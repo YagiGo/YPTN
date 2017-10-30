@@ -2,7 +2,8 @@
 import requests
 import ast
 import time
-import os, csv
+import os
+import csv
 
 
 def manification(js_code, compilation_level, output_info):
@@ -22,8 +23,8 @@ def manification(js_code, compilation_level, output_info):
     headers = {"Content=type": "application/x-www-form-urlencode"}
     conn = requests.post('https://closure-compiler.appspot.com/compile', data=params, headers=headers)
     # Do not change header
-    result = ast.literal_eval(conn.text) # Using ast lib to convert str to dict
-    if result["serverErrors"]:
+    result = ast.literal_eval(conn.text)  # Using ast lib to convert str to dict
+    if "serverErrors" in result:
         err_flag = 1
         err_msg = result["serverErrors"][0]
         return err_flag, err_msg
@@ -32,18 +33,20 @@ def manification(js_code, compilation_level, output_info):
         return err_flag, result["compiledCode"]
 
 
-def evaluate(result,url, test_result):
+def evaluate(result, url, test_result):
     eval_result = ast.literal_eval(result)  # Using ast lib to convert str to dict
     try:
 
         compressed = int(eval_result['statistics']['originalSize']) - int(eval_result['statistics']['compressedSize'])
         if compressed < 0:
-             test_result.append((url,'Compression not Effective!','',''))
+            test_result.append((url, 'Compression not Effective!', '', ''))
         else:
-            test_result.append((url,result['statistics']['originalSize'],result['statistics']['compressedSize'],compressed))
+            test_result.append((url, result['statistics']['originalSize'], result['statistics']['compressedSize'], compressed))
 
     except Exception as err:
-        test_result.append((url,'Failed with err' + str(err),'','',''))
+        test_result.append((url, 'Failed with err' + str(err), '', '', ''))
+
+
 if __name__ == '__main__':
     testJS = "var aPageStart = (new Date()).getTime();"
     err_check, result = manification(testJS, compilation_level="SIMPLE_OPTIMIZATIONS", output_info="compiled_code")

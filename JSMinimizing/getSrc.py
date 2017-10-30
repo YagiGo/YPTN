@@ -53,8 +53,8 @@ class SiteSrcFiles:
                     else:
                         print("JS file No.{} ".format(jsfile_counter) + "Compiling Succeeded!" +
                               "Time Usage:" + str(int(time_cost)) + "s")
-                        mod_script_tag.string = result["compiledCode"]
-                    # Replace the original script with the minimized one
+                        mod_script_tag.string = compiled_result
+                        # Replace the original script with the minimized one
                         script.replace_with(mod_script_tag)
                         jsfile_counter += 1
 
