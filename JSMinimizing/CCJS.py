@@ -4,6 +4,7 @@ import ast
 import time
 import os
 import csv
+from Proxy.IPProxy import getIPProxies
 
 
 def manification(js_code, compilation_level, output_info):
@@ -20,8 +21,9 @@ def manification(js_code, compilation_level, output_info):
     output_info:compiled_code, warnings,errors, statistics
     '''
     # Using POST method to process js file
+    proxy = getIPProxies()
     headers = {"Content=type": "application/x-www-form-urlencode"}
-    conn = requests.post('https://closure-compiler.appspot.com/compile', data=params, headers=headers)
+    conn = requests.post('https://closure-compiler.appspot.com/compile', proxies=proxy, data=params, headers=headers)
     # Do not change header
     result = ast.literal_eval(conn.text)  # Using ast lib to convert str to dict
     if "serverErrors" in result:

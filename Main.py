@@ -86,8 +86,8 @@ if __name__ == '__main__':
     }
     # header is something needed to be modified if deployed
     i = 1
-    custom_site = ['https://www.twitter.com']
-    for site in custom_site:
+    custom_site = ['https://www.amazon.co.jp']
+    for site in test_sites:
         mod_files = SiteSrcFiles(site, header)
         start_time = time.time()
         print("Processing No.{}".format(i))

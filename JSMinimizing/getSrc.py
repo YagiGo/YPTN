@@ -6,6 +6,7 @@ import os
 import time
 from JSMinimizing.CCJS import *
 import traceback
+from Proxy.IPProxy import getIPProxies
 
 
 class SiteSrcFiles:
@@ -50,6 +51,8 @@ class SiteSrcFiles:
                         print("JS file No.{} ".format(jsfile_counter) + "Compiling Failed with ERROR CODE:"
                               + str(compiled_result["code"]) + " " + compiled_result["error"])
                         jsfile_counter += 1
+                        print("Will Try again with Proxy ON")
+
                     else:
                         print("JS file No.{} ".format(jsfile_counter) + "Compiling Succeeded!" +
                               "Time Usage:" + str(int(time_cost)) + "s")

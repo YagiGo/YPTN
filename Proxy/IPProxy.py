@@ -1,20 +1,21 @@
 #! /usr/bin/env python
 # -*- coding utf-8 -*-
-#使用开源库IPProxyPool获取了足够的IP地址
+# 使用ProxyPool获取了足够的IP地址
 import requests as rq
-import json
 import random
+import ast
+
+
 def getIPProxies():
-    url = 'http://127.0.0.1:8000'
+    url = 'http://47.104.17.141:5010/get_all'  # Proxy IP Server
     IPAddr = rq.get(url).text
-    IPPorts = json.loads(IPAddr)
-    max = len(IPPorts)
-    item = random.randint(0 , max-1)
-    ip = IPPorts[item][0]
-    port = IPPorts[item][1]
+    IPAddr = ast.literal_eval(IPAddr)  # String to List Conversion
+    # print(type(IPAddr))
+    max = len(IPAddr)
+    item = random.randint(0, max - 1)
     proxies = {
-        'http': 'http://{}:{}'.format(ip,port),
-        'https': 'https://{}:{}'.format(ip,port)
+        'http': IPAddr[item],
+        'https': IPAddr[item]
     }
-    print("Using Proxy at {}".format(proxies))
+    print("Using Proxy at {}".format(proxies))  # Will be Removed!
     return proxies
