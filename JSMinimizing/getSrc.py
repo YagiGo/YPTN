@@ -4,7 +4,8 @@ from bs4 import BeautifulSoup
 import hashlib
 import os
 import time
-from JSMinimizing.CCJS import *
+# from JSMinimizing.CCJS import *
+from JSMinimizing.JSMinifyer import *
 import traceback
 from Proxy.IPProxy import getIPProxies
 
@@ -37,16 +38,37 @@ class SiteSrcFiles:
                             'w', encoding='utf-8')  # Using SHA256
                 file.write(str(sortedHTML))
                 file.close()
-                jsfile_list = sortedHTML.find_all('script')
-                print("The Page You Requested Contains {} JavaScript Files".format(len(jsfile_list)))
-                for script in jsfile_list:
+                jsfile_list1 = sortedHTML.find_all('script',{'type':'text/javascript'})
+                jsfile_list2 = sortedHTML.find_all('script',{'type':''})
+                jsfile_num = len(jsfile_list1) + len(jsfile_list2)
+                print("The Page You Requested Contains {} JavaScript Files".format(jsfile_num))
+                for script in jsfile_list1:
                     # create a new script tag with modified script
                     mod_script_tag = sortedHTML.new_tag('script')
                     # add modified script to this new tag (THIS WILL REMOVE <script tpye='text/javascript> TYPE!)
                     compile_start = time.time()
-                    err_check, compiled_result = manification(script.text, self.compile_level, 'compiled_code')
+                    compiled_result = manification(script.text, self.compile_level, 'compiled_code') #JS Miniyer
+                    mod_script_tag.string = compiled_result
+                    script.replace_with(mod_script_tag)
+                    # err_check, compiled_result = manification(script.text, self.compile_level, 'compiled_code') #CC
                     compiled_end = time.time()
-                    time_cost = compiled_end - compile_start
+                    time_cost1 = compiled_end - compile_start
+                    print("js_file NO.{} compiling finished, time cost:{}".format(jsfile_counter, time_cost1))
+                    jsfile_counter += 1
+                for script in jsfile_list2:
+                    # create a new script tag with modified script
+                    mod_script_tag = sortedHTML.new_tag('script')
+                    # add modified script to this new tag (THIS WILL REMOVE <script tpye='text/javascript> TYPE!)
+                    compile_start = time.time()
+                    compiled_result = manification(script.text, self.compile_level, 'compiled_code')  # JS Miniyer
+                    mod_script_tag.string = compiled_result
+                    script.replace_with(mod_script_tag)
+                    # err_check, compiled_result = manification(script.text, self.compile_level, 'compiled_code') #CC
+                    compiled_end = time.time()
+                    time_cost2 = compiled_end - compile_start
+                    print("js_file NO.{} compiling finished, time cost:{}".format(jsfile_counter, time_cost2))
+                    jsfile_counter += 1
+                    '''
                     if (err_check):
                         print("JS file No.{} ".format(jsfile_counter) + "Compiling Failed with ERROR CODE:"
                               + str(compiled_result["code"]) + " " + compiled_result["error"])
@@ -60,7 +82,7 @@ class SiteSrcFiles:
                         # Replace the original script with the minimized one
                         script.replace_with(mod_script_tag)
                         jsfile_counter += 1
-
+                    '''
                 # file = open(os.path.abspath('JSMinimizing') + '\\jsfile.js', 'w', encoding='utf-8')
                 file = open(os.path.abspath('Cache') + '\\' + hashed_cache + '.html',
                             'w', encoding='utf-8')  # Using SHA256

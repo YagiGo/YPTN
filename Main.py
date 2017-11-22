@@ -1,4 +1,4 @@
-from JSMinimizing.CCJS import manification, evaluate
+# from JSMinimizing.CCJS import manification, evaluate
 from JSMinimizing.getSrc import *
 import time
 if __name__ == '__main__':
@@ -86,8 +86,11 @@ if __name__ == '__main__':
     }
     # header is something needed to be modified if deployed
     i = 1
-    custom_site = ['https://www.amazon.co.jp']
-    for site in test_sites:
+    custom_site = ['https://www.taobao.com','https://www.facebook.com',
+                   'https://www.youtube.com','https://www.weibo.com','https://www.twitter.com',
+                   'https://www.imdb.com','https://www.bilibili.com','https://www.niconicovideo.jp']
+    failed_site = ['https://www.amazon.co.jp']
+    for site in failed_site:
         mod_files = SiteSrcFiles(site, header)
         start_time = time.time()
         print("Processing No.{}".format(i))

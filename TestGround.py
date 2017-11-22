@@ -57,11 +57,10 @@ print(hashlib.sha224(b"https://www.c.com").hexdigest()
 # Replace Test
 from bs4 import BeautifulSoup
 newText = 'HELLO'
-soup = BeautifulSoup('<script>var aPageStart = (new Date()).getTime();</script><script tpye=javascript>var aPageStart = (new Date()).getTime();</script>', 'html.parser')
-for script in soup.findAll('script'):
-      # mod_script = soup.new_tag('script')
-      # mod_script.string = "HELLO"
-      # script.replace_with(mod_script)
-      print(script)
-print(soup)
+soup = BeautifulSoup('<script type="text/javascript">var aPageStart = (new Date()).getTime();</script><script>var aPageStart = (new Date()).getTime();</script>', 'html.parser')
+for script in soup.findAll('script', {'type': ''}):
+    mod_script = soup.new_tag('script')
+    mod_script.string = "HELLO"
+    script.replace_with(mod_script)
 
+print(soup)

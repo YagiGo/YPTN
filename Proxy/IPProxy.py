@@ -14,8 +14,7 @@ def getIPProxies():
     max = len(IPAddr)
     item = random.randint(0, max - 1)
     proxies = {
-        'http': IPAddr[item],
-        'https': IPAddr[item]
+        "https": "https://{}" .format(IPAddr[item])
     }
     print("Using Proxy at {}".format(proxies))  # Will be Removed!
     return proxies

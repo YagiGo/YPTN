@@ -1,8 +1,743 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c69ca65-0925-492c-bb46-5b19e23ca29e" name="Default" comment="">
+    <list default="true" id="2c69ca65-0925-492c-bb46-5b19e23ca29e" name="Default" comment="&quot;Proxy Function&quot;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/aecpm.alicdn.com1511393930.4845092.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/aecpm.alicdn.com1511393930.5105107.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/aecpm.alicdn.com1511393966.644865.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/aecpm.alicdn.com1511393966.7038653.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/gtms01.alicdn.com1511393936.0001018.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393909.088209.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393909.1808152.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393909.2679718.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393909.3565433.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393909.4622257.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393928.7717404.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393928.8237576.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393928.832744.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.048733.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.1622186.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.2012815.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.243257.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.2662325.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.2922368.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.3172383.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.34424.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.3692489.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.3832495.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.4032507.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.4182518.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.431252.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.4812906.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.4982913.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.5182922.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.534293.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.5582974.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.607305.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.6263058.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.918374.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393930.8665595.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393930.8995638.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393930.9520705.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393931.0095809.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393931.040582.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393932.5938113.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393932.688821.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393932.7308323.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393933.2959032.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393933.3509436.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393933.6489503.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393933.8310182.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393934.183061.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393934.3390734.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393934.3890762.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393934.635115.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393934.7051234.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393936.6416824.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393936.720694.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393936.8082027.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393937.3669283.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.0603628.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.0893674.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.132381.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.154344.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.1673763.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.1833463.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.1933923.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.203398.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.2604024.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393951.5994842.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393951.7741868.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393951.800191.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393953.2231596.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393953.2851055.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393953.5191827.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393959.3235257.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393969.3573961.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393974.3680718.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393979.3580234.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393984.3752499.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511394092.5677102.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/completion/aaa" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/completion/aab" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/completion/aac" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_protobuf_data/protobuf02" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_protobuf_data/protobuf03" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_wbxml_data/data.wbxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/all.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/confdir/mitmproxy-ca-cert.p12" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/dercert" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/dumpfile-010" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image_parser/all.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image_parser/app1.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image_parser/aspect.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image_parser/chi.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image_parser/comment.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image_parser/ct0n0g04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image_parser/ct1n0g04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image_parser/cten0g04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image_parser/ctzn0g04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image_parser/example.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image_parser/g07n0g16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image_parser/hopper.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image_parser/iss634.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/dercert" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/fontawesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/fontawesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/fontawesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/fontawesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/chrome-devtools/resourceCSSIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/chrome-devtools/resourceDocumentIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/chrome-devtools/resourceJSIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/chrome-devtools/resourcePlainIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/resourceExecutableIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/resourceFlashIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/resourceImageIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/resourceJavaIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/resourceNotModifiedIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/resourceRedirectIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/apidata.googleusercontent.com1511394048.1412702.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/apidata.googleusercontent.com1511394048.3258066.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/docs.google.com1511394030.1875196.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/fragment.tmall.com1511393949.777925.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/fragment.tmall.com1511393949.8209677.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/fragment.tmall.com1511393949.8376608.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/fragment.tmall.com1511394085.1897206.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/fragment.tmall.com1511394085.4567802.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/pages.tmall.com1511393949.9998977.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/pages.tmall.com1511393950.0303473.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/suggest.taobao.com1511393938.7312412.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/suggest.taobao.com1511394098.075363.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/taobao.com1511393883.3180258.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/tce.alicdn.com1511393930.4014971.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/textlink.simba.taobao.com1511393908.6587007.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/textlink.simba.taobao.com1511393936.394151.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/tns.simba.taobao.com1511393931.8167143.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/wwc.alicdn.com1511393905.8953743.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.google.com1511393880.1803799.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.google.com1511393881.2566679.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.google.com1511393881.4677355.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.google.com1511393897.5218112.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.google.com1511393903.8714616.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.taobao.com1511393884.5764787.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.tmall.com1511393935.8615181.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.tmall.com1511393937.6809833.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSMinimizing/JSMinifyer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSMinimizing/merge.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/conftest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/examples/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/examples/test_examples.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/examples/test_har_dump.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/examples/test_xss_scanner.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/filename_matching.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/full_coverage_plugin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/helper_tools/1024example" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/helper_tools/bench.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/helper_tools/benchtool.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/helper_tools/dumperview.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/helper_tools/getcert" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/helper_tools/inspect_dumpfile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/helper_tools/memoryleak.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/helper_tools/passive_close.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/helper_tools/testpatt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/helper_tools/typehints_for_options.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/individual_coverage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/onboardingapp/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/onboardingapp/test_app.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_allowremote.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_anticache.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_anticomp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_check_ca.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_clientplayback.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_core.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_core_option_validation.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_cut.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_disable_h2c.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_dumper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_eventstore.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_export.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_intercept.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_keepserving.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_onboarding.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_proxyauth.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_readfile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_replace.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_save.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_script.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_serverplayback.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_setheaders.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_stickyauth.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_stickycookie.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_streambodies.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_termlog.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_termstatus.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_upstream_auth.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_view.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/addons/test_wsgiapp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/completion/bbb/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/image/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/image/test_image_parser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/image/test_view.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_api.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_auto.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/animation-keyframe-formatted.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/animation-keyframe.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/blank-lines-and-spaces-formatted.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/blank-lines-and-spaces.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/block-comment-formatted.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/block-comment.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/empty-rule-formatted.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/empty-rule.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/import-directive-formatted.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/import-directive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/indentation-formatted.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/indentation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/media-directive-formatted.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/media-directive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/quoted-string-formatted.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/quoted-string.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/selectors-formatted.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/selectors.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/simple-formatted.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_css_data/simple.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_hex.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_javascript.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_js_data/simple-formatted.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_js_data/simple.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_json.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_multipart.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_protobuf.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_protobuf_data/protobuf01" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_protobuf_data/protobuf02-decoded" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_protobuf_data/protobuf03-decoded" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_query.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_raw.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_urlencoded.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_wbxml.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_wbxml_data/data-formatted.wbxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_xml_html.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_xml_html_data/cdata-formatted.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_xml_html_data/cdata.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_xml_html_data/comment-formatted.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_xml_html_data/comment.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_xml_html_data/inline-formatted.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_xml_html_data/inline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_xml_html_data/simple-formatted.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_xml_html_data/simple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_xml_html_data/test-formatted.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/contentviews/test_xml_html_data/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/addonscripts/addon.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/addonscripts/concurrent_decorator.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/addonscripts/concurrent_decorator_class.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/addonscripts/concurrent_decorator_err.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/addonscripts/error.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/addonscripts/load_error.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/addonscripts/print.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/addonscripts/recorder/a.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/addonscripts/recorder/b.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/addonscripts/recorder/c.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/addonscripts/recorder/e.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/addonscripts/recorder/recorder.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/addonscripts/same_filename/addon.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/addonscripts/shutdown.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/addonscripts/stream_modify.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/addonscripts/tcp_stream_modify.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/clientcert/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/clientcert/127.0.0.1.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/clientcert/client.cnf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/clientcert/client.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/clientcert/make" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/confdir/mitmproxy-ca-cert.cer" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/confdir/mitmproxy-ca-cert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/confdir/mitmproxy-ca.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/dumpfile-011" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/dumpfile-018" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/har_extractor.har" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/htpasswd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/htpasswd.invalid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/image_parser/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/no_common_name.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/pf01" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/pf02" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/replace" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/scripts/all.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/servercert/9da13359.0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/servercert/self-signed.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/servercert/trusted-leaf.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/servercert/trusted-root.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/data/testkey.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/fuzzing/.env" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/fuzzing/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/fuzzing/client_patterns" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/fuzzing/go_proxy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/fuzzing/reverse_patterns" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/fuzzing/straight_stream" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/fuzzing/straight_stream_patterns" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/fuzzing/straight_stream_ssl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/io/test_compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/io/test_io.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/io/test_tnetstring.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/clientcert/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/clientcert/client.cnf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/clientcert/client.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/clientcert/make" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/dhparam.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/htpasswd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/server.crt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/server.key" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/text_cert" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/text_cert_2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/text_cert_weird1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/verificationcerts/9da13359.0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/verificationcerts/generate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/verificationcerts/self-signed.crt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/verificationcerts/self-signed.key" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/verificationcerts/trusted-leaf.crt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/verificationcerts/trusted-leaf.key" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/verificationcerts/trusted-root.crt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/verificationcerts/trusted-root.key" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/data/verificationcerts/trusted-root.srl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/http1/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/http1/test_assemble.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/http1/test_read.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/http2/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/http2/test_framereader.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/http2/test_utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/test_cookies.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/test_encoding.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/test_headers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/test_message.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/test_multipart.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/test_request.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/test_response.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/test_status_codes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/test_url.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/http/test_user_agents.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/test_check.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/test_server_spec.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/test_socks.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/test_tcp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/test_tls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/test_wsgi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/tools/getcertnames" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/tservers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/websockets/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/websockets/test_frame.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/websockets/test_masker.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/net/websockets/test_utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/platform/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/platform/test_pf.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/modes/test_http_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/modes/test_reverse_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/modes/test_socks_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/modes/test_transparent_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/protocol/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/protocol/test_base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/protocol/test_http.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/protocol/test_http1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/protocol/test_http2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/protocol/test_http_replay.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/protocol/test_rawtcp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/protocol/test_tls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/protocol/test_websocket.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/test_config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/test_root_context.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/proxy/test_server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/script/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/script/test_concurrent.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_addonmanager.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_certs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_command.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_connections.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_controller.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_ctx.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_eventsequence.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_flow.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_flowfilter.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_fuzzing.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_http.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_log.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_master.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_options.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_optmanager.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_stateobject.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_taddons.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_tcp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_version.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/test_websocket.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/tools/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/tools/console/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/tools/console/test_common.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/tools/console/test_keymap.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/tools/console/test_master.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/tools/console/test_palettes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/tools/console/test_pathedit.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/tools/console/test_statusbar.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/tools/test_cmdline.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/tools/test_dump.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/tools/test_main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/tools/web/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/tools/web/test_app.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/tools/web/test_master.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/tools/web/test_static_viewer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/tservers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/types/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/types/test_basethread.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/types/test_bidi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/types/test_multidict.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/types/test_serializable.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/utils/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/utils/test_arg_check.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/utils/test_bits.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/utils/test_data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/utils/test_debug.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/utils/test_human.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/utils/test_sliding_window.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/utils/test_strutils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/mitmproxy/utils/test_typecheck.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/data/clientcert/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/data/clientcert/client.cnf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/data/clientcert/client.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/data/clientcert/make" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/data/file" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/data/request" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/data/response" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/data/testkey.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/language/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/language/test_actions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/language/test_base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/language/test_exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/language/test_generators.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/language/test_http.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/language/test_http2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/language/test_message.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/language/test_websockets.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/language/test_writer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/protocols/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/protocols/test_http.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/protocols/test_http2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/protocols/test_websockets.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/scripts/generate.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/scripts/openssl.cnf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/test_log.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/test_pathoc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/test_pathoc_cmdline.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/test_pathod.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/test_pathod_cmdline.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/test_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/test_utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Proxy/test/pathod/tservers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/add_header.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/custom_contentview.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/custom_option.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complex/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complex/change_upstream_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complex/dns_spoofing.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complex/dup_and_replay.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complex/full_transparency_shim.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complex/har_dump.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complex/mitmproxywrapper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complex/nonblocking.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complex/remote_debug.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complex/sslstrip.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complex/stream.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complex/stream_modify.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complex/tcp_message.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complex/tls_passthrough.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/complex/xss_scanner.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/pathod/libpathod_pathoc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/pathod/test_context.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/pathod/test_setup.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/pathod/test_setupall.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/simple/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/simple/add_header_class.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/simple/filter_flows.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/simple/log_events.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/simple/modify_body_inject_iframe.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/simple/modify_form.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/simple/modify_querystring.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/simple/send_reply_from_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/simple/wsgi_flask_app.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/io_read_dumpfile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/io_write_dumpfile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addonmanager.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/allowremote.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/anticache.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/anticomp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/check_ca.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/clientplayback.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/core.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/core_option_validation.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/cut.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/disable_h2c.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/dumper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/eventstore.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/export.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/intercept.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/keepserving.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/onboarding.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/app.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/fontawesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/fontawesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/fontawesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/mitmproxy.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/templates/frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/templates/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/templates/layout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/proxyauth.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/readfile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/replace.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/save.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/script.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/serverplayback.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/setheaders.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/stickyauth.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/stickycookie.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/streambodies.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/termlog.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/termstatus.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/upstream_auth.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/view.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/addons/wsgiapp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/certs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/command.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/connections.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/auto.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/css.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/hex.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/image/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/image/image_parser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/image/view.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/javascript.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/json.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/multipart.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/protobuf.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/query.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/raw.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/urlencoded.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/wbxml.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contentviews/xml_html.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/exif.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/exif_be.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/exif_le.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/gif.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/google_protobuf.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/ico.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/jpeg.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/make.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/png.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/tls_client_hello.ksy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/tls_client_hello.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/vlq_base128_le.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/wbxml/ASCommandResponse.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/wbxml/ASWBXML.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/wbxml/ASWBXMLByteQueue.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/wbxml/ASWBXMLCodePage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/wbxml/GlobalTokens.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/wbxml/InvalidDataException.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/contrib/wbxml/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/controller.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/ctx.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/eventsequence.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/flow.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/flowfilter.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/http.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/io/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/io/compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/io/io.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/io/tnetstring.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/log.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/master.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/check.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/cookies.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/encoding.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/headers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/http1/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/http1/assemble.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/http1/read.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/http2/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/http2/framereader.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/http2/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/message.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/multipart.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/request.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/response.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/status_codes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/url.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/http/user_agents.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/server_spec.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/socks.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/tcp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/tls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/websockets/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/websockets/frame.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/websockets/masker.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/websockets/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/net/wsgi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/options.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/optmanager.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/platform/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/platform/linux.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/platform/openbsd.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/platform/osx.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/platform/pf.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/platform/windows.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/modes/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/modes/http_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/modes/reverse_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/modes/socks_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/modes/transparent_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/protocol/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/protocol/base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/protocol/http.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/protocol/http1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/protocol/http2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/protocol/http_replay.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/protocol/rawtcp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/protocol/tls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/protocol/websocket.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/root_context.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/proxy/server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/script/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/script/concurrent.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/stateobject.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tcp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/test/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/test/taddons.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/test/tflow.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/test/tutils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/cmdline.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/commandeditor.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/commands.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/common.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/consoleaddons.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/defaultkeys.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/eventlog.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/flowdetailview.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/flowlist.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/flowview.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/grideditor/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/grideditor/base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/grideditor/col_bytes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/grideditor/col_subgrid.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/grideditor/col_text.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/grideditor/editors.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/help.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/keybindings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/keymap.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/layoutwidget.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/master.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/options.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/overlay.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/palettes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/pathedit.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/searchable.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/signals.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/statusbar.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/tabs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/console/window.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/dump.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/app.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/master.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/chrome-devtools/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/static.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/vendor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static/vendor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/static_viewer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/templates/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/tools/web/webaddons.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/types/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/types/basethread.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/types/bidi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/types/multidict.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/types/serializable.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/utils/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/utils/arg_check.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/utils/bits.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/utils/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/utils/debug.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/utils/human.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/utils/sliding_window.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/utils/strutils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/utils/typecheck.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/version.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mitmproxy/websocket.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pagemodifier.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redirect_requests.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Cache/jsfile.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JSMinimizing/CCJS.py" afterPath="$PROJECT_DIR$/JSMinimizing/CCJS.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JSMinimizing/getSrc.py" afterPath="$PROJECT_DIR$/JSMinimizing/getSrc.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Proxy/IPProxy.py" afterPath="$PROJECT_DIR$/Proxy/IPProxy.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestGround.py" afterPath="$PROJECT_DIR$/TestGround.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,41 +748,47 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/NetworkProgramming$getSrc.coverage" NAME="getSrc Coverage Results" MODIFIED="1509174622941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSMinimizing" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1511388662118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$UDP.coverage" NAME="UDP Coverage Results" MODIFIED="1508399661672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$upsidedownternet.coverage" NAME="upsidedownternet Coverage Results" MODIFIED="1511387550616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$POSTtoCCS.coverage" NAME="POSTtoCCS Coverage Results" MODIFIED="1509008140054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$Main.coverage" NAME="Main Coverage Results" MODIFIED="1509352998046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$CCJS.coverage" NAME="CCJS Coverage Results" MODIFIED="1509346367627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSMinimizing" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$TestGround.coverage" NAME="TestGround Coverage Results" MODIFIED="1509323938724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="getSrc.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/JSMinimizing/getSrc.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="475">
-                    <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-                    <folding>
-                      <element signature="e#0#9#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
+    <SUITE FILE_PATH="coverage/NetworkProgramming$Main.coverage" NAME="Main Coverage Results" MODIFIED="1509608246548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$CCJS.coverage" NAME="CCJS Coverage Results" MODIFIED="1509497528870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSMinimizing" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$IPProxy__1_.coverage" NAME="IPProxy (1) Coverage Results" MODIFIED="1509506753654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Proxy" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$TestGround.coverage" NAME="TestGround Coverage Results" MODIFIED="1509526845374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1511388852305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy/proxy" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$http.coverage" NAME="http Coverage Results" MODIFIED="1511388881813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$IPProxy.coverage" NAME="IPProxy Coverage Results" MODIFIED="1509431566068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Proxy/IPProxyPool" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1194">
+              <caret line="96" column="46" lean-forward="false" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pagemodifier.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pagemodifier.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+              <folding>
+                <element signature="e#81#90#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TestGround.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestGround.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1121">
-              <caret line="59" column="26" lean-forward="false" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+            <state relative-caret-position="171">
+              <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -55,125 +796,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jsfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestFiles/jsfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="55" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="58" />
-              <folding>
-                <marker date="1509168070165" expanded="true" signature="46362:46375" ph="..." />
-                <marker date="1509168070165" expanded="true" signature="46442:46463" ph="..." />
-                <marker date="1509168070165" expanded="true" signature="48106:48119" ph="..." />
-                <marker date="1509168070165" expanded="true" signature="48186:48207" ph="..." />
-                <marker date="1509168070165" expanded="true" signature="49767:49780" ph="..." />
-                <marker date="1509168070165" expanded="true" signature="49847:49868" ph="..." />
-                <marker date="1509168070165" expanded="true" signature="51473:51486" ph="..." />
-                <marker date="1509168070165" expanded="true" signature="51553:51574" ph="..." />
-                <marker date="1509168070165" expanded="true" signature="53287:53300" ph="..." />
-                <marker date="1509168070165" expanded="true" signature="53367:53388" ph="..." />
-                <marker date="1509168070165" expanded="true" signature="168316:168330" ph="..." />
-                <marker date="1509168070165" expanded="true" signature="168412:168426" ph="..." />
-                <marker date="1509168070165" expanded="true" signature="178043:178050" ph="×" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jsfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Cache/jsfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="226" lean-forward="false" selection-start-line="0" selection-start-column="226" selection-end-line="0" selection-end-column="226" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jsfile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestFiles/jsfile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="5" selection-end-column="437" />
-              <folding>
-                <marker date="1509167391891" expanded="true" signature="46362:46375" ph="..." />
-                <marker date="1509167391891" expanded="true" signature="46442:46463" ph="..." />
-                <marker date="1509167391891" expanded="true" signature="48106:48119" ph="..." />
-                <marker date="1509167391891" expanded="true" signature="48186:48207" ph="..." />
-                <marker date="1509167391891" expanded="true" signature="49767:49780" ph="..." />
-                <marker date="1509167391891" expanded="true" signature="49847:49868" ph="..." />
-                <marker date="1509167391891" expanded="true" signature="51475:51488" ph="..." />
-                <marker date="1509167391891" expanded="true" signature="51555:51576" ph="..." />
-                <marker date="1509167391891" expanded="true" signature="53289:53302" ph="..." />
-                <marker date="1509167391891" expanded="true" signature="53369:53390" ph="..." />
-                <marker date="1509167391891" expanded="true" signature="172872:172886" ph="..." />
-                <marker date="1509167391891" expanded="true" signature="172968:172982" ph="..." />
-                <marker date="1509167391891" expanded="true" signature="182599:182606" ph="×" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CCJS.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSMinimizing/CCJS.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="30" column="9" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-              <folding>
-                <element signature="e#20#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlexaSiteCrawing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSMinimizing/AlexaSiteCrawing.py">
+      <file leaf-file-name="test_context.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/pathod/test_context.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testJS.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestFiles/testJS.js">
+      <file leaf-file-name="test_setup.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/pathod/test_setup.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
               <folding>
-                <element signature="e#0#52#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IPProxy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Proxy/IPProxy.py">
+      <file leaf-file-name="test_setupall.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/pathod/test_setupall.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#74#95#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UDP_TimeAsk.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UDP_TimeAsk.py">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="266">
+              <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -192,6 +855,12 @@
     <findStrings>
       <find>javasc</find>
       <find>js_code</find>
+      <find>succeeded</find>
+      <find>Processing No</find>
+      <find>jsfile_</find>
+      <find>HTTPResponse</find>
+      <find>content</find>
+      <find>Flow</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -205,11 +874,22 @@
         <option value="$PROJECT_DIR$/POSTtoCCS.py" />
         <option value="$PROJECT_DIR$/JS Minimizing/AlexaSiteCrawing.py" />
         <option value="$PROJECT_DIR$/JS Minimizing/POSTtoCCS.py" />
-        <option value="$PROJECT_DIR$/TestGround.py" />
+        <option value="$PROJECT_DIR$/Proxy/IPProxyPool/config.py" />
+        <option value="$PROJECT_DIR$/Proxy/IPProxyPool/IPProxy.py" />
         <option value="$PROJECT_DIR$/Proxy/IPProxy.py" />
         <option value="$PROJECT_DIR$/JSMinimizing/CCJS.py" />
+        <option value="$PROJECT_DIR$/JSMinimizing/JSMinifyer.py" />
+        <option value="$PROJECT_DIR$/JSMinimizing/MERGE.py" />
+        <option value="$PROJECT_DIR$/JSMinimizing/merge.py" />
+        <option value="$PROJECT_DIR$/TestGround.py" />
         <option value="$PROJECT_DIR$/JSMinimizing/getSrc.py" />
+        <option value="$PROJECT_DIR$/Proxy/examples/simple/custom_contentview.py" />
         <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/redirect_requests.py" />
+        <option value="$PROJECT_DIR$/mitmproxy/http.py" />
+        <option value="$PROJECT_DIR$/mitmproxy/certs.py" />
+        <option value="$PROJECT_DIR$/upsidedownternet.py" />
+        <option value="$PROJECT_DIR$/pagemodifier.py" />
       </list>
     </option>
   </component>
@@ -219,9 +899,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="2591" />
-    <option name="y" value="-27" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1273" />
     <option name="width" value="1294" />
     <option name="height" value="1567" />
   </component>
@@ -254,10 +933,17 @@
             <id>XML</id>
           </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyCompatibilityInspection</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -273,7 +959,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,50 +967,22 @@
               <item name="NetworkProgramming" type="b2602c69:ProjectViewProjectNode" />
               <item name="NetworkProgramming" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="NetworkProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NetworkProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="Cache" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NetworkProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NetworkProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="JSMinimizing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NetworkProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NetworkProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NetworkProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NetworkProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="UglifyJS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NetworkProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NetworkProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="Proxy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NetworkProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NetworkProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="TestFiles" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/mitmproxy-master/mitmproxy-master" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming" />
+      <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming\lib" />
       <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming\Cache" />
       <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming\TestFiles" />
       <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming\JS Minimizing" />
@@ -342,25 +1000,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Main">
-    <configuration name="CCJS" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/JSMinimizing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="NetworkProgramming" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JSMinimizing/CCJS.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.http">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -379,7 +1019,61 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="POSTtoCCS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mitmproxy/proxy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NetworkProgramming" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mitmproxy/proxy/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mitmproxy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NetworkProgramming" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mitmproxy/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="http" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mitmproxy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NetworkProgramming" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mitmproxy/http.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="upsidedownternet" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -392,61 +1086,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NetworkProgramming" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\jerem\PycharmProjects\NetworkProgramming\JS Minimizing\POSTtoCCS.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="TestGround" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="NetworkProgramming" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestGround.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="getSrc" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/JSMinimizing" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="NetworkProgramming" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JSMinimizing/getSrc.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/upsidedownternet.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.TestGround" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Main" />
-      <item index="2" class="java.lang.String" itemvalue="Python.POSTtoCCS" />
-      <item index="3" class="java.lang.String" itemvalue="Python.CCJS" />
-      <item index="4" class="java.lang.String" itemvalue="Python.getSrc" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Main" />
+      <item index="1" class="java.lang.String" itemvalue="Python.upsidedownternet" />
+      <item index="2" class="java.lang.String" itemvalue="Python.__init__" />
+      <item index="3" class="java.lang.String" itemvalue="Python.__init__ (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.http" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Python.CCJS" />
-        <item index="2" class="java.lang.String" itemvalue="Python.TestGround" />
-        <item index="3" class="java.lang.String" itemvalue="Python.getSrc" />
-        <item index="4" class="java.lang.String" itemvalue="Python.POSTtoCCS" />
+        <item index="0" class="java.lang.String" itemvalue="Python.http" />
+        <item index="1" class="java.lang.String" itemvalue="Python.__init__ (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.__init__" />
+        <item index="3" class="java.lang.String" itemvalue="Python.upsidedownternet" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -478,30 +1136,44 @@
       <option name="project" value="LOCAL" />
       <updated>1509353132154</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="&quot;Delete irrelevant files&quot;">
+      <created>1509353240055</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1509353240055</updated>
+    </task>
+    <task id="LOCAL-00004" summary="&quot;Proxy Function&quot;">
+      <created>1509442599915</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1509442599916</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2560" y="0" width="1200" height="1920" extended-state="6" />
+    <frame x="1273" y="0" width="1294" height="1567" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17166667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22848201" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58912593" sideWeight="0.12363067" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45824412" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3785272" sideWeight="0.8763693" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966277" sideWeight="0.49666667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39917412" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966277" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -514,421 +1186,351 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;Adding Proxy Function and Debugging&quot;" />
     <MESSAGE value="&quot;Delete irrelevant files&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Delete irrelevant files&quot;" />
+    <MESSAGE value="&quot;Proxy Function&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Proxy Function&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JSMinimizing/CCJS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#20#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSMinimizing/AlexaSiteCrawing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UDP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestGround.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cache/JSMinimizing.html">
+    <entry file="file://$PROJECT_DIR$/Cache/1511376952.994094.html" />
+    <entry file="file://$PROJECT_DIR$/Cache/1511376949.7381723.html" />
+    <entry file="file://$PROJECT_DIR$/Cache/1511376948.674979.html" />
+    <entry file="file://$PROJECT_DIR$/Cache/1511376949.5209265.html" />
+    <entry file="file://$PROJECT_DIR$/Cache/sp0.baidu.com1511377082.1482122.js" />
+    <entry file="file://$PROJECT_DIR$/Cache/www.baidu.com1511377082.5135145.html" />
+    <entry file="file://$PROJECT_DIR$/Cache/www.baidu.com1511377082.6187105.html" />
+    <entry file="file://$PROJECT_DIR$/Cache/config.pinyin.sogou.com1511376949.7081084.html" />
+    <entry file="file://$PROJECT_DIR$/Cache/www.baidu.com1511377081.1190968.html" />
+    <entry file="file://$PROJECT_DIR$/mitmproxy/tools/dump.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSMinimizing/CCJS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#20#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSMinimizing/AlexaSiteCrawing.py">
+    <entry file="file://$PROJECT_DIR$/mitmproxy/contentviews/raw.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
+    <entry file="file://$PROJECT_DIR$/mitmproxy/contentviews/protobuf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="38">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UDP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestGround.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cache/JSMinimizing.html">
+    <entry file="file://$PROJECT_DIR$/mitmproxy/contentviews/json.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSMinimizing/CCJS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#20#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSMinimizing/AlexaSiteCrawing.py">
+    <entry file="file://$PROJECT_DIR$/mitmproxy/contentviews/auto.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UDP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestGround.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cache/JSMinimizing.html">
+    <entry file="file://$PROJECT_DIR$/mitmproxy/contentviews/image/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
+    <entry file="file://$PROJECT_DIR$/mitmproxy/contentviews/image/image_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1881">
+          <caret line="99" column="13" lean-forward="false" selection-start-line="99" selection-start-column="13" selection-end-line="99" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSMinimizing/AlexaSiteCrawing.py">
+    <entry file="file://$PROJECT_DIR$/mitmproxy/contentviews/javascript.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="399">
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSMinimizing/CCJS.py">
+    <entry file="file://$PROJECT_DIR$/mitmproxy/contentviews/css.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#20#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1254">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UDP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestGround.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test Files/testJS.js" />
-    <entry file="file://$PROJECT_DIR$/UDP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestGround.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UDP_TimeAsk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UDP.py">
+    <entry file="file://$PROJECT_DIR$/mitmproxy/test/tflow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test Files/testJS.js" />
-    <entry file="file://$PROJECT_DIR$/Test Files/testJS2(baidu).js" />
-    <entry file="file://$PROJECT_DIR$/JS Minimizing/AlexaSiteCrawing.py" />
-    <entry file="file://$PROJECT_DIR$/JS Minimizing/POSTtoCCS.py" />
-    <entry file="file://$PROJECT_DIR$/UDP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cache/JSMinimizing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cache/youtube.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16378">
-          <caret line="564" column="0" lean-forward="false" selection-start-line="564" selection-start-column="0" selection-end-line="564" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cache/amazonjp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cache/YahooJP.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestFiles/jsfile.html">
+    <entry file="file://$PROJECT_DIR$/mitmproxy/eventsequence.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="5" selection-end-column="437" />
-          <folding>
-            <marker date="1509167391891" expanded="true" signature="46362:46375" ph="..." />
-            <marker date="1509167391891" expanded="true" signature="46442:46463" ph="..." />
-            <marker date="1509167391891" expanded="true" signature="48106:48119" ph="..." />
-            <marker date="1509167391891" expanded="true" signature="48186:48207" ph="..." />
-            <marker date="1509167391891" expanded="true" signature="49767:49780" ph="..." />
-            <marker date="1509167391891" expanded="true" signature="49847:49868" ph="..." />
-            <marker date="1509167391891" expanded="true" signature="51475:51488" ph="..." />
-            <marker date="1509167391891" expanded="true" signature="51555:51576" ph="..." />
-            <marker date="1509167391891" expanded="true" signature="53289:53302" ph="..." />
-            <marker date="1509167391891" expanded="true" signature="53369:53390" ph="..." />
-            <marker date="1509167391891" expanded="true" signature="172872:172886" ph="..." />
-            <marker date="1509167391891" expanded="true" signature="172968:172982" ph="..." />
-            <marker date="1509167391891" expanded="true" signature="182599:182606" ph="×" />
-          </folding>
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cache/jsfile.html">
+    <entry file="file://$PROJECT_DIR$/mitmproxy/connections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UDP_TimeAsk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cache/bd2ccadcc6e1da5334cdc09e1c4afa410200e59cd45ddf66f0fc84291d4b5812.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cache/10ea527f5da6048255ee4dc23e4d88c8e24f30b3b2da379a5ad96bf28122d51a.html" />
-    <entry file="file://$PROJECT_DIR$/Cache/jsfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="226" lean-forward="false" selection-start-line="0" selection-start-column="226" selection-end-line="0" selection-end-column="226" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestFiles/testJS.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestFiles/jsfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="55" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="58" />
-          <folding>
-            <marker date="1509168070165" expanded="true" signature="46362:46375" ph="..." />
-            <marker date="1509168070165" expanded="true" signature="46442:46463" ph="..." />
-            <marker date="1509168070165" expanded="true" signature="48106:48119" ph="..." />
-            <marker date="1509168070165" expanded="true" signature="48186:48207" ph="..." />
-            <marker date="1509168070165" expanded="true" signature="49767:49780" ph="..." />
-            <marker date="1509168070165" expanded="true" signature="49847:49868" ph="..." />
-            <marker date="1509168070165" expanded="true" signature="51473:51486" ph="..." />
-            <marker date="1509168070165" expanded="true" signature="51553:51574" ph="..." />
-            <marker date="1509168070165" expanded="true" signature="53287:53300" ph="..." />
-            <marker date="1509168070165" expanded="true" signature="53367:53388" ph="..." />
-            <marker date="1509168070165" expanded="true" signature="168316:168330" ph="..." />
-            <marker date="1509168070165" expanded="true" signature="168412:168426" ph="..." />
-            <marker date="1509168070165" expanded="true" signature="178043:178050" ph="×" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestGround.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="59" column="26" lean-forward="false" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Proxy/IPProxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding>
-            <element signature="e#74#95#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSMinimizing/AlexaSiteCrawing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSMinimizing/CCJS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="30" column="9" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding>
-            <element signature="e#20#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2527">
+          <caret line="141" column="35" lean-forward="false" selection-start-line="141" selection-start-column="35" selection-end-line="141" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JSMinimizing/getSrc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        <state relative-caret-position="646">
+          <caret line="52" column="82" lean-forward="false" selection-start-line="52" selection-start-column="82" selection-end-line="52" selection-end-column="82" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mitmproxy/flow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mitmproxy/certs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mitmproxy/net/http/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mitmproxy/net/http/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mitmproxy/net/http/message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mitmproxy/net/http/encoding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mitmproxy/net/http/http2/framereader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mitmproxy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mitmproxy/proxy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mitmproxy/proxy/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mitmproxy/proxy/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mitmproxy/http.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1217">
+          <caret line="260" column="0" lean-forward="false" selection-start-line="260" selection-start-column="0" selection-end-line="263" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python36-32/Lib/enum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mitmproxy/script/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mitmproxy/script/concurrent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/pathod/test_context.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/pathod/test_setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/pathod/test_setupall.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1511390040.6185544.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestGround.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upsidedownternet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1346">
+          <caret line="81" column="57" lean-forward="false" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+        <state relative-caret-position="1194">
+          <caret line="96" column="46" lean-forward="false" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cache/github.com1511391106.5208988.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cache/www.google.com1511391074.5243475.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cache/maps.gstatic.com1511393504.5475643.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cache/maps.gstatic.com1511393508.5745735.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cache/maps.google.com1511393499.2668955.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pagemodifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
           <folding>
-            <element signature="e#0#52#0" expanded="true" />
+            <element signature="e#81#90#0" expanded="true" />
           </folding>
         </state>
       </provider>

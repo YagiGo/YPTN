@@ -5,7 +5,7 @@ import time
 import os
 import csv
 from Proxy.IPProxy import getIPProxies
-
+import traceback
 
 def manification(js_code, compilation_level, output_info):
     # TODO Using Proxies to Reduce Server Decline Rate
@@ -21,9 +21,16 @@ def manification(js_code, compilation_level, output_info):
     output_info:compiled_code, warnings,errors, statistics
     '''
     # Using POST method to process js file
-    proxy = getIPProxies()
+    succeed_flag = 0  # Check if compiling succeed
     headers = {"Content=type": "application/x-www-form-urlencode"}
-    conn = requests.post('https://closure-compiler.appspot.com/compile', proxies=proxy, data=params, headers=headers)
+    while(succeed_flag == 0):
+        try:
+            proxy = getIPProxies()
+            print(proxy)
+            conn = requests.post('https://closure-compiler.appspot.com/compile', proxies=proxy, data=params, headers=headers)
+            succeed_flag = 1
+        except Exception as e:
+            print(str(e))
     # Do not change header
     result = ast.literal_eval(conn.text)  # Using ast lib to convert str to dict
     if "serverErrors" in result:
