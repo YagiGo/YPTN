@@ -1,0 +1,56 @@
+#!/usr/bin/env python
+"""
+    This example shows how to build a proxy based on mitmproxy's Flow
+    primitives.
+
+    Heads Up: In the majority of cases, you want to use inline scripts.
+
+    Note that request and response messages are not automatically replied to,
+    so we need to implement handlers to do this.
+"""
+from libmproxy import flow
+from libmproxy.proxy import ProxyServer, ProxyConfig
+from Minify import BaseMinifyHandeler
+import sys
+import logging
+
+
+class MyMaster(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
+    def __init__(self, server, state, level, log_file):
+        flow.FlowMaster.__init__(self, server=server, state=state)
+        BaseMinifyHandeler.Minifyflow.__init__(self, functionname=sys.argv[0], level=level, log_file=log_file)
+
+    def run(self):
+        try:
+            flow.FlowMaster.run(self)
+        except KeyboardInterrupt:
+            self.shutdown()
+
+    def handle_request(self, f):
+        f = flow.FlowMaster.handle_request(self, f)
+        if f:
+            f.reply()
+        print((BaseMinifyHandeler.Minifyflow.get_userID(self,f)))
+        return f
+
+    def handle_response(self, f):
+        f = flow.FlowMaster.handle_responseheaders(self, f)
+        BaseMinifyHandeler.Minifyflow.process_html(self, f)
+        BaseMinifyHandeler.Minifyflow.process_js(self, f)
+        BaseMinifyHandeler.Minifyflow.process_all_img(self, f)
+        if f:
+            f.reply()
+        #  print(f.response)
+        return f
+
+
+config = ProxyConfig(
+    port=8080,
+    # use ~/.mitmproxy/mitmproxy-ca.pem as default CA file.
+    cadir="~/.mitmproxy/"
+)
+
+state = flow.State()
+server = ProxyServer(config)
+m = MyMaster(server, state, level=logging.INFO, log_file=BaseMinifyHandeler.Minifyflow.create_log_file())
+m.run()
