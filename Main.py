@@ -1,5 +1,6 @@
 # from JSMinimizing.CCJS import manification, evaluate
 from JSMinimizing.getSrc import *
+import pagemodifier
 import time
 if __name__ == '__main__':
     '''

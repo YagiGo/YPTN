@@ -20,7 +20,7 @@ class Filter:
     def response(self, flow: http.HTTPFlow) -> None:
         if flowfilter.match(self.filter, flow):
             print("Flow matches filter:")
-            print(flow)
+            print(fl
 
 
 addons = [Filter()]

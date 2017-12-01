@@ -37,7 +37,7 @@ def response(flow: http.HTTPFlow) -> None:
             htmlfileName = flow.request.headers.get(":authority", "")
         print(flow.request.headers.get("user-agent", ""))
         print(Fore.WHITE + Back.BLACK + "HTML Files Intercepted!")
-        print(Fore.GREEN + "htmlfilename is " + htmlfileName)
+        print(Fore.GREEN + "Host is " + htmlfileName)
         open("Cache/{}{}.html".format(htmlfileName, time.time()), "wb").write(htmlfile)
         # TODO Using the Minification System
 
@@ -47,7 +47,7 @@ def response(flow: http.HTTPFlow) -> None:
         if not jsfileName:
             jsfileName = flow.request.headers.get(":authority", "")
         print(Fore.WHITE + Back.BLACK + "JavaScript Files Intercepted!")
-        print(Fore.GREEN + "jsfilename is" + jsfileName)
+        print(Fore.GREEN + "Host is" + jsfileName)
         open("Cache/{}{}.js".format(jsfileName, time.time()), "wb").write(jsfile)
         # TODO Using the Minification System
 
@@ -57,36 +57,44 @@ def response(flow: http.HTTPFlow) -> None:
     Compression and monitoring
     """
     img_format = flow.response.headers.get("content-type", "")
-    if ima_format.startswith("image"):
+    if img_format.startswith("image"):
         # TODO The code is too messy and redundant, use @ to rewrite!
         imgname = flow.request.headers.get("Host", "")
         if not imgname:
             imgname = flow.request.headers.get(":authority", "")
+
         if img_format == "image/jpeg":
             # TODO Do something about the jpeg, for now, just save it as cache
-            print(Fore.WHITE + Back.BLACK + "Image Packet Intercepted, format:jpeg")
-            #
-            s = io.BytesIO(flow.response.content)
-            img = Image.open(io.BytesIO(flow.response.content))
-            # s2 = io.BytesIO()
-            img.save("Cache/{}{}.jpeg".format(imgname, time.time()), "JPEG")
-            # open("{}.png".format(time.time()), "wb").write(s2)
-            # flow.response.content = s2.getvalue()
-            # Convert JPEG to PNG, NOT necessary
-            # flow.response.content = s2.getvalue()
-            # flow.response.headers["content-type"] = "img/jpeg"
+            img_save(imgname, flow, img_format="jpeg")
+            img_rotate(flow, img_format="JPEG", content_type="image/jpeg")
 
         elif img_format == "image/png":
             # TODO Do Something about the png, for now just save it as cache
-            # s = io.BytesIO(flow.response.content)
-            img = Image.open(io.BytesIO(flow.response.content))  # A test without actual use
-            img.save("Cache/{}{}.png".format(imgname,time.time()), "PNG")
-            # open("{}.png".format(time.time()), "wb").write(s2)
-            # flow.response.content = s2.getvalue()
-            # Convert JPEG to PNG, NOT necessary
-            # flow.response.content = s2.getvalue()
-            # flow.response.headers["content-type"] = "img/png"
-            print(Fore.WHITE + Back.BLACK + "Image Packet Intercepted, format:png")
+            img_save(imgname, flow, img_format="png")
+            img_rotate(flow, img_format="PNG", content_type="image/png")
         elif img_format == "image/jpg":
-            img = Image.open
+            img_save(imgname, flow, img_format="jpg")
+            img_rotate(flow, img_format="JPG", content_type="image/jpg")
+
+        elif img_format == "image/gif":
+            img_save(imgname,flow, img_format="gif")
+            img_rotate(flow, img_format="GIF", content_type="image/gif")
+
     # TODO Monitoring the User, include but not limited to screen resolution, conncetion speed
+def img_save(img_name, flow, img_format):
+    try:
+        img = Image.open(io.BytesIO(flow.response.content))
+        img.save("Cache/" + img_name +"{}.{}".format(time.time(), img_format),
+                 img_format)
+
+        print(Fore.WHITE + Back.BLACK + "Image Packet Intercepted, format:%s" %img_format)
+        print(Fore.WHITE + Back.BLACK + "Host is" + img_name)
+    except Exception as e:
+        print(Fore.BLUE + Back.WHITE + e)
+def img_rotate(flow, img_format, content_type):
+    s = io.BytesIO(flow.response.content)
+    img = Image.open(s).rotate(180)
+    s2 = io.BytesIO()
+    img.save(s2, img_format)
+    flow.response.content = s2.getvalue()
+    flow.response.headers["content-type"] = content_type

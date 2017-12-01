@@ -53,7 +53,7 @@ print(hashlib.sha224(b"https://www.b.com").hexdigest()
 print(hashlib.sha224(b"https://www.c.com").hexdigest()
       )
 '''
-
+'''
 # Replace Test
 from bs4 import BeautifulSoup
 newText = 'HELLO'
@@ -64,3 +64,21 @@ for script in soup.findAll('script', {'type': ''}):
     script.replace_with(mod_script)
 
 print(soup)
+'''
+'''
+import logging
+import time
+logger = logging.getLogger("TestGround")
+hdlr = logging.FileHandler("{}.log".format(time.time()))
+formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
+hdlr.setFormatter(formatter)
+logger.addHandler(hdlr)
+logger.setLevel(logging.INFO)
+logger.error("Huston, We have a problem")
+logger.cr
+'''
+def test():
+    res = "1"
+    ret = "0"
+    return res if res != "1" else ret
+print(test())
