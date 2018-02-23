@@ -14,8 +14,9 @@ from Minify import BaseMinifyHandeler
 import sys
 import logging
 
+from tools import identifyUser
 
-class MyMaster(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
+class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
     def __init__(self, server, state, level, log_file):
         flow.FlowMaster.__init__(self, server=server, state=state)
         BaseMinifyHandeler.Minifyflow.__init__(self, functionname=sys.argv[0], level=level, log_file=log_file)
@@ -31,6 +32,7 @@ class MyMaster(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
         if f:
             f.reply()
         print((BaseMinifyHandeler.Minifyflow.get_userID(self,f)))
+        print (f.client_conn)
         return f
 
     def handle_response(self, f):
@@ -40,7 +42,7 @@ class MyMaster(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
         BaseMinifyHandeler.Minifyflow.process_all_img(self, f)
         if f:
             f.reply()
-        #  print(f.response)
+        print (f.server_conn)
         return f
 
 
@@ -50,7 +52,9 @@ config = ProxyConfig(
     cadir="~/.mitmproxy/"
 )
 
+
+
 state = flow.State()
 server = ProxyServer(config)
-m = MyMaster(server, state, level=logging.INFO, log_file=BaseMinifyHandeler.Minifyflow.create_log_file())
+m = Intercept(server, state, level=logging.INFO, log_file=BaseMinifyHandeler.Minifyflow.create_log_file())
 m.run()

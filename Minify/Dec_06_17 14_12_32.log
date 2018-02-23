@@ -2806,3 +2806,829 @@
 2017-12-06 18:02:29,944 INFO: HTML File from: www.youtube.comhas been cached
 2017-12-06 18:02:39,944 INFO: Host: www.youtube.com sent a HTML file
 2017-12-06 18:02:39,944 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:02:49,898 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:02:49,898 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:02:56,930 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:02:56,930 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:02:59,930 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:02:59,930 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:03:00,898 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:03:00,898 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:03:03,398 INFO: Host: github.com sent a HTML file
+2017-12-06 18:03:03,398 INFO: HTML File from: github.comhas been cached
+2017-12-06 18:03:04,085 INFO: Host: github.com sent a HTML file
+2017-12-06 18:03:04,085 INFO: HTML File from: github.comhas been cached
+2017-12-06 18:03:08,055 INFO: Host: github.com sent a HTML file
+2017-12-06 18:03:08,055 INFO: HTML File from: github.comhas been cached
+2017-12-06 18:03:09,944 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:03:09,944 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:03:19,946 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:03:19,946 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:03:25,335 INFO: Host: github.com sent a HTML file
+2017-12-06 18:03:25,335 INFO: HTML File from: github.comhas been cached
+2017-12-06 18:03:26,071 INFO: Host: github.com sent a HTML file
+2017-12-06 18:03:26,071 INFO: HTML File from: github.comhas been cached
+2017-12-06 18:03:26,430 INFO: Host: github.com sent a HTML file
+2017-12-06 18:03:26,430 INFO: HTML File from: github.comhas been cached
+2017-12-06 18:03:29,946 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:03:29,946 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:03:31,148 INFO: Host: github.com sent a HTML file
+2017-12-06 18:03:31,148 INFO: HTML File from: github.comhas been cached
+2017-12-06 18:03:31,835 INFO: Host: github.com sent a HTML file
+2017-12-06 18:03:31,835 INFO: HTML File from: github.comhas been cached
+2017-12-06 18:03:31,868 INFO: Host: github.com sent a HTML file
+2017-12-06 18:03:31,868 INFO: HTML File from: github.comhas been cached
+2017-12-06 18:03:34,305 INFO: Host: github.com sent a HTML file
+2017-12-06 18:03:34,305 INFO: HTML File from: github.comhas been cached
+2017-12-06 18:03:38,461 INFO: Host: github.com sent a HTML file
+2017-12-06 18:03:38,461 INFO: HTML File from: github.comhas been cached
+2017-12-06 18:03:39,976 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:03:39,976 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:03:40,384 INFO: Host: github.com sent a HTML file
+2017-12-06 18:03:40,384 INFO: HTML File from: github.comhas been cached
+2017-12-06 18:03:40,961 INFO: Host: avatars0.githubusercontent.com sent an image
+2017-12-06 18:03:40,961 INFO: Image from avatars0.githubusercontent.com has been cached
+2017-12-06 18:03:41,398 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:03:41,398 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:03:49,961 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:03:49,961 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:03:59,961 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:03:59,961 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:04:09,947 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:04:09,947 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:04:19,947 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:04:19,947 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:04:20,947 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:04:20,947 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:04:22,634 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:22,650 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:22,868 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:22,900 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:22,947 INFO: Host: bn1304files.storage.live.com sent an image
+2017-12-06 18:04:22,961 INFO: Image from bn1304files.storage.live.com has been cached
+2017-12-06 18:04:22,961 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,118 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,134 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,150 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,150 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,180 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,197 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,211 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,243 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,259 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,259 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,290 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,352 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,384 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,415 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,430 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,430 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,461 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,493 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,509 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,572 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,586 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,602 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,618 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,618 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,650 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,650 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,680 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,680 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,711 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,711 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,727 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,727 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,759 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,822 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,838 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:23,838 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:23,868 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:24,322 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:04:24,322 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:04:29,947 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:04:29,947 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:04:39,947 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:04:39,947 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:04:39,993 INFO: Host: i1.hdslb.com sent an image
+2017-12-06 18:04:40,040 INFO: Image from i1.hdslb.com has been cached
+2017-12-06 18:04:49,915 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:04:49,915 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:04:59,947 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:04:59,947 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:05:00,931 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:05:00,931 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:05:09,947 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:05:09,947 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:05:19,947 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:05:19,947 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:05:29,947 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:05:29,947 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:05:39,933 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:05:39,933 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:05:40,933 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:05:40,933 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:05:42,447 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:42,447 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:42,447 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:42,776 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:42,994 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,010 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,088 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,105 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,183 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,197 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,213 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,244 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,244 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,260 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,260 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,276 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,276 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,292 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,292 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,308 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,308 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,322 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,322 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,338 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,355 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,355 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,355 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,369 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,369 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,369 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,369 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,385 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,385 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,385 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,385 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,401 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,401 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,417 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,417 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,417 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,417 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,417 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,417 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,433 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,433 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,447 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,447 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,447 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:43,447 INFO: Host: omextemplates.content.office.net sent an image
+2017-12-06 18:05:43,463 INFO: Image from omextemplates.content.office.net has been cached
+2017-12-06 18:05:49,917 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:05:49,917 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:05:57,105 INFO: Host: apidata.googleusercontent.com sent a HTML file
+2017-12-06 18:05:57,105 INFO: HTML File from: apidata.googleusercontent.comhas been cached
+2017-12-06 18:05:57,246 INFO: Host: apidata.googleusercontent.com sent a HTML file
+2017-12-06 18:05:57,246 INFO: HTML File from: apidata.googleusercontent.comhas been cached
+2017-12-06 18:05:58,151 INFO: Host: apidata.googleusercontent.com sent a HTML file
+2017-12-06 18:05:58,151 INFO: HTML File from: apidata.googleusercontent.comhas been cached
+2017-12-06 18:05:58,292 INFO: Host: apidata.googleusercontent.com sent a HTML file
+2017-12-06 18:05:58,292 INFO: HTML File from: apidata.googleusercontent.comhas been cached
+2017-12-06 18:05:59,948 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:05:59,948 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:06:09,948 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:06:09,948 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:06:19,948 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:06:19,948 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:06:20,934 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:06:20,934 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:06:29,964 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:06:29,964 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:06:39,950 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:06:39,950 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:06:43,403 INFO: Host: i.ytimg.com sent an image
+2017-12-06 18:06:43,403 INFO: Image from i.ytimg.com has been cached
+2017-12-06 18:06:43,528 INFO: Host: i.ytimg.com sent an image
+2017-12-06 18:06:43,542 INFO: Image from i.ytimg.com has been cached
+2017-12-06 18:06:43,667 INFO: Host: i.ytimg.com sent an image
+2017-12-06 18:06:43,667 INFO: Image from i.ytimg.com has been cached
+2017-12-06 18:06:44,325 INFO: Host: yt3.ggpht.com sent an image
+2017-12-06 18:06:44,325 INFO: Image from yt3.ggpht.com has been cached
+2017-12-06 18:06:44,512 INFO: Host: i.ytimg.com sent an image
+2017-12-06 18:06:44,528 INFO: Image from i.ytimg.com has been cached
+2017-12-06 18:06:44,528 INFO: Host: yt3.ggpht.com sent an image
+2017-12-06 18:06:44,542 INFO: Image from yt3.ggpht.com has been cached
+2017-12-06 18:06:44,621 INFO: Host: i.ytimg.com sent an image
+2017-12-06 18:06:44,637 INFO: Image from i.ytimg.com has been cached
+2017-12-06 18:06:44,730 INFO: Host: yt3.ggpht.com sent an image
+2017-12-06 18:06:44,730 INFO: Image from yt3.ggpht.com has been cached
+2017-12-06 18:06:44,730 INFO: Host: yt3.ggpht.com sent an image
+2017-12-06 18:06:44,746 INFO: Image from yt3.ggpht.com has been cached
+2017-12-06 18:06:44,778 INFO: Host: yt3.ggpht.com sent an image
+2017-12-06 18:06:44,778 INFO: Image from yt3.ggpht.com has been cached
+2017-12-06 18:06:44,839 INFO: Host: yt3.ggpht.com sent an image
+2017-12-06 18:06:44,839 INFO: Image from yt3.ggpht.com has been cached
+2017-12-06 18:06:44,903 INFO: Host: yt3.ggpht.com sent an image
+2017-12-06 18:06:44,903 INFO: Image from yt3.ggpht.com has been cached
+2017-12-06 18:06:44,934 INFO: Host: yt3.ggpht.com sent an image
+2017-12-06 18:06:44,934 INFO: Image from yt3.ggpht.com has been cached
+2017-12-06 18:06:48,325 INFO: Host: yt3.ggpht.com sent an image
+2017-12-06 18:06:48,325 INFO: Image from yt3.ggpht.com has been cached
+2017-12-06 18:06:48,325 INFO: Host: yt3.ggpht.com sent an image
+2017-12-06 18:06:48,339 INFO: Image from yt3.ggpht.com has been cached
+2017-12-06 18:06:48,339 INFO: Host: yt3.ggpht.com sent an image
+2017-12-06 18:06:48,339 INFO: Image from yt3.ggpht.com has been cached
+2017-12-06 18:06:48,339 INFO: Host: yt3.ggpht.com sent an image
+2017-12-06 18:06:48,355 INFO: Image from yt3.ggpht.com has been cached
+2017-12-06 18:06:48,355 INFO: Host: yt3.ggpht.com sent an image
+2017-12-06 18:06:48,355 INFO: Image from yt3.ggpht.com has been cached
+2017-12-06 18:06:48,700 INFO: Host: yt3.ggpht.com sent an image
+2017-12-06 18:06:48,700 INFO: Image from yt3.ggpht.com has been cached
+2017-12-06 18:06:48,871 INFO: Host: i.ytimg.com sent an image
+2017-12-06 18:06:48,887 INFO: Image from i.ytimg.com has been cached
+2017-12-06 18:06:48,887 INFO: Host: i.ytimg.com sent an image
+2017-12-06 18:06:48,903 INFO: Image from i.ytimg.com has been cached
+2017-12-06 18:06:49,950 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:06:49,950 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:06:52,903 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:06:52,903 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:06:59,950 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:06:59,950 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:07:00,934 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:07:00,934 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:07:09,950 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:07:09,950 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:07:19,966 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:07:19,966 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:07:30,107 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:07:30,107 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:07:39,950 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:07:39,950 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:07:40,920 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:07:40,920 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:07:49,904 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:07:49,904 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:07:59,654 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:07:59,654 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:07:59,920 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:07:59,920 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:08:00,529 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:00,545 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:00,779 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:00,779 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:01,013 INFO: Host: www.google.com sent an image
+2017-12-06 18:08:01,013 INFO: Image from www.google.com has been cached
+2017-12-06 18:08:01,420 INFO: Host: lh5.googleusercontent.com sent an image
+2017-12-06 18:08:01,436 INFO: Image from lh5.googleusercontent.com has been cached
+2017-12-06 18:08:01,482 INFO: Host: geo2.ggpht.com sent an image
+2017-12-06 18:08:01,482 INFO: Image from geo2.ggpht.com has been cached
+2017-12-06 18:08:01,513 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:01,513 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:01,607 INFO: Host: www.google.com sent a JavaScript file
+2017-12-06 18:08:01,654 INFO: JS file from www.google.com has been cached
+2017-12-06 18:08:01,686 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:01,686 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:02,013 INFO: Host: www.google.com sent a JavaScript file
+2017-12-06 18:08:02,013 INFO: JS file from www.google.com has been cached
+2017-12-06 18:08:02,232 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:02,232 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:02,420 INFO: Host: www.google.com sent a JavaScript file
+2017-12-06 18:08:02,420 INFO: JS file from www.google.com has been cached
+2017-12-06 18:08:02,670 INFO: Host: www.google.com sent a JavaScript file
+2017-12-06 18:08:02,670 INFO: JS file from www.google.com has been cached
+2017-12-06 18:08:02,904 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:02,904 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:02,904 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:02,904 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:02,936 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:02,936 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:03,888 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:03,888 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:05,608 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:05,608 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:10,138 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:10,138 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:10,138 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:10,138 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:10,138 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:08:10,138 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:08:19,951 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:08:19,951 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:08:20,904 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:08:20,904 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:08:29,951 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:08:29,951 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:08:40,013 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:08:40,013 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:08:49,951 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:08:49,951 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:08:55,124 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:55,124 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:55,921 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:55,921 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:56,171 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:56,171 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:56,437 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:56,437 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:56,796 INFO: Host: www.google.com sent a JavaScript file
+2017-12-06 18:08:56,812 INFO: JS file from www.google.com has been cached
+2017-12-06 18:08:56,999 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:56,999 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:57,046 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:57,046 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:57,076 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:57,076 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:57,233 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:57,233 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:58,154 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:58,154 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:59,312 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:08:59,312 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:08:59,937 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:08:59,937 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:09:00,342 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:09:00,342 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:09:00,905 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:09:00,905 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:09:06,937 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:09:06,937 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:09:09,905 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:09:09,905 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:09:19,953 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:09:19,953 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:09:29,953 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:09:29,953 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:09:39,969 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:09:39,969 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:09:40,953 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:09:40,953 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:09:49,953 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:09:49,953 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:09:59,953 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:09:59,953 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:10:09,921 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:10:09,921 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:10:19,970 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:10:19,970 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:10:20,953 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:10:20,953 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:10:29,970 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:10:29,970 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:10:40,250 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:10:40,250 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:10:49,954 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:10:49,954 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:10:59,923 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:10:59,923 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:11:00,923 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:11:00,923 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:11:09,970 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:11:09,970 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:11:19,970 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:11:19,970 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:11:29,954 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:11:29,954 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:11:39,954 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:11:39,954 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:11:40,956 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:11:40,956 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:11:49,970 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:11:49,970 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:11:59,956 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:11:59,956 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:12:09,956 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:12:09,956 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:12:19,956 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:12:19,956 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:12:20,924 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:12:20,924 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:12:29,956 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:12:29,956 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:12:39,924 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:12:39,924 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:12:49,940 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:12:49,940 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:12:59,957 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:12:59,957 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:13:00,926 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:13:00,926 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:13:09,957 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:13:09,957 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:13:19,957 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:13:19,957 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:13:29,957 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:13:29,957 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:13:39,989 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:13:39,989 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:13:40,941 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:13:40,941 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:13:49,941 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:13:49,941 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:13:59,973 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:13:59,973 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:14:09,943 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:14:09,943 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:14:19,927 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:14:19,927 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:14:20,927 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:14:20,927 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:14:29,943 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:14:29,943 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:14:39,959 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:14:39,974 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:14:49,974 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:14:49,974 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:14:59,974 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:14:59,974 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:15:00,913 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:15:00,913 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:15:09,944 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:15:09,944 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:15:19,974 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:15:19,974 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:15:29,960 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:15:29,960 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:15:39,960 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:15:39,960 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:15:40,928 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:15:40,928 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:15:49,976 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:15:49,976 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:15:59,960 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:15:59,960 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:16:09,976 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:16:09,976 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:16:19,960 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:16:19,960 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:16:20,976 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:16:20,976 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:16:29,976 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:16:29,976 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:16:39,976 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:16:39,976 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:16:49,976 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:16:49,976 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:16:59,946 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:16:59,946 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:17:00,930 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:17:00,930 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:17:09,993 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:17:09,993 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:17:19,977 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:17:19,977 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:17:29,977 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:17:29,977 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:17:39,977 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:17:39,977 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:17:40,930 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:17:40,930 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:17:50,009 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:17:50,009 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:17:59,979 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:17:59,979 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:18:09,979 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:18:09,979 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:18:19,994 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:18:19,994 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:18:20,947 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:18:20,947 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:18:29,979 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:18:29,979 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:18:39,979 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:18:39,979 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:18:50,010 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:18:50,010 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:18:59,963 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:18:59,963 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:19:00,963 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:19:00,963 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:19:09,933 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:19:09,933 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:19:19,980 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:19:19,980 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:19:29,980 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:19:29,996 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:19:39,980 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:19:39,980 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:19:40,964 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:19:40,964 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:19:50,012 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:19:50,012 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:19:59,980 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:19:59,980 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:20:09,980 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:20:09,980 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:20:19,996 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:20:19,996 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:20:20,980 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:20:20,980 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:20:29,966 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:20:29,966 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:20:39,950 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:20:39,950 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:20:49,982 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:20:49,982 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:20:59,982 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:20:59,982 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:21:00,982 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:21:00,982 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:21:09,997 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:21:09,997 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:21:19,983 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:21:19,983 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:21:29,983 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:21:29,983 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:21:39,967 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:21:39,967 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:21:40,936 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:21:40,936 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:21:49,983 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:21:49,983 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:21:59,999 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:21:59,999 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:22:02,858 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:02,858 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:03,765 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:03,765 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:04,046 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:04,046 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:04,326 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:04,326 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:04,608 INFO: Host: www.google.com sent a JavaScript file
+2017-12-06 18:22:04,640 INFO: JS file from www.google.com has been cached
+2017-12-06 18:22:04,858 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:04,858 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:04,858 INFO: Host: www.google.com sent a JavaScript file
+2017-12-06 18:22:04,858 INFO: JS file from www.google.com has been cached
+2017-12-06 18:22:04,951 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:04,951 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:05,140 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:05,140 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:05,171 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:05,171 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:05,967 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:05,967 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:07,154 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:07,154 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:08,499 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:08,499 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:08,529 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:08,529 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:09,467 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:09,467 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:09,967 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:22:09,967 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:22:10,154 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:10,154 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:10,312 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:10,312 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:10,546 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:10,546 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:10,687 INFO: Host: www.google.com sent a JavaScript file
+2017-12-06 18:22:10,701 INFO: JS file from www.google.com has been cached
+2017-12-06 18:22:10,921 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:10,921 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:12,029 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:12,029 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:13,029 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:13,029 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:13,029 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:13,029 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:13,796 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:13,796 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:14,562 INFO: Host: zh.wikipedia.org sent a HTML file
+2017-12-06 18:22:14,562 INFO: HTML File from: zh.wikipedia.orghas been cached
+2017-12-06 18:22:14,904 INFO: Host: zh.wikipedia.org sent an image
+2017-12-06 18:22:14,904 INFO: Image from zh.wikipedia.org has been cached
+2017-12-06 18:22:15,717 INFO: Host: zh.wikipedia.org sent a JavaScript file
+2017-12-06 18:22:15,733 INFO: JS file from zh.wikipedia.org has been cached
+2017-12-06 18:22:15,779 INFO: Host: zh.wikipedia.org sent an image
+2017-12-06 18:22:15,779 INFO: Image from zh.wikipedia.org has been cached
+2017-12-06 18:22:15,858 INFO: Host: upload.wikimedia.org sent an image
+2017-12-06 18:22:15,858 INFO: Image from upload.wikimedia.org has been cached
+2017-12-06 18:22:15,890 INFO: Host: zh.wikipedia.org sent an image
+2017-12-06 18:22:15,890 INFO: Image from zh.wikipedia.org has been cached
+2017-12-06 18:22:16,092 INFO: Host: zh.wikipedia.org sent an image
+2017-12-06 18:22:16,092 INFO: Image from zh.wikipedia.org has been cached
+2017-12-06 18:22:16,233 INFO: Host: zh.wikipedia.org sent a JavaScript file
+2017-12-06 18:22:16,249 INFO: JS file from zh.wikipedia.org has been cached
+2017-12-06 18:22:16,592 INFO: Host: zh.wikipedia.org sent a JavaScript file
+2017-12-06 18:22:16,608 INFO: JS file from zh.wikipedia.org has been cached
+2017-12-06 18:22:16,608 INFO: Host: zh.wikipedia.org sent a JavaScript file
+2017-12-06 18:22:16,624 INFO: JS file from zh.wikipedia.org has been cached
+2017-12-06 18:22:16,733 INFO: Host: zh.wikipedia.org sent a JavaScript file
+2017-12-06 18:22:16,765 INFO: JS file from zh.wikipedia.org has been cached
+2017-12-06 18:22:17,326 INFO: Host: zh.wikipedia.org sent a HTML file
+2017-12-06 18:22:17,326 INFO: HTML File from: zh.wikipedia.orghas been cached
+2017-12-06 18:22:17,733 INFO: Host: zh.wikipedia.org sent a JavaScript file
+2017-12-06 18:22:17,749 INFO: JS file from zh.wikipedia.org has been cached
+2017-12-06 18:22:17,983 INFO: Host: zh.wikipedia.org sent a JavaScript file
+2017-12-06 18:22:17,999 INFO: JS file from zh.wikipedia.org has been cached
+2017-12-06 18:22:18,390 INFO: Host: zh.wikipedia.org sent a JavaScript file
+2017-12-06 18:22:18,390 INFO: JS file from zh.wikipedia.org has been cached
+2017-12-06 18:22:18,421 INFO: Host: zh.wikipedia.org sent a JavaScript file
+2017-12-06 18:22:18,437 INFO: JS file from zh.wikipedia.org has been cached
+2017-12-06 18:22:18,499 INFO: Host: zh.wikipedia.org sent a JavaScript file
+2017-12-06 18:22:18,515 INFO: JS file from zh.wikipedia.org has been cached
+2017-12-06 18:22:18,655 INFO: Host: meta.wikimedia.org sent a JavaScript file
+2017-12-06 18:22:18,655 INFO: JS file from meta.wikimedia.org has been cached
+2017-12-06 18:22:18,828 INFO: Host: login.wikimedia.org sent a JavaScript file
+2017-12-06 18:22:18,828 INFO: JS file from login.wikimedia.org has been cached
+2017-12-06 18:22:19,951 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:22:19,951 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:22:20,999 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:22:20,999 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:22:22,951 INFO: Host: ja.wikipedia.org sent a HTML file
+2017-12-06 18:22:22,951 INFO: HTML File from: ja.wikipedia.orghas been cached
+2017-12-06 18:22:23,187 INFO: Host: ja.wikipedia.org sent an image
+2017-12-06 18:22:23,187 INFO: Image from ja.wikipedia.org has been cached
+2017-12-06 18:22:23,905 INFO: Host: ja.wikipedia.org sent an image
+2017-12-06 18:22:23,937 INFO: Image from ja.wikipedia.org has been cached
+2017-12-06 18:22:23,951 INFO: Host: ja.wikipedia.org sent a JavaScript file
+2017-12-06 18:22:23,967 INFO: JS file from ja.wikipedia.org has been cached
+2017-12-06 18:22:24,201 INFO: Host: ja.wikipedia.org sent an image
+2017-12-06 18:22:24,201 INFO: Image from ja.wikipedia.org has been cached
+2017-12-06 18:22:24,233 INFO: Host: ja.wikipedia.org sent a JavaScript file
+2017-12-06 18:22:24,249 INFO: JS file from ja.wikipedia.org has been cached
+2017-12-06 18:22:24,515 INFO: Host: ja.wikipedia.org sent a JavaScript file
+2017-12-06 18:22:24,576 INFO: JS file from ja.wikipedia.org has been cached
+2017-12-06 18:22:24,608 INFO: Host: login.wikimedia.org sent a JavaScript file
+2017-12-06 18:22:24,608 INFO: JS file from login.wikimedia.org has been cached
+2017-12-06 18:22:24,608 INFO: Host: meta.wikimedia.org sent a JavaScript file
+2017-12-06 18:22:24,608 INFO: JS file from meta.wikimedia.org has been cached
+2017-12-06 18:22:24,796 INFO: Host: ja.wikipedia.org sent a JavaScript file
+2017-12-06 18:22:24,796 INFO: JS file from ja.wikipedia.org has been cached
+2017-12-06 18:22:24,796 INFO: Host: ja.wikipedia.org sent a JavaScript file
+2017-12-06 18:22:24,796 INFO: JS file from ja.wikipedia.org has been cached
+2017-12-06 18:22:29,983 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:22:29,983 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:22:39,967 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:22:39,967 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:22:45,390 INFO: Host: www.google.com sent a HTML file
+2017-12-06 18:22:45,390 INFO: HTML File from: www.google.comhas been cached
+2017-12-06 18:22:49,953 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:22:49,953 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:22:59,953 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:22:59,953 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:23:00,983 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:23:00,983 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:23:04,953 INFO: Host: apidata.googleusercontent.com sent a HTML file
+2017-12-06 18:23:04,953 INFO: HTML File from: apidata.googleusercontent.comhas been cached
+2017-12-06 18:23:05,094 INFO: Host: apidata.googleusercontent.com sent a HTML file
+2017-12-06 18:23:05,094 INFO: HTML File from: apidata.googleusercontent.comhas been cached
+2017-12-06 18:23:09,984 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:23:09,984 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:23:19,984 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:23:19,984 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:23:29,969 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:23:29,969 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:23:39,984 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:23:39,984 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:23:40,970 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:23:40,970 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:23:49,984 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:23:49,984 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:24:00,000 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:24:00,000 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:24:10,000 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:24:10,000 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:24:19,986 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:24:19,986 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:24:20,954 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:24:20,954 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:24:29,986 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:24:29,986 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:24:39,986 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:24:39,986 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:24:49,986 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:24:49,986 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:25:00,033 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:25:00,033 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:25:00,970 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:25:00,970 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:25:10,003 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:25:10,003 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:25:19,956 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:25:19,956 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:25:29,986 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:25:29,986 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:25:39,987 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:25:39,987 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:25:40,987 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:25:40,987 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:25:49,971 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:25:49,971 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:25:59,987 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:25:59,987 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:26:09,987 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:26:09,987 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:26:19,987 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:26:19,987 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:26:20,973 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:26:20,973 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:26:29,989 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:26:29,989 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:26:40,003 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:26:40,003 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:26:49,989 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:26:49,989 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:26:59,989 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:26:59,989 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:27:00,989 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:27:00,989 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:27:09,989 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:27:09,989 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:27:19,990 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:27:19,990 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:27:30,005 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:27:30,005 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:27:40,006 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:27:40,006 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:27:40,943 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:27:40,943 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:27:49,990 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:27:49,990 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:27:59,990 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:27:59,990 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:28:09,974 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:28:09,974 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:28:19,990 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:28:19,990 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:28:20,974 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:28:20,974 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:28:30,006 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:28:30,006 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:28:40,022 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:28:40,022 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:28:49,990 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:28:49,990 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:28:59,992 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:28:59,992 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:29:00,960 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:29:00,960 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:29:09,992 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:29:09,992 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:29:20,007 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:29:20,007 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:29:30,007 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:29:30,007 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:29:39,992 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:29:39,992 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:29:40,992 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:29:40,992 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:29:49,993 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:29:49,993 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:29:59,960 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:29:59,960 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:30:09,993 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:30:09,993 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:30:20,009 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:30:20,009 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:30:20,993 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:30:20,993 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:30:30,025 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:30:30,025 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:30:39,993 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:30:39,993 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:30:49,993 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:30:49,993 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:31:00,025 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:31:00,025 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:31:00,977 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:31:00,977 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:31:09,993 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:31:10,009 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:31:20,009 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:31:20,009 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:31:29,993 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:31:29,993 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:31:40,026 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:31:40,026 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:31:40,994 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:31:41,009 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:31:49,994 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:31:49,994 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:31:59,994 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:31:59,994 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:32:10,026 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:32:10,026 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:32:19,994 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:32:19,994 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:32:20,963 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:32:20,963 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:32:29,996 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:32:29,996 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:32:40,012 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:32:40,012 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:32:50,012 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:32:50,012 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:33:00,012 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:33:00,012 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:33:01,012 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:33:01,012 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:33:10,012 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:33:10,012 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:33:19,964 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:33:19,964 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:33:30,012 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:33:30,012 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:33:39,966 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:33:39,966 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:33:40,980 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:33:40,980 INFO: HTML File from: www.youtube.comhas been cached
+2017-12-06 18:33:50,121 INFO: Host: www.youtube.com sent a HTML file
+2017-12-06 18:33:50,121 INFO: HTML File from: www.youtube.comhas been cached

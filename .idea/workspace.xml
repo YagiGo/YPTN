@@ -1,31 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/MITMProxy_Simplified/certs.py" line="249" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c69ca65-0925-492c-bb46-5b19e23ca29e" name="Default" comment="&quot;Proxy Function&quot;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minify/BaseMerge.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minify/CSSMinify.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minify/HTTPMinify.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Minify/JSMinify.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/tlog.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/webpy-py3/webpy-py3/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/webpy-py3/webpy-py3/docs/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/webpy-py3/webpy-py3/experimental/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/webpy-py3/webpy-py3/tools/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opt strategy/WhiteList.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/opt strategy/checkifcertexist.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/log.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trytogetproxyrun.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Cache/jsfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Cache/wwc.alicdn.com1511393905.8953743.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Cache/www.tmall.com1511393937.6809833.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Minify/BaseHandeler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UDP.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UDP_ERRHANDLE.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UDP_TimeAsk.py" afterPath="" />
+    <list default="true" id="2c69ca65-0925-492c-bb46-5b19e23ca29e" name="Default" comment="&quot;Use libmproxy API now&quot;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/aecpm.alicdn.com1511393930.4845092.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/aecpm.alicdn.com1511393930.5105107.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/aecpm.alicdn.com1511393966.644865.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/aecpm.alicdn.com1511393966.7038653.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/gtms01.alicdn.com1511393936.0001018.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393909.088209.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393909.1808152.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393909.2679718.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393909.3565433.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393909.4622257.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393928.7717404.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393928.8237576.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393928.832744.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.048733.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.1622186.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.2012815.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.243257.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.2662325.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.2922368.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.3172383.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.34424.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.3692489.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.3832495.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.4032507.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.4182518.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.431252.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.4812906.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.4982913.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.5182922.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.534293.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.5582974.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.607305.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.6263058.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393929.918374.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393930.8665595.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393930.8995638.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393930.9520705.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393931.0095809.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393931.040582.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393932.5938113.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393932.688821.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393932.7308323.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393933.2959032.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393933.3509436.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393933.6489503.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393933.8310182.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393934.183061.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393934.3390734.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393934.3890762.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393934.635115.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393934.7051234.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393936.6416824.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393936.720694.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393936.8082027.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393937.3669283.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.0603628.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.0893674.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.132381.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.154344.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.1673763.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.1833463.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.1933923.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.203398.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393950.2604024.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393951.5994842.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393951.7741868.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393951.800191.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393953.2231596.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393953.2851055.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393953.5191827.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393959.3235257.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393969.3573961.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393974.3680718.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393979.3580234.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393984.3752499.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511394092.5677102.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/fontawesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/fontawesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/fontawesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/fontawesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/chrome-devtools/resourceCSSIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/chrome-devtools/resourceDocumentIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/chrome-devtools/resourceJSIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/chrome-devtools/resourcePlainIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/resourceExecutableIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/resourceFlashIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/resourceImageIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/resourceJavaIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/resourceNotModifiedIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/resourceRedirectIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/webfonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/webfonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/webfonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/apidata.googleusercontent.com1511394048.1412702.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/apidata.googleusercontent.com1511394048.3258066.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/docs.google.com1511394030.1875196.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/fragment.tmall.com1511393949.777925.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/fragment.tmall.com1511393949.8209677.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/fragment.tmall.com1511393949.8376608.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/fragment.tmall.com1511394085.1897206.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/fragment.tmall.com1511394085.4567802.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/pages.tmall.com1511393949.9998977.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/pages.tmall.com1511393950.0303473.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/suggest.taobao.com1511393938.7312412.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/suggest.taobao.com1511394098.075363.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/taobao.com1511393883.3180258.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/tce.alicdn.com1511393930.4014971.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/textlink.simba.taobao.com1511393908.6587007.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/textlink.simba.taobao.com1511393936.394151.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/tns.simba.taobao.com1511393931.8167143.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.google.com1511393880.1803799.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.google.com1511393881.2566679.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.google.com1511393881.4677355.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.google.com1511393897.5218112.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.google.com1511393903.8714616.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.taobao.com1511393884.5764787.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.tmall.com1511393935.8615181.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/cmdline.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/common.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/flowdetailview.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/flowlist.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/flowview.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/grideditor.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/help.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/options.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/palettepicker.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/palettes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/pathedit.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/searchable.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/select.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/signals.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/statusbar.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/tabs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/window.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contentviews.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/jsbeautifier/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/jsbeautifier/unpackers/README.specs.mkd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/jsbeautifier/unpackers/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/jsbeautifier/unpackers/evalbased.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/jsbeautifier/unpackers/javascriptobfuscator.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/jsbeautifier/unpackers/myobfuscate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/jsbeautifier/unpackers/packer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/jsbeautifier/unpackers/urlencode.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/tls/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/tls/_constructs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/tls/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/wbxml/ASCommandResponse.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/wbxml/ASWBXML.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/wbxml/ASWBXMLCodePage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/wbxml/GlobalTokens.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/wbxml/InvalidDataException.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/wbxml/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/controller.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/dump.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/filt.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/flow.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/models/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/models/connections.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/models/flow.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/models/http.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/app.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/fontawesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/fontawesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/fontawesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/mitmproxy.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/templates/frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/templates/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/templates/layout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/platform/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/platform/linux.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/platform/osx.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/platform/pf.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/platform/windows.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/protocol/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/protocol/base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/protocol/http.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/protocol/http_replay.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/protocol/rawtcp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/protocol/tls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/modes/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/modes/http_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/modes/reverse_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/modes/socks_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/modes/transparent_proxy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/root_context.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/script.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/stateobject.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/tnetstring.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/version.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/app.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/chrome-devtools/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/vendor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/vendor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/templates/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/webfonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/CA_create_distribute.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MITMProxy_Simplified/certs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MITMProxy_Simplified/flow.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MITMProxy_Simplified/http.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MITMProxy_Simplified/serializable.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MITMProxy_Simplified/stateobjetc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Render Engine/selenium.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/__init__.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addonmanager.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/__init__.py" afterPath="" />
@@ -44,6 +241,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/intercept.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/keepserving.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboarding.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/__init__.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/app.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/bootstrap.min.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/fontawesome/css/font-awesome.css" afterPath="" />
@@ -93,6 +291,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/wbxml.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/xml_html.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/__init__.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/exif.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/exif_be.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/exif_le.py" afterPath="" />
@@ -248,6 +447,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/types/bidi.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/types/multidict.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/types/serializable.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/utils/__init__.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/utils/arg_check.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/utils/bits.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/utils/data.py" afterPath="" />
@@ -258,17 +458,14 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/utils/typecheck.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/version.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/websocket.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/__init__.py" afterPath="$PROJECT_DIR$/MITMProxy_Simplified/certs.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/wbxml/__init__.py" afterPath="$PROJECT_DIR$/MITMProxy_Simplified/flow.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mitmproxy/net/__init__.py" afterPath="$PROJECT_DIR$/MITMProxy_Simplified/http.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mitmproxy/test/__init__.py" afterPath="$PROJECT_DIR$/MITMProxy_Simplified/serializable.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mitmproxy/tools/__init__.py" afterPath="$PROJECT_DIR$/MITMProxy_Simplified/stateobjetc.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mitmproxy/types/__init__.py" afterPath="$PROJECT_DIR$/MITMProxy_Simplified/test/tcert.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/NetworkProgramming.iml" afterPath="$PROJECT_DIR$/.idea/NetworkProgramming.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestGround.py" afterPath="$PROJECT_DIR$/TestGround.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minify/Dec_06_17 14_12_32.log" afterPath="$PROJECT_DIR$/Minify/Dec_06_17 14_12_32.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minify/JSMinify.py" afterPath="$PROJECT_DIR$/Minify/JSMinify.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minify/flowbasic" afterPath="$PROJECT_DIR$/Minify/flowbasic" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/simple/filter_flows.py" afterPath="$PROJECT_DIR$/examples/simple/filter_flows.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pagemodifier.py" afterPath="$PROJECT_DIR$/pagemodifier.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/identifyUser.py" afterPath="$PROJECT_DIR$/tools/identifyUser.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -278,25 +475,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/NetworkProgramming$flow.coverage" NAME="flow Coverage Results" MODIFIED="1519282238947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/libmproxy" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$flowbasic__1_.coverage" NAME="flowbasic (1) Coverage Results" MODIFIED="1519285215814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Minify" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1511388662118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$UDP.coverage" NAME="UDP Coverage Results" MODIFIED="1508399661672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$BaseMinifyHandeler.coverage" NAME="BaseMinifyHandeler Coverage Results" MODIFIED="1512117430597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Minify" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$selenium.coverage" NAME="selenium Coverage Results" MODIFIED="1519279176422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$master.coverage" NAME="master Coverage Results" MODIFIED="1511761907052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$tlog.coverage" NAME="tlog Coverage Results" MODIFIED="1512024120482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1511388852305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy/proxy" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$http.coverage" NAME="http Coverage Results" MODIFIED="1511388881813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$IPProxy.coverage" NAME="IPProxy Coverage Results" MODIFIED="1509431566068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Proxy/IPProxyPool" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$getSrc.coverage" NAME="getSrc Coverage Results" MODIFIED="1509174622941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSMinimizing" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$upsidedownternet.coverage" NAME="upsidedownternet Coverage Results" MODIFIED="1511387550616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$CCJS.coverage" NAME="CCJS Coverage Results" MODIFIED="1509497528870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSMinimizing" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$stateobjetc.coverage" NAME="stateobjetc Coverage Results" MODIFIED="1511848852300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MITMProxy_Simplified" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$trytogetproxyrun.coverage" NAME="trytogetproxyrun Coverage Results" MODIFIED="1511949381519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$identifyUser.coverage" NAME="identifyUser Coverage Results" MODIFIED="1512350363023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$IPProxy__1_.coverage" NAME="IPProxy (1) Coverage Results" MODIFIED="1509506753654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Proxy" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$flow.coverage" NAME="flow Coverage Results" MODIFIED="1511503454124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1511388662118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$tryopenbrowser.coverage" NAME="tryopenbrowser Coverage Results" MODIFIED="1519355585075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$windows.coverage" NAME="windows Coverage Results" MODIFIED="1511859592963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy/platform" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$UDP.coverage" NAME="UDP Coverage Results" MODIFIED="1508399661672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$POSTtoCCS.coverage" NAME="POSTtoCCS Coverage Results" MODIFIED="1509008140054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$Main.coverage" NAME="Main Coverage Results" MODIFIED="1509608246548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$BaseMinifyHandeler.coverage" NAME="BaseMinifyHandeler Coverage Results" MODIFIED="1512034596050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Minify" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$master.coverage" NAME="master Coverage Results" MODIFIED="1511761907052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$tlog.coverage" NAME="tlog Coverage Results" MODIFIED="1512024120482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1511388852305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy/proxy" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$http.coverage" NAME="http Coverage Results" MODIFIED="1511388881813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$flowbasic.coverage" NAME="flowbasic Coverage Results" MODIFIED="1512109552414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ENITM/examples" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$TestGround.coverage" NAME="TestGround Coverage Results" MODIFIED="1512027740446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$IPProxy.coverage" NAME="IPProxy Coverage Results" MODIFIED="1509431566068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Proxy/IPProxyPool" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$http__1_.coverage" NAME="http (1) Coverage Results" MODIFIED="1511492960340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MITMProxy_Simplified" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$tflow.coverage" NAME="tflow Coverage Results" MODIFIED="1511920697006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy/test" />
   </component>
@@ -304,161 +506,15 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="http.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/MITMProxy_Simplified/http.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="38">
-                    <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="flow.py" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/MITMProxy_Simplified/flow.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="95">
-                    <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-                    <folding>
-                      <element signature="e#0#11#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="stateobjetc.py" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/MITMProxy_Simplified/stateobjetc.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1293">
-                    <caret line="74" column="29" lean-forward="false" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
-                    <folding>
-                      <element signature="e#0#22#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="BaseMinifyHandeler.py" pinned="false" current-in-tab="false">
+          <leaf>
+            <file leaf-file-name="BaseMinifyHandeler.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/Minify/BaseMinifyHandeler.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="266">
-                    <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+                  <state relative-caret-position="570">
+                    <caret line="96" column="42" lean-forward="false" selection-start-line="96" selection-start-column="42" selection-end-line="96" selection-end-column="42" />
                     <folding>
                       <element signature="e#0#9#0" expanded="true" />
                     </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="getSrc.py" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/JSMinimizing/getSrc.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="323">
-                    <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-                    <folding>
-                      <element signature="e#0#9#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="JSMinifyer.py" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/JSMinimizing/JSMinifyer.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="456">
-                    <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="merge.py" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/JSMinimizing/merge.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="pagemodifier.py" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/pagemodifier.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="272">
-                    <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-                    <folding>
-                      <element signature="e#81#90#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="change_upstream_proxy.py" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/examples/complex/change_upstream_proxy.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="log_events.py" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/examples/simple/log_events.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="190">
-                    <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="modify_form.py" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/examples/simple/modify_form.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/examples/README.md">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="228">
-                    <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="add_header_class.py" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/examples/simple/add_header_class.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="171">
-                    <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="filter_flows.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/examples/simple/filter_flows.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="399">
-                    <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-                    <folding />
                   </state>
                 </provider>
               </entry>
@@ -470,32 +526,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tlog.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/tlog.py">
+      <file leaf-file-name="flowbasic" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Minify/flowbasic">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            <state relative-caret-position="1140">
+              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding>
-                <element signature="e#0#21#0" expanded="true" />
+                <element signature="e#317#343#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tools/log.py">
+      <file leaf-file-name="controller.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libmproxy/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-61">
-              <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+            <state relative-caret-position="977">
+              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flow.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libmproxy/flow.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="633">
+              <caret line="277" column="4" lean-forward="false" selection-start-line="277" selection-start-column="4" selection-end-line="277" selection-end-column="4" />
               <folding>
-                <element signature="e#1#16#0" expanded="true" />
+                <element signature="e#118#156#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/__init__.py">
+      <file leaf-file-name="tryopenbrowser.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Render Engine/tryopenbrowser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="geckodriver.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Render Engine/geckodriver.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="redirect_requests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redirect_requests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom_option.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/custom_option.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -504,11 +601,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestGround.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestGround.py">
+      <file leaf-file-name="identifyUser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/identifyUser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="875">
-              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="13" />
+            <state relative-caret-position="760">
+              <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools/log.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -543,6 +650,10 @@
       <find>filter</find>
       <find>POST</find>
       <find>try</find>
+      <find>FlowMaster</find>
+      <find>handle_response</find>
+      <find>ID</find>
+      <find>get_user</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -551,22 +662,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Proxy/IPProxyPool/IPProxy.py" />
-        <option value="$PROJECT_DIR$/Proxy/IPProxy.py" />
-        <option value="$PROJECT_DIR$/JSMinimizing/CCJS.py" />
-        <option value="$PROJECT_DIR$/JSMinimizing/JSMinifyer.py" />
-        <option value="$PROJECT_DIR$/JSMinimizing/MERGE.py" />
-        <option value="$PROJECT_DIR$/JSMinimizing/merge.py" />
-        <option value="$PROJECT_DIR$/JSMinimizing/getSrc.py" />
-        <option value="$PROJECT_DIR$/Proxy/examples/simple/custom_contentview.py" />
-        <option value="$PROJECT_DIR$/redirect_requests.py" />
-        <option value="$PROJECT_DIR$/mitmproxy/certs.py" />
-        <option value="$PROJECT_DIR$/upsidedownternet.py" />
-        <option value="$PROJECT_DIR$/pagemodifier.py" />
-        <option value="$PROJECT_DIR$/mitmproxy/ctx.py" />
-        <option value="$PROJECT_DIR$/MITMProxy_Simplified/flow.py" />
-        <option value="$PROJECT_DIR$/mitmproxy/types/serializable.py" />
-        <option value="$PROJECT_DIR$/MITMProxy_Simplified/http.py" />
         <option value="$PROJECT_DIR$/mitmproxy/master.py" />
         <option value="$PROJECT_DIR$/mitmproxy/flow.py" />
         <option value="$PROJECT_DIR$/mitmproxy/stateobject.py" />
@@ -590,18 +685,34 @@
         <option value="$PROJECT_DIR$/Minify/CSSMinify.py" />
         <option value="$PROJECT_DIR$/Minify/BaseMerge.py" />
         <option value="$PROJECT_DIR$/opt strategy/WhiteList.py" />
-        <option value="$PROJECT_DIR$/Minify/JSMinify.py" />
         <option value="$PROJECT_DIR$/Test/Nov_30_17 14_47_16.log" />
         <option value="$PROJECT_DIR$/Test/Nov_30_17 14_54_01.log" />
         <option value="$PROJECT_DIR$/Test/Nov_30_17 15_00_33.log" />
         <option value="$PROJECT_DIR$/Test/Nov_30_17 15_00_44.log" />
         <option value="$PROJECT_DIR$/Test/Nov_30_17 15_22_30.log" />
-        <option value="$PROJECT_DIR$/tools/log.py" />
         <option value="$PROJECT_DIR$/Test/tlog.py" />
         <option value="$PROJECT_DIR$/TestGround.py" />
         <option value="$PROJECT_DIR$/tools/__init__.py" />
         <option value="$PROJECT_DIR$/examples/simple/filter_flows.py" />
+        <option value="$PROJECT_DIR$/Minify/Dec_01_17 16_39_10.log" />
+        <option value="$PROJECT_DIR$/Minify/Dec_01_17 16_47_16.log" />
+        <option value="$PROJECT_DIR$/Minify/Dec_01_17 16_51_52.log" />
+        <option value="$PROJECT_DIR$/Minify/Dec_01_17 17_10_15.log" />
+        <option value="$PROJECT_DIR$/Minify/Dec_01_17 17_34_54.log" />
+        <option value="$PROJECT_DIR$/Minify/Dec_01_17 17_38_18.log" />
+        <option value="$PROJECT_DIR$/Minify/Dec_01_17 17_42_22.log" />
+        <option value="$PROJECT_DIR$/Minify/Dec_01_17 17_44_21.log" />
+        <option value="$PROJECT_DIR$/tools/log.py" />
+        <option value="$PROJECT_DIR$/tools/CA_create_distribute.py" />
+        <option value="$PROJECT_DIR$/tools/identifyUser.py" />
+        <option value="$PROJECT_DIR$/Minify/Dec_06_17 09_48_11.log" />
+        <option value="$PROJECT_DIR$/Minify/Dec_06_17 14_12_32.log" />
+        <option value="$PROJECT_DIR$/Render Engine/Selenium.py" />
+        <option value="$PROJECT_DIR$/Render Engine/selenium.py" />
+        <option value="$PROJECT_DIR$/Minify/JSMinify.py" />
         <option value="$PROJECT_DIR$/Minify/BaseMinifyHandeler.py" />
+        <option value="$PROJECT_DIR$/Minify/flowbasic" />
+        <option value="$PROJECT_DIR$/Render Engine/tryopenbrowser.py" />
       </list>
     </option>
   </component>
@@ -612,8 +723,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1294" />
+    <option name="x" value="1113" />
+    <option name="width" value="1440" />
     <option name="height" value="1567" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -671,7 +782,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -683,17 +793,12 @@
             <path>
               <item name="NetworkProgramming" type="b2602c69:ProjectViewProjectNode" />
               <item name="NetworkProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NetworkProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NetworkProgramming" type="462c0819:PsiDirectoryNode" />
               <item name="Minify" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NetworkProgramming" type="b2602c69:ProjectViewProjectNode" />
               <item name="NetworkProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="opt strategy" type="462c0819:PsiDirectoryNode" />
+              <item name="Render Engine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NetworkProgramming" type="b2602c69:ProjectViewProjectNode" />
@@ -704,21 +809,25 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mitmproxy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="SearchEverywhereHistoryKey" value="clientconnect&#9;null&#9;null&#10;clientdisconnect&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming\Minify" />
       <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming" />
       <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming\lib" />
       <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming\Cache" />
       <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming\TestFiles" />
-      <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming\JS Minimizing" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -733,8 +842,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.BaseMinifyHandeler">
-    <configuration name="BaseMinifyHandeler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.tryopenbrowser">
+    <configuration name="flow" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/libmproxy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NetworkProgramming" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/libmproxy/flow.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="flowbasic (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -747,97 +874,79 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NetworkProgramming" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Minify/BaseMinifyHandeler.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Minify/flowbasic" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="TestGround" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="identifyUser" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NetworkProgramming" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestGround.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/identifyUser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="tflow" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="selenium" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mitmproxy/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Render Engine" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NetworkProgramming" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mitmproxy/test/tflow.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Render Engine/selenium.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="tlog" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tryopenbrowser" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Render Engine" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NetworkProgramming" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/tlog.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="trytogetproxyrun" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="NetworkProgramming" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trytogetproxyrun.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Render Engine/tryopenbrowser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.tflow" />
-      <item index="1" class="java.lang.String" itemvalue="Python.trytogetproxyrun" />
-      <item index="2" class="java.lang.String" itemvalue="Python.TestGround" />
-      <item index="3" class="java.lang.String" itemvalue="Python.tlog" />
-      <item index="4" class="java.lang.String" itemvalue="Python.BaseMinifyHandeler" />
+      <item index="0" class="java.lang.String" itemvalue="Python.flowbasic (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.identifyUser" />
+      <item index="2" class="java.lang.String" itemvalue="Python.selenium" />
+      <item index="3" class="java.lang.String" itemvalue="Python.tryopenbrowser" />
+      <item index="4" class="java.lang.String" itemvalue="Python.flow" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.BaseMinifyHandeler" />
-        <item index="1" class="java.lang.String" itemvalue="Python.TestGround" />
-        <item index="2" class="java.lang.String" itemvalue="Python.tlog" />
-        <item index="3" class="java.lang.String" itemvalue="Python.trytogetproxyrun" />
-        <item index="4" class="java.lang.String" itemvalue="Python.tflow" />
+        <item index="0" class="java.lang.String" itemvalue="Python.tryopenbrowser" />
+        <item index="1" class="java.lang.String" itemvalue="Python.flowbasic (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.flow" />
+        <item index="3" class="java.lang.String" itemvalue="Python.selenium" />
+        <item index="4" class="java.lang.String" itemvalue="Python.identifyUser" />
       </list>
     </recent_temporary>
   </component>
@@ -890,33 +999,63 @@
       <option name="project" value="LOCAL" />
       <updated>1511394725762</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="&quot;Update on DEC 1, MOVE TO LINUX&quot;">
+      <created>1512098761092</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1512098761092</updated>
+    </task>
+    <task id="LOCAL-00007" summary="&quot;Use libmproxy API now&quot;">
+      <created>1512120956226</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1512120956227</updated>
+    </task>
+    <task id="LOCAL-00008" summary="&quot;log example&quot;">
+      <created>1512550961960</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1512550961960</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1294" height="1567" extended-state="0" />
-    <editor active="true" />
+    <frame x="1113" y="0" width="1440" height="1567" extended-state="0" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23103933" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58912593" sideWeight="0.12363067" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30144528" sideWeight="0.8763693" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24845149" sideWeight="0.8763693" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966277" sideWeight="0.49666667" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25821596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966277" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39917412" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900137" sideWeight="0.49666667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3987688" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966277" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966277" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -951,16 +1090,142 @@
     <MESSAGE value="&quot;Delete irrelevant files&quot;" />
     <MESSAGE value="&quot;Proxy Function&quot;" />
     <MESSAGE value="&quot;Implement Mitmproxy Project to modify HTTPS&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Implement Mitmproxy Project to modify HTTPS&quot;" />
+    <MESSAGE value="&quot;Update on DEC 1, MOVE TO LINUX&quot;" />
+    <MESSAGE value="&quot;log example&quot;" />
+    <MESSAGE value="&quot;Use libmproxy API now&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Use libmproxy API now&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <default-breakpoints>
+        <breakpoint suspend="NONE" type="python-exception">
+          <properties exception="BaseException" />
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 14_43_15.log">
+    <entry file="file://$PROJECT_DIR$/ENITM/examples/stickycookies">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="41" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 16_20_01.log" />
+    <entry file="file://$PROJECT_DIR$/Minify/CSSMinify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libmproxy/proxy/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="196" column="54" lean-forward="true" selection-start-line="196" selection-start-column="54" selection-end-line="196" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_header.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 16_39_10.log" />
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 16_44_46.log" />
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 16_47_16.log" />
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 16_49_34.log" />
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 16_51_52.log" />
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 17_03_10.log" />
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 17_10_15.log" />
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 17_34_54.log" />
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 17_35_54.log" />
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 17_38_18.log" />
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 17_42_22.log" />
+    <entry file="file://$PROJECT_DIR$/TestGround.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="83" column="13" lean-forward="false" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_06_17 09_40_56.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_06_17 09_48_11.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="19">
+          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 18_03_45.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 18_18_53.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="190">
+          <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 17_56_59.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="0">
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 17_48_56.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="418">
+          <caret line="22" column="68" lean-forward="false" selection-start-line="22" selection-start-column="68" selection-end-line="23" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 15_34_59.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 17_44_21.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="1539">
+          <caret line="81" column="41" lean-forward="false" selection-start-line="81" selection-start-column="41" selection-end-line="81" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_06_17 14_12_32.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="52440">
+          <caret line="2760" column="23" lean-forward="false" selection-start-line="2756" selection-start-column="0" selection-end-line="2785" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 17_58_29.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="4978">
+          <caret line="262" column="24" lean-forward="false" selection-start-line="262" selection-start-column="24" selection-end-line="262" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Render Engine/selenium.py" />
+    <entry file="file://$PROJECT_DIR$/opt strategy/WhiteList.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -968,7 +1233,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 14_43_10.log">
+    <entry file="file://$PROJECT_DIR$/opt strategy/checkifcertexist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -976,7 +1241,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 14_43_08.log">
+    <entry file="file://$PROJECT_DIR$/Minify/BaseMerge.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -984,7 +1249,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 14_53_16.log">
+    <entry file="file://$PROJECT_DIR$/Minify/HTTPMinify.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -992,74 +1257,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 14_47_16.log">
+    <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-657">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 14_54_01.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 14_57_37.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 14_58_41.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_00_03.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 14_59_43.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_00_33.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_00_44.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_19_56.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1067,197 +1268,36 @@
     <entry file="file://$PROJECT_DIR$/trytogetproxyrun.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="1" column="40" lean-forward="true" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_22_30.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_25_08.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_25_26.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_26_13.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_27_23.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_28_06.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_28_57.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_30_18.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_30_30.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_34_44.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_34_38.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_30_17.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_34_39.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/Nov_30_17 15_42_00.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/tlog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/simple/add_header_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MITMProxy_Simplified/flow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestGround.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="13" />
+          <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pagemodifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        <state relative-caret-position="217">
+          <caret line="45" column="45" lean-forward="false" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
           <folding>
-            <element signature="e#81#90#0" expanded="true" />
+            <element signature="e#81#90#0" expanded="false" />
+            <marker date="1511484559638" expanded="true" signature="632:3379" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/complex/change_upstream_proxy.py">
+    <entry file="file://$PROJECT_DIR$/Test/tlog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="475">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/simple/log_events.py">
+    <entry file="file://$PROJECT_DIR$/Minify/JSMinify.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/simple/modify_form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1270,7 +1310,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Minify/Nov_30_17 18_22_59.log">
+    <entry file="file://$PROJECT_DIR$/tools/CA_create_distribute.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1278,7 +1318,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Minify/Nov_30_17 18_22_13.log">
+    <entry file="file://$PROJECT_DIR$/tools/identifyUser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom_option.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1286,96 +1334,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Minify/Nov_30_17 18_39_58.log">
+    <entry file="file://$PROJECT_DIR$/libmproxy/models/flow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-1916">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minify/Nov_30_17 18_44_50.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minify/Nov_30_17 18_42_39.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/simple/filter_flows.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 11_18_14.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 11_30_42.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 11_31_13.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MITMProxy_Simplified/stateobjetc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1293">
-          <caret line="74" column="29" lean-forward="false" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#66#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Minify/BaseMinifyHandeler.py">
+    <entry file="file://$PROJECT_DIR$/libmproxy/flow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        <state relative-caret-position="633">
+          <caret line="277" column="4" lean-forward="false" selection-start-line="277" selection-start-column="4" selection-end-line="277" selection-end-column="4" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#118#156#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MITMProxy_Simplified/http.py">
+    <entry file="file://$PROJECT_DIR$/libmproxy/controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="977">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redirect_requests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-61">
-          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        <state relative-caret-position="437">
+          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minify/BaseMinifyHandeler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="96" column="42" lean-forward="false" selection-start-line="96" selection-start-column="42" selection-end-line="96" selection-end-column="42" />
           <folding>
-            <element signature="e#1#16#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minify/flowbasic">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <element signature="e#317#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Render Engine/test_screenshoot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Render Engine/geckodriver.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Render Engine/tryopenbrowser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

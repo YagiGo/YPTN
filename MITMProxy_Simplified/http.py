@@ -1,2 +1,0 @@
-import abc
-class MyABC:

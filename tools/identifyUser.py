@@ -1,14 +1,15 @@
 from ua_parser import user_agent_parser
 import pprint
 class IdentifyDevice(object):
-    def __init__(self, flow):
-        self.flow = flow
 
+    @staticmethod
     def get_user_agent(self):
         return self.flow.request.headers["User-Agent"]
 
+    @staticmethod
     def parse_ua(self):
         return user_agent_parser.Parse(self.get_user_agent())
+
     @staticmethod
     def return_os(ua):
         return ua["os"]["family"]
@@ -21,12 +22,15 @@ class IdentifyDevice(object):
     def return_device(ua):
         return  ua["device"]["family"]
 
+    @staticmethod
     def get_os(self):
         return self.return_os(self.parse_ua(self.get_user_agent()))
 
+    @staticmethod
     def get_browser(self):
         return self.return_os(self.parse_ua(self.get_user_agent()))
 
+    @staticmethod
     def get_device(self):
         return self.return_device(self.parse_ua(self.get_user_agent()))
 
