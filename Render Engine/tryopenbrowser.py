@@ -49,7 +49,9 @@ class TestOne(unittest.TestCase):
 if __name__ == '__main__':
     url = "https://www.youtube.com"
     lab_url = "http://www.softlab.cs.tsukuba.ac.jp/research.html"
-    getScreenShoot(url)
-    print (getHtmlSource(url))
+    #  getScreenShoot(url)
+    #  print (getHtmlSource(url))
+    dir = "./TestFiles"
+    getWholePagewithWget(url, dir)
 
 
