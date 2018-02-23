@@ -78,26 +78,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393979.3580234.jpeg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511393984.3752499.jpeg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/img.alicdn.com1511394092.5677102.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/fontawesome/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/fontawesome/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/fontawesome/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/fontawesome/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/chrome-devtools/resourceCSSIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/chrome-devtools/resourceDocumentIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/chrome-devtools/resourceJSIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/chrome-devtools/resourcePlainIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/resourceExecutableIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/resourceFlashIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/resourceImageIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/resourceJavaIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/resourceNotModifiedIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/resourceRedirectIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/webfonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/webfonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/webfonts/fontawesome-webfont.woff" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/apidata.googleusercontent.com1511394048.1412702.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/apidata.googleusercontent.com1511394048.3258066.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/docs.google.com1511394030.1875196.html" />
@@ -122,350 +102,9 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.google.com1511393903.8714616.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.taobao.com1511393884.5764787.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.tmall.com1511393935.8615181.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/cmdline.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/common.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/flowdetailview.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/flowlist.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/flowview.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/grideditor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/help.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/options.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/palettepicker.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/palettes.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/pathedit.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/searchable.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/select.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/signals.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/statusbar.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/tabs.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/console/window.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contentviews.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/jsbeautifier/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/jsbeautifier/unpackers/README.specs.mkd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/jsbeautifier/unpackers/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/jsbeautifier/unpackers/evalbased.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/jsbeautifier/unpackers/javascriptobfuscator.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/jsbeautifier/unpackers/myobfuscate.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/jsbeautifier/unpackers/packer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/jsbeautifier/unpackers/urlencode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/tls/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/tls/_constructs.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/tls/utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/wbxml/ASCommandResponse.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/wbxml/ASWBXML.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/wbxml/ASWBXMLCodePage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/wbxml/GlobalTokens.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/wbxml/InvalidDataException.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/contrib/wbxml/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/controller.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/dump.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/exceptions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/filt.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/flow.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/main.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/models/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/models/connections.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/models/flow.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/models/http.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/app.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/fontawesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/fontawesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/fontawesome/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/static/mitmproxy.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/templates/frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/templates/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/onboarding/templates/layout.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/platform/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/platform/linux.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/platform/osx.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/platform/pf.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/platform/windows.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/protocol/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/protocol/base.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/protocol/http.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/protocol/http_replay.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/protocol/rawtcp.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/protocol/tls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/config.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/modes/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/modes/http_proxy.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/modes/reverse_proxy.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/modes/socks_proxy.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/modes/transparent_proxy.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/root_context.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/proxy/server.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/script.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/stateobject.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/tnetstring.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/version.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/app.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/images/chrome-devtools/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/vendor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/static/vendor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/web/templates/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libmproxy/webfonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/CA_create_distribute.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MITMProxy_Simplified/certs.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MITMProxy_Simplified/flow.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MITMProxy_Simplified/http.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MITMProxy_Simplified/serializable.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MITMProxy_Simplified/stateobjetc.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Render Engine/selenium.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addonmanager.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/allowremote.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/anticache.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/anticomp.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/check_ca.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/clientplayback.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/core.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/core_option_validation.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/cut.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/disable_h2c.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/dumper.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/eventstore.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/export.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/intercept.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/keepserving.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboarding.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/app.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/fontawesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/fontawesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/fontawesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/fontawesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/fontawesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/fontawesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/fontawesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/static/mitmproxy.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/templates/frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/templates/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/onboardingapp/templates/layout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/proxyauth.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/readfile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/replace.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/save.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/script.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/serverplayback.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/setheaders.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/stickyauth.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/stickycookie.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/streambodies.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/termlog.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/termstatus.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/upstream_auth.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/view.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/addons/wsgiapp.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/certs.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/command.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/connections.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/auto.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/css.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/hex.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/image/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/image/image_parser.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/image/view.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/javascript.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/json.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/multipart.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/protobuf.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/query.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/raw.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/urlencoded.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/wbxml.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contentviews/xml_html.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/exif.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/exif_be.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/exif_le.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/gif.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/google_protobuf.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/ico.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/jpeg.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/make.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/png.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/tls_client_hello.ksy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/tls_client_hello.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/kaitaistruct/vlq_base128_le.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/wbxml/ASCommandResponse.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/wbxml/ASWBXML.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/wbxml/ASWBXMLByteQueue.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/wbxml/ASWBXMLCodePage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/wbxml/GlobalTokens.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/contrib/wbxml/InvalidDataException.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/controller.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/ctx.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/eventsequence.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/exceptions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/flow.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/flowfilter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/http.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/io/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/io/compat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/io/io.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/io/tnetstring.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/log.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/master.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/check.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/cookies.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/encoding.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/headers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/http1/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/http1/assemble.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/http1/read.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/http2/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/http2/framereader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/http2/utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/message.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/multipart.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/request.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/response.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/status_codes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/url.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/http/user_agents.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/server_spec.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/socks.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/tcp.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/tls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/websockets/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/websockets/frame.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/websockets/masker.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/websockets/utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/net/wsgi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/options.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/optmanager.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/platform/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/platform/linux.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/platform/openbsd.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/platform/osx.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/platform/pf.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/platform/windows.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/config.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/modes/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/modes/http_proxy.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/modes/reverse_proxy.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/modes/socks_proxy.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/modes/transparent_proxy.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/protocol/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/protocol/base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/protocol/http.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/protocol/http1.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/protocol/http2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/protocol/http_replay.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/protocol/rawtcp.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/protocol/tls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/protocol/websocket.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/root_context.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/proxy/server.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/script/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/script/concurrent.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/stateobject.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tcp.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/test/taddons.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/test/tflow.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/test/tutils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/cmdline.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/commandeditor.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/commands.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/common.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/consoleaddons.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/defaultkeys.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/eventlog.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/flowdetailview.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/flowlist.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/flowview.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/grideditor/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/grideditor/base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/grideditor/col_bytes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/grideditor/col_subgrid.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/grideditor/col_text.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/grideditor/editors.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/help.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/keybindings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/keymap.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/layoutwidget.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/master.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/options.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/overlay.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/palettes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/pathedit.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/searchable.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/signals.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/statusbar.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/tabs.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/console/window.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/dump.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/main.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/app.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/master.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/app.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/chrome-devtools/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/chrome-devtools/resourceCSSIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/chrome-devtools/resourceDocumentIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/chrome-devtools/resourceJSIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/chrome-devtools/resourcePlainIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/resourceExecutableIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/resourceFlashIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/resourceImageIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/resourceJavaIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/resourceNotModifiedIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/images/resourceRedirectIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/static.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/vendor.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static/vendor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/static_viewer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/templates/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/tools/web/webaddons.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/types/basethread.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/types/bidi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/types/multidict.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/types/serializable.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/utils/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/utils/arg_check.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/utils/bits.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/utils/data.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/utils/debug.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/utils/human.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/utils/sliding_window.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/utils/strutils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/utils/typecheck.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/version.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mitmproxy/websocket.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/NetworkProgramming.iml" afterPath="$PROJECT_DIR$/.idea/NetworkProgramming.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Render Engine/tryopenbrowser.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MITMProxy_Simplified/test/tcert.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minify/Dec_06_17 14_12_32.log" afterPath="$PROJECT_DIR$/Minify/Dec_06_17 14_12_32.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minify/JSMinify.py" afterPath="$PROJECT_DIR$/Minify/JSMinify.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minify/flowbasic" afterPath="$PROJECT_DIR$/Minify/flowbasic" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/simple/filter_flows.py" afterPath="$PROJECT_DIR$/examples/simple/filter_flows.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/identifyUser.py" afterPath="$PROJECT_DIR$/tools/identifyUser.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -563,8 +202,8 @@
       <file leaf-file-name="tryopenbrowser.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Render Engine/tryopenbrowser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="893">
+              <caret line="47" column="3" lean-forward="true" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -1020,7 +659,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512550961960</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="&quot;Use libmproxy API now&quot;">
+      <created>1519356696783</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1519356696783</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -1034,8 +680,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1113" y="0" width="1440" height="1567" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23103933" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23103933" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58912593" sideWeight="0.12363067" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1412,8 +1059,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/tryopenbrowser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        <state relative-caret-position="893">
+          <caret line="47" column="3" lean-forward="true" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
