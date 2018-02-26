@@ -102,10 +102,10 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.google.com1511393903.8714616.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.taobao.com1511393884.5764787.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.tmall.com1511393935.8615181.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Render Engine/mhtifier.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Render Engine/ghostdriver.log" afterPath="$PROJECT_DIR$/Render Engine/ghostdriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Render Engine/tryopenbrowser.py" afterPath="$PROJECT_DIR$/Render Engine/tryopenbrowser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Render Engine/geckodriver.log" afterPath="$PROJECT_DIR$/Render Engine/geckodriver.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Render Engine/htmlcombine.py" afterPath="$PROJECT_DIR$/Render Engine/htmlcombine.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Render Engine/mhtifier.py" afterPath="$PROJECT_DIR$/Render Engine/mhtifier.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -116,7 +116,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/NetworkProgramming$flow.coverage" NAME="flow Coverage Results" MODIFIED="1519282238947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/libmproxy" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$mhtifier.coverage" NAME="mhtifier Coverage Results" MODIFIED="1519371220505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$mhtifier.coverage" NAME="mhtifier Coverage Results" MODIFIED="1519371560092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$flowbasic__1_.coverage" NAME="flowbasic (1) Coverage Results" MODIFIED="1519285215814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Minify" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1511388662118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$UDP.coverage" NAME="UDP Coverage Results" MODIFIED="1508399661672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -143,12 +143,32 @@
     <SUITE FILE_PATH="coverage/NetworkProgramming$http__1_.coverage" NAME="http (1) Coverage Results" MODIFIED="1511492960340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MITMProxy_Simplified" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$tflow.coverage" NAME="tflow Coverage Results" MODIFIED="1511920697006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy/test" />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="htmlcombine.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="1387">
+                    <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="flowbasic" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Minify/flowbasic">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1026">
+            <state relative-caret-position="1140">
               <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding>
                 <element signature="e#317#343#0" expanded="true" />
@@ -182,7 +202,7 @@
       <file leaf-file-name="tryopenbrowser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Render Engine/tryopenbrowser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
+            <state relative-caret-position="19">
               <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -194,8 +214,8 @@
       <file leaf-file-name="mhtifier.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Render Engine/mhtifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2845">
-              <caret line="344" column="15" lean-forward="false" selection-start-line="344" selection-start-column="15" selection-end-line="344" selection-end-column="15" />
+            <state relative-caret-position="301">
+              <caret line="105" column="15" lean-forward="true" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="60" />
               <folding>
                 <element signature="e#48#111#0" expanded="true" />
               </folding>
@@ -206,8 +226,8 @@
       <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Render Engine/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="6" column="1161" lean-forward="false" selection-start-line="6" selection-start-column="1161" selection-end-line="6" selection-end-column="1161" />
+            <state relative-caret-position="437">
+              <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -227,16 +247,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
               <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom_option.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom_option.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -285,6 +295,7 @@
       <find>handle_response</find>
       <find>ID</find>
       <find>get_user</find>
+      <find>CACHE HIT</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -293,7 +304,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mitmproxy/flow.py" />
         <option value="$PROJECT_DIR$/mitmproxy/stateobject.py" />
         <option value="$PROJECT_DIR$/MITMProxy_Simplified/stateobjetc.py" />
         <option value="$PROJECT_DIR$/mitmproxy/net/tcp.py" />
@@ -344,6 +354,7 @@
         <option value="$PROJECT_DIR$/Minify/flowbasic" />
         <option value="$PROJECT_DIR$/Render Engine/tryopenbrowser.py" />
         <option value="$PROJECT_DIR$/Render Engine/mhtifier.py" />
+        <option value="$PROJECT_DIR$/Render Engine/htmlcombine.py" />
       </list>
     </option>
   </component>
@@ -353,11 +364,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1113" />
-    <option name="y" value="10" />
-    <option name="width" value="1440" />
-    <option name="height" value="1557" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2552" />
+    <option name="y" value="-8" />
+    <option name="width" value="1216" />
+    <option name="height" value="1896" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -414,6 +425,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -430,8 +443,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -441,15 +452,15 @@
     <property name="SearchEverywhereHistoryKey" value="clientconnect&#9;null&#9;null&#10;clientdisconnect&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming\Render Engine" />
       <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming\Minify" />
       <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming" />
       <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming\lib" />
       <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming\Cache" />
-      <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming\TestFiles" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jerem\PycharmProjects\NetworkProgramming" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -656,7 +667,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519357011902</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Save html folder as one">
+      <created>1519371386291</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1519371386291</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -669,13 +687,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1113" y="10" width="1440" height="1557" extended-state="0" />
+    <frame x="2552" y="-8" width="1216" height="1896" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23103933" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13916667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58912593" sideWeight="0.12363067" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24809425" sideWeight="0.8763693" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24809425" sideWeight="0.8763693" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -730,7 +749,8 @@
     <MESSAGE value="&quot;log example&quot;" />
     <MESSAGE value="&quot;Use libmproxy API now&quot;" />
     <MESSAGE value="Web page Rendering Part Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Web page Rendering Part Updated" />
+    <MESSAGE value="Save html folder as one" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save html folder as one" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -744,13 +764,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Minify/CSSMinify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libmproxy/proxy/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="820">
@@ -935,7 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
           <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -988,16 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Minify/flowbasic">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="e#317#343#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/test_screenshoot.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1020,17 +1022,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Render Engine/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="1161" lean-forward="false" selection-start-line="6" selection-start-column="1161" selection-end-line="6" selection-end-column="1161" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/tryopenbrowser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
+        <state relative-caret-position="19">
           <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -1038,10 +1032,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Render Engine/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Minify/flowbasic">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <element signature="e#317#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1387">
+          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/mhtifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2845">
-          <caret line="344" column="15" lean-forward="false" selection-start-line="344" selection-start-column="15" selection-end-line="344" selection-end-column="15" />
+        <state relative-caret-position="301">
+          <caret line="105" column="15" lean-forward="true" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="60" />
           <folding>
             <element signature="e#48#111#0" expanded="true" />
           </folding>

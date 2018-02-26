@@ -340,6 +340,6 @@ def main():
         sys.stdout.write(rs)
 
 if __name__ == '__main__':
-    url = "https://www.google.com"
+    url = "https://www.twitter.com"
     output = "test.html"
     mhtify(url, output)

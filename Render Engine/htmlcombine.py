@@ -98,7 +98,59 @@ def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_er
         except Exception as ex:
             if verbose: log('[WARN] Opps - %s %s' %(fullpath, ex), 'yellow')
             return '', None
-        
+
+    elif os.path.exists(index):
+        if relpath:
+            relpath = relpath.split('#')[0].split('?')[0]
+            if os.path.exists(relpath):
+                fullpath = relpath
+            else:
+                #  Normalize a pathname by collapsing redundant separators and up-level references
+                #  so that A//B, A/B/, A/./B and A/foo/../B all become A/B.
+                fullpath = os.path.normpath(os.path.join(os.path.dirname(index), relpath))
+            try:
+                ret = open(fullpath, 'rb').read()
+                if verbose: log('[LOCAL] found - %s' %fullpath)
+                return ret, None
+            except IOError as err:
+                #  Head up: IOError
+                if verbose: log('[WARN] file not found - %s %s'%(index, str(err)), 'yellow')
+                return '', None
+        else:
+            try:
+                ret = open(index, 'rb').read()
+                if verbose: log('[LOCAL] found - %s' %index)
+                return ret, None
+            except IOError as err:
+                #  Head up: IOError
+                if verbose: log('[WARN] file not found - %s %s'%(index, str(err)), 'yellow')
+                return '', None
+    else:
+        if verbose: log('[ERROR] invalid index - %s' %index, 'red')
+        return '', None
+
+#  use data URI scheme to inclde data in-line in web pages see  http://en.wikipedia.org/wiki/Data_URI_scheme
+#  related introduction(Chinese Version) https://www.jianshu.com/p/ea49397fcd13
+#  Basic format of Data URI
+"""
+data:[<mime type>][;charset=<charset>][;<encoding>],<encoded data>
+1.  data ：协议名称；
+2.  [<mime type>] ：可选项，数据类型（image/png、text/plain等）
+3.  [;charset=<charset>] ：可选项，源文本的字符集编码方式
+4.  [;<encoding>] ：数据编码方式（默认US-ASCII，BASE64两种）
+5.  ,<encoded data> ：编码后的数据
+"""
+def data_to_base64(index, src, verbose=True):
+    sp = urlparse.urlparse(src).path.lower()
+    if src.strip().startwith('data:'):
+        return src
+    if sp.endwith('.png'):
+        fmt = 'image/png'
+    if sp.endwith('.png'):
+        fmt = 'image/png'
+    if sp.endwith('.png'):
+        fmt = 'image/png'
+
 
 
 
