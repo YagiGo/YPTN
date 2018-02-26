@@ -46,7 +46,7 @@ def absurl(index, relpath=None, normpath=None):
     if normpath is None:
         normpath = lambda x:x
     #  Process for relpath
-    if index.lower().startwith('http') or (relpath and relpath.startwith('http')):
+    if index.lower().startswith('http') or (relpath and relpath.startswith('http')):
         new = urlparse.urlparse(urlparse.urljoin(index, relpath))
         return urlparse.urlunsplit((new.scheme, new.netloc, normpath(new.path), new.query, ''))
     else:
@@ -68,7 +68,7 @@ def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_er
     :return: content(str), extra_data(dict, url, content-type e.t.c)
     """
     global webpage2html_cache
-    if index.startwith('http') or (relpath and relpath.startwith('http')):
+    if index.startswith('http') or (relpath and relpath.startswith('http')):
         fullpath = absurl(index, relpath)
         if not fullpath:
             if verbose: log('[WARN] invalid path, %s %s' %(index, relpath), 'yellow')
@@ -87,6 +87,12 @@ def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_er
         }
         try:
             response = requests.get(fullpath, headers=headers, verify=verify)
+            #  Some web page not encoded with UTF-8, which could cause problem
+            # TODO need an RE here to find out the encoding
+            print response.headers['Content-Type'].find('charset')
+
+
+
             if verbose: log('[GET] %d -%s' %(response.status_code, response.url))
             if not ignore_error and response.status_code >= 400 or response.status_code < 200:
                 content = ''
@@ -205,6 +211,15 @@ def handle_css_content(index, css, verbose=True):
     css = reg.sub(repl, css)
     return css
 
+def generate(index, verbose=False, comment=True, keep_script=True, prettify=False, full_url=True, verify=False, erropage=False):
+    orgin_index = index
+    html_doc, extra_data = get(index, verbose=verbose, verify=verify, ignore_error=erropage)
+    #  return html_doc
 
 
+if __name__ == '__main__':
+    url = "http://www.softlab.cs.tsukuba.ac.jp/index.html.en"
 
+    test_url="https://www.google.com"
+
+    print generate(test_url)
