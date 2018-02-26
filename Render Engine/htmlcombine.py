@@ -4,6 +4,7 @@
 import re
 import sys, urlparse, os
 import urllib
+import requests
 re_css_url = re.compile('(url\(.*?\))') #  get css url
 
 #  colored logging, at present, stderr is used, may shift to log file system
@@ -83,6 +84,21 @@ def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_er
         headers = {
             'User-Agent': 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Win64; x64; Trident/6.0)'
         }
+        try:
+            response = requests.get(fullpath, headers=headers, verify=verify)
+            if verbose: log('[GET] %d -%s' %(response.status_code, response.url))
+            if not ignore_error and response.status_code >= 400 or response.status_code < 200:
+                content = ''
+            else:
+                content = response.content
+            if usecache:
+                #  Save as Cache
+                webpage2html_cache[response.url] = response.content
+            return content, {'url':response.url, 'content-type':response.headers.get('content-type')}
+        except Exception as ex:
+            if verbose: log('[WARN] Opps - %s %s' %(fullpath, ex), 'yellow')
+            return '', None
+        
 
 
 
