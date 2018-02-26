@@ -103,9 +103,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.taobao.com1511393884.5764787.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cache/www.tmall.com1511393935.8615181.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Render Engine/geckodriver.log" afterPath="$PROJECT_DIR$/Render Engine/geckodriver.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Render Engine/htmlcombine.py" afterPath="$PROJECT_DIR$/Render Engine/htmlcombine.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Render Engine/mhtifier.py" afterPath="$PROJECT_DIR$/Render Engine/mhtifier.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestGround.py" afterPath="$PROJECT_DIR$/TestGround.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -127,6 +126,7 @@
     <SUITE FILE_PATH="coverage/NetworkProgramming$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1511388852305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy/proxy" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$http.coverage" NAME="http Coverage Results" MODIFIED="1511388881813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$IPProxy.coverage" NAME="IPProxy Coverage Results" MODIFIED="1509431566068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Proxy/IPProxyPool" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$htmlcombine.coverage" NAME="htmlcombine Coverage Results" MODIFIED="1519628335280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$getSrc.coverage" NAME="getSrc Coverage Results" MODIFIED="1509174622941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSMinimizing" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$upsidedownternet.coverage" NAME="upsidedownternet Coverage Results" MODIFIED="1511387550616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$CCJS.coverage" NAME="CCJS Coverage Results" MODIFIED="1509497528870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSMinimizing" />
@@ -139,7 +139,7 @@
     <SUITE FILE_PATH="coverage/NetworkProgramming$POSTtoCCS.coverage" NAME="POSTtoCCS Coverage Results" MODIFIED="1509008140054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$Main.coverage" NAME="Main Coverage Results" MODIFIED="1509608246548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$flowbasic.coverage" NAME="flowbasic Coverage Results" MODIFIED="1512109552414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ENITM/examples" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$TestGround.coverage" NAME="TestGround Coverage Results" MODIFIED="1512027740446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$TestGround.coverage" NAME="TestGround Coverage Results" MODIFIED="1519629251825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$http__1_.coverage" NAME="http (1) Coverage Results" MODIFIED="1511492960340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MITMProxy_Simplified" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$tflow.coverage" NAME="tflow Coverage Results" MODIFIED="1511920697006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy/test" />
   </component>
@@ -151,9 +151,11 @@
             <file leaf-file-name="htmlcombine.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1387">
-                    <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-                    <folding />
+                  <state relative-caret-position="1216">
+                    <caret line="205" column="14" lean-forward="true" selection-start-line="205" selection-start-column="14" selection-end-line="205" selection-end-column="14" />
+                    <folding>
+                      <element signature="e#35#44#0" expanded="true" />
+                    </folding>
                   </state>
                 </provider>
               </entry>
@@ -214,11 +216,21 @@
       <file leaf-file-name="mhtifier.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Render Engine/mhtifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="105" column="15" lean-forward="true" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="60" />
+            <state relative-caret-position="-1370">
+              <caret line="207" column="28" lean-forward="false" selection-start-line="207" selection-start-column="28" selection-end-line="207" selection-end-column="28" />
               <folding>
                 <element signature="e#48#111#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestGround.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestGround.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1219">
+              <caret line="88" column="14" lean-forward="true" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -331,7 +343,6 @@
         <option value="$PROJECT_DIR$/Test/Nov_30_17 15_00_44.log" />
         <option value="$PROJECT_DIR$/Test/Nov_30_17 15_22_30.log" />
         <option value="$PROJECT_DIR$/Test/tlog.py" />
-        <option value="$PROJECT_DIR$/TestGround.py" />
         <option value="$PROJECT_DIR$/tools/__init__.py" />
         <option value="$PROJECT_DIR$/examples/simple/filter_flows.py" />
         <option value="$PROJECT_DIR$/Minify/Dec_01_17 16_39_10.log" />
@@ -354,6 +365,7 @@
         <option value="$PROJECT_DIR$/Minify/flowbasic" />
         <option value="$PROJECT_DIR$/Render Engine/tryopenbrowser.py" />
         <option value="$PROJECT_DIR$/Render Engine/mhtifier.py" />
+        <option value="$PROJECT_DIR$/TestGround.py" />
         <option value="$PROJECT_DIR$/Render Engine/htmlcombine.py" />
       </list>
     </option>
@@ -475,21 +487,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mhtifier">
-    <configuration name="flow" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.TestGround">
+    <configuration name="TestGround" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/libmproxy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NetworkProgramming" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/libmproxy/flow.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestGround.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -512,6 +524,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="htmlcombine" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Render Engine" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NetworkProgramming" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Render Engine/htmlcombine.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="mhtifier" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -526,24 +556,6 @@
       <module name="NetworkProgramming" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Render Engine/mhtifier.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="selenium" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Render Engine" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="NetworkProgramming" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Render Engine/selenium.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -568,18 +580,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.flowbasic (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Python.selenium" />
-      <item index="2" class="java.lang.String" itemvalue="Python.tryopenbrowser" />
-      <item index="3" class="java.lang.String" itemvalue="Python.flow" />
-      <item index="4" class="java.lang.String" itemvalue="Python.mhtifier" />
+      <item index="1" class="java.lang.String" itemvalue="Python.tryopenbrowser" />
+      <item index="2" class="java.lang.String" itemvalue="Python.mhtifier" />
+      <item index="3" class="java.lang.String" itemvalue="Python.htmlcombine" />
+      <item index="4" class="java.lang.String" itemvalue="Python.TestGround" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.mhtifier" />
-        <item index="1" class="java.lang.String" itemvalue="Python.tryopenbrowser" />
-        <item index="2" class="java.lang.String" itemvalue="Python.flowbasic (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.flow" />
-        <item index="4" class="java.lang.String" itemvalue="Python.selenium" />
+        <item index="0" class="java.lang.String" itemvalue="Python.TestGround" />
+        <item index="1" class="java.lang.String" itemvalue="Python.htmlcombine" />
+        <item index="2" class="java.lang.String" itemvalue="Python.mhtifier" />
+        <item index="3" class="java.lang.String" itemvalue="Python.tryopenbrowser" />
+        <item index="4" class="java.lang.String" itemvalue="Python.flowbasic (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -674,7 +686,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519371386291</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="&quot;Merge Web page folder&quot;">
+      <created>1519627535363</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1519627535363</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -694,7 +713,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58912593" sideWeight="0.12363067" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24809425" sideWeight="0.8763693" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24803591" sideWeight="0.8763693" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -750,7 +769,8 @@
     <MESSAGE value="&quot;Use libmproxy API now&quot;" />
     <MESSAGE value="Web page Rendering Part Updated" />
     <MESSAGE value="Save html folder as one" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save html folder as one" />
+    <MESSAGE value="&quot;Merge Web page folder&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Merge Web page folder&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -789,13 +809,6 @@
     <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 17_35_54.log" />
     <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 17_38_18.log" />
     <entry file="file://$PROJECT_DIR$/Minify/Dec_01_17 17_42_22.log" />
-    <entry file="file://$PROJECT_DIR$/TestGround.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="83" column="13" lean-forward="false" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Minify/Dec_06_17 09_40_56.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="0">
@@ -1050,18 +1063,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TestGround.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1219">
+          <caret line="88" column="14" lean-forward="true" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1387">
-          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1216">
+          <caret line="205" column="14" lean-forward="true" selection-start-line="205" selection-start-column="14" selection-end-line="205" selection-end-column="14" />
+          <folding>
+            <element signature="e#35#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/mhtifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="105" column="15" lean-forward="true" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="60" />
+        <state relative-caret-position="-1370">
+          <caret line="207" column="28" lean-forward="false" selection-start-line="207" selection-start-column="28" selection-end-line="207" selection-end-column="28" />
           <folding>
             <element signature="e#48#111#0" expanded="true" />
           </folding>

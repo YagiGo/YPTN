@@ -77,8 +77,13 @@ logger.setLevel(logging.INFO)
 logger.error("Huston, We have a problem")
 logger.cr
 '''
+'''
 def test():
     res = "1"
     ret = "0"
     return res if res != "1" else ret
 print(test())
+'''
+import re
+m = re.search('(?<=-)\w+', 'spam-egg')
+print m.group(0)

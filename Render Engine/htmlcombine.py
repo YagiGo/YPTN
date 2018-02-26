@@ -5,6 +5,7 @@ import re
 import sys, urlparse, os
 import urllib
 import requests
+import base64
 re_css_url = re.compile('(url\(.*?\))') #  get css url
 
 #  colored logging, at present, stderr is used, may shift to log file system
@@ -55,7 +56,7 @@ def absurl(index, relpath=None, normpath=None):
             return index
 #  get web Content
 webpage2html_cache = {}
-def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_error=False)
+def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_error=False):
     """
 
     :param index:
@@ -64,7 +65,7 @@ def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_er
     :param usecache: use cache?
     :param verify: verify cache?
     :param ignore_error:
-    :return:
+    :return: content(str), extra_data(dict, url, content-type e.t.c)
     """
     global webpage2html_cache
     if index.startwith('http') or (relpath and relpath.startwith('http')):
@@ -142,14 +143,67 @@ data:[<mime type>][;charset=<charset>][;<encoding>],<encoded data>
 """
 def data_to_base64(index, src, verbose=True):
     sp = urlparse.urlparse(src).path.lower()
-    if src.strip().startwith('data:'):
+    if src.strip().startswith('data:'):
         return src
-    if sp.endwith('.png'):
+    if sp.endswith('.png'):
         fmt = 'image/png'
-    if sp.endwith('.png'):
+    elif sp.endswith('.gif'):
+        fmt = 'image/gif'
+    elif sp.endswith('.ico'):
+        fmt = 'image/x-icon'
+    elif sp.endswith('.jpg') or sp.endswith('.jpeg'):
+        fmt = 'image/jpg'
+    elif sp.endswith('.svg'):
+        fmt = 'image/svg+xml'
+    elif sp.endswith('.ttf'):
+        fmt = 'application/x-font-ttf'
+    elif sp.endswith('.otf'):
+        fmt = 'application/x-font-opentype'
+    elif sp.endswith('.woff'):
+        fmt = 'application/font-woff'
+    elif sp.endswith('.woff2'):
+        fmt = 'application/font-woff2'
+    elif sp.endswith('.eot'):
+        fmt = 'application/vnd.ms-fontobject'
+    elif sp.endswith('.sfnt'):
+        fmt = 'application/font-sfnt'
+    elif sp.endswith('.css') or sp.endswith('.less'):
+        fmt = 'text/css'
+    elif sp.endswith('.js'):
+        fmt = 'application/javascript'
+    else:
+        # what if it's not a valid font type? may not matter
         fmt = 'image/png'
-    if sp.endwith('.png'):
-        fmt = 'image/png'
+    data, extra_data = get(index, src, verbose)
+    if extra_data and extra_data.get('content-type'):
+        fmt = extra_data.get('content-type').replace(' ', '')
+    if data:
+        return('data:%s;base64,'%fmt) + base64.b64encode(data)
+    else:
+        return absurl(index, src)
+
+
+#  Handle CSS
+css_encoding_re = re.compile(r'''@charset\s+["']([-_a-zA-Z0-9]+)["']\;''', re.I)
+
+def handle_css_content(index, css, verbose=True):
+    if not css:
+        return css
+    if not isinstance(css, unicode):
+        #  if css file is not unicode encoded, try to convert it into unicode
+        mo = css_encoding_re.search(css)
+        if mo:
+            try:
+                css = css.decode(mo.group(1))
+            except:
+                log('[WARN] failed to convert css to encoding %s'%mo.group(1), 'yellow')
+    reg = re.compile(r'url\s*\((.+?)\)')
+
+    def repl(matchobj):
+        src = matchobj.group(1).strip('\'"')
+        return 'url(' + data_to_base64(index, src, verbose=verbose) + ')'
+    css = reg.sub(repl, css)
+    return css
 
 
 
