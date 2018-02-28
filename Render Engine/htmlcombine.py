@@ -220,26 +220,46 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
         index = extra_data['url']
     soup = BeautifulSoup(html_doc, 'lxml')
     soup_title = soup.title.string if soup.title else ''
-    #  TODO Bulid Dom Tree
     for link in soup('link'):
         """
         <link href="/index.html" rel="index"/>
         <link href="/css/import.css" media="screen, tv, projection" rel="stylesheet" type="text/css"/>
         """
-        print link
-        if link.get('herf'):
+        #  print link
+        if link.get('href'):
             if 'mask-icon' in (link.get('rel') or []) or 'icon' in(link.get('rel') or []) or 'apple-touch-icon' in (link.get('rel') or []) or 'apple-touch-icon-precomposed' in (link.get('rel') or []):
                 #  Convert icon into URI form with base64
                 link['data-href'] = link['href']
                 link['href'] = data_to_base64(index, link['href'], verbose=verbose)
-
-
+                #  print link['href']
+            #  now the css part needs to be handled encoding with base64
+            elif link.get('type') == 'text/css' or link['href'].lower().endswith('.css') or 'stylesheet' in (link.get('rel') or []):
+                new_type = 'text/css' if not link.get('type') else link['type']
+                css = soup.new_tag('style', type=new_type)
+                #  print link['href']
+                css['data-href'] = link['href']
+                #  print link
+                """
+                <link href="/yts/cssbin/player-vflUq7Z-t/www-player.css" name="player/www-player" rel="stylesheet"/>
+                attrs:href, name, rel
+                """
+                for attr in link.attrs:
+                    if attr in ['href']: continue  #  ignore href
+                    css[attr] = link[attr]
+                css_data, _ = get(index, relpath=link['href'], verbose=verbose)
+                new_css_content = handle_css_content(absurl(index, link['href']), css_data, verbose=verbose)
+                if False:
+                    link['href'] = 'data:text/css;base64,' + base64.b64encode(new_css_content)
+                else:
+                    css.string = new_css_content
+                    link.replace_with(css)
+            elif full_url:
+                link['data-href'] = link['href']
+                link['href'] = absurl(index, link['href'])
     #  TODO DO Something with the JS
 
     #  TODO DO Something with the image encoding with Base64
 
-    #  TODO Do Something with the CSS
-    
     #  TODO Maybe other things needs to be done
     #  return html_doc
     #  return soup_title

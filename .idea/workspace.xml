@@ -125,7 +125,7 @@
     <SUITE FILE_PATH="coverage/NetworkProgramming$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1511388852305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy/proxy" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$http.coverage" NAME="http Coverage Results" MODIFIED="1511388881813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$IPProxy.coverage" NAME="IPProxy Coverage Results" MODIFIED="1509431566068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Proxy/IPProxyPool" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$htmlcombine.coverage" NAME="htmlcombine Coverage Results" MODIFIED="1519789734759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$htmlcombine.coverage" NAME="htmlcombine Coverage Results" MODIFIED="1519791971703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$getSrc.coverage" NAME="getSrc Coverage Results" MODIFIED="1509174622941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSMinimizing" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$upsidedownternet.coverage" NAME="upsidedownternet Coverage Results" MODIFIED="1511387550616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$CCJS.coverage" NAME="CCJS Coverage Results" MODIFIED="1509497528870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSMinimizing" />
@@ -150,8 +150,8 @@
             <file leaf-file-name="htmlcombine.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="898">
-                    <caret line="233" column="83" lean-forward="true" selection-start-line="233" selection-start-column="83" selection-end-line="233" selection-end-column="83" />
+                  <state relative-caret-position="1335">
+                    <caret line="261" column="0" lean-forward="true" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
                     <folding>
                       <element signature="e#35#44#0" expanded="true" />
                     </folding>
@@ -203,8 +203,8 @@
       <file leaf-file-name="mhtifier.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Render Engine/mhtifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-619">
-              <caret line="182" column="0" lean-forward="true" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+            <state relative-caret-position="1034">
+              <caret line="284" column="17" lean-forward="true" selection-start-line="284" selection-start-column="17" selection-end-line="284" selection-end-column="17" />
               <folding>
                 <element signature="e#48#111#0" expanded="true" />
               </folding>
@@ -296,6 +296,7 @@
       <find>get_user</find>
       <find>CACHE HIT</find>
       <find>startwith</find>
+      <find>url(</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -806,7 +807,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519631125023</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="&quot;HTML merger under development&quot;">
+      <created>1519790573139</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1519790573139</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -828,7 +836,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24803591" sideWeight="0.8763693" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24803591" sideWeight="0.8763693" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900137" sideWeight="0.49666667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -884,7 +892,8 @@
     <MESSAGE value="Save html folder as one" />
     <MESSAGE value="&quot;Merge Web page folder&quot;" />
     <MESSAGE value="&quot;Merge a whole web page into one html file&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Merge a whole web page into one html file&quot;" />
+    <MESSAGE value="&quot;HTML merger under development&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;HTML merger under development&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1186,8 +1195,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="898">
-          <caret line="233" column="83" lean-forward="true" selection-start-line="233" selection-start-column="83" selection-end-line="233" selection-end-column="83" />
+        <state relative-caret-position="1335">
+          <caret line="261" column="0" lean-forward="true" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
           <folding>
             <element signature="e#35#44#0" expanded="true" />
           </folding>
@@ -1196,8 +1205,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/mhtifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-619">
-          <caret line="182" column="0" lean-forward="true" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+        <state relative-caret-position="1034">
+          <caret line="284" column="17" lean-forward="true" selection-start-line="284" selection-start-column="17" selection-end-line="284" selection-end-column="17" />
           <folding>
             <element signature="e#48#111#0" expanded="true" />
           </folding>
