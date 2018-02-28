@@ -301,9 +301,40 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
         # For now a simple warning is displayed informing that image has multiple sources
         # that are stripped.
         # TODO handle srcset
+        if img.get('srcset'):
+            img['data-srcset'] = img['srcset']
+            del img['srcset']
+            if verbose: log('[WARN] srcset found in img tag. Attribute will be cleared. File src = %s' %img['data-src'], 'yellow')
+        #  For any other situation that can not be handled at this stage, just warn the user
+        def check_alt(attr):
+            if img.has_attr(attr) and img[attr].startswith('this.src='):
+                if verbose: log('[WARN] %s found in img tag and unhandled, which may be broken'%attr, 'yellow')
+        # fail to load
+        """
+        <img src="image.gif" onerror="alert('The image could not be loaded.')" />
+        """
+        check_alt('onerror')
+        # onmouseover and onmouseout
+        check_alt('onmouseover')
+        check_alt('onmouseout')
+    for tag in soup(True):
+        if full_url and tag.name == 'a' and tag.has_attr('href') and not tag['href'].startswith('#'):
+            tag['data-href'] = tag['href']
+            tag['href'] = absurl(index, tag['href'])
+        if tag.has_attr('style'):
+            if tag['style']:
+                tag['style'] = handle_css_content(index, tag['style'], verbose=verbose)
+            elif tag.name == 'link' and tag.has_attr('type') and tag['type'] == 'text/css':
+                if tag.string:
+                    tag.string = handle_css_content(index, tag.string, verbose=verbose)
+            elif tag.name == 'style':
+                if tag.stringL
+                    tag.string = handle_css_content(index, tag.string, verbose=verbose)
 
 
-    #  TODO Maybe other things needs to be done
+
+
+    #  TODO Emmmm...  There may be other things that need to be done
     #  return html_doc
     #  return soup_title
 

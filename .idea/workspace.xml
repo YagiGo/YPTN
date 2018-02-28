@@ -50,8 +50,8 @@
             <file leaf-file-name="htmlcombine.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1570">
-                    <caret line="305" column="47" lean-forward="true" selection-start-line="305" selection-start-column="47" selection-end-line="305" selection-end-column="47" />
+                  <state relative-caret-position="1065">
+                    <caret line="331" column="87" lean-forward="true" selection-start-line="331" selection-start-column="87" selection-end-line="331" selection-end-column="87" />
                     <folding>
                       <element signature="e#35#44#0" expanded="true" />
                     </folding>
@@ -103,8 +103,8 @@
       <file leaf-file-name="mhtifier.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Render Engine/mhtifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="245" column="25" lean-forward="false" selection-start-line="245" selection-start-column="25" selection-end-line="245" selection-end-column="25" />
+            <state relative-caret-position="1034">
+              <caret line="266" column="41" lean-forward="true" selection-start-line="266" selection-start-column="41" selection-end-line="266" selection-end-column="41" />
               <folding>
                 <element signature="e#48#111#0" expanded="true" />
               </folding>
@@ -613,7 +613,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519792791032</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="&quot;HTML Merger under development&quot;">
+      <created>1519796732148</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1519796732148</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -627,6 +634,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2552" y="-8" width="1216" height="1896" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -904,6 +912,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4902">
           <caret line="277" column="4" lean-forward="false" selection-start-line="277" selection-start-column="4" selection-end-line="277" selection-end-column="4" />
+          <folding>
+            <element signature="e#118#156#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -986,22 +997,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Render Engine/mhtifier.py">
+    <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="245" column="25" lean-forward="false" selection-start-line="245" selection-start-column="25" selection-end-line="245" selection-end-column="25" />
+        <state relative-caret-position="1065">
+          <caret line="331" column="87" lean-forward="true" selection-start-line="331" selection-start-column="87" selection-end-line="331" selection-end-column="87" />
           <folding>
-            <element signature="e#48#111#0" expanded="true" />
+            <element signature="e#35#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
+    <entry file="file://$PROJECT_DIR$/Render Engine/mhtifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1570">
-          <caret line="305" column="47" lean-forward="true" selection-start-line="305" selection-start-column="47" selection-end-line="305" selection-end-column="47" />
+        <state relative-caret-position="1034">
+          <caret line="266" column="41" lean-forward="true" selection-start-line="266" selection-start-column="41" selection-end-line="266" selection-end-column="41" />
           <folding>
-            <element signature="e#35#44#0" expanded="true" />
+            <element signature="e#48#111#0" expanded="true" />
           </folding>
         </state>
       </provider>
