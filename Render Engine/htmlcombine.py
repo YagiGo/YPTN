@@ -6,6 +6,7 @@ import sys, urlparse, os
 import urllib
 import requests
 import base64
+from bs4 import BeautifulSoup
 re_css_url = re.compile('(url\(.*?\))') #  get css url
 
 #  colored logging, at present, stderr is used, may shift to log file system
@@ -89,7 +90,8 @@ def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_er
             response = requests.get(fullpath, headers=headers, verify=verify)
             #  Some web page not encoded with UTF-8, which could cause problem
             # TODO need an RE here to find out the encoding
-            print response.headers['Content-Type'].find('charset')
+            if response.headers['Content-Type'].find('charset') < 0:
+                if verbose: log('[WARN] Not UTF-8 Encoded', 'yellow')
 
 
 
@@ -214,12 +216,18 @@ def handle_css_content(index, css, verbose=True):
 def generate(index, verbose=False, comment=True, keep_script=True, prettify=False, full_url=True, verify=False, erropage=False):
     orgin_index = index
     html_doc, extra_data = get(index, verbose=verbose, verify=verify, ignore_error=erropage)
+    if extra_data and extra_data.get('url'):
+        index = extra_data['url']
+    soup = BeautifulSoup(html_doc, 'lxml')
+    soup_title = soup.title.string if soup.title else ''
     #  return html_doc
+    return soup_title
 
 
 if __name__ == '__main__':
-    url = "http://www.softlab.cs.tsukuba.ac.jp/index.html.en"
+    test_url1 = "http://www.softlab.cs.tsukuba.ac.jp/index.html.en"
 
-    test_url="https://www.google.com"
+    test_url2 = "https://www.google.com"
 
-    print generate(test_url)
+    test_return = generate(test_url1)
+    print test_return
