@@ -221,6 +221,18 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
     soup = BeautifulSoup(html_doc, 'lxml')
     soup_title = soup.title.string if soup.title else ''
     #  TODO Bulid Dom Tree
+    for link in soup('link'):
+        """
+        <link href="/index.html" rel="index"/>
+        <link href="/css/import.css" media="screen, tv, projection" rel="stylesheet" type="text/css"/>
+        """
+        print link
+        if link.get('herf'):
+            if 'mask-icon' in (link.get('rel') or []) or 'icon' in(link.get('rel') or []) or 'apple-touch-icon' in (link.get('rel') or []) or 'apple-touch-icon-precomposed' in (link.get('rel') or []):
+                #  Convert icon into URI form with base64
+                link['data-href'] = link['href']
+                link['href'] = data_to_base64(index, link['href'], verbose=verbose)
+
 
     #  TODO DO Something with the JS
 
@@ -230,13 +242,13 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
     
     #  TODO Maybe other things needs to be done
     #  return html_doc
-    return soup_title
+    #  return soup_title
 
 
 if __name__ == '__main__':
     test_url1 = "http://www.softlab.cs.tsukuba.ac.jp/index.html.en"
 
-    test_url2 = "https://www.google.com"
+    test_url2 = "https://www.youtube.com"
 
-    test_return = generate(test_url1)
-    print test_return
+    test_return = generate(test_url2)
+    #  print test_return
