@@ -256,9 +256,52 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
             elif full_url:
                 link['data-href'] = link['href']
                 link['href'] = absurl(index, link['href'])
-    #  TODO DO Something with the JS
+    #  Embed js script with base64 encoding
+    #  TODO in the future, try to execute js files on the server and transmit result to the client
+    for js in soup('script'):
+        if not keep_script:
+            js.replace_with('')
+            continue
+        if not js.get('src'): continue
+        new_type = 'text/javascript' if not js.has_attr('type') or not js['type'] else js['type']
+        code = soup.new_tag('script', type=new_type)
+        code['data-src'] = js['src']
+        try:
+            js_str, _ = get(index, relpath=js['src'], verbose=verbose)
+            if js_str.find('</script>') > -1:
+                code['src'] = 'data:text/javascript;base64,' + base64.b64encode(js_str)
+            #  the CDATA part
+            elif js_str.find(']]>') < 0:
+                code.string = '<!--//--><![CDATA[//><!--\n' + js_str + '\n//--><!]]>'
+            else:
+                code.string = js_str.encode('utf-8')
+            """
+            被<![CDATA[]]>这个标记所包含的内容将表示为纯文本，比如<![CDATA[<]]>表示文本内容“<”。 
+            此标记用于xml文档中，我们先来看看使用转义符的情况。
+            我们知道，在xml中，”<”、”>”、”&”等字符是不能直接存入的，否则xml语法检查时会报错，
+            如果想在xml中使用这些符号，必须将其转义为实体，如”&lt;”、”&gt;”、”&amp;”，这样才能保存进xml文档。 
+            在使用程序读取的时候，解析器会自动将这些实体转换回”<”、”>”、”&”。
+            举个例子： 
+            <age> age < 30 </age> 
+            上面这种写法会报错，应该这样写： 
+            <age> age &lt; 30 </age> 
+            """
+        except:
+            if verbose: log(repr(js_str))
+            raise
+        js.replace_with(code)
+    #  encode img with base64 and URI scheme
+    for img in soup('img'):
+        if not img.get('src'): continue
+        img['data-src'] = img['src']
+        img['src'] = data_to_base64(index, img['src'], verbose=verbose)
+        # `img` elements may have `srcset` attributes with multiple sets of images.
+        # To get a lighter document it will be cleared, and used only the standard `src` attribute
+        # Maybe add a flag to enable the base64 conversion of each `srcset`?
+        # For now a simple warning is displayed informing that image has multiple sources
+        # that are stripped.
+        # TODO handle srcset
 
-    #  TODO DO Something with the image encoding with Base64
 
     #  TODO Maybe other things needs to be done
     #  return html_doc
@@ -268,7 +311,7 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
 if __name__ == '__main__':
     test_url1 = "http://www.softlab.cs.tsukuba.ac.jp/index.html.en"
 
-    test_url2 = "https://www.youtube.com"
+    test_url2 = "https://www.baidu.com"
 
     test_return = generate(test_url2)
     #  print test_return
