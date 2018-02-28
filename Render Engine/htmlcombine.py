@@ -7,6 +7,7 @@ import urllib
 import requests
 import base64
 from bs4 import BeautifulSoup
+import datetime, time
 re_css_url = re.compile('(url\(.*?\))') #  get css url
 
 #  colored logging, at present, stderr is used, may shift to log file system
@@ -57,7 +58,7 @@ def absurl(index, relpath=None, normpath=None):
             return index
 #  get web Content
 webpage2html_cache = {}
-def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_error=False):
+def get(index, relpath=None, verbose=False, usecache=True, verify=True, ignore_error=False):
     """
 
     :param index:
@@ -90,9 +91,6 @@ def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_er
             response = requests.get(fullpath, headers=headers, verify=verify)
             #  Some web page not encoded with UTF-8, which could cause problem
             # TODO need an RE here to find out the encoding
-            if response.headers['Content-Type'].find('charset') < 0:
-                if verbose: log('[WARN] Not UTF-8 Encoded', 'yellow')
-
 
 
             if verbose: log('[GET] %d -%s' %(response.status_code, response.url))
@@ -149,7 +147,7 @@ data:[<mime type>][;charset=<charset>][;<encoding>],<encoded data>
 4.  [;<encoding>] ：数据编码方式（默认US-ASCII，BASE64两种）
 5.  ,<encoded data> ：编码后的数据
 """
-def data_to_base64(index, src, verbose=True):
+def data_to_base64(index, src, verbose=False):
     sp = urlparse.urlparse(src).path.lower()
     if src.strip().startswith('data:'):
         return src
@@ -194,7 +192,7 @@ def data_to_base64(index, src, verbose=True):
 #  Handle CSS
 css_encoding_re = re.compile(r'''@charset\s+["']([-_a-zA-Z0-9]+)["']\;''', re.I)
 
-def handle_css_content(index, css, verbose=True):
+def handle_css_content(index, css, verbose=False):
     if not css:
         return css
     if not isinstance(css, unicode):
@@ -291,6 +289,7 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
             raise
         js.replace_with(code)
     #  encode img with base64 and URI scheme
+
     for img in soup('img'):
         if not img.get('src'): continue
         img['data-src'] = img['src']
@@ -317,20 +316,42 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
         # onmouseover and onmouseout
         check_alt('onmouseover')
         check_alt('onmouseout')
+
     for tag in soup(True):
+
         if full_url and tag.name == 'a' and tag.has_attr('href') and not tag['href'].startswith('#'):
+            #  Hyperlink
             tag['data-href'] = tag['href']
             tag['href'] = absurl(index, tag['href'])
         if tag.has_attr('style'):
+            #  print tag
+            # style sheet
             if tag['style']:
                 tag['style'] = handle_css_content(index, tag['style'], verbose=verbose)
+                #  print tag['style']
             elif tag.name == 'link' and tag.has_attr('type') and tag['type'] == 'text/css':
                 if tag.string:
                     tag.string = handle_css_content(index, tag.string, verbose=verbose)
             elif tag.name == 'style':
-                if tag.stringL
+                if tag.string:
                     tag.string = handle_css_content(index, tag.string, verbose=verbose)
+    # Insert some comment
+    if comment:
+        for html in soup('html'):
+            html.insert(0, BeautifulSoup(
+                '<!-- \n single html Orginal:https://github.com/zTrix/webpage2html\n Modified by https://github.com/YagiGo\n title: %s\n url: %s\n date: %s\n-->' % (
+                soup_title, index, datetime.datetime.now().ctime()
+            ), 'lxml'))
+            break
+    if prettify:
+        return soup.prettify(formatter='html')
+    else:
+        return str(soup)
 
+def mergeHTML(url, output):
+    rs = generate(url, output)
+    with open(output, 'wb') as f:
+        f.write(rs)
 
 
 
@@ -340,9 +361,13 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
 
 
 if __name__ == '__main__':
-    test_url1 = "http://www.softlab.cs.tsukuba.ac.jp/index.html.en"
+    test_url1 = "http://www.softlab.cs.tsukuba.ac.jp/members.html"
 
-    test_url2 = "https://www.baidu.com"
-
-    test_return = generate(test_url2)
+    test_url2 = "https://www.taobao.com/"
+    test_url3 = "https://developer.mozilla.org/zh-CN/docs/Web/API/GlobalEventHandlers/onerror"
+    output = "test.html"
+    start_time = time.time()
+    mergeHTML(test_url1, output)
     #  print test_return
+    end_time = time.time()
+    print ("time cost: %s"%(str(end_time - start_time)))
