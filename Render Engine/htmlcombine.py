@@ -220,6 +220,15 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
         index = extra_data['url']
     soup = BeautifulSoup(html_doc, 'lxml')
     soup_title = soup.title.string if soup.title else ''
+    #  TODO Bulid Dom Tree
+
+    #  TODO DO Something with the JS
+
+    #  TODO DO Something with the image encoding with Base64
+
+    #  TODO Do Something with the CSS
+    
+    #  TODO Maybe other things needs to be done
     #  return html_doc
     return soup_title
 
