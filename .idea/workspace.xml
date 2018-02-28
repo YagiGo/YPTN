@@ -25,7 +25,7 @@
     <SUITE FILE_PATH="coverage/NetworkProgramming$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1511388852305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy/proxy" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$http.coverage" NAME="http Coverage Results" MODIFIED="1511388881813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$IPProxy.coverage" NAME="IPProxy Coverage Results" MODIFIED="1509431566068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Proxy/IPProxyPool" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$htmlcombine.coverage" NAME="htmlcombine Coverage Results" MODIFIED="1519802489635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$htmlcombine.coverage" NAME="htmlcombine Coverage Results" MODIFIED="1519803925460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$getSrc.coverage" NAME="getSrc Coverage Results" MODIFIED="1509174622941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSMinimizing" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$upsidedownternet.coverage" NAME="upsidedownternet Coverage Results" MODIFIED="1511387550616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$CCJS.coverage" NAME="CCJS Coverage Results" MODIFIED="1509497528870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSMinimizing" />
@@ -50,8 +50,8 @@
             <file leaf-file-name="htmlcombine.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="3110">
-                    <caret line="311" column="11" lean-forward="true" selection-start-line="311" selection-start-column="11" selection-end-line="311" selection-end-column="11" />
+                  <state relative-caret-position="1267">
+                    <caret line="382" column="21" lean-forward="false" selection-start-line="382" selection-start-column="21" selection-end-line="382" selection-end-column="21" />
                     <folding>
                       <element signature="e#35#44#0" expanded="true" />
                     </folding>
@@ -125,8 +125,8 @@
       <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Render Engine/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12502">
-              <caret line="75" column="2554" lean-forward="false" selection-start-line="75" selection-start-column="2554" selection-end-line="75" selection-end-column="2554" />
+            <state relative-caret-position="331">
+              <caret line="521" column="15279" lean-forward="true" selection-start-line="521" selection-start-column="15279" selection-end-line="521" selection-end-column="15279" />
               <folding>
                 <element signature="e#1211#3549#0" expanded="true" />
                 <element signature="e#3674#7236#0" expanded="true" />
@@ -134,7 +134,6 @@
                 <element signature="n#src#0;n#img#0;n#div#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#src#0;n#img#0;n#div#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#src#0;n#img#0;n#div#0;n#ul#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#div#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#src#0;n#img#0;n#div#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#src#0;n#img#0;n#div#0;n#ul#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#src#0;n#img#0;n#div#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -160,16 +159,16 @@
                 <element signature="n#src#0;n#img#0;n#div#0;n#ul#9;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#src#0;n#img#0;n#div#0;n#ul#10;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#src#0;n#img#0;n#div#0;n#ul#11;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1519802494254" expanded="true" signature="64895:64901" ph=" " />
-                <marker date="1519802494254" expanded="true" signature="64901:64907" ph=" " />
-                <marker date="1519802494254" expanded="true" signature="64924:64928" ph="&gt;" />
-                <marker date="1519802494254" expanded="true" signature="65109:65115" ph=" " />
-                <marker date="1519802494254" expanded="true" signature="65115:65121" ph=" " />
-                <marker date="1519802494254" expanded="true" signature="65133:65137" ph="&lt;" />
-                <marker date="1519802494254" expanded="true" signature="68940:69005" ph="..." />
-                <marker date="1519802494254" expanded="true" signature="69281:69346" ph="..." />
-                <marker date="1519802494254" expanded="true" signature="69731:69781" ph="..." />
-                <marker date="1519802494254" expanded="true" signature="69930:69981" ph="..." />
+                <marker date="1519803931015" expanded="true" signature="64895:64901" ph=" " />
+                <marker date="1519803931015" expanded="true" signature="64901:64907" ph=" " />
+                <marker date="1519803931015" expanded="true" signature="64924:64928" ph="&gt;" />
+                <marker date="1519803931015" expanded="true" signature="65109:65115" ph=" " />
+                <marker date="1519803931015" expanded="true" signature="65115:65121" ph=" " />
+                <marker date="1519803931015" expanded="true" signature="65133:65137" ph="&lt;" />
+                <marker date="1519803931015" expanded="true" signature="68940:69005" ph="..." />
+                <marker date="1519803931015" expanded="true" signature="69281:69346" ph="..." />
+                <marker date="1519803931015" expanded="true" signature="69731:69781" ph="..." />
+                <marker date="1519803931015" expanded="true" signature="69930:69981" ph="..." />
               </folding>
             </state>
           </provider>
@@ -215,8 +214,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>js_code</find>
-      <find>succeeded</find>
       <find>Processing No</find>
       <find>jsfile_</find>
       <find>HTTPResponse</find>
@@ -245,6 +242,8 @@
       <find>base64</find>
       <find>verbose</find>
       <find>UTF-8</find>
+      <find>cache</find>
+      <find>webpage2html_cache</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -303,8 +302,8 @@
         <option value="$PROJECT_DIR$/Render Engine/tryopenbrowser.py" />
         <option value="$PROJECT_DIR$/Render Engine/mhtifier.py" />
         <option value="$PROJECT_DIR$/TestGround.py" />
-        <option value="$PROJECT_DIR$/Render Engine/htmlcombine.py" />
         <option value="$PROJECT_DIR$/Render Engine/test.html" />
+        <option value="$PROJECT_DIR$/Render Engine/htmlcombine.py" />
       </list>
     </option>
   </component>
@@ -656,7 +655,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519798153078</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="&quot;HTML Merger under development&quot;">
+      <created>1519803338502</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1519803338502</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -670,13 +676,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2552" y="-8" width="1216" height="1896" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58912593" sideWeight="0.12363067" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24803591" sideWeight="0.8763693" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24803591" sideWeight="0.8763693" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1038,20 +1043,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3110">
-          <caret line="311" column="11" lean-forward="true" selection-start-line="311" selection-start-column="11" selection-end-line="311" selection-end-column="11" />
-          <folding>
-            <element signature="e#35#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12502">
-          <caret line="75" column="2554" lean-forward="false" selection-start-line="75" selection-start-column="2554" selection-end-line="75" selection-end-column="2554" />
+        <state relative-caret-position="331">
+          <caret line="521" column="15279" lean-forward="true" selection-start-line="521" selection-start-column="15279" selection-end-line="521" selection-end-column="15279" />
           <folding>
             <element signature="e#1211#3549#0" expanded="true" />
             <element signature="e#3674#7236#0" expanded="true" />
@@ -1059,7 +1054,6 @@
             <element signature="n#src#0;n#img#0;n#div#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#ul#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#ul#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#src#0;n#img#0;n#div#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#ul#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#ul#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1085,16 +1079,26 @@
             <element signature="n#src#0;n#img#0;n#div#0;n#ul#9;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#ul#10;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#ul#11;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1519802494254" expanded="true" signature="64895:64901" ph=" " />
-            <marker date="1519802494254" expanded="true" signature="64901:64907" ph=" " />
-            <marker date="1519802494254" expanded="true" signature="64924:64928" ph="&gt;" />
-            <marker date="1519802494254" expanded="true" signature="65109:65115" ph=" " />
-            <marker date="1519802494254" expanded="true" signature="65115:65121" ph=" " />
-            <marker date="1519802494254" expanded="true" signature="65133:65137" ph="&lt;" />
-            <marker date="1519802494254" expanded="true" signature="68940:69005" ph="..." />
-            <marker date="1519802494254" expanded="true" signature="69281:69346" ph="..." />
-            <marker date="1519802494254" expanded="true" signature="69731:69781" ph="..." />
-            <marker date="1519802494254" expanded="true" signature="69930:69981" ph="..." />
+            <marker date="1519803931015" expanded="true" signature="64895:64901" ph=" " />
+            <marker date="1519803931015" expanded="true" signature="64901:64907" ph=" " />
+            <marker date="1519803931015" expanded="true" signature="64924:64928" ph="&gt;" />
+            <marker date="1519803931015" expanded="true" signature="65109:65115" ph=" " />
+            <marker date="1519803931015" expanded="true" signature="65115:65121" ph=" " />
+            <marker date="1519803931015" expanded="true" signature="65133:65137" ph="&lt;" />
+            <marker date="1519803931015" expanded="true" signature="68940:69005" ph="..." />
+            <marker date="1519803931015" expanded="true" signature="69281:69346" ph="..." />
+            <marker date="1519803931015" expanded="true" signature="69731:69781" ph="..." />
+            <marker date="1519803931015" expanded="true" signature="69930:69981" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1267">
+          <caret line="382" column="21" lean-forward="false" selection-start-line="382" selection-start-column="21" selection-end-line="382" selection-end-column="21" />
+          <folding>
+            <element signature="e#35#44#0" expanded="true" />
           </folding>
         </state>
       </provider>

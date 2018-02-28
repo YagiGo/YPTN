@@ -347,11 +347,17 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
         return soup.prettify(formatter='html')
     else:
         return str(soup)
-
+page_cache = {}
 def mergeHTML(url, output):
-    rs = generate(url, output)
+    global page_cache
+    if url in page_cache:
+        rs = page_cache[url]
+    else:
+        rs = generate(url, output)
+        page_cache[url] = rs
     with open(output, 'wb') as f:
         f.write(rs)
+    print page_cache
 
 
 
@@ -371,3 +377,7 @@ if __name__ == '__main__':
     #  print test_return
     end_time = time.time()
     print ("time cost: %s"%(str(end_time - start_time)))
+#  TODO 使用数据库（推荐MongoDB）缓存转换好的HTML文件，按照LRU算法对缓存文件进行更新，在用户访问某网站时直接调用缓存
+#  TODO 但是对很多实时性要求高的网站不能使用这个方法
+#  TODO 对这类网站加上标签，然后直接访问，不经过HTML转换
+#  TODO 加标签的方法，emmmm 机器学习走一波
