@@ -8,6 +8,7 @@ import requests
 import base64
 from bs4 import BeautifulSoup
 import datetime, time
+from cachesave import savetodb
 re_css_url = re.compile('(url\(.*?\))') #  get css url
 
 #  colored logging, at present, stderr is used, may shift to log file system
@@ -347,15 +348,27 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
         return soup.prettify(formatter='html')
     else:
         return str(soup)
-page_cache = {}
-def mergeHTML(url, output):
-    global page_cache
+def mergeHTML(url, output, conn):
+    """
+
+    :param url: access url
+    :param output: processed html src
+    :param conn: database connection
+    :return: NONE
+    """
+
+    """
     if url in page_cache:
         rs = page_cache[url]
     else:
         rs = generate(url, output)
         page_cache[url] = rs
     with open(output, 'wb') as f:
+        f.write(rs)
+    """
+    rs = generate(url, output)
+    savetodb(url, rs, host, port)
+    with open(output, "wb") as f:
         f.write(rs)
     #  print page_cache
 
@@ -367,10 +380,23 @@ def mergeHTML(url, output):
 
 
 if __name__ == '__main__':
+    #  CACHE DB CONFIG HERE
+    HOST = "localhost"
+    PORT = "27017"
     test_url1 = "https://realpython.com/blog/python/introduction-to-mongodb-and-python/"
 
     test_url2 = "https://www.taobao.com/"
     test_url3 = "https://developer.mozilla.org/zh-CN/docs/Web/API/GlobalEventHandlers/onerror"
+    test_urls = [
+            "https://www.baidu.com",
+            "https://www.gooogle.com",
+            "https://www.yahoo.co.jp",
+            "https://www.imdb.com",
+            "https://www.yahoo.com",
+            "https://www.twitter.com",
+            "https://www.microsoft.com",
+            "http://http://www.softlab.cs.tsukuba.ac.jp/members.html"
+        ]
     output = "test.html"
     start_time = time.time()
     mergeHTML(test_url1, output)
