@@ -9,6 +9,7 @@ import base64
 from bs4 import BeautifulSoup
 import datetime, time
 from cachesave import savetodb
+from pymongo import MongoClient
 re_css_url = re.compile('(url\(.*?\))') #  get css url
 
 #  colored logging, at present, stderr is used, may shift to log file system
@@ -348,7 +349,7 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
         return soup.prettify(formatter='html')
     else:
         return str(soup)
-def mergeHTML(url, output, conn):
+def mergeHTML(conn, url, output):
     """
 
     :param url: access url
@@ -367,7 +368,7 @@ def mergeHTML(url, output, conn):
         f.write(rs)
     """
     rs = generate(url, output)
-    savetodb(url, rs, host, port)
+    savetodb(conn, url, rs)
     with open(output, "wb") as f:
         f.write(rs)
     #  print page_cache
@@ -382,7 +383,7 @@ def mergeHTML(url, output, conn):
 if __name__ == '__main__':
     #  CACHE DB CONFIG HERE
     HOST = "localhost"
-    PORT = "27017"
+    PORT = 27017
     test_url1 = "https://realpython.com/blog/python/introduction-to-mongodb-and-python/"
 
     test_url2 = "https://www.taobao.com/"
@@ -395,11 +396,13 @@ if __name__ == '__main__':
             "https://www.yahoo.com",
             "https://www.twitter.com",
             "https://www.microsoft.com",
-            "http://http://www.softlab.cs.tsukuba.ac.jp/members.html"
+            "http://www.softlab.cs.tsukuba.ac.jp/members.html"
         ]
+    conn = MongoClient(HOST, PORT)
     output = "test.html"
     start_time = time.time()
-    mergeHTML(test_url1, output)
+    for url in test_urls:
+        mergeHTML(conn, url, output)
     #  print test_return
     end_time = time.time()
     print ("time cost: %s"%(str(end_time - start_time)))

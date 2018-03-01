@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c69ca65-0925-492c-bb46-5b19e23ca29e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Render Engine/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Render Engine/cachesave.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Render Engine/cachesave.py" afterPath="$PROJECT_DIR$/Render Engine/cachesave.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Render Engine/htmlcombine.py" afterPath="$PROJECT_DIR$/Render Engine/htmlcombine.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +27,7 @@
     <SUITE FILE_PATH="coverage/NetworkProgramming$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1511388852305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy/proxy" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$http.coverage" NAME="http Coverage Results" MODIFIED="1511388881813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$IPProxy.coverage" NAME="IPProxy Coverage Results" MODIFIED="1509431566068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Proxy/IPProxyPool" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$htmlcombine.coverage" NAME="htmlcombine Coverage Results" MODIFIED="1519804846835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$htmlcombine.coverage" NAME="htmlcombine Coverage Results" MODIFIED="1519878437652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$getSrc.coverage" NAME="getSrc Coverage Results" MODIFIED="1509174622941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSMinimizing" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$upsidedownternet.coverage" NAME="upsidedownternet Coverage Results" MODIFIED="1511387550616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$CCJS.coverage" NAME="CCJS Coverage Results" MODIFIED="1509497528870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSMinimizing" />
@@ -36,7 +35,7 @@
     <SUITE FILE_PATH="coverage/NetworkProgramming$trytogetproxyrun.coverage" NAME="trytogetproxyrun Coverage Results" MODIFIED="1511949381519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$identifyUser.coverage" NAME="identifyUser Coverage Results" MODIFIED="1512350363023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$IPProxy__1_.coverage" NAME="IPProxy (1) Coverage Results" MODIFIED="1509506753654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Proxy" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$cachesave.coverage" NAME="cachesave Coverage Results" MODIFIED="1519876346125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$cachesave.coverage" NAME="cachesave Coverage Results" MODIFIED="1519878398139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$tryopenbrowser.coverage" NAME="tryopenbrowser Coverage Results" MODIFIED="1519369323663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$windows.coverage" NAME="windows Coverage Results" MODIFIED="1511859592963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy/platform" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$POSTtoCCS.coverage" NAME="POSTtoCCS Coverage Results" MODIFIED="1509008140054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -54,8 +53,8 @@
             <file leaf-file-name="htmlcombine.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-633">
-                    <caret line="308" column="28" lean-forward="false" selection-start-line="308" selection-start-column="28" selection-end-line="308" selection-end-column="28" />
+                  <state relative-caret-position="640">
+                    <caret line="378" column="22" lean-forward="true" selection-start-line="378" selection-start-column="22" selection-end-line="378" selection-end-column="22" />
                     <folding>
                       <element signature="e#35#44#0" expanded="true" />
                     </folding>
@@ -119,60 +118,9 @@
       <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Render Engine/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-325448">
-              <caret line="681" column="138306" lean-forward="false" selection-start-line="681" selection-start-column="138306" selection-end-line="681" selection-end-column="138306" />
-              <folding>
-                <element signature="e#7750#9226#0" expanded="true" />
-                <element signature="e#12470#233509#2" expanded="true" />
-                <element signature="e#233514#454553#1" expanded="true" />
-                <element signature="e#454582#557490#1" expanded="true" />
-                <element signature="e#557507#688246#1" expanded="true" />
-                <element signature="e#688262#909036#1" expanded="true" />
-                <element signature="e#909056#1501595#1" expanded="true" />
-                <element signature="e#1596215#1596257#1" expanded="true" />
-                <element signature="e#1596621#1596663#1" expanded="true" />
-                <element signature="e#1597272#1597314#1" expanded="true" />
-                <element signature="e#1597720#1597762#1" expanded="true" />
-                <element signature="e#1608761#1608803#1" expanded="true" />
-                <element signature="e#1636592#1636634#1" expanded="true" />
-                <element signature="e#1636826#1636868#1" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#a#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#figure#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#figure#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#figure#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#1730170#1730174#1" expanded="true" />
-                <element signature="e#1730189#1730193#1" expanded="true" />
-                <element signature="e#1734759#1734763#0" expanded="true" />
-                <element signature="e#1734763#1734767#0" expanded="true" />
-                <element signature="e#1734767#1734771#0" expanded="true" />
-                <element signature="e#1745993#1745997#0" expanded="true" />
-                <element signature="e#1746040#1746044#0" expanded="true" />
-                <element signature="e#1761331#1761336#0" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#p#2;n#div#0;n#form#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1519804854332" expanded="true" signature="2105135:2105184" ph="..." />
-                <marker date="1519804854332" expanded="true" signature="2105302:2105351" ph="..." />
-                <marker date="1519804854332" expanded="true" signature="2105469:2105518" ph="..." />
-                <marker date="1519804854332" expanded="true" signature="2105636:2105685" ph="..." />
-                <marker date="1519804854332" expanded="true" signature="2105803:2105852" ph="..." />
-                <marker date="1519804854332" expanded="true" signature="2105970:2106019" ph="..." />
-                <marker date="1519804854332" expanded="true" signature="2106137:2106186" ph="..." />
-                <marker date="1519804854332" expanded="true" signature="2106304:2106353" ph="..." />
-                <marker date="1519804854332" expanded="true" signature="2106471:2106520" ph="..." />
-                <marker date="1519804854332" expanded="true" signature="2106638:2106687" ph="..." />
-                <marker date="1519804854332" expanded="true" signature="2259506:2259523" ph="..." />
-                <marker date="1519804854332" expanded="true" signature="2259592:2259666" ph="..." />
-                <marker date="1519804854332" expanded="true" signature="2259742:2259796" ph="..." />
-                <marker date="1519804854332" expanded="true" signature="2260090:2260143" ph="..." />
-                <marker date="1519804854332" expanded="true" signature="2262096:2262135" ph="..." />
-                <marker date="1519804854332" expanded="true" signature="2267636:2267666" ph="..." />
-                <marker date="1519804854332" expanded="true" signature="2270777:2270807" ph="..." />
-              </folding>
+            <state relative-caret-position="-338387">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -220,8 +168,8 @@
       <file leaf-file-name="cachesave.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Render Engine/cachesave.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+            <state relative-caret-position="152">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
               <folding>
                 <element signature="e#80#111#0" expanded="true" />
               </folding>
@@ -328,8 +276,8 @@
         <option value="$PROJECT_DIR$/Render Engine/test.html" />
         <option value="$PROJECT_DIR$/Cache/dbconnect.py" />
         <option value="$PROJECT_DIR$/Render Engine/__init__.py" />
-        <option value="$PROJECT_DIR$/Render Engine/cachesave.py" />
         <option value="$PROJECT_DIR$/Render Engine/htmlcombine.py" />
+        <option value="$PROJECT_DIR$/Render Engine/cachesave.py" />
       </list>
     </option>
   </component>
@@ -455,7 +403,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cachesave">
+  <component name="RunManager" selected="Python.htmlcombine">
     <configuration name="TestGround" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -538,9 +486,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.cachesave" />
-        <item index="1" class="java.lang.String" itemvalue="Python.dbconnect" />
-        <item index="2" class="java.lang.String" itemvalue="Python.htmlcombine" />
+        <item index="0" class="java.lang.String" itemvalue="Python.htmlcombine" />
+        <item index="1" class="java.lang.String" itemvalue="Python.cachesave" />
+        <item index="2" class="java.lang.String" itemvalue="Python.dbconnect" />
         <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
         <item index="4" class="java.lang.String" itemvalue="Python.TestGround" />
       </list>
@@ -707,7 +655,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519870314145</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="&quot;Implement Cache System&quot;">
+      <created>1519876704994</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1519876704994</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -725,7 +680,7 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58912593" sideWeight="0.12363067" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24803591" sideWeight="0.8763693" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48260382" sideWeight="0.8763693" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900137" sideWeight="0.49666667" order="7" side_tool="false" content_ui="tabs" />
@@ -788,7 +743,8 @@
     <MESSAGE value="&quot;HTML merger under development&quot;" />
     <MESSAGE value="&quot;HTML Merger under development&quot;" />
     <MESSAGE value="&quot;Remove unused files&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Remove unused files&quot;" />
+    <MESSAGE value="&quot;Implement Cache System&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Implement Cache System&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1068,60 +1024,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-325448">
-          <caret line="681" column="138306" lean-forward="false" selection-start-line="681" selection-start-column="138306" selection-end-line="681" selection-end-column="138306" />
-          <folding>
-            <element signature="e#7750#9226#0" expanded="true" />
-            <element signature="e#12470#233509#2" expanded="true" />
-            <element signature="e#233514#454553#1" expanded="true" />
-            <element signature="e#454582#557490#1" expanded="true" />
-            <element signature="e#557507#688246#1" expanded="true" />
-            <element signature="e#688262#909036#1" expanded="true" />
-            <element signature="e#909056#1501595#1" expanded="true" />
-            <element signature="e#1596215#1596257#1" expanded="true" />
-            <element signature="e#1596621#1596663#1" expanded="true" />
-            <element signature="e#1597272#1597314#1" expanded="true" />
-            <element signature="e#1597720#1597762#1" expanded="true" />
-            <element signature="e#1608761#1608803#1" expanded="true" />
-            <element signature="e#1636592#1636634#1" expanded="true" />
-            <element signature="e#1636826#1636868#1" expanded="true" />
-            <element signature="n#src#0;n#img#0;n#a#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#figure#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#src#0;n#img#0;n#figure#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#figure#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1730170#1730174#1" expanded="true" />
-            <element signature="e#1730189#1730193#1" expanded="true" />
-            <element signature="e#1734759#1734763#0" expanded="true" />
-            <element signature="e#1734763#1734767#0" expanded="true" />
-            <element signature="e#1734767#1734771#0" expanded="true" />
-            <element signature="e#1745993#1745997#0" expanded="true" />
-            <element signature="e#1746040#1746044#0" expanded="true" />
-            <element signature="e#1761331#1761336#0" expanded="true" />
-            <element signature="n#src#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#src#0;n#img#0;n#p#2;n#div#0;n#form#0;n#div#0;n#aside#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#src#0;n#img#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1519804854332" expanded="true" signature="2105135:2105184" ph="..." />
-            <marker date="1519804854332" expanded="true" signature="2105302:2105351" ph="..." />
-            <marker date="1519804854332" expanded="true" signature="2105469:2105518" ph="..." />
-            <marker date="1519804854332" expanded="true" signature="2105636:2105685" ph="..." />
-            <marker date="1519804854332" expanded="true" signature="2105803:2105852" ph="..." />
-            <marker date="1519804854332" expanded="true" signature="2105970:2106019" ph="..." />
-            <marker date="1519804854332" expanded="true" signature="2106137:2106186" ph="..." />
-            <marker date="1519804854332" expanded="true" signature="2106304:2106353" ph="..." />
-            <marker date="1519804854332" expanded="true" signature="2106471:2106520" ph="..." />
-            <marker date="1519804854332" expanded="true" signature="2106638:2106687" ph="..." />
-            <marker date="1519804854332" expanded="true" signature="2259506:2259523" ph="..." />
-            <marker date="1519804854332" expanded="true" signature="2259592:2259666" ph="..." />
-            <marker date="1519804854332" expanded="true" signature="2259742:2259796" ph="..." />
-            <marker date="1519804854332" expanded="true" signature="2260090:2260143" ph="..." />
-            <marker date="1519804854332" expanded="true" signature="2262096:2262135" ph="..." />
-            <marker date="1519804854332" expanded="true" signature="2267636:2267666" ph="..." />
-            <marker date="1519804854332" expanded="true" signature="2270777:2270807" ph="..." />
-          </folding>
+        <state relative-caret-position="-338387">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1167,8 +1072,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-633">
-          <caret line="308" column="28" lean-forward="false" selection-start-line="308" selection-start-column="28" selection-end-line="308" selection-end-column="28" />
+        <state relative-caret-position="640">
+          <caret line="378" column="22" lean-forward="true" selection-start-line="378" selection-start-column="22" selection-end-line="378" selection-end-column="22" />
           <folding>
             <element signature="e#35#44#0" expanded="true" />
           </folding>
@@ -1177,8 +1082,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/cachesave.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        <state relative-caret-position="152">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding>
             <element signature="e#80#111#0" expanded="true" />
           </folding>

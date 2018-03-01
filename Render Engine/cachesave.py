@@ -8,14 +8,22 @@ def savetodb(conn, url, htmlsrc):
         "url" : str(hash(url)), "src" : htmlsrc, "date" : datetime.datetime.utcnow()
     }
     # use hash to represent url because mongodb can not handle . in key
-    webcache = db.webcache
-    try:
-        cachefile_id = webcache.insert_one(cachefile).inserted_id
-    except  Exception as err:
-        err_handle = {
-            "Error": "ERROR %s"%str(err), "data": datetime.datetime.utcnow()
-        }
-        cachefile_id = webcache.insert_one(err_handle).inserted_id
+    webcache = db.webcache_test1
+    existcache = webcache.find_one({"url" : str(hash(url))})
+    print existcache
+    if not existcache :
+        try:
+            cachefile_id = webcache.insert_one(cachefile).inserted_id
+        except  Exception as err:
+            err_handle = {
+                "Error": "ERROR %s"%str(err), "data": datetime.datetime.utcnow()
+            }
+            cachefile_id = webcache.insert_one(err_handle).inserted_id
+    else:
+        #  update src file and datetime
+        existcache['src'] = htmlsrc
+        existcache['date'] = datetime.datetime.utcnow()
+
 
 if __name__ == "__main__":
     test_urls = [
