@@ -84,6 +84,18 @@ def test():
     return res if res != "1" else ret
 print(test())
 '''
+'''
 import re
 m = re.search('(?<=-)\w+', 'spam-egg')
 print m.group(0)
+'''
+import datetime
+import time
+"""
+first_time = datetime.time()
+time.sleep(1)
+second_time = datetime.time()
+"""
+# convert time into timestamp
+a = "2018-03-01 13:07:46.209"
+

@@ -1,6 +1,7 @@
 # coding=utf-8
 
 #  Get URL for css
+# encoding=utf8
 import re
 import sys, urlparse, os
 import urllib
@@ -8,7 +9,7 @@ import requests
 import base64
 from bs4 import BeautifulSoup
 import datetime, time
-from cachesave import savetodb
+#  from cachesave import savetoAndReadfromDB
 from pymongo import MongoClient
 re_css_url = re.compile('(url\(.*?\))') #  get css url
 
@@ -349,6 +350,68 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
         return soup.prettify(formatter='html')
     else:
         return str(soup)
+#  DB CACHE
+
+def savetoAndReadfromDB(conn, url, threshold):
+    """
+
+    :param conn: db connection
+    :param url: web page url
+    :param htmlsrc: processed html file
+    :param threshold: expiration threshold
+    :return: html source code
+    """
+    db = conn.webcache
+
+    # use hash to represent url because mongodb can not handle . in key
+    webcache = db.webcache_test1
+    existcache = webcache.find_one({"url" : str(hash(url))})
+    if not existcache:
+        try:
+            htmlsrc = generate(url)
+            cachefile = {
+                "url": str(hash(url)), "src": htmlsrc, "date": str(datetime.datetime.utcnow()),
+                "recent_access_time": 0,
+            }
+            cachefile_id = webcache.insert_one(cachefile).inserted_id
+        except  Exception as err:
+            err_handle = {
+                "Error": "ERROR %s"%str(err), "data": str(datetime.datetime.utcnow())
+            }
+            cachefile_id = webcache.insert_one(err_handle).inserted_id
+    elif isexpired(existcache, threshold):
+        try:
+            #  update src file and datetime
+            htmlsrc = generate(url)
+            #  print "expired!"
+            #  existcache['src'] = htmlsrc
+            #  print existcache['date']
+            #  existcache['date'] = str(datetime.datetime.utcnow())
+            #  修改记录 db.Account.update({"UserName":"libing"},{"$set":{"Email":"libing@126.com","Password":"123"}})
+
+            webcache.update_one({'url':str(hash(url))}, {"$set" : {"src":htmlsrc, "date":str(datetime.datetime.utcnow())}})
+        except Exception as err:
+            err_handle = {
+                "Error": "ERROR %s"%str(err), "data": str(datetime.datetime.utcnow())
+            }
+            cachefile_id = webcache.insert_one(err_handle).inserted_id
+    return webcache.find_one({"url" : str(hash(url))})['src']
+
+def isexpired(cache, threshold):
+    current_time = time.strptime(str(datetime.datetime.utcnow()).split('.')[0], "%Y-%m-%d %H:%M:%S")
+    current_timestamp = int(time.mktime(current_time))
+    cache_time = time.strptime(cache['date'].split('.')[0], "%Y-%m-%d %H:%M:%S")
+    cache_timestamp = int(time.mktime(cache_time))
+    live_time = current_timestamp - cache_timestamp
+    #  print "live time" + str(live_time)
+    if live_time > threshold:
+        return True
+    else:
+        return False
+
+
+
+
 def mergeHTML(conn, url, output):
     """
 
@@ -367,12 +430,13 @@ def mergeHTML(conn, url, output):
     with open(output, 'wb') as f:
         f.write(rs)
     """
-    rs = generate(url, output)
-    savetodb(conn, url, rs)
+    reload(sys)
+    sys.setdefaultencoding('utf8') #  This is the pain in the ass for python in windows, set sys to utf8 to avoid ascii bs!
+    # rs = generate(url)
     with open(output, "wb") as f:
-        f.write(rs)
+        f.write(savetoAndReadfromDB(conn, url, threshold=600))
     #  print page_cache
-
+    #  print savetoAndReadfromDB(conn, url, threshold=600)
 
 
     #  TODO Emmmm...  There may be other things that need to be done
@@ -388,6 +452,7 @@ if __name__ == '__main__':
 
     test_url2 = "https://www.taobao.com/"
     test_url3 = "https://developer.mozilla.org/zh-CN/docs/Web/API/GlobalEventHandlers/onerror"
+    test_url4 = "https://dev.opera.com/articles/opera-mini-and-javascript/"
     test_urls = [
             "https://www.baidu.com",
             "https://www.gooogle.com",
@@ -396,13 +461,24 @@ if __name__ == '__main__':
             "https://www.yahoo.com",
             "https://www.twitter.com",
             "https://www.microsoft.com",
-            "http://www.softlab.cs.tsukuba.ac.jp/members.html"
+            "http://www.softlab.cs.tsukuba.ac.jp/members.html",
+            "https://github.com/YagiGo"
         ]
+    test_urls2 = [
+        "https://www.yahoo.co.jp",
+        "https://news.yahoo.co.jp/pickup/6273847",
+        "https://news.yahoo.co.jp/pickup/6273853"
+        "https://headlines.yahoo.co.jp/hl?a=20180301-00138618-nksports-fight"
+
+    ]
     conn = MongoClient(HOST, PORT)
     output = "test.html"
     start_time = time.time()
-    for url in test_urls:
+    mergeHTML(conn, test_url4, output)
+    """
+    for url in test_urls2:
         mergeHTML(conn, url, output)
+    """
     #  print test_return
     end_time = time.time()
     print ("time cost: %s"%(str(end_time - start_time)))
