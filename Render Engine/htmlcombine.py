@@ -452,7 +452,7 @@ if __name__ == '__main__':
 
     test_url2 = "https://www.taobao.com/"
     test_url3 = "https://developer.mozilla.org/zh-CN/docs/Web/API/GlobalEventHandlers/onerror"
-    test_url4 = "https://dev.opera.com/articles/opera-mini-and-javascript/"
+    test_url4 = "http://www.amazarashi.com/top/"
     test_urls = [
             "https://www.baidu.com",
             "https://www.gooogle.com",
