@@ -396,6 +396,7 @@ def savetoAndReadfromDB(conn, url, threshold):
             }
             cachefile_id = webcache.insert_one(err_handle).inserted_id
     return webcache.find_one({"url" : str(hash(url))})['src']
+#  TODO Create a database for image encoding to avoid redundancy.
 
 def isexpired(cache, threshold):
     current_time = time.strptime(str(datetime.datetime.utcnow()).split('.')[0], "%Y-%m-%d %H:%M:%S")
