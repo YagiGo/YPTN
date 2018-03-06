@@ -215,7 +215,6 @@ def handle_css_content(index, css, verbose=False):
         return 'url(' + data_to_base64(index, src, verbose=verbose) + ')'
     css = reg.sub(repl, css)
     return css
-
 def generate(index, verbose=False, comment=True, keep_script=True, prettify=False, full_url=True, verify=False, erropage=False):
     orgin_index = index
     html_doc, extra_data = get(index, verbose=verbose, verify=verify, ignore_error=erropage)
@@ -295,6 +294,10 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
         js.replace_with(code)
     #  encode img with base64 and URI scheme
     # try use multiprocessing
+    """
+    def check_alt(attr):
+        if img.has_attr(attr) and img[attr].startswith('this.src='):
+            if verbose: log('[WARN] %s found in img tag and unhandled, which may be broken' % attr, 'yellow')
     def process_img(img):
         if img.get('src'):
             img['data-src'] = img['src']
@@ -312,9 +315,6 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
                     '[WARN] srcset found in img tag. Attribute will be cleared. File src = %s' % img['data-src'], 'yellow')
 
         # For any other situation that can not be handled at this stage, just warn the user
-        def check_alt(attr):
-            if img.has_attr(attr) and img[attr].startswith('this.src='):
-                if verbose: log('[WARN] %s found in img tag and unhandled, which may be broken' % attr, 'yellow')
 
         # fail to load
 
@@ -323,12 +323,10 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
         # onmouseover and onmouseout
         check_alt('onmouseover')
         check_alt('onmouseout')
-
-    # Multiprocessing here
-    img_pool = Pool(8)
-    img_pool.map(process_img, soup('img'))
-
     """
+    # Multiprocessing here
+    # functions are only picklable if they are defined at the top-level of a module.
+
     for img in soup('img'):
         if not img.get('src'): continue
         img['data-src'] = img['src']
@@ -354,7 +352,6 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
         # onmouseover and onmouseout
         check_alt('onmouseover')
         check_alt('onmouseout')
-    """
     for tag in soup(True):
 
         if full_url and tag.name == 'a' and tag.has_attr('href') and not tag['href'].startswith('#'):
@@ -406,12 +403,13 @@ def savetoAndReadfromDB(conn, url, threshold):
             htmlsrc = generate(url)
             cachefile = {
                 "url": str(hash(url)), "src": htmlsrc, "date": str(datetime.datetime.utcnow()),
-                "recent_access_time": 0,
+                "recent_access_time": 1
             }
             cachefile_id = webcache.insert_one(cachefile).inserted_id
         except  Exception as err:
             err_handle = {
-                "Error": "ERROR %s"%str(err), "data": str(datetime.datetime.utcnow())
+                "url": str(hash(url)),
+                "Error": "ERROR %s"%str(err), "date": str(datetime.datetime.utcnow())
             }
             cachefile_id = webcache.insert_one(err_handle).inserted_id
     elif isexpired(existcache, threshold):
@@ -427,10 +425,15 @@ def savetoAndReadfromDB(conn, url, threshold):
             webcache.update_one({'url':str(hash(url))}, {"$set" : {"src":htmlsrc, "date":str(datetime.datetime.utcnow())}})
         except Exception as err:
             err_handle = {
-                "Error": "ERROR %s"%str(err), "data": str(datetime.datetime.utcnow())
+                "url": str(hash(url)),
+                "Error": "ERROR %s"%str(err), "date": str(datetime.datetime.utcnow())
             }
             cachefile_id = webcache.insert_one(err_handle).inserted_id
-    return webcache.find_one({"url" : str(hash(url))})['src']
+    # return HTML page if there is nothing wrong else return an Error page
+    try:
+        return webcache.find_one({"url" : str(hash(url))})['src']
+    except Exception as err:
+        return "Opps, it appears that something went wrong" + str(err)
 #  TODO Create a database for image encoding to avoid redundancy.
 
 def isexpired(cache, threshold):
