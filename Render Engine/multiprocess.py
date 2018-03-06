@@ -274,7 +274,7 @@ def process_js(js, index, soup, verbose, keep_script):
             if verbose: log(repr(js_str))
             raise
         js.replace_with(code)
-def process_img(index, img, verbose=False):
+def process_img(img, index, verbose=False):
     if img.get('src'):
         img['data-src'] = img['src']
         img['src'] = data_to_base64(index, img['src'], verbose=verbose)
@@ -329,7 +329,30 @@ def generate_parallel(index, verbose=False, comment=True, keep_script=True, pret
         index = extra_data['url']
     soup = BeautifulSoup(html_doc, 'lxml')
     soup_title = soup.title.string if soup.title else ''
-
+    link_tasks = [(link, index, soup, verbose, full_url) for link in soup('link')]
+    js_tasks = [(js, index, soup, verbose, keep_script) for js in soup('script')]
+    img_tasks = [(img, index, verbose) for img in soup('img')]
+    tag_tasks = [(tag, index, full_url, verbose) for tag in soup(True)]
+    link_pool = Pool(processes=5)
+    js_pool = Pool(processes=5)
+    img_pool = Pool(processes=20)
+    tag_pool = Pool(processes=5)
+    link_pool.map(process_link, link_tasks)
+    js_pool.map(process_js, js_tasks)
+    img_pool.map(process_img, img_tasks)
+    tag_pool.map(process_tag, tag_tasks)
+    # Insert some comment
+    if comment:
+        for html in soup('html'):
+            html.insert(0, BeautifulSoup(
+                '<!-- \n single html Orginal:https://github.com/zTrix/webpage2html\n Modified by https://github.com/YagiGo\n title: %s\n url: %s\n date: %s\n-->' % (
+                soup_title, index, datetime.datetime.now().ctime()
+            ), 'lxml'))
+            break
+    if prettify:
+        return soup.prettify(formatter='html')
+    else:
+        return str(soup)
 
 
 
@@ -343,7 +366,7 @@ def savetoAndReadfromDB(conn, url, threshold):
     :param url: web page url
     :param htmlsrc: processed html file
     :param threshold: expiration threshold
-    :return: html source code
+    :return: ht]ml source code
     """
     db = conn.webcache
 
@@ -399,3 +422,76 @@ def savetoAndReadfromDB(conn, url, threshold):
     except Exception as err:
         return "Opps, it appears that something went wrong" + str(err)
 #  TODO Create a database for image encoding to avoid redundancy.
+
+def mergeHTML(conn, url, output):
+    """
+
+    :param url: access url
+    :param output: processed html src
+    :param conn: database connection
+    :return: NONE
+    """
+
+    """
+    if url in page_cache:
+        rs = page_cache[url]
+    else:
+        rs = generate(url, output)
+        page_cache[url] = rs
+    with open(output, 'wb') as f:
+        f.write(rs)
+    """
+    reload(sys)
+    sys.setdefaultencoding('utf8') #  This is the pain in the ass for python in windows, set sys to utf8 to avoid ascii bs!
+    # rs = generate(url)
+    with open(output, "wb") as f:
+        f.write(savetoAndReadfromDB(conn, url, threshold=600))
+    #  print page_cache
+    #  print savetoAndReadfromDB(conn, url, threshold=600)
+
+
+    #  TODO Emmmm...  There may be other things that need to be done
+    #  return html_doc
+    #  return soup_title
+
+
+if __name__ == '__main__':
+    #  CACHE DB CONFIG HERE
+    HOST = "localhost"
+    PORT = 27017
+    test_url1 = "https://realpython.com/blog/python/introduction-to-mongodb-and-python/"
+
+    test_url2 = "https://www.taobao.com/"
+    test_url3 = "https://developer.mozilla.org/zh-CN/docs/Web/API/GlobalEventHandlers/onerror"
+    test_url4 = "http://www.amazarashi.com/top/"
+    test_urls = [
+            "https://www.baidu.com",
+            "https://www.gooogle.com",
+            "https://www.yahoo.co.jp",
+            "https://www.imdb.com",
+            "https://www.yahoo.com",
+            "https://www.twitter.com",
+            "https://www.microsoft.com",
+            "http://www.softlab.cs.tsukuba.ac.jp/members.html",
+            "https://github.com/YagiGo"
+        ]
+    test_urls2 = [
+        "https://www.yahoo.co.jp",
+        "https://news.yahoo.co.jp/pickup/6273847",
+        "https://news.yahoo.co.jp/pickup/6273853"
+        "https://headlines.yahoo.co.jp/hl?a=20180301-00138618-nksports-fight"
+
+    ]
+    conn = MongoClient(HOST, PORT)
+    output = "test.html"
+    start_time = time.time()
+    # mergeHTML(conn, test_url4, output)
+    for url in test_urls:
+        mergeHTML(conn, url, output)
+    #  print test_return
+    end_time = time.time()
+    print ("time cost: %s"%(str(end_time - start_time)))
+#  TODO 使用数据库（推荐MongoDB）缓存转换好的HTML文件，按照LRU算法对缓存文件进行更新，在用户访问某网站时直接调用缓存
+#  TODO 但是对很多实时性要求高的网站不能使用这个方法(SNS)
+#  TODO 对这类网站加上标签，然后直接访问，不经过HTML转换
+#  TODO 加标签的方法，emmmm 机器学习走一波
