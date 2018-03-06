@@ -211,6 +211,7 @@ def handle_css_content(index, css, verbose=False):
     def repl(matchobj):
         src = matchobj.group(1).strip('\'"')
         return 'url(' + data_to_base64(index, src, verbose=verbose) + ')'
+        return 'url(' + data_to_base64(index, src, verbose=verbose) + ')'
     css = reg.sub(repl, css)
     return css
 
@@ -475,7 +476,7 @@ if __name__ == '__main__':
     conn = MongoClient(HOST, PORT)
     output = "test.html"
     start_time = time.time()
-    mergeHTML(conn, test_url4, output)
+    mergeHTML(conn, test_urls, output)
     """
     for url in test_urls2:
         mergeHTML(conn, url, output)
