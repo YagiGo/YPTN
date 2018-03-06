@@ -321,10 +321,81 @@ def process_tag(tag, index, full_url, verbose):
             if tag.string:
                 tag.string = handle_css_content(index, tag.string, verbose=verbose)
 
-def generate(index, verbose=False, comment=True, keep_script=True, prettify=False, full_url=True, verify=False, erropage=False):
+
+def generate_parallel(index, verbose=False, comment=True, keep_script=True, prettify=False, full_url=True, verify=False, erropage=False):
     orgin_index = index
     html_doc, extra_data = get(index, verbose=verbose, verify=verify, ignore_error=erropage)
     if extra_data and extra_data.get('url'):
         index = extra_data['url']
     soup = BeautifulSoup(html_doc, 'lxml')
     soup_title = soup.title.string if soup.title else ''
+
+
+
+
+
+
+
+def savetoAndReadfromDB(conn, url, threshold):
+    """
+
+    :param conn: db connection
+    :param url: web page url
+    :param htmlsrc: processed html file
+    :param threshold: expiration threshold
+    :return: html source code
+    """
+    db = conn.webcache
+
+    # use hash to represent url because mongodb can not handle . in key
+    webcache = db.webcache_test1
+    existcache = webcache.find_one({"url" : str(hash(url))})
+
+    def isexpired(cache, threshold):
+        current_time = time.strptime(str(datetime.datetime.utcnow()).split('.')[0], "%Y-%m-%d %H:%M:%S")
+        current_timestamp = int(time.mktime(current_time))
+        cache_time = time.strptime(cache['date'].split('.')[0], "%Y-%m-%d %H:%M:%S")
+        cache_timestamp = int(time.mktime(cache_time))
+        live_time = current_timestamp - cache_timestamp
+        #  print "live time" + str(live_time)
+        if live_time > threshold:
+            return True
+        else:
+            return False
+    if not existcache:
+        try:
+            htmlsrc = generate_parallel(url)
+            cachefile = {
+                "url": str(hash(url)), "src": htmlsrc, "date": str(datetime.datetime.utcnow()),
+                "recent_access_time": 1
+            }
+            cachefile_id = webcache.insert_one(cachefile).inserted_id
+        except  Exception as err:
+            err_handle = {
+                "url": str(hash(url)),
+                "Error": "ERROR %s"%str(err), "date": str(datetime.datetime.utcnow())
+            }
+            cachefile_id = webcache.insert_one(err_handle).inserted_id
+    elif isexpired(existcache, threshold):
+        try:
+            #  update src file and datetime
+            htmlsrc = generate_parallel(url)
+            #  print "expired!"
+            #  existcache['src'] = htmlsrc
+            #  print existcache['date']
+            #  existcache['date'] = str(datetime.datetime.utcnow())
+            #  修改记录 db.Account.update({"UserName":"libing"},{"$set":{"Email":"libing@126.com","Password":"123"}})
+
+            webcache.update_one({'url':str(hash(url))}, {"$set" : {"src":htmlsrc, "date":str(datetime.datetime.utcnow())}})
+        except Exception as err:
+            err_handle = {
+                "url": str(hash(url)),
+                "Error": "ERROR %s"%str(err), "date": str(datetime.datetime.utcnow())
+            }
+            cachefile_id = webcache.insert_one(err_handle).inserted_id
+    # return HTML page if there is nothing wrong else return an Error page
+    try:
+        return webcache.find_one({"url" : str(hash(url))})['src']
+    except Exception as err:
+        return "Opps, it appears that something went wrong" + str(err)
+#  TODO Create a database for image encoding to avoid redundancy.

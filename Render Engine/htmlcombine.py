@@ -398,6 +398,18 @@ def savetoAndReadfromDB(conn, url, threshold):
     # use hash to represent url because mongodb can not handle . in key
     webcache = db.webcache_test1
     existcache = webcache.find_one({"url" : str(hash(url))})
+
+    def isexpired(cache, threshold):
+        current_time = time.strptime(str(datetime.datetime.utcnow()).split('.')[0], "%Y-%m-%d %H:%M:%S")
+        current_timestamp = int(time.mktime(current_time))
+        cache_time = time.strptime(cache['date'].split('.')[0], "%Y-%m-%d %H:%M:%S")
+        cache_timestamp = int(time.mktime(cache_time))
+        live_time = current_timestamp - cache_timestamp
+        #  print "live time" + str(live_time)
+        if live_time > threshold:
+            return True
+        else:
+            return False
     if not existcache:
         try:
             htmlsrc = generate(url)
