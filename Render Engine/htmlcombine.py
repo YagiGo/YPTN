@@ -9,6 +9,7 @@ import requests
 import base64
 from bs4 import BeautifulSoup
 import datetime, time
+from multiprocessing import Pool
 #  from cachesave import savetoAndReadfromDB
 from pymongo import MongoClient
 re_css_url = re.compile('(url\(.*?\))') #  get css url
@@ -287,13 +288,47 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
             <age> age < 30 </age> 
             上面这种写法会报错，应该这样写： 
             <age> age &lt; 30 </age> 
-            """
+             """
         except:
             if verbose: log(repr(js_str))
             raise
         js.replace_with(code)
     #  encode img with base64 and URI scheme
+    # try use multiprocessing
+    def process_img(img):
+        if img.get('src'):
+            img['data-src'] = img['src']
+            img['src'] = data_to_base64(index, img['src'], verbose=verbose)
+            # `img` elements may have `srcset` attributes with multiple sets of images.
+            # To get a lighter document it will be cleared, and used only the standard `src` attribute
+            # Maybe add a flag to enable the base64 conversion of each `srcset`?
+            # For now a simple warning is displayed informing that image has multiple sources
+            # that are stripped.
+            # TODO handle srcset
+            if img.get('srcset'):
+                img['data-srcset'] = img['srcset']
+                del img['srcset']
+                if verbose: log(
+                    '[WARN] srcset found in img tag. Attribute will be cleared. File src = %s' % img['data-src'], 'yellow')
 
+        # For any other situation that can not be handled at this stage, just warn the user
+        def check_alt(attr):
+            if img.has_attr(attr) and img[attr].startswith('this.src='):
+                if verbose: log('[WARN] %s found in img tag and unhandled, which may be broken' % attr, 'yellow')
+
+        # fail to load
+
+        #  <img src="image.gif" onerror="alert('The image could not be loaded.')" />
+        check_alt('onerror')
+        # onmouseover and onmouseout
+        check_alt('onmouseover')
+        check_alt('onmouseout')
+
+    # Multiprocessing here
+    img_pool = Pool(8)
+    img_pool.map(process_img, soup('img'))
+
+    """
     for img in soup('img'):
         if not img.get('src'): continue
         img['data-src'] = img['src']
@@ -313,14 +348,13 @@ def generate(index, verbose=False, comment=True, keep_script=True, prettify=Fals
             if img.has_attr(attr) and img[attr].startswith('this.src='):
                 if verbose: log('[WARN] %s found in img tag and unhandled, which may be broken'%attr, 'yellow')
         # fail to load
-        """
-        <img src="image.gif" onerror="alert('The image could not be loaded.')" />
-        """
+
+        #  <img src="image.gif" onerror="alert('The image could not be loaded.')" />
         check_alt('onerror')
         # onmouseover and onmouseout
         check_alt('onmouseover')
         check_alt('onmouseout')
-
+    """
     for tag in soup(True):
 
         if full_url and tag.name == 'a' and tag.has_attr('href') and not tag['href'].startswith('#'):
@@ -476,11 +510,9 @@ if __name__ == '__main__':
     conn = MongoClient(HOST, PORT)
     output = "test.html"
     start_time = time.time()
-    mergeHTML(conn, test_urls, output)
-    """
-    for url in test_urls2:
+    # mergeHTML(conn, test_url4, output)
+    for url in test_urls:
         mergeHTML(conn, url, output)
-    """
     #  print test_return
     end_time = time.time()
     print ("time cost: %s"%(str(end_time - start_time)))
