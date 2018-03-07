@@ -57,7 +57,7 @@ def absurl(index, relpath=None, normpath=None):
             return index
 #  get web Content
 webpage2html_cache = {}
-def get(index, relpath=None, verbose=False, usecache=True, verify=True, ignore_error=False):
+def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_error=False):
     """
 
     :param index:
@@ -328,12 +328,16 @@ def process_tag(tag, index, full_url, verbose):
                 tag.string = handle_css_content(index, tag.string, verbose=verbose)
 def run_link_process(args):
     process_link(args[0],args[1],args[2],args[3],args[4])
+    #  print("LInk Processing")
 def run_js_process(args):
     process_js(args[0],args[1],args[2],args[3],args[4])
+    #  print("js processing")
 def run_img_process(args):
     process_img(args[0],args[1],args[2])
+    #  print("img processing")
 def run_tag_process(args):
     process_tag(args[0],args[1],args[2],args[3])
+    #  print("tag processing")
 
 def generate_parallel(index, verbose=False, comment=True, keep_script=True, prettify=False, full_url=True, verify=False, erropage=False):
     orgin_index = index
@@ -346,12 +350,14 @@ def generate_parallel(index, verbose=False, comment=True, keep_script=True, pret
     js_tasks = [(js, index, soup, verbose, keep_script) for js in soup('script')]
     img_tasks = [(img, index, verbose) for img in soup('img')]
     tag_tasks = [(tag, index, full_url, verbose) for tag in soup(True)]
+    """
     link_pool = Pool(processes=5)
     js_pool = Pool(processes=5)
     img_pool = Pool(processes=20)
     tag_pool = Pool(processes=5)
+    """
     # concurrent test here
-    with ThreadPoolExecutor(max_workers=40) as executor:
+    with ThreadPoolExecutor(max_workers=80) as executor:
         executor.map(run_link_process, link_tasks)
         executor.map(run_js_process, js_tasks)
         executor.map(run_img_process, img_tasks)
@@ -488,9 +494,9 @@ if __name__ == '__main__':
     PORT = 27017
     test_url1 = "https://realpython.com/blog/python/introduction-to-mongodb-and-python/"
 
-    test_url2 = "https://www.taobao.com/"
-    test_url3 = "https://developer.mozilla.org/zh-CN/docs/Web/API/GlobalEventHandlers/onerror"
-    test_url4 = "http://www.amazarashi.com/top/"
+    test_url2 =[ "https://www.imdb.com/"]
+    test_url3 = ["https://developer.mozilla.org/zh-CN/docs/Web/API/GlobalEventHandlers/onerror"]
+    test_url4 = ["http://www.amazarashi.com/top/"]
     test_urls = [
             "https://www.baidu.com",
             "https://www.gooogle.com",
@@ -509,22 +515,22 @@ if __name__ == '__main__':
         "https://headlines.yahoo.co.jp/hl?a=20180301-00138618-nksports-fight"
 
     ]
-    img_url = "https://imgur.com/"
+    img_url = ["https://imgur.com/"]
     conn = MongoClient(HOST, PORT)
     output = "test.html"
-    start_time = time.time()
     # mergeHTML(conn, test_url4, output)
-
-    for url in test_urls:
+    first_start_time = time.time()
+    for url in test_urls2:
+        start_time = time.time()
         mergeHTML(conn, url, output)
     #  print test_return
-    end_time = time.time()
-    print ("time cost: %s"%(str(end_time - start_time)))
+        end_time = time.time()
+        print ("url: %s" %url + "\ntime cost: %s"%(str(end_time - start_time)))
 
 
     # mergeHTML(conn, img_url, output)
-    # end_time = time.time()
-    print ("time cost: %s" % (str(end_time - start_time)))
+    final_end_time = time.time()
+    print ("total time cost: %s" % (str(final_end_time - first_start_time)))
 #  TODO 使用数据库（推荐MongoDB）缓存转换好的HTML文件，按照LRU算法对缓存文件进行更新，在用户访问某网站时直接调用缓存
 #  TODO 但是对很多实时性要求高的网站不能使用这个方法(SNS)
 #  TODO 对这类网站加上标签，然后直接访问，不经过HTML转换

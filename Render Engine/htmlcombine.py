@@ -524,13 +524,18 @@ if __name__ == '__main__':
     ]
     conn = MongoClient(HOST, PORT)
     output = "test.html"
-    start_time = time.time()
-    # mergeHTML(conn, test_url4, output)
+    first_start_time = time.time()
     for url in test_urls:
+        start_time = time.time()
         mergeHTML(conn, url, output)
     #  print test_return
-    end_time = time.time()
-    print ("time cost: %s"%(str(end_time - start_time)))
+        end_time = time.time()
+        print ("url: %s" %url + "\ntime cost: %s"%(str(end_time - start_time)))
+
+
+    # mergeHTML(conn, img_url, output)
+    final_end_time = time.time()
+    print ("total time cost: %s" % (str(final_end_time - first_start_time)))
 #  TODO 使用数据库（推荐MongoDB）缓存转换好的HTML文件，按照LRU算法对缓存文件进行更新，在用户访问某网站时直接调用缓存
 #  TODO 但是对很多实时性要求高的网站不能使用这个方法(SNS)
 #  TODO 对这类网站加上标签，然后直接访问，不经过HTML转换
