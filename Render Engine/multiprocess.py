@@ -337,10 +337,20 @@ def generate_parallel(index, verbose=False, comment=True, keep_script=True, pret
     js_pool = Pool(processes=5)
     img_pool = Pool(processes=20)
     tag_pool = Pool(processes=5)
-    link_pool.map(process_link, link_tasks)
-    js_pool.map(process_js, js_tasks)
-    img_pool.map(process_img, img_tasks)
-    tag_pool.map(process_tag, tag_tasks)
+    def run_link_process(args):
+        process_link(args[0],args[1],args[2],args[3],args[4])
+    def run_js_process(args):
+        process_js(args[0],args[1],args[2],args[3],args[4])
+    def run_img_process(args):
+        process_img(args[0],args[1],args[2])
+    def run_tag_process(args):
+        process_tag(args[0],args[1],args[2],args[3])
+
+
+    link_pool.map(run_link_process, link_tasks)
+    js_pool.map(run_js_process, js_tasks)
+    img_pool.map(run_img_process, img_tasks)
+    tag_pool.map(run_tag_process, tag_tasks)
     # Insert some comment
     if comment:
         for html in soup('html'):
@@ -396,7 +406,7 @@ def savetoAndReadfromDB(conn, url, threshold):
         except  Exception as err:
             err_handle = {
                 "url": str(hash(url)),
-                "Error": "ERROR %s"%str(err), "date": str(datetime.datetime.utcnow())
+                "Error": "ERROR on page generation %s"%str(err), "date": str(datetime.datetime.utcnow())
             }
             cachefile_id = webcache.insert_one(err_handle).inserted_id
     elif isexpired(existcache, threshold):
@@ -413,7 +423,7 @@ def savetoAndReadfromDB(conn, url, threshold):
         except Exception as err:
             err_handle = {
                 "url": str(hash(url)),
-                "Error": "ERROR %s"%str(err), "date": str(datetime.datetime.utcnow())
+                "Error": "ERROR on expiration check %s"%str(err), "date": str(datetime.datetime.utcnow())
             }
             cachefile_id = webcache.insert_one(err_handle).inserted_id
     # return HTML page if there is nothing wrong else return an Error page
