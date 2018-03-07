@@ -11,6 +11,7 @@ from bs4 import BeautifulSoup
 import datetime, time
 from multiprocessing import Pool
 from pymongo import MongoClient
+import traceback
 re_css_url = re.compile('(url\(.*?\))') #  get css url
 
 def log(s, color=None, on_color=None, attrs=None, new_line=True):
@@ -189,7 +190,7 @@ def data_to_base64(index, src, verbose=False):
 #  Handle CSS
 css_encoding_re = re.compile(r'''@charset\s+["']([-_a-zA-Z0-9]+)["']\;''', re.I)
 
-def handle_css_content(index, css, verbose=False):
+def handle_css_content(index, css, verbose=False, debug=True):
     if not css:
         return css
     if not isinstance(css, unicode):
@@ -198,8 +199,12 @@ def handle_css_content(index, css, verbose=False):
         if mo:
             try:
                 css = css.decode(mo.group(1))
-            except:
-                log('[WARN] failed to convert css to encoding %s'%mo.group(1), 'yellow')
+            except Exception as err:
+                if not debug:
+                    log('[WARN] failed to convert css to encoding %s'%mo.group(1), 'yellow')
+                else:
+                    traceback.print_exc()
+
     reg = re.compile(r'url\s*\((.+?)\)')
 
     def repl(matchobj):
@@ -369,7 +374,7 @@ def generate_parallel(index, verbose=False, comment=True, keep_script=True, pret
 
 
 
-def savetoAndReadfromDB(conn, url, threshold):
+def savetoAndReadfromDB(conn, url, threshold, debug=True):
     """
 
     :param conn: db connection
@@ -404,11 +409,14 @@ def savetoAndReadfromDB(conn, url, threshold):
             }
             cachefile_id = webcache.insert_one(cachefile).inserted_id
         except  Exception as err:
-            err_handle = {
-                "url": str(hash(url)),
-                "Error": "ERROR on page generation %s"%str(err), "date": str(datetime.datetime.utcnow())
-            }
-            cachefile_id = webcache.insert_one(err_handle).inserted_id
+            if not debug:
+                err_handle = {
+                    "url": str(hash(url)),
+                    "Error": "ERROR on page generation %s"%str(err), "date": str(datetime.datetime.utcnow())
+                }
+                cachefile_id = webcache.insert_one(err_handle).inserted_id
+            else:
+                traceback.print_exc()
     elif isexpired(existcache, threshold):
         try:
             #  update src file and datetime
@@ -421,11 +429,14 @@ def savetoAndReadfromDB(conn, url, threshold):
 
             webcache.update_one({'url':str(hash(url))}, {"$set" : {"src":htmlsrc, "date":str(datetime.datetime.utcnow())}})
         except Exception as err:
-            err_handle = {
-                "url": str(hash(url)),
-                "Error": "ERROR on expiration check %s"%str(err), "date": str(datetime.datetime.utcnow())
-            }
-            cachefile_id = webcache.insert_one(err_handle).inserted_id
+            if not debug:
+                err_handle = {
+                    "url": str(hash(url)),
+                    "Error": "ERROR on expiration check %s"%str(err), "date": str(datetime.datetime.utcnow())
+                }
+                cachefile_id = webcache.insert_one(err_handle).inserted_id
+            else:
+                traceback.print_exc()
     # return HTML page if there is nothing wrong else return an Error page
     try:
         return webcache.find_one({"url" : str(hash(url))})['src']
