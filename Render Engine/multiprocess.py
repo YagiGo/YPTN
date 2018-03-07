@@ -12,6 +12,7 @@ import datetime, time
 from multiprocessing import Pool
 from pymongo import MongoClient
 import traceback
+from concurrent.futures import ThreadPoolExecutor
 re_css_url = re.compile('(url\(.*?\))') #  get css url
 
 def log(s, color=None, on_color=None, attrs=None, new_line=True):
@@ -325,7 +326,14 @@ def process_tag(tag, index, full_url, verbose):
         elif tag.name == 'style':
             if tag.string:
                 tag.string = handle_css_content(index, tag.string, verbose=verbose)
-
+def run_link_process(args):
+    process_link(args[0],args[1],args[2],args[3],args[4])
+def run_js_process(args):
+    process_js(args[0],args[1],args[2],args[3],args[4])
+def run_img_process(args):
+    process_img(args[0],args[1],args[2])
+def run_tag_process(args):
+    process_tag(args[0],args[1],args[2],args[3])
 
 def generate_parallel(index, verbose=False, comment=True, keep_script=True, prettify=False, full_url=True, verify=False, erropage=False):
     orgin_index = index
@@ -342,21 +350,19 @@ def generate_parallel(index, verbose=False, comment=True, keep_script=True, pret
     js_pool = Pool(processes=5)
     img_pool = Pool(processes=20)
     tag_pool = Pool(processes=5)
-    def run_link_process(args):
-        process_link(args[0],args[1],args[2],args[3],args[4])
-    def run_js_process(args):
-        process_js(args[0],args[1],args[2],args[3],args[4])
-    def run_img_process(args):
-        process_img(args[0],args[1],args[2])
-    def run_tag_process(args):
-        process_tag(args[0],args[1],args[2],args[3])
-
-
+    # concurrent test here
+    with ThreadPoolExecutor(max_workers=40) as executor:
+        executor.map(run_link_process, link_tasks)
+        executor.map(run_js_process, js_tasks)
+        executor.map(run_img_process, img_tasks)
+        executor.map(run_tag_process, tag_tasks)
+    """
     link_pool.map(run_link_process, link_tasks)
     js_pool.map(run_js_process, js_tasks)
     img_pool.map(run_img_process, img_tasks)
     tag_pool.map(run_tag_process, tag_tasks)
-    # Insert some comment
+    """
+   # Insert some comment
     if comment:
         for html in soup('html'):
             html.insert(0, BeautifulSoup(
@@ -503,15 +509,22 @@ if __name__ == '__main__':
         "https://headlines.yahoo.co.jp/hl?a=20180301-00138618-nksports-fight"
 
     ]
+    img_url = "https://imgur.com/"
     conn = MongoClient(HOST, PORT)
     output = "test.html"
     start_time = time.time()
     # mergeHTML(conn, test_url4, output)
+
     for url in test_urls:
         mergeHTML(conn, url, output)
     #  print test_return
     end_time = time.time()
     print ("time cost: %s"%(str(end_time - start_time)))
+
+
+    # mergeHTML(conn, img_url, output)
+    # end_time = time.time()
+    print ("time cost: %s" % (str(end_time - start_time)))
 #  TODO 使用数据库（推荐MongoDB）缓存转换好的HTML文件，按照LRU算法对缓存文件进行更新，在用户访问某网站时直接调用缓存
 #  TODO 但是对很多实时性要求高的网站不能使用这个方法(SNS)
 #  TODO 对这类网站加上标签，然后直接访问，不经过HTML转换
