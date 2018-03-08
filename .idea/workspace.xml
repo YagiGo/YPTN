@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c69ca65-0925-492c-bb46-5b19e23ca29e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Render Engine/css server push.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Render Engine/mhtfier.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Render Engine/nodeserver.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Render Engine/nodeserver.js" afterPath="$PROJECT_DIR$/Render Engine/nodeserver.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -119,8 +117,8 @@
       <file leaf-file-name="nodeserver.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Render Engine/nodeserver.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="931">
+              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -774,7 +772,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520490975747</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="&quot;Emerging nodejs with Server push function on&quot;">
+      <created>1520499110208</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1520499110208</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -862,7 +867,8 @@
     <MESSAGE value="&quot;Adding debugger&quot;" />
     <MESSAGE value="&quot;Concurrent Method&quot;" />
     <MESSAGE value="&quot;Server push&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Server push&quot;" />
+    <MESSAGE value="&quot;Emerging nodejs with Server push function on&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Emerging nodejs with Server push function on&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1229,8 +1235,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/nodeserver.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="931">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding />
         </state>
       </provider>
