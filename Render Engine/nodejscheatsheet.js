@@ -157,9 +157,54 @@ var buf12 = Buffer.concat([buf10, buf11]);
 //Output: 123456
 console.log("buf12: " + buf12.toString());
 
+//缓冲区比较
+/*
+buf.compare(otherBuffer)
+otherBuffer 比较的另外一个Buffer
+返回一个数字，表示 buf 在 otherBuffer 之前，之后或相同。
+
+ */
+var buf13 = Buffer.from('ABC');
+var buf14 = Buffer.from('ABCD');
+var result = buf13.compare(buf14);
+
+if(result < 0) {
+    console.log(buf13 + '在' + buf14 + '之前');
+}
+else if(result == 0) {
+    console.log(buf13 + '与' + buf14 + '相同');
+}
+else {
+    console.log(buf13 + '在' + buf14 + '之后');
+}
 
 
 
+//字符串的裁剪，拷贝，求长度
+//拷贝
+/*
+buf.copy(targetBuffer[, targetStart[, sourceStart[, sourceEnd]]])
+targetBuffer - 要拷贝的 Buffer 对象。
+
+targetStart - 数字, 可选, 默认: 0
+
+sourceStart - 数字, 可选, 默认: 0
+
+sourceEnd - 数字, 可选, 默认: buffer.length
+ */
+var buf15 = Buffer.from('abcdefghijklmn');
+var buf16 = Buffer.from('OPQRSTUVWXYZ');
+buf16.copy(buf15)
+
+//裁剪
+/*
+buf.slice([start[, end]])
+返回一个新的缓冲区，它和旧缓冲区指向同一块内存，但是从索引 start 到 end 的位置剪切。
+ */
+var buf17 = Buffer.from('ABCDEFG');
+var buf18 = buf17.slice(0,2);
+console.log('Content: ' + buf18.toString());
+//buf.length 长度
 
 
 
