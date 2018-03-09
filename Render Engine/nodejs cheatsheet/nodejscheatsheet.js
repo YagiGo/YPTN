@@ -231,6 +231,28 @@ readerStream.on('error', function(err) {
 console.log("Finished");
 
 
+//创建写入流
+var writerStream = fs.createWriteStream('output.txt');
+writerStream.write('This is writing test', 'UTF8');
+
+writerStream.end()  //标记文件末尾
+
+//处理流事件
+writerStream.on('finish', function() {
+    console.log('Finished!');
+});
+
+writerStream.on('error', function(err) {
+    console.log(err.stack);
+});
+console.log('Program Finished');
+
+
+//创建管道流
+readerStream.pipe(writerStream);
+
+//创建链式流
+//链式是通过连接输出流到另外一个流并创建多个流操作链的机制。链式流一般用于管道操作。
 
 
 
