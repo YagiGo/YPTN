@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c69ca65-0925-492c-bb46-5b19e23ca29e" name="Default" comment="&quot;node js merge&quot;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/Global Object/globalObject.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/function.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route/router.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/compress.js" afterPath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/stream/compress.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/decompress.js" afterPath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/stream/decompress.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/input.txt" afterPath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/stream/input.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/input.txt.gz" afterPath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/stream/input.txt.gz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/input_uncompressed.txt" afterPath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/stream/input_uncompressed.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/util module/utiltool.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,8 +55,8 @@
             <file leaf-file-name="htmlcombine.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-3355">
-                    <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+                  <state relative-caret-position="779">
+                    <caret line="258" column="44" lean-forward="false" selection-start-line="258" selection-start-column="44" selection-end-line="258" selection-end-column="44" />
                     <folding>
                       <element signature="e#51#60#0" expanded="true" />
                       <element signature="e#12373#13800#1" expanded="false" />
@@ -81,21 +75,11 @@
       <file leaf-file-name="nodejscheatsheet.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/nodejscheatsheet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="237" column="28" lean-forward="true" selection-start-line="237" selection-start-column="28" selection-end-line="237" selection-end-column="28" />
+            <state relative-caret-position="0">
+              <caret line="237" column="28" lean-forward="false" selection-start-line="237" selection-start-column="28" selection-end-line="237" selection-end-column="28" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="compress.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/stream/compress.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -104,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/stream/decompress.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+              <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -114,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/module.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -133,8 +117,18 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route/server.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="665">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utiltool.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/util module/utiltool.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <caret line="25" column="0" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -160,11 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="globalObject.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="globalObject.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/Global Object/globalObject.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1083">
-              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="190">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -175,7 +169,7 @@
       <file leaf-file-name="hello.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/hello.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="228">
               <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -235,8 +229,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Test/Nov_30_17 15_00_44.log" />
-        <option value="$PROJECT_DIR$/Test/Nov_30_17 15_22_30.log" />
         <option value="$PROJECT_DIR$/Test/tlog.py" />
         <option value="$PROJECT_DIR$/tools/__init__.py" />
         <option value="$PROJECT_DIR$/examples/simple/filter_flows.py" />
@@ -282,10 +274,12 @@
         <option value="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route.py" />
         <option value="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/router.js" />
         <option value="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/function.js" />
-        <option value="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route/server.js" />
         <option value="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route/index.js" />
         <option value="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route/router.js" />
         <option value="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/Global Object/globalObject.js" />
+        <option value="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route/server.js" />
+        <option value="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/util module/util tool.js" />
+        <option value="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/util module/utiltool.js" />
       </list>
     </option>
   </component>
@@ -355,6 +349,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -394,11 +389,17 @@
               <item name="nodejs cheatsheet" type="462c0819:PsiDirectoryNode" />
               <item name="stream" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="NetworkProgramming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NetworkProgramming" type="462c0819:PsiDirectoryNode" />
+              <item name="Render Engine" type="462c0819:PsiDirectoryNode" />
+              <item name="nodejs cheatsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="util module" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -858,7 +859,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520577394735</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="&quot;node js merge&quot;">
+      <created>1520585675949</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1520585675949</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -962,20 +970,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/libmproxy/flow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4902">
-          <caret line="277" column="4" lean-forward="false" selection-start-line="277" selection-start-column="4" selection-end-line="277" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libmproxy/controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tools/log.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -1119,7 +1113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,9 +1128,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-          <folding>
-            <element signature="e#317#343#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1145,9 +1135,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9310">
           <caret line="500" column="36" lean-forward="false" selection-start-line="500" selection-start-column="36" selection-end-line="500" selection-end-column="36" />
-          <folding>
-            <element signature="e#51#60#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1155,7 +1142,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1163,7 +1149,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1171,7 +1156,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1179,7 +1163,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1187,25 +1170,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/nodejs server push.js" />
     <entry file="file://$PROJECT_DIR$/Render Engine/nodejs test.js" />
-    <entry file="file://$PROJECT_DIR$/Render Engine/nodeserver.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Render Engine/nodeserver.js" />
     <entry file="file://$PROJECT_DIR$/Render Engine/css server push.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1213,7 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1229,26 +1202,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="23" lean-forward="true" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/stream/decompress.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route.py" />
     <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/function.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -1260,15 +1225,15 @@
     <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/nodejscheatsheet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="237" column="28" lean-forward="true" selection-start-line="237" selection-start-column="28" selection-end-line="237" selection-end-column="28" />
+        <state relative-caret-position="0">
+          <caret line="237" column="28" lean-forward="false" selection-start-line="237" selection-start-column="28" selection-end-line="237" selection-end-column="28" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -1277,7 +1242,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/hello.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="228">
           <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -1293,21 +1258,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route/server.js">
+    <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/Global Object/globalObject.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3355">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="190">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
-            <element signature="e#51#60#0" expanded="true" />
-            <element signature="e#12373#13800#1" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1320,13 +1276,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/Global Object/globalObject.js">
+    <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="779">
+          <caret line="258" column="44" lean-forward="false" selection-start-line="258" selection-start-column="44" selection-end-line="258" selection-end-column="44" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#51#60#0" expanded="true" />
+            <element signature="e#12373#13800#1" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/util module/util tool.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/util module/utiltool.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="25" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
