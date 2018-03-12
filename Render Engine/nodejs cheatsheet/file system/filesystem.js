@@ -91,3 +91,96 @@ fs.readFile('input.txt', function(err, data) {
 });
 console.log("Finished!");
 
+//读取文件
+/*
+fs.read(fd, buffer, offset, length, position, callback)
+fd 通过fs.open方法返回的文件描述符
+buffer 数据写入的缓冲区
+offset 缓冲区写入的写入偏移量
+length 从文件中读取的字节数
+position 文件读取的起始位置，默认从文件指针的位置读取
+callback 回调函数，有三个参数err, bytesRead, buffer. err为错误信息，bytesRead表示读取的字节数，buffer为缓冲区对象
+ */
+console.log("准备打开已存在的文件");
+var buf = new Buffer(1024);
+
+fs.open('input.txt','r+', function(err,fd) {
+    if(err) {
+        console.error(err);
+    }
+    console.log("File opened!");
+    console.log("Reading File...");
+    fs.read(fd, buf, 0, buf.length, 0, function(err, bytes) {
+        if(err) {
+            console.error(err);
+        }
+        console.log("File Size: " + bytes);
+        if(bytes > 0) {
+            console.log("Content: " + buf.slice(0, bytes).toString());
+        }
+    });
+    fs.close(fd, function(err) {
+        if(err) {
+            console.error(err);
+        }
+    });
+});
+//截取文件
+/*
+fs.ftruncate(fd, len, callback)
+fd 通过fs.open方式返回的文件描述符
+len 文件截取长度
+callbcak 回调函数，没有参数
+ */
+//下面的代码先读出完整的文件，然后读出截取的10字节数据
+fs.open('input.txt', 'r+', function(err, fd) {
+    if(err) {
+        console.error(err);
+    }
+    console.log("File Opened!");
+    console.log("Reading File...");
+    fs.read(fd, buf, 0, buf.length, 0, function(err, bytes) {
+        if (err) {
+            console.error(err);
+        }
+        console.log("File Size: " + bytes);
+        console.log("File COntent:" + buf.slice(0, buf.length).toString());
+    });
+    fs.truncate(fd, 10, function(err) {
+        if(err) {
+            console.error(err);
+        }
+    });
+    fs.read(fd, buf, 0, buf.length, 0, function (err, bytes) {
+        if(err) {
+            console.error(err);
+        }
+        console.log("Truncated File:" + bytes);
+        console.log("Truncated File Content:" + buf.slice(0, buf.length).toString());
+    });
+    fs.close(fd, function(err) {
+        if(err) {
+            console.error(err);
+        }
+    });
+});
+//删除文件
+/*
+fs.unlink(path, callback)
+path 删除文件
+callback 回调函数
+ */
+//创建目录
+/*
+fs.mkdir(path[, mode], callback)
+path 文件路径
+mode 设置目录权限，默认为0777
+callback 回调函数， 没有参数
+ */
+console.log("创建新目录");
+fs.mkdir('/test', function(err) {
+    if(err) {
+        console.error(err);
+    }
+    console.log("目录创建成功");
+});
