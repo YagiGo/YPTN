@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c69ca65-0925-492c-bb46-5b19e23ca29e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/network/getpost.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/network/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/network/urlparse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/file system/filesystem.js" afterPath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/file system/filesystem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/file system/input.txt" afterPath="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/file system/input.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,34 +75,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nodejscheatsheet.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/nodejscheatsheet.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="237" column="28" lean-forward="false" selection-start-line="237" selection-start-column="28" selection-end-line="237" selection-end-column="28" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="module.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/module.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="665">
               <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1520817555384" expanded="true" signature="51:684" ph="/*...*/" />
+                <marker date="1520817555384" expanded="true" signature="762:1168" ph="{...}" />
+                <marker date="1520817555384" expanded="true" signature="806:1084" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,18 +93,62 @@
         <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/util module/utiltool.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="25" selection-end-column="0" />
+              <caret line="25" column="0" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <marker date="1520819503335" expanded="true" signature="90:221" ph="{...}" />
+                <marker date="1520819503335" expanded="true" signature="169:218" ph="{...}" />
+                <marker date="1520819503335" expanded="true" signature="222:282" ph="//..." />
+                <marker date="1520819503335" expanded="true" signature="320:351" ph="{...}" />
+                <marker date="1520819503335" expanded="true" signature="369:395" ph="{...}" />
+                <marker date="1520819503335" expanded="true" signature="621:752" ph="{...}" />
+                <marker date="1520819503335" expanded="true" signature="684:750" ph="{...}" />
+                <marker date="1520819503335" expanded="true" signature="799:847" ph="{...}" />
+                <marker date="1520819503335" expanded="true" signature="895:948" ph="{...}" />
+                <marker date="1520819503335" expanded="true" signature="969:998" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filesystem.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/file system/filesystem.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filesystem.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/file system/filesystem.js">
+      <file leaf-file-name="getpost.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/network/getpost.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="171" column="3" lean-forward="true" selection-start-line="171" selection-start-column="3" selection-end-line="171" selection-end-column="3" />
+            <state relative-caret-position="1289">
+              <caret line="90" column="16" lean-forward="true" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/network/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urlparse.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/network/urlparse.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1520835308457" expanded="true" signature="255:575" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,7 +167,7 @@
         <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
-              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+              <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -147,8 +177,10 @@
         <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route/router.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-              <folding />
+              <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <folding>
+                <marker date="1520581381570" expanded="true" signature="25:165" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,21 +189,14 @@
         <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/Global Object/globalObject.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hello.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/hello.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <marker date="1520585639253" expanded="true" signature="0:90" ph="//..." />
+                <marker date="1520585639253" expanded="true" signature="237:272" ph="{...}" />
+                <marker date="1520585639253" expanded="true" signature="408:1103" ph="/*...*/" />
+                <marker date="1520585639253" expanded="true" signature="1160:1273" ph="/*...*/" />
+                <marker date="1520585639253" expanded="true" signature="1308:1469" ph="{...}" />
+                <marker date="1520585639253" expanded="true" signature="1370:1424" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -184,6 +209,7 @@
       <list>
         <option value="Python Script" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -228,9 +254,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Minify/Dec_01_17 16_39_10.log" />
-        <option value="$PROJECT_DIR$/Minify/Dec_01_17 16_47_16.log" />
-        <option value="$PROJECT_DIR$/Minify/Dec_01_17 16_51_52.log" />
         <option value="$PROJECT_DIR$/Minify/Dec_01_17 17_10_15.log" />
         <option value="$PROJECT_DIR$/Minify/Dec_01_17 17_34_54.log" />
         <option value="$PROJECT_DIR$/Minify/Dec_01_17 17_38_18.log" />
@@ -279,6 +302,9 @@
         <option value="$PROJECT_DIR$/Render Engine/file system/input.txt" />
         <option value="$PROJECT_DIR$/Render Engine/file system/filesystem.js" />
         <option value="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/file system/filesystem.js" />
+        <option value="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/network/urlparse.js" />
+        <option value="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/network/index.html" />
+        <option value="$PROJECT_DIR$/Render Engine/nodejs cheatsheet/network/getpost.js" />
       </list>
     </option>
   </component>
@@ -379,28 +405,7 @@
               <item name="NetworkProgramming" type="462c0819:PsiDirectoryNode" />
               <item name="Render Engine" type="462c0819:PsiDirectoryNode" />
               <item name="nodejs cheatsheet" type="462c0819:PsiDirectoryNode" />
-              <item name="Global Object" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NetworkProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NetworkProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="Render Engine" type="462c0819:PsiDirectoryNode" />
-              <item name="nodejs cheatsheet" type="462c0819:PsiDirectoryNode" />
-              <item name="route" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NetworkProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NetworkProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="Render Engine" type="462c0819:PsiDirectoryNode" />
-              <item name="nodejs cheatsheet" type="462c0819:PsiDirectoryNode" />
-              <item name="stream" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NetworkProgramming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NetworkProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="Render Engine" type="462c0819:PsiDirectoryNode" />
-              <item name="nodejs cheatsheet" type="462c0819:PsiDirectoryNode" />
-              <item name="util module" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -411,9 +416,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
     <property name="last_opened_file_path" value="C:/workspace/Tsukuba-Helper" />
     <property name="SearchEverywhereHistoryKey" value="clientconnect&#9;null&#9;null&#10;clientdisconnect&#9;null&#9;null" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="PyCoverageOptionsProvider">
     <option name="myUseBundledCoveragePy" value="true" />
@@ -886,7 +892,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520823240294</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="&quot;node js merge&quot;">
+      <created>1520829282549</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1520829282549</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -990,21 +1003,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Cache/dbconnect.py" />
-    <entry file="file://$PROJECT_DIR$/Render Engine/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Minify/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/cachesave.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -1240,18 +1238,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="237" column="28" lean-forward="false" selection-start-line="237" selection-start-column="28" selection-end-line="237" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/hello.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1520577363316" expanded="true" signature="0:69" ph="/*...*/" />
+            <marker date="1520577363316" expanded="true" signature="70:160" ph="//..." />
+            <marker date="1520577363316" expanded="true" signature="178:342" ph="{...}" />
+            <marker date="1520577363316" expanded="true" signature="231:262" ph="{...}" />
+            <marker date="1520577363316" expanded="true" signature="296:339" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1259,7 +1259,7 @@
     <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1267,9 +1267,14 @@
     <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/Global Object/globalObject.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1520585639253" expanded="true" signature="0:90" ph="//..." />
+            <marker date="1520585639253" expanded="true" signature="237:272" ph="{...}" />
+            <marker date="1520585639253" expanded="true" signature="408:1103" ph="/*...*/" />
+            <marker date="1520585639253" expanded="true" signature="1160:1273" ph="/*...*/" />
+            <marker date="1520585639253" expanded="true" signature="1308:1469" ph="{...}" />
+            <marker date="1520585639253" expanded="true" signature="1370:1424" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1277,8 +1282,10 @@
     <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/route/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
+          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <marker date="1520581381570" expanded="true" signature="25:165" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1305,15 +1312,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1520817555384" expanded="true" signature="51:684" ph="/*...*/" />
+            <marker date="1520817555384" expanded="true" signature="762:1168" ph="{...}" />
+            <marker date="1520817555384" expanded="true" signature="806:1084" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/util module/utiltool.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="25" selection-end-column="0" />
-          <folding />
+          <caret line="25" column="0" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <marker date="1520819503335" expanded="true" signature="90:221" ph="{...}" />
+            <marker date="1520819503335" expanded="true" signature="169:218" ph="{...}" />
+            <marker date="1520819503335" expanded="true" signature="222:282" ph="//..." />
+            <marker date="1520819503335" expanded="true" signature="320:351" ph="{...}" />
+            <marker date="1520819503335" expanded="true" signature="369:395" ph="{...}" />
+            <marker date="1520819503335" expanded="true" signature="621:752" ph="{...}" />
+            <marker date="1520819503335" expanded="true" signature="684:750" ph="{...}" />
+            <marker date="1520819503335" expanded="true" signature="799:847" ph="{...}" />
+            <marker date="1520819503335" expanded="true" signature="895:948" ph="{...}" />
+            <marker date="1520819503335" expanded="true" signature="969:998" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1325,10 +1347,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/network/urlparse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1520835308457" expanded="true" signature="255:575" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/file system/filesystem.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="171" column="3" lean-forward="true" selection-start-line="171" selection-start-column="3" selection-end-line="171" selection-end-column="3" />
+        <state relative-caret-position="342">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/network/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Render Engine/nodejs cheatsheet/network/getpost.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1289">
+          <caret line="90" column="16" lean-forward="true" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
           <folding />
         </state>
       </provider>
