@@ -70,7 +70,7 @@ var postHTML = readFile('index.html').then(function(data){return (data.toString(
     '</body>' +
     '</html>';
    */
-console.log(postHTML)
+console.log(postHTML);
 http.createServer(function(req,res) {
     var body = "";
     req.on('data', function(chunk) {
