@@ -63,7 +63,7 @@ def absurl(index, relpath=None, normpath=None):
             return index
 #  get web Content
 webpage2html_cache = {}
-def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_error=False):
+def get(index, relpath=None, verbose=False, usecache=True, verify=True, ignore_error=False):
     """
 
     :param index:
@@ -152,7 +152,7 @@ data:[<mime type>][;charset=<charset>][;<encoding>],<encoded data>
 4.  [;<encoding>] ：数据编码方式（默认US-ASCII，BASE64两种）
 5.  ,<encoded data> ：编码后的数据
 """
-def data_to_base64(index, src, verbose=True):
+def data_to_base64(index, src, verbose=False):
     sp = urlparse.urlparse(src).path.lower()
     if src.strip().startswith('data:'):
         return src
@@ -335,20 +335,20 @@ def process_tag(tag, index, full_url, verbose):
                 tag.string = handle_css_content(index, tag.string, verbose=verbose)
 def run_link_process(args):
     process_link(args[0],args[1],args[2],args[3],args[4])
-    #  print("LInk Processing")
+    #print("LInk Processing")
 def run_js_process(args):
     process_js(args[0],args[1],args[2],args[3],args[4])
-    #  print("js processing")
+    #print("js processing")
 def run_img_process(args):
     process_img(args[0],args[1],args[2])
-    #  print("img processing")
+    #print("img processing")
 def run_tag_process(args):
     process_tag(args[0],args[1],args[2],args[3])
-    #  print("tag processing")
+    #print("tag processing")
 def run_get_progress(arg):
     get(arg[0], arg[1], arg[2], arg[3], arg[4], arg[5], arg[6], arg[7])
 
-def generate_parallel(index, verbose=True, comment=True, keep_script=True, prettify=False, full_url=True, verify=False, erropage=False):
+def generate_parallel(index, verbose=False, comment=True, keep_script=True, prettify=False, full_url=True, verify=False, erropage=False):
     orgin_index = index
     html_doc, extra_data = get(index, verbose=verbose, verify=verify, ignore_error=erropage)
     if extra_data and extra_data.get('url'):

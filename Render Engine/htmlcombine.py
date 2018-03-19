@@ -62,7 +62,7 @@ def absurl(index, relpath=None, normpath=None):
             return index
 #  get web Content
 webpage2html_cache = {}
-def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_error=False):
+def get(index, relpath=None, verbose=False, usecache=True, verify=True, ignore_error=False):
     """
 
     :param index:
@@ -151,7 +151,7 @@ data:[<mime type>][;charset=<charset>][;<encoding>],<encoded data>
 4.  [;<encoding>] ：数据编码方式（默认US-ASCII，BASE64两种）
 5.  ,<encoded data> ：编码后的数据
 """
-def data_to_base64(index, src, verbose=True):
+def data_to_base64(index, src, verbose=False):
     sp = urlparse.urlparse(src).path.lower()
     if src.strip().startswith('data:'):
         return src
@@ -196,7 +196,7 @@ def data_to_base64(index, src, verbose=True):
 #  Handle CSS
 css_encoding_re = re.compile(r'''@charset\s+["']([-_a-zA-Z0-9]+)["']\;''', re.I)
 
-def handle_css_content(index, css, verbose=True):
+def handle_css_content(index, css, verbose=False):
     if not css:
         return css
     if not isinstance(css, unicode):
@@ -215,7 +215,7 @@ def handle_css_content(index, css, verbose=True):
         return 'url(' + data_to_base64(index, src, verbose=verbose) + ')'
     css = reg.sub(repl, css)
     return css
-def generate(index, verbose=True, comment=True, keep_script=True, prettify=False, full_url=True, verify=False, erropage=False):
+def generate(index, verbose=False, comment=True, keep_script=True, prettify=False, full_url=True, verify=False, erropage=False):
     orgin_index = index
     html_doc, extra_data = get(index, verbose=verbose, verify=verify, ignore_error=erropage)
     if extra_data and extra_data.get('url'):
@@ -326,7 +326,6 @@ def generate(index, verbose=True, comment=True, keep_script=True, prettify=False
     """
     # Multiprocessing here
     # functions are only picklable if they are defined at the top-level of a module.
-    """
     for img in soup('img'):
         if not img.get('src'): continue
         img['data-src'] = img['src']
@@ -352,7 +351,6 @@ def generate(index, verbose=True, comment=True, keep_script=True, prettify=False
         # onmouseover and onmouseout
         check_alt('onmouseover')
         check_alt('onmouseout')
-    """
     for tag in soup(True):
 
         if full_url and tag.name == 'a' and tag.has_attr('href') and not tag['href'].startswith('#'):
