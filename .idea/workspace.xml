@@ -28,7 +28,7 @@
     <SUITE FILE_PATH="coverage/NetworkProgramming$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1511388852305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy/proxy" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$http.coverage" NAME="http Coverage Results" MODIFIED="1511388881813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$IPProxy.coverage" NAME="IPProxy Coverage Results" MODIFIED="1509431566068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Proxy/IPProxyPool" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$htmlcombine.coverage" NAME="htmlcombine Coverage Results" MODIFIED="1521449801748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$htmlcombine.coverage" NAME="htmlcombine Coverage Results" MODIFIED="1521451138964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$getSrc.coverage" NAME="getSrc Coverage Results" MODIFIED="1509174622941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSMinimizing" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$upsidedownternet.coverage" NAME="upsidedownternet Coverage Results" MODIFIED="1511387550616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$CCJS.coverage" NAME="CCJS Coverage Results" MODIFIED="1509497528870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSMinimizing" />
@@ -43,7 +43,7 @@
     <SUITE FILE_PATH="coverage/NetworkProgramming$Main.coverage" NAME="Main Coverage Results" MODIFIED="1509608246548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$flowbasic.coverage" NAME="flowbasic Coverage Results" MODIFIED="1512109552414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ENITM/examples" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$multithreading_processing.coverage" NAME="multithreading-processing Coverage Results" MODIFIED="1521445079920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$multiprocess.coverage" NAME="multiprocess Coverage Results" MODIFIED="1521450088626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$multiprocess.coverage" NAME="multiprocess Coverage Results" MODIFIED="1521451287921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$TestGround.coverage" NAME="TestGround Coverage Results" MODIFIED="1519883982549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$http__1_.coverage" NAME="http (1) Coverage Results" MODIFIED="1511492960340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MITMProxy_Simplified" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$tflow.coverage" NAME="tflow Coverage Results" MODIFIED="1511920697006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy/test" />
@@ -56,8 +56,8 @@
             <file leaf-file-name="htmlcombine.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="946">
-                    <caret line="195" column="33" lean-forward="true" selection-start-line="195" selection-start-column="33" selection-end-line="195" selection-end-column="33" />
+                  <state relative-caret-position="-2016">
+                    <caret line="186" column="47" lean-forward="true" selection-start-line="186" selection-start-column="47" selection-end-line="186" selection-end-column="47" />
                     <folding>
                       <element signature="e#51#60#0" expanded="true" />
                     </folding>
@@ -115,8 +115,8 @@
       <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Render Engine/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="44841">
+              <caret line="646" column="116" lean-forward="true" selection-start-line="646" selection-start-column="116" selection-end-line="646" selection-end-column="116" />
               <folding />
             </state>
           </provider>
@@ -142,8 +142,8 @@
       <file leaf-file-name="multiprocess.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Render Engine/multiprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="161" column="29" lean-forward="true" selection-start-line="161" selection-start-column="29" selection-end-line="161" selection-end-column="29" />
+            <state relative-caret-position="811">
+              <caret line="385" column="42" lean-forward="false" selection-start-line="385" selection-start-column="42" selection-end-line="385" selection-end-column="42" />
               <folding>
                 <element signature="e#51#60#0" expanded="true" />
               </folding>
@@ -207,7 +207,6 @@
       <find>except</find>
       <find>generate</find>
       <find>Pool</find>
-      <find>base64</find>
       <find>pool</find>
       <find>get</find>
       <find>thres</find>
@@ -216,6 +215,7 @@
       <find>verbose</find>
       <find>img</find>
       <find>data_to_base64</find>
+      <find>base64</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -518,13 +518,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1508391312441</updated>
-    </task>
-    <task id="LOCAL-00006" summary="&quot;Update on DEC 1, MOVE TO LINUX&quot;">
-      <created>1512098761092</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1512098761092</updated>
     </task>
     <task id="LOCAL-00007" summary="&quot;Use libmproxy API now&quot;">
       <created>1512120956226</created>
@@ -862,7 +855,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521448113494</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="&quot;Concurrent Modifying and DATA URI Improvement&quot;">
+      <created>1521450137214</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1521450137214</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -876,12 +876,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2560" y="0" width="1200" height="1920" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58912593" sideWeight="0.12363067" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20235546" sideWeight="0.8763693" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20235546" sideWeight="0.8763693" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -928,7 +929,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="&quot;Adding Proxy Function and Debugging&quot;" />
     <MESSAGE value="&quot;Delete irrelevant files&quot;" />
     <MESSAGE value="&quot;Proxy Function&quot;" />
     <MESSAGE value="&quot;Implement Mitmproxy Project to modify HTTPS&quot;" />
@@ -953,7 +953,8 @@
     <MESSAGE value="&quot;node js merge&quot;" />
     <MESSAGE value="&quot;http2 server push&quot;" />
     <MESSAGE value="&quot;Concurrent Modifying&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Concurrent Modifying&quot;" />
+    <MESSAGE value="&quot;Concurrent Modifying and DATA URI Improvement&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Concurrent Modifying and DATA URI Improvement&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1274,28 +1275,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Render Engine/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="195" column="33" lean-forward="true" selection-start-line="195" selection-start-column="33" selection-end-line="195" selection-end-column="33" />
+        <state relative-caret-position="-2016">
+          <caret line="186" column="47" lean-forward="true" selection-start-line="186" selection-start-column="47" selection-end-line="186" selection-end-column="47" />
           <folding>
             <element signature="e#51#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Render Engine/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44841">
+          <caret line="646" column="116" lean-forward="true" selection-start-line="646" selection-start-column="116" selection-end-line="646" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/multiprocess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="161" column="29" lean-forward="true" selection-start-line="161" selection-start-column="29" selection-end-line="161" selection-end-column="29" />
+        <state relative-caret-position="811">
+          <caret line="385" column="42" lean-forward="false" selection-start-line="385" selection-start-column="42" selection-end-line="385" selection-end-column="42" />
           <folding>
             <element signature="e#51#60#0" expanded="true" />
           </folding>

@@ -188,7 +188,6 @@ def data_to_base64(index, src, verbose=False):
     if extra_data and extra_data.get('content-type'):
         fmt = extra_data.get('content-type').replace(' ', '')
     if data and extra_data and (sp.endswith('.png') or sp.endswith('.jpg')) and int(extra_data.get('content-length')) <2000:
-        print(extra_data.get('content-length'))
         return('data:%s;base64,'%fmt) + base64.b64encode(data)
     elif data and extra_data:
         return('data:%s;base64,'%fmt) + base64.b64encode(data)

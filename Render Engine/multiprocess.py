@@ -190,6 +190,7 @@ def data_to_base64(index, src, verbose=False):
     if extra_data and extra_data.get('content-type'):
         fmt = extra_data.get('content-type').replace(' ', '')
     if data and extra_data and (sp.endswith('.png') or sp.endswith('.jpg')) and int(extra_data.get('content-length')) < 2000:
+        print(extra_data.get('content-length'))
         return('data:%s;base64,'%fmt) + base64.b64encode(data)
     elif data and extra_data:
         return('data:%s;base64,'%fmt) + base64.b64encode(data)
@@ -346,9 +347,6 @@ def run_img_process(args):
 def run_tag_process(args):
     process_tag(args[0],args[1],args[2],args[3])
     #print("tag processing")
-def run_get_progress(arg):
-    get(arg[0], arg[1], arg[2], arg[3], arg[4], arg[5], arg[6], arg[7])
-
 def generate_parallel(index, verbose=False, comment=True, keep_script=True, prettify=False, full_url=True, verify=False, erropage=False):
     orgin_index = index
     html_doc, extra_data = get(index, verbose=verbose, verify=verify, ignore_error=erropage)
