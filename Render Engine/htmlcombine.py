@@ -486,7 +486,7 @@ def mergeHTML(conn, url, output):
     sys.setdefaultencoding('utf8') #  This is the pain in the ass for python in windows, set sys to utf8 to avoid ascii bs!
     # rs = generate(url)
     with open(output, "wb") as f:
-        f.write(savetoAndReadfromDB(conn, url, threshold=600))
+        f.write(savetoAndReadfromDB(conn, url, threshold=1))
     #  print page_cache
     #  print savetoAndReadfromDB(conn, url, threshold=600)
 

@@ -10,11 +10,14 @@ import base64
 from bs4 import BeautifulSoup
 import datetime, time
 from multiprocessing import Pool
+import multiprocessing
 from pymongo import MongoClient
 import traceback
 from concurrent.futures import ThreadPoolExecutor
-re_css_url = re.compile('(url\(.*?\))') #  get css url
 
+re_css_url = re.compile('(url\(.*?\))')  # get css url
+
+# Global Multiprocessing Pool here
 #  colored logging, at present, stderr is used, may shift to log file system
 try:
     from termcolor import colored
@@ -32,6 +35,8 @@ def log(s, color=None, on_color=None, attrs=None, new_line=True):
     if new_line:
         print >> sys.stderr.write("\n")
     sys.stderr.flush()
+
+
 #  convert all relpath to abspath
 """
     将urlstring解析成6个部分，它从urlstring中取得URL，并返回元组 (scheme, netloc, path, parameters, query, fragment)，
@@ -49,10 +54,12 @@ def log(s, color=None, on_color=None, attrs=None, new_line=True):
     query='hl=en&q=urlparse&btnG=Google+Search',
     fragment='')
 """
+
+
 def absurl(index, relpath=None, normpath=None):
     if normpath is None:
-        normpath = lambda x:x
-    #  Process for relpath
+        normpath = lambda x: x
+    # Process for relpath
     if index.lower().startswith('http') or (relpath and relpath.startswith('http')):
         new = urlparse.urlparse(urlparse.urljoin(index, relpath))
         return urlparse.urlunsplit((new.scheme, new.netloc, normpath(new.path), new.query, ''))
@@ -61,8 +68,12 @@ def absurl(index, relpath=None, normpath=None):
             return normpath(os.path.join(os.path.dirname(index), relpath))
         else:
             return index
-#  get web Content
+
+
+# get web Content
 webpage2html_cache = {}
+
+
 def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_error=False):
     """
 
@@ -78,7 +89,7 @@ def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_er
     if index.startswith('http') or (relpath and relpath.startswith('http')):
         fullpath = absurl(index, relpath)
         if not fullpath:
-            if verbose: log('[WARN] invalid path, %s %s' %(index, relpath), 'yellow')
+            if verbose: log('[WARN] invalid path, %s %s' % (index, relpath), 'yellow')
             return '', None
         # urllib2 only accepts valid url, the following code is taken from urllib
         # http://svn.python.org/view/python/trunk/Lib/urllib.py?r1=71780&r2=71779&pathrev=71780
@@ -87,7 +98,7 @@ def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_er
         fullpath = urllib.quote(fullpath, safe="%/:=&?~#+!$,;'@()*[]")
         if usecache:
             if fullpath in webpage2html_cache:
-                if verbose: log('[CACHE-HIT] -%s' %fullpath)
+                if verbose: log('[CACHE-HIT] -%s' % fullpath)
                 return webpage2html_cache[fullpath], None
         headers = {
             'User-Agent': 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Win64; x64; Trident/6.0)'
@@ -98,7 +109,7 @@ def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_er
             # TODO need an RE here to find out the encoding
 
 
-            if verbose: log('[GET] %d -%s' %(response.status_code, response.url))
+            if verbose: log('[GET] %d -%s' % (response.status_code, response.url))
             if not ignore_error and response.status_code >= 400 or response.status_code < 200:
                 content = ''
             else:
@@ -106,9 +117,9 @@ def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_er
             if usecache:
                 #  Save as Cache
                 webpage2html_cache[response.url] = response.content
-            return content, {'url' : response.url, 'content-type' : response.headers.get('content-type')}
+            return content, {'url': response.url, 'content-type': response.headers.get('content-type')}
         except Exception as ex:
-            if verbose: log('[WARN] Opps - %s %s' %(fullpath, ex), 'yellow')
+            if verbose: log('[WARN] Opps - %s %s' % (fullpath, ex), 'yellow')
             return '', None
 
     elif os.path.exists(index):
@@ -122,26 +133,27 @@ def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_er
                 fullpath = os.path.normpath(os.path.join(os.path.dirname(index), relpath))
             try:
                 ret = open(fullpath, 'rb').read()
-                if verbose: log('[LOCAL] found - %s' %fullpath)
+                if verbose: log('[LOCAL] found - %s' % fullpath)
                 return ret, None
             except IOError as err:
                 #  Head up: IOError
-                if verbose: log('[WARN] file not found - %s %s'%(index, str(err)), 'yellow')
+                if verbose: log('[WARN] file not found - %s %s' % (index, str(err)), 'yellow')
                 return '', None
         else:
             try:
                 ret = open(index, 'rb').read()
-                if verbose: log('[LOCAL] found - %s' %index)
+                if verbose: log('[LOCAL] found - %s' % index)
                 return ret, None
             except IOError as err:
                 #  Head up: IOError
-                if verbose: log('[WARN] file not found - %s %s'%(index, str(err)), 'yellow')
+                if verbose: log('[WARN] file not found - %s %s' % (index, str(err)), 'yellow')
                 return '', None
     else:
-        if verbose: log('[ERROR] invalid index - %s' %index, 'red')
+        if verbose: log('[ERROR] invalid index - %s' % index, 'red')
         return '', None
 
-#  use data URI scheme to inclde data in-line in web pages see  http://en.wikipedia.org/wiki/Data_URI_scheme
+
+# use data URI scheme to inclde data in-line in web pages see  http://en.wikipedia.org/wiki/Data_URI_scheme
 #  related introduction(Chinese Version) https://www.jianshu.com/p/ea49397fcd13
 #  Basic format of Data URI
 """
@@ -152,6 +164,8 @@ data:[<mime type>][;charset=<charset>][;<encoding>],<encoded data>
 4.  [;<encoding>] ：数据编码方式（默认US-ASCII，BASE64两种）
 5.  ,<encoded data> ：编码后的数据
 """
+
+
 def data_to_base64(index, src, verbose=True):
     sp = urlparse.urlparse(src).path.lower()
     if src.strip().startswith('data:'):
@@ -189,13 +203,14 @@ def data_to_base64(index, src, verbose=True):
     if extra_data and extra_data.get('content-type'):
         fmt = extra_data.get('content-type').replace(' ', '')
     if data:
-        return('data:%s;base64,'%fmt) + base64.b64encode(data)
+        return ('data:%s;base64,' % fmt) + base64.b64encode(data)
     else:
         return absurl(index, src)
 
 
-#  Handle CSS
+# Handle CSS
 css_encoding_re = re.compile(r'''@charset\s+["']([-_a-zA-Z0-9]+)["']\;''', re.I)
+
 
 def handle_css_content(index, css, verbose=True, debug=True):
     if not css:
@@ -208,7 +223,7 @@ def handle_css_content(index, css, verbose=True, debug=True):
                 css = css.decode(mo.group(1))
             except Exception as err:
                 if not debug:
-                    log('[WARN] failed to convert css to encoding %s'%mo.group(1), 'yellow')
+                    log('[WARN] failed to convert css to encoding %s' % mo.group(1), 'yellow')
                 else:
                     traceback.print_exc()
 
@@ -218,20 +233,22 @@ def handle_css_content(index, css, verbose=True, debug=True):
         src = matchobj.group(1).strip('\'"')
         return 'url(' + data_to_base64(index, src, verbose=verbose) + ')'
         return 'url(' + data_to_base64(index, src, verbose=verbose) + ')'
+
     css = reg.sub(repl, css)
     return css
+
 
 def process_link(link, index, soup, verbose, full_url):
     if link.get('href'):
         if 'mask-icon' in (link.get('rel') or []) or 'icon' in (link.get('rel') or []) or 'apple-touch-icon' in (
-            link.get('rel') or []) or 'apple-touch-icon-precomposed' in (link.get('rel') or []):
+                    link.get('rel') or []) or 'apple-touch-icon-precomposed' in (link.get('rel') or []):
             #  Convert icon into URI form with base64
             link['data-href'] = link['href']
-            link['href'] = data_to_base64(index, link['href'], verbose=verbose)
+            link['href'] = data_to_base64(index, link['href'], verbose=verbose) #request happened
             #  print link['href']
         #  now the css part needs to be handled encoding with base64
         elif link.get('type') == 'text/css' or link['href'].lower().endswith('.css') or 'stylesheet' in (
-            link.get('rel') or []):
+                    link.get('rel') or []):
             new_type = 'text/css' if not link.get('type') else link['type']
             css = soup.new_tag('style', type=new_type)
             #  print link['href']
@@ -240,7 +257,7 @@ def process_link(link, index, soup, verbose, full_url):
             """
             <link href="/yts/cssbin/player-vflUq7Z-t/www-player.css" name="player/www-player" rel="stylesheet"/>
             attrs:href, name, rel
-            
+
             """
             for attr in link.attrs:
                 if attr in ['href']: continue  # ignore href
@@ -255,6 +272,7 @@ def process_link(link, index, soup, verbose, full_url):
         elif full_url:
             link['data-href'] = link['href']
             link['href'] = absurl(index, link['href'])
+
 
 def process_js(js, index, soup, verbose, keep_script):
     if not keep_script:
@@ -287,6 +305,8 @@ def process_js(js, index, soup, verbose, keep_script):
             if verbose: log(repr(js_str))
             raise
         js.replace_with(code)
+
+
 def process_img(img, index, verbose=True):
     if img.get('src'):
         img['data-src'] = img['src']
@@ -311,10 +331,12 @@ def process_img(img, index, verbose=True):
     def check_alt(attr):
         if img.has_attr(attr) and img[attr].startswith('this.src='):
             if verbose: log('[WARN] %s found in img tag and unhandled, which may be broken' % attr, 'yellow')
+
     check_alt('onerror')
     # onmouseover and onmouseout
     check_alt('onmouseover')
     check_alt('onmouseout')
+
 
 def process_tag(tag, index, full_url, verbose):
     if full_url and tag.name == 'a' and tag.has_attr('href') and not tag['href'].startswith('#'):
@@ -333,32 +355,44 @@ def process_tag(tag, index, full_url, verbose):
         elif tag.name == 'style':
             if tag.string:
                 tag.string = handle_css_content(index, tag.string, verbose=verbose)
+
+
 def run_link_process(args):
-    process_link(args[0],args[1],args[2],args[3],args[4])
+    process_link(args[0], args[1], args[2], args[3], args[4])
     #  print("LInk Processing")
+
+
 def run_js_process(args):
-    process_js(args[0],args[1],args[2],args[3],args[4])
+    process_js(args[0], args[1], args[2], args[3], args[4])
     #  print("js processing")
+
+
 def run_img_process(args):
-    process_img(args[0],args[1],args[2])
+    process_img(args[0], args[1], args[2])
     #  print("img processing")
+
+
 def run_tag_process(args):
-    process_tag(args[0],args[1],args[2],args[3])
+    process_tag(args[0], args[1], args[2], args[3])
     #  print("tag processing")
+
+
 def run_get_progress(arg):
     get(arg[0], arg[1], arg[2], arg[3], arg[4], arg[5], arg[6], arg[7])
 
-def generate_parallel(index, verbose=True, comment=True, keep_script=True, prettify=False, full_url=True, verify=False, erropage=False):
+
+def generate_parallel(index, verbose=True, comment=True, keep_script=True, prettify=False, full_url=True, verify=False,
+                      erropage=False):
     orgin_index = index
     html_doc, extra_data = get(index, verbose=verbose, verify=verify, ignore_error=erropage)
     if extra_data and extra_data.get('url'):
         index = extra_data['url']
     soup = BeautifulSoup(html_doc, 'lxml')
     soup_title = soup.title.string if soup.title else ''
-    link_tasks = [(link, index, soup, verbose, full_url) for link in soup('link')]
-    js_tasks = [(js, index, soup, verbose, keep_script) for js in soup('script')]
-    img_tasks = [(img, index, verbose) for img in soup('img')]
-    tag_tasks = [(tag, index, full_url, verbose) for tag in soup(True)]
+    # link_tasks = [(link, index, soup, verbose, full_url) for link in soup('link')]
+    # js_tasks = [(js, index, soup, verbose, keep_script) for js in soup('script')]
+    # img_tasks = [(img, index, verbose) for img in soup('img')]
+    # tag_tasks = [(tag, index, full_url, verbose) for tag in soup(True)]
     """
     link_pool = Pool(processes=5)
     js_pool = Pool(processes=5)
@@ -366,12 +400,38 @@ def generate_parallel(index, verbose=True, comment=True, keep_script=True, prett
     tag_pool = Pool(processes=5)
     """
     # concurrent test here
+    pool = Pool(processes=multiprocessing.cpu_count())
+    multiprocessing.freeze_support()  # For Windows
 
-    with ThreadPoolExecutor(max_workers=40) as executor:
-        executor.map(run_link_process, link_tasks)
-        executor.map(run_js_process, js_tasks)
-        executor.map(run_img_process, img_tasks)
-        executor.map(run_tag_process, tag_tasks)
+    for link in soup('link'):
+        link_tasks = [link, index, soup, verbose, full_url]
+        pool.apply_async(run_link_process, (link_tasks))
+    for js in soup('script'):
+        js_tasks = [js, index, soup, verbose, keep_script]
+        pool.apply_async(run_js_process, (js_tasks))
+    for img in soup('img'):
+        img_tasks = [img, index, verbose]
+        pool.apply_async(run_img_process, (img_tasks))
+    for tag in soup(True):
+        tag_tasks = [tag, index, full_url, verbose]
+        pool.apply_async(run_tag_process, (tag_tasks))
+#    link_res = [pool.apply_async(run_link_process, args=(link, index, soup, verbose, full_url)) for link in soup('link')]
+#    pool.apply_async(run_link_process, (link_tasks, ))
+#    js_res = [pool.apply_async(run_js_process, js_tasks)]
+#    pool.apply_async(run_js_process, (js_tasks, ))
+#    img_res = [pool.apply_async(run_img_process, img_tasks)]
+#    pool.apply_async(run_img_process, (img_tasks, ))
+#    tag_res = [pool.apply_async(run_tag_process, tag_tasks)]
+#    pool.apply_async(run_tag_process, (tag_tasks, ))
+    pool.close()
+    pool.join()
+#    print(link_res)
+#    with ThreadPoolExecutor(max_workers=40) as executor:
+#        executor.map(run_link_process, link_tasks)
+#        executor.map(run_js_process, js_tasks)
+#        executor.map(run_img_process, img_tasks)
+#        executor.map(run_tag_process, tag_tasks)
+
 
     """
     link_pool.map(run_link_process, link_tasks)
@@ -379,22 +439,18 @@ def generate_parallel(index, verbose=True, comment=True, keep_script=True, prett
     img_pool.map(run_img_process, img_tasks)
     tag_pool.map(run_tag_process, tag_tasks)
     """
-   # Insert some comment
+    # Insert some comment
     if comment:
         for html in soup('html'):
             html.insert(0, BeautifulSoup(
                 '<!-- \n single html Orginal:https://github.com/zTrix/webpage2html\n Modified by https://github.com/YagiGo\n title: %s\n url: %s\n date: %s\n-->' % (
-                soup_title, index, datetime.datetime.now().ctime()
-            ), 'lxml'))
+                    soup_title, index, datetime.datetime.now().ctime()
+                ), 'lxml'))
             break
     if prettify:
         return soup.prettify(formatter='html')
     else:
         return str(soup)
-
-
-
-
 
 
 def savetoAndReadfromDB(conn, url, threshold, debug=True):
@@ -410,7 +466,7 @@ def savetoAndReadfromDB(conn, url, threshold, debug=True):
 
     # use hash to represent url because mongodb can not handle . in key
     webcache = db.webcache_test1
-    existcache = webcache.find_one({"url" : str(hash(url))})
+    existcache = webcache.find_one({"url": str(hash(url))})
 
     def isexpired(cache, threshold):
         current_time = time.strptime(str(datetime.datetime.utcnow()).split('.')[0], "%Y-%m-%d %H:%M:%S")
@@ -423,6 +479,7 @@ def savetoAndReadfromDB(conn, url, threshold, debug=True):
             return True
         else:
             return False
+
     if not existcache:
         try:
             htmlsrc = generate_parallel(url)
@@ -435,7 +492,7 @@ def savetoAndReadfromDB(conn, url, threshold, debug=True):
             if not debug:
                 err_handle = {
                     "url": str(hash(url)),
-                    "Error": "ERROR on page generation %s"%str(err), "date": str(datetime.datetime.utcnow())
+                    "Error": "ERROR on page generation %s" % str(err), "date": str(datetime.datetime.utcnow())
                 }
                 cachefile_id = webcache.insert_one(err_handle).inserted_id
             else:
@@ -450,22 +507,25 @@ def savetoAndReadfromDB(conn, url, threshold, debug=True):
             #  existcache['date'] = str(datetime.datetime.utcnow())
             #  修改记录 db.Account.update({"UserName":"libing"},{"$set":{"Email":"libing@126.com","Password":"123"}})
 
-            webcache.update_one({'url':str(hash(url))}, {"$set" : {"src":htmlsrc, "date":str(datetime.datetime.utcnow())}})
+            webcache.update_one({'url': str(hash(url))},
+                                {"$set": {"src": htmlsrc, "date": str(datetime.datetime.utcnow())}})
         except Exception as err:
             if not debug:
                 err_handle = {
                     "url": str(hash(url)),
-                    "Error": "ERROR on expiration check %s"%str(err), "date": str(datetime.datetime.utcnow())
+                    "Error": "ERROR on expiration check %s" % str(err), "date": str(datetime.datetime.utcnow())
                 }
                 cachefile_id = webcache.insert_one(err_handle).inserted_id
             else:
                 traceback.print_exc()
     # return HTML page if there is nothing wrong else return an Error page
     try:
-        return webcache.find_one({"url" : str(hash(url))})['src']
+        return webcache.find_one({"url": str(hash(url))})['src']
     except Exception as err:
         return "Opps, it appears that something went wrong" + str(err)
-#  TODO Create a database for image encoding to avoid redundancy.
+
+
+# TODO Create a database for image encoding to avoid redundancy.
 
 def mergeHTML(conn, url, output):
     """
@@ -486,17 +546,18 @@ def mergeHTML(conn, url, output):
         f.write(rs)
     """
     reload(sys)
-    sys.setdefaultencoding('utf8') #  This is the pain in the ass for python in windows, set sys to utf8 to avoid ascii bs!
+    sys.setdefaultencoding(
+        'utf8')  # This is the pain in the ass for python in windows, set sys to utf8 to avoid ascii bs!
     # rs = generate(url)
     with open(output, "wb") as f:
         f.write(savetoAndReadfromDB(conn, url, threshold=1))
-    #  print page_cache
-    #  print savetoAndReadfromDB(conn, url, threshold=600)
+        #  print page_cache
+        #  print savetoAndReadfromDB(conn, url, threshold=600)
 
 
-    #  TODO Emmmm...  There may be other things that need to be done
-    #  return html_doc
-    #  return soup_title
+        #  TODO Emmmm...  There may be other things that need to be done
+        #  return html_doc
+        #  return soup_title
 
 
 if __name__ == '__main__':
@@ -505,20 +566,20 @@ if __name__ == '__main__':
     PORT = 27017
     test_url1 = "https://realpython.com/blog/python/introduction-to-mongodb-and-python/"
 
-    test_url2 =[ "https://www.imdb.com/"]
+    test_url2 = ["https://www.imdb.com/"]
     test_url3 = ["https://developer.mozilla.org/zh-CN/docs/Web/API/GlobalEventHandlers/onerror"]
     test_url4 = ["http://www.amazarashi.com/top/"]
     test_urls = [
-            "https://www.baidu.com",
-            "https://www.gooogle.com",
-            "https://www.yahoo.co.jp",
-            "https://www.imdb.com",
-            "https://www.yahoo.com",
-            "https://www.twitter.com",
-            "https://www.microsoft.com",
-            "http://www.softlab.cs.tsukuba.ac.jp/members.html",
-            "https://github.com/YagiGo"
-        ]
+        "https://www.baidu.com",
+        "https://www.gooogle.com",
+        "https://www.yahoo.co.jp",
+        "https://www.imdb.com",
+        "https://www.yahoo.com",
+        "https://www.twitter.com",
+        "https://www.microsoft.com",
+        "http://www.softlab.cs.tsukuba.ac.jp/members.html",
+        "https://github.com/YagiGo"
+    ]
     test_urls2 = [
         "https://www.yahoo.co.jp",
         "https://news.yahoo.co.jp/pickup/6273847",
@@ -534,15 +595,14 @@ if __name__ == '__main__':
     for url in test_urls:
         start_time = time.time()
         mergeHTML(conn, url, output)
-    #  print test_return
+        #  print test_return
         end_time = time.time()
-        print ("url: %s" %url + "\ntime cost: %s"%(str(end_time - start_time)))
-
+        print ("url: %s" % url + "\ntime cost: %s" % (str(end_time - start_time)))
 
     # mergeHTML(conn, img_url, output)
     final_end_time = time.time()
     print ("total time cost: %s" % (str(final_end_time - first_start_time)))
-#  TODO 使用数据库（推荐MongoDB）缓存转换好的HTML文件，按照LRU算法对缓存文件进行更新，在用户访问某网站时直接调用缓存
-#  TODO 但是对很多实时性要求高的网站不能使用这个方法(SNS)
-#  TODO 对这类网站加上标签，然后直接访问，不经过HTML转换
-#  TODO 加标签的方法，emmmm 机器学习走一波
+    #  TODO 使用数据库（推荐MongoDB）缓存转换好的HTML文件，按照LRU算法对缓存文件进行更新，在用户访问某网站时直接调用缓存
+    #  TODO 但是对很多实时性要求高的网站不能使用这个方法(SNS)
+    #  TODO 对这类网站加上标签，然后直接访问，不经过HTML转换
+    #  TODO 加标签的方法，emmmm 机器学习走一波
