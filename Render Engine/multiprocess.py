@@ -100,7 +100,7 @@ def get(index, relpath=None, verbose=True, usecache=True, verify=True, ignore_er
             if usecache:
                 #  Save as Cache
                 webpage2html_cache[response.url] = response.content
-            return content, {'url':response.url, 'content-type':response.headers.get('content-type')}
+            return content, {'url' : response.url, 'content-type' : response.headers.get('content-type')}
         except Exception as ex:
             if verbose: log('[WARN] Opps - %s %s' %(fullpath, ex), 'yellow')
             return '', None
@@ -146,7 +146,7 @@ data:[<mime type>][;charset=<charset>][;<encoding>],<encoded data>
 4.  [;<encoding>] ：数据编码方式（默认US-ASCII，BASE64两种）
 5.  ,<encoded data> ：编码后的数据
 """
-def data_to_base64(index, src, verbose=False):
+def data_to_base64(index, src, verbose=True):
     sp = urlparse.urlparse(src).path.lower()
     if src.strip().startswith('data:'):
         return src
@@ -191,7 +191,7 @@ def data_to_base64(index, src, verbose=False):
 #  Handle CSS
 css_encoding_re = re.compile(r'''@charset\s+["']([-_a-zA-Z0-9]+)["']\;''', re.I)
 
-def handle_css_content(index, css, verbose=False, debug=True):
+def handle_css_content(index, css, verbose=True, debug=True):
     if not css:
         return css
     if not isinstance(css, unicode):
@@ -234,6 +234,7 @@ def process_link(link, index, soup, verbose, full_url):
             """
             <link href="/yts/cssbin/player-vflUq7Z-t/www-player.css" name="player/www-player" rel="stylesheet"/>
             attrs:href, name, rel
+            
             """
             for attr in link.attrs:
                 if attr in ['href']: continue  # ignore href
@@ -280,7 +281,7 @@ def process_js(js, index, soup, verbose, keep_script):
             if verbose: log(repr(js_str))
             raise
         js.replace_with(code)
-def process_img(img, index, verbose=False):
+def process_img(img, index, verbose=True):
     if img.get('src'):
         img['data-src'] = img['src']
         img['src'] = data_to_base64(index, img['src'], verbose=verbose)
@@ -338,8 +339,10 @@ def run_img_process(args):
 def run_tag_process(args):
     process_tag(args[0],args[1],args[2],args[3])
     #  print("tag processing")
+def run_get_progress(arg):
+    get(arg[0], arg[1], arg[2], arg[3], arg[4], arg[5], arg[6], arg[7])
 
-def generate_parallel(index, verbose=False, comment=True, keep_script=True, prettify=False, full_url=True, verify=False, erropage=False):
+def generate_parallel(index, verbose=True, comment=True, keep_script=True, prettify=False, full_url=True, verify=False, erropage=False):
     orgin_index = index
     html_doc, extra_data = get(index, verbose=verbose, verify=verify, ignore_error=erropage)
     if extra_data and extra_data.get('url'):
@@ -520,7 +523,7 @@ if __name__ == '__main__':
     output = "test.html"
     # mergeHTML(conn, test_url4, output)
     first_start_time = time.time()
-    for url in test_urls2:
+    for url in test_urls:
         start_time = time.time()
         mergeHTML(conn, url, output)
     #  print test_return
