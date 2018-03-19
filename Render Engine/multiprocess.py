@@ -360,7 +360,7 @@ def generate_parallel(index, verbose=True, comment=True, keep_script=True, prett
     tag_pool = Pool(processes=5)
     """
     # concurrent test here
-    with ThreadPoolExecutor(max_workers=80) as executor:
+    with ThreadPoolExecutor(max_workers=40) as executor:
         executor.map(run_link_process, link_tasks)
         executor.map(run_js_process, js_tasks)
         executor.map(run_img_process, img_tasks)
