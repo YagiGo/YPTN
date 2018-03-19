@@ -106,7 +106,8 @@ def get(index, relpath=None, verbose=False, usecache=True, verify=True, ignore_e
             if usecache:
                 #  Save as Cache
                 webpage2html_cache[response.url] = response.content
-            return content, {'url' : response.url, 'content-type' : response.headers.get('content-type')}
+            return content, {'url' : response.url, 'content-type' : response.headers.get('content-type'),
+            'content-length' : response.headers.get('content-length')}
         except Exception as ex:
             if verbose: log('[WARN] Opps - %s %s' %(fullpath, ex), 'yellow')
             return '', None
@@ -188,7 +189,9 @@ def data_to_base64(index, src, verbose=False):
     data, extra_data = get(index, src, verbose)
     if extra_data and extra_data.get('content-type'):
         fmt = extra_data.get('content-type').replace(' ', '')
-    if data:
+    if data and extra_data and (sp.endswith('.png') or sp.endswith('.jpg')) and int(extra_data.get('content-length')) < 2000:
+        return('data:%s;base64,'%fmt) + base64.b64encode(data)
+    elif data and extra_data:
         return('data:%s;base64,'%fmt) + base64.b64encode(data)
     else:
         return absurl(index, src)
