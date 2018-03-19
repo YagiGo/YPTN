@@ -217,8 +217,6 @@ def handle_css_content(index, css, verbose=True, debug=True):
     def repl(matchobj):
         src = matchobj.group(1).strip('\'"')
         return 'url(' + data_to_base64(index, src, verbose=verbose) + ')'
-        return 'url(' + data_to_base64(index, src, verbose=verbose) + ')'
-    css = reg.sub(repl, css)
     return css
 
 def process_link(link, index, soup, verbose, full_url):
@@ -546,3 +544,4 @@ if __name__ == '__main__':
 #  TODO 但是对很多实时性要求高的网站不能使用这个方法(SNS)
 #  TODO 对这类网站加上标签，然后直接访问，不经过HTML转换
 #  TODO 加标签的方法，emmmm 机器学习走一波
+#  by using multithreading method, the loading time was successfully reduced by 50%
