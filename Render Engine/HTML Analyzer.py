@@ -1,3 +1,5 @@
+ #!/usr/bin/python
+#coding:utf-8
 import re
 import sys, urlparse, os
 import urllib
@@ -77,7 +79,7 @@ def get(index, relpath=None, verbose=False, usecache=True, verify=True, ignore_e
             if usecache:
                 #  Save as Cache
                 webpage2html_cache[response.url] = response.content
-            return content, {'url':response.url, 'content-type':response.headers.get('content-type'), 'content-length':response.headers.get('content-length')}
+            return content, response.headers
         except Exception as ex:
             if verbose: log('[WARN] Opps - %s %s' %(fullpath, ex), 'yellow')
             return '', None
@@ -111,3 +113,83 @@ def get(index, relpath=None, verbose=False, usecache=True, verify=True, ignore_e
     else:
         if verbose: log('[ERROR] invalid index - %s' %index, 'red')
         return '', None
+def get_header_information(index, src, verbose=True):
+    sp = urlparse.urlparse(src).path.lower()
+    data, extra_data = get(src, src, verbose)
+    return extra_data
+
+def analyze(index, verbose=True, comment=True, keep_script=True, prettify=False, full_url=True, verify=False, errorpage=False):
+    origin_index = index
+    html_doc, extra_data = get(index, verbose = verbose, verify = verify, ignore_error = errorpage)
+    if extra_data and extra_data.get('url'):
+        index = extra_data['url']
+    soup = BeautifulSoup(html_doc, 'lxml')
+    soup_title = soup.title.string if soup.title else ''
+    # link analyzing
+    for link in soup('link'):
+        """
+        <link href="/index.html" rel="index" />
+        <link href="/css/import.css" media="screen, tv, projection" rel="stylesheet" type="text/css" />
+        """
+        if link.get('href'):
+            print(get_header_information(index, link['href'], verbose=verbose))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if __name__ == "__main__":
+    test_url1 = "https://realpython.com/blog/python/introduction-to-mongodb-and-python/"
+
+    test_url2 = "https://www.taobao.com/"
+    test_url3 = "https://developer.mozilla.org/zh-CN/docs/Web/API/GlobalEventHandlers/onerror"
+    test_url4 = "http://www.amazarashi.com/top/"
+    test_urls = [
+            "https://www.baidu.com",
+            "https://www.gooogle.com",
+            "https://www.yahoo.co.jp",
+            "https://www.imdb.com",
+            "https://www.yahoo.com",
+            "https://www.twitter.com",
+            "https://www.microsoft.com",
+            "http://www.softlab.cs.tsukuba.ac.jp/members.html",
+            "https://github.com/YagiGo"
+        ]
+    test_urls2 = [
+        "https://www.yahoo.co.jp",
+        "https://news.yahoo.co.jp/pickup/6273847",
+        "https://news.yahoo.co.jp/pickup/6273853"
+        "https://headlines.yahoo.co.jp/hl?a=20180301-00138618-nksports-fight"
+
+    ]
+    
