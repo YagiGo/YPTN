@@ -525,7 +525,7 @@ if __name__ == '__main__':
     conn = MongoClient(HOST, PORT)
     output = "test.html"
     first_start_time = time.time()
-    for url in test_urls:
+    for url in test_url3:
         start_time = time.time()
         mergeHTML(conn, url, output)
     #  print test_return

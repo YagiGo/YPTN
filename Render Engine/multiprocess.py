@@ -190,7 +190,7 @@ def data_to_base64(index, src, verbose=False):
     if extra_data and extra_data.get('content-type'):
         fmt = extra_data.get('content-type').replace(' ', '')
     if data and extra_data and (sp.endswith('.png') or sp.endswith('.jpg')) and int(extra_data.get('content-length')) < 2000:
-        print(extra_data.get('content-length'))
+        #  print(extra_data.get('content-length'))
         return('data:%s;base64,'%fmt) + base64.b64encode(data)
     elif data and extra_data:
         return('data:%s;base64,'%fmt) + base64.b64encode(data)
@@ -504,7 +504,7 @@ if __name__ == '__main__':
     PORT = 27017
     test_url1 = "https://realpython.com/blog/python/introduction-to-mongodb-and-python/"
 
-    test_url2 =[ "https://www.imdb.com/"]
+    test_url2 =[ "https://www.apple.com/"]
     test_url3 = ["https://developer.mozilla.org/zh-CN/docs/Web/API/GlobalEventHandlers/onerror"]
     test_url4 = ["http://www.amazarashi.com/top/"]
     test_urls = [
@@ -530,7 +530,7 @@ if __name__ == '__main__':
     output = "test.html"
     # mergeHTML(conn, test_url4, output)
     first_start_time = time.time()
-    for url in test_urls:
+    for url in test_url3:
         start_time = time.time()
         mergeHTML(conn, url, output)
     #  print test_return
