@@ -24,12 +24,12 @@ def log(s, color=None, on_color=None, attrs=None, new_line=True):
     if not color:
         #  使用 print >> std, str 把输出字符串定义到stderr
         #  new_line: 是否换行
-        print >> sys.stderr, str(s)
+        print ( sys.stderr, str(s) )
     else:
-        print >> sys.stderr, colored(str(s), color, on_color, attrs)
+        print ( sys.stderr, colored(str(s), color, on_color, attrs) )
 
     if new_line:
-        print >> sys.stderr.write("\n")
+        print ( sys.stderr.write("\n") )
     sys.stderr.flush()
 #  convert all relpath to abspath
 """
