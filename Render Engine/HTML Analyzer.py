@@ -36,6 +36,8 @@ def absurl(index, relpath=None, normpath=None):
             return normpath(os.path.join(os.path.dirname(index), relpath))
         else:
             return index
+
+webpage2html_cache = {}
 def get(index, relpath=None, verbose=False, usecache=True, verify=True, ignore_error=False):
     """
 
@@ -125,6 +127,10 @@ def analyze(index, verbose=True, comment=True, keep_script=True, prettify=False,
         index = extra_data['url']
     soup = BeautifulSoup(html_doc, 'lxml')
     soup_title = soup.title.string if soup.title else ''
+    css_info_list = []
+    js_info_list = []
+    image_info_list = []
+
     # link analyzing
     for link in soup('link'):
         """
@@ -132,7 +138,16 @@ def analyze(index, verbose=True, comment=True, keep_script=True, prettify=False,
         <link href="/css/import.css" media="screen, tv, projection" rel="stylesheet" type="text/css" />
         """
         if link.get('href'):
-            print(get_header_information(index, link['href'], verbose=verbose))
+
+            link_header = get_header_information(index, absurl(index, link['href']), verbose=verbose)
+            if link_header.get('content-type') == 'text/css':
+                css_info_list.append('name:{} length:{}'.format(link.get('href'), link_header.get('content-length')))
+            elif link_header.get('content-type') == 'text/script':
+                js_info_list.append('name:{} length:{}'.format(link.get('href'), link_header.get('content-length')))
+            elif link_header.get('content-type').startswith('image'):
+                image_info_list.append('name:{} length:{}'.format(link.get('href'), link_header.get('content-length')))
+    for js in soup('script'):
+        print(js)
 
 
 
@@ -169,11 +184,11 @@ def analyze(index, verbose=True, comment=True, keep_script=True, prettify=False,
 
 
 if __name__ == "__main__":
-    test_url1 = "https://realpython.com/blog/python/introduction-to-mongodb-and-python/"
+    test_url1 = ["https://realpython.com/blog/python/introduction-to-mongodb-and-python/"]
 
-    test_url2 = "https://www.taobao.com/"
-    test_url3 = "https://developer.mozilla.org/zh-CN/docs/Web/API/GlobalEventHandlers/onerror"
-    test_url4 = "http://www.amazarashi.com/top/"
+    test_url2 = ["https://www.taobao.com/"]
+    test_url3 = ["https://developer.mozilla.org/zh-CN/docs/Web/API/GlobalEventHandlers/onerror"]
+    test_url4 = ["http://www.amazarashi.com/top/"]
     test_urls = [
             "https://www.baidu.com",
             "https://www.gooogle.com",
@@ -192,4 +207,6 @@ if __name__ == "__main__":
         "https://headlines.yahoo.co.jp/hl?a=20180301-00138618-nksports-fight"
 
     ]
-    
+    for url in test_url2:
+        analyze(url)
+
