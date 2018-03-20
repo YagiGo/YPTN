@@ -149,6 +149,10 @@ def analyze(index, verbose=True, comment=True, keep_script=True, prettify=False,
     for js in soup('script'):
         print(js)
 
+    for img in soup('img'):
+        print(img)
+    for tag in soup(True):
+        print(tag)
 
 
 

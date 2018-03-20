@@ -39,7 +39,7 @@
     <SUITE FILE_PATH="coverage/NetworkProgramming$windows.coverage" NAME="windows Coverage Results" MODIFIED="1511859592963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mitmproxy/platform" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$POSTtoCCS.coverage" NAME="POSTtoCCS Coverage Results" MODIFIED="1509008140054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$Main.coverage" NAME="Main Coverage Results" MODIFIED="1509608246548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NetworkProgramming$HTML_Analyzer.coverage" NAME="HTML Analyzer Coverage Results" MODIFIED="1521525786973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
+    <SUITE FILE_PATH="coverage/NetworkProgramming$HTML_Analyzer.coverage" NAME="HTML Analyzer Coverage Results" MODIFIED="1521532596399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$flowbasic.coverage" NAME="flowbasic Coverage Results" MODIFIED="1512109552414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ENITM/examples" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$multithreading_processing.coverage" NAME="multithreading-processing Coverage Results" MODIFIED="1521445079920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$multiprocess.coverage" NAME="multiprocess Coverage Results" MODIFIED="1521521805246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Render Engine" />
@@ -55,8 +55,8 @@
             <file leaf-file-name="htmlcombine.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="573">
-                    <caret line="501" column="0" lean-forward="false" selection-start-line="501" selection-start-column="0" selection-end-line="523" selection-end-column="5" />
+                  <state relative-caret-position="-1565">
+                    <caret line="241" column="37" lean-forward="true" selection-start-line="241" selection-start-column="37" selection-end-line="241" selection-end-column="37" />
                     <folding>
                       <element signature="e#51#60#0" expanded="true" />
                     </folding>
@@ -94,8 +94,8 @@
       <file leaf-file-name="HTML Analyzer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Render Engine/HTML Analyzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2385">
-              <caret line="194" column="4" lean-forward="false" selection-start-line="194" selection-start-column="4" selection-end-line="194" selection-end-column="4" />
+            <state relative-caret-position="708">
+              <caret line="184" column="0" lean-forward="true" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
               <folding>
                 <element signature="e#33#42#0" expanded="true" />
               </folding>
@@ -209,7 +209,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>TCertId</find>
       <find>SSLCert</find>
       <find>filter</find>
       <find>POST</find>
@@ -239,6 +238,7 @@
       <find>img</find>
       <find>data_to_base64</find>
       <find>base64</find>
+      <find>log</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -438,7 +438,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.HTML Analyzer">
-    <configuration name="HTML Analyzer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="HTML Analyzer" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -512,19 +512,18 @@
     </configuration>
     <configuration name="test.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NetworkProgramming/Render Engine/test.html" />
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.htmlcombine" />
-      <item index="1" class="java.lang.String" itemvalue="Python.multiprocess" />
-      <item index="2" class="java.lang.String" itemvalue="Python.multithreading-processing" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
-      <item index="4" class="java.lang.String" itemvalue="Python.HTML Analyzer" />
+      <item index="0" class="java.lang.String" itemvalue="Python.HTML Analyzer" />
+      <item index="1" class="java.lang.String" itemvalue="Python.htmlcombine" />
+      <item index="2" class="java.lang.String" itemvalue="Python.multiprocess" />
+      <item index="3" class="java.lang.String" itemvalue="Python.multithreading-processing" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.HTML Analyzer" />
-        <item index="1" class="java.lang.String" itemvalue="Python.multiprocess" />
-        <item index="2" class="java.lang.String" itemvalue="Python.htmlcombine" />
-        <item index="3" class="java.lang.String" itemvalue="Python.multithreading-processing" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.multiprocess" />
+        <item index="1" class="java.lang.String" itemvalue="Python.htmlcombine" />
+        <item index="2" class="java.lang.String" itemvalue="Python.multithreading-processing" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.test.html" />
       </list>
     </recent_temporary>
   </component>
@@ -541,20 +540,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1508391312441</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Web page Rendering Part Updated">
-      <created>1519357011902</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1519357011902</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Save html folder as one">
-      <created>1519371386291</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1519371386291</updated>
     </task>
     <task id="LOCAL-00012" summary="&quot;Merge Web page folder&quot;">
       <created>1519627535363</created>
@@ -885,7 +870,21 @@
       <option name="project" value="LOCAL" />
       <updated>1521525343574</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="&quot;web components analyzer&quot;">
+      <created>1521528222197</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1521528222197</updated>
+    </task>
+    <task id="LOCAL-00060" summary="&quot;web components analyzer&quot;">
+      <created>1521532225855</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1521532225855</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -1333,8 +1332,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/htmlcombine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="501" column="0" lean-forward="false" selection-start-line="501" selection-start-column="0" selection-end-line="523" selection-end-column="5" />
+        <state relative-caret-position="-1565">
+          <caret line="241" column="37" lean-forward="true" selection-start-line="241" selection-start-column="37" selection-end-line="241" selection-end-column="37" />
           <folding>
             <element signature="e#51#60#0" expanded="true" />
           </folding>
@@ -1343,8 +1342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Render Engine/HTML Analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2385">
-          <caret line="194" column="4" lean-forward="false" selection-start-line="194" selection-start-column="4" selection-end-line="194" selection-end-column="4" />
+        <state relative-caret-position="708">
+          <caret line="184" column="0" lean-forward="true" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
           <folding>
             <element signature="e#33#42#0" expanded="true" />
           </folding>
