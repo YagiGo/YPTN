@@ -98,4 +98,14 @@ second_time = datetime.time()
 """
 # convert time into timestamp
 a = "2018-03-01 13:07:46.209"
+def save_txt_file(path, list):
+    if not os.path.exists(os.path.dirname(os.path.abspath(path))):
+        print("The requested path does not exist, will create one...")
+        os.mkdir(path)
+    with open('test.txt', 'wb') as f:
+        for item in list:
+            f.writelines(item+'\n')
+list = ['htkko', 'two lines here']
+path = 'test.txt'
 
+save_txt_file(path, list)
