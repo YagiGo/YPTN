@@ -1,4 +1,5 @@
-import time
+#-*-coding:utf-8 -*-
+# import time
 import sys
 import os
 '''
@@ -97,6 +98,7 @@ time.sleep(1)
 second_time = datetime.time()
 """
 # convert time into timestamp
+"""
 a = "2018-03-01 13:07:46.209"
 def save_txt_file(path, list):
     if not os.path.exists(os.path.dirname(os.path.abspath(path))):
@@ -109,3 +111,8 @@ list = ['htkko', 'two lines here']
 path = 'test.txt'
 
 save_txt_file(path, list)
+"""
+test_dict = {'h': '又可以来黑h了'}
+for key in test_dict:
+    print(key)
+    print (test_dict[key])
