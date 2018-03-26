@@ -126,7 +126,7 @@ def save_txt_file(path, list):
     if not os.path.exists(os.path.dirname(os.path.abspath(path))):
         print("The requested path does not exist, will create one...")
         os.mkdir(path)
-    with open('test.txt', 'wb') as f:
+    with open(path, 'wb') as f:
         for item in list:
             f.writelines(item+'\n')
 
@@ -140,7 +140,6 @@ def analyze(index, verbose=True, comment=True, keep_script=True, prettify=False,
     css_info_list = []
     js_info_list = []
     image_info_list = []
-
     # link analyzing
     for link in soup('link'):
         """
@@ -165,9 +164,30 @@ def analyze(index, verbose=True, comment=True, keep_script=True, prettify=False,
                 elif filetype.startswith('image'):
                     image_info_list.append(
                         'name:{} length:{}'.format(link.get('href'), link_header.get('content-length')))
+    """
     save_txt_file('test_js.txt', js_info_list)
     save_txt_file('test_css.txt', css_info_list)
     save_txt_file('test_img.txt', image_info_list)
+    """
+    for js in soup('script'):
+
+    """
+    for img in soup('img'):
+        img_src = img.get('src')
+        print(img_src)
+        if img_src:
+            uesless_data, header_info = get(img_src)
+            print(header_info)
+        #  image_info_list.append(header_info)
+    """
+
+
+
+    save_txt_file('test_js.txt', js_info_list)
+    save_txt_file('test_css.txt', css_info_list)
+    save_txt_file('test_img.txt', image_info_list)
+
+
 
 """
     for js in soup('script'):
@@ -229,7 +249,7 @@ def main():
     kwargs = {}
     args = parser.parse_args()
     if args.quiet:
-        kwargs['verbose'] = True
+        kwargs['verbose'] = False
     if args.errorpage:
         kwargs['errorpage'] = True
     if args.output:
@@ -257,8 +277,7 @@ def main():
 
 
 if __name__ == "__main__":
-
-    test_url1 = ["https://www.imdb.com"]
+    test_url1 = ["https://www.microsoft.com"]
     test_url2 = ["https://www.taobao.com/"]
     test_url3 = ["https://developer.mozilla.org/zh-CN/docs/Web/API/GlobalEventHandlers/onerror"]
     test_url4 = ["http://www.amazarashi.com/top/"]
