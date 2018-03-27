@@ -33,7 +33,7 @@ Chrome(function (chrome) {
                            function () {
                               Page.captureScreenshot(function (err, res) {
                               var buf = new Buffer(res.data, 'base64');
-                              var imageFile = myArgs[3] + '.png'
+                              var imageFile = myArgs[3] + '.png';
                               fs.writeFileSync(imageFile, buf);
             });
            });
@@ -43,7 +43,7 @@ Chrome(function (chrome) {
            Tracing.end(function () {
                               Page.captureScreenshot(function (err, res) {
                               var buf = new Buffer(res.data, 'base64');
-                              var imageFile = myArgs[3] + '.png'
+                              var imageFile = myArgs[3] + '.png';
                               fs.writeFileSync(imageFile, buf);
             });
            });

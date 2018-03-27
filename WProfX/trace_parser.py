@@ -1202,8 +1202,7 @@ class Trace():
             #print(self.all)
             if obj[0].startswith('Networking') or obj[0].startswith('Loading') or obj[0].startswith('Scripting'):
                 print('obj0: {0} \n obj1: {1}'.format(obj[0], obj[1]))
-                self.G.add_node(obj[0], obj[1])
-                #self.G.add_node(obj[0])
+                self.G.add_node(obj[0], obj[1]) # can only run under version 2.0!!!
         return True
 
     def edge_start(self, e1, s2):
