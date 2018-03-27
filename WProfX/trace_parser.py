@@ -1184,7 +1184,7 @@ class Trace():
         _plot = waterfall_draw.DrawWaterfall(_resJson, _outf, _lookup_dict, _order_lookup)
         #_plot = waterfall_draw.DrawWaterfall(_resJson, _outf, _lookup_dict, _order_lookup, self.all_modified_dict)
         # _plot.draw_from_json()
-        _plot.draw_from_json_new()
+        _plot.draw_from_json()
         _plot.draw_critical_path(self.critical_path)
         #_plot.draw_all_dependency()
         _plot.showPlot()
@@ -1533,7 +1533,9 @@ class Trace():
 
                     elif _nodeData['name'] == 'ParseHTML' and _nodeData['fromScript'] not in ['Null', None, '']:
                         # _script_nodeId = self.scripts_lookup_url[urldefrag(_nodeData['fromScript'])[0]]
-                        if len(self.scripts_lookup_url[urldefrag(_nodeData['fromScript'])[0]]) <= 1:
+                        print(self.scripts_lookup_url)
+                        print(_nodeData['fromScript'])
+                        if _nodeData['fromScript'] is not 'Null' and len(self.scripts_lookup_url[urldefrag(_nodeData['fromScript'])[0]]) <= 1:
                             _script_nodeId = self.scripts_lookup_url[urldefrag(_nodeData['fromScript'])[0]][0]
                         else:
                             _script_nodeId = self.find_url(urldefrag(_nodeData['fromScript'])[0], _nodeData, 'script')
@@ -1882,7 +1884,7 @@ def main():
     #_trace_file = '/Users/jnejati/PycharmProjects/wpt/traces/1_testbed01.trace' # uncompressed mutli imgs
     _trace_file = '/Users/jnejati/PycharmProjects/wpt/traces/1_testbed01_jsbig_uncompgood3g.trace'
     _trace_file = '/Users/jnejati/PycharmProjects/wpt/traces/1_testbed01_jsbig_compgood3g.trace'
-    _trace_file = '/Users/jnejati/PycharmProjects/wpt/traces/live_www.cnn.com.trace'
+    _trace_file = '/home/zhaoxin/workspace/YPTN/WProfX/desktop_livetest/www.zhihu.com/run_0/trace/0_www.zhihu.com.trace'
 
 
     trace = Trace(_trace_file)
@@ -1892,9 +1894,9 @@ def main():
         #if 'dcmads.js' in t:
             print(t)
     exit()"""
-    _output_file = './results/cnn.json'
+    _output_file = '/home/zhaoxin/workspace/YPTN/WProfX/graphs/0_www.zhihu.com.json'
     trace.WriteJson(_output_file, _result)
-    trace.draw_waterfall(_output_file, 'cnn.html')
+    trace.draw_waterfall(_output_file, '0_www.zhihu.com.html')
 
 
 if '__main__' == __name__:
