@@ -1,0 +1,394 @@
+[
+  {
+    "MessageLoop::RunTask": {
+      "sum": 171.12699999846518,
+      "count": 1506,
+      "min": 0,
+      "max": 25.759999999776483
+    }
+  },
+  {
+    "TaskQueueManager::ProcessTaskFromWorkQueue": {
+      "sum": 87.49599999468774,
+      "count": 213,
+      "min": 0,
+      "max": 25.17200000025332
+    }
+  },
+  {
+    "ParseHTML": {
+      "sum": 36.73799999896437,
+      "count": 6,
+      "min": 0.5329999998211861,
+      "max": 15.191999999806285
+    }
+  },
+  {
+    "MessagePumpLibevent::OnLibeventNotification": {
+      "sum": 36.15099999960512,
+      "count": 466,
+      "min": 0.0019999993965029716,
+      "max": 1.6340000005438924
+    }
+  },
+  {
+    "EvaluateScript": {
+      "sum": 24.94799999985844,
+      "count": 9,
+      "min": 0.061000000685453415,
+      "max": 13.893999999389052
+    }
+  },
+  {
+    "Layout": {
+      "sum": 23.306000001728535,
+      "count": 7,
+      "min": 0.04300000052899122,
+      "max": 22.510000000707805
+    }
+  },
+  {
+    "v8.compile": {
+      "sum": 12.03699999768287,
+      "count": 9,
+      "min": 0.04799999948590994,
+      "max": 8.176999999210238
+    }
+  },
+  {
+    "TaskSchedulerRunTask": {
+      "sum": 10.313999998383224,
+      "count": 84,
+      "min": 0,
+      "max": 1.8509999997913837
+    }
+  },
+  {
+    "EventDispatch": {
+      "sum": 9.698999998159707,
+      "count": 25,
+      "min": 0.0020000003278255463,
+      "max": 5.25899999961257
+    }
+  },
+  {
+    "FunctionCall": {
+      "sum": 8.552000000141561,
+      "count": 27,
+      "min": 0.0040000006556510925,
+      "max": 5.074000000022352
+    }
+  },
+  {
+    "UpdateLayoutTree": {
+      "sum": 3.516000000759959,
+      "count": 10,
+      "min": 0.03099999949336052,
+      "max": 1.5559999998658895
+    }
+  },
+  {
+    "UpdateLayer": {
+      "sum": 2.5200000014156103,
+      "count": 51,
+      "min": 0.0009999992325901985,
+      "max": 0.5970000000670552
+    }
+  },
+  {
+    "CompositeLayers": {
+      "sum": 2.107000003568828,
+      "count": 18,
+      "min": 0.06500000040978193,
+      "max": 0.38200000021606684
+    }
+  },
+  {
+    "SingleThreadTaskGraphRunner::RunTaskWithLockAcquired": {
+      "sum": 1.9730000011622906,
+      "count": 107,
+      "min": 0.0009999992325901985,
+      "max": 0.28200000058859587
+    }
+  },
+  {
+    "MinorGC": {
+      "sum": 1.9339999994263053,
+      "count": 2,
+      "min": 0.9639999996870756,
+      "max": 0.9699999997392297
+    }
+  },
+  {
+    "RasterTask": {
+      "sum": 1.6080000018700957,
+      "count": 19,
+      "min": 0.02500000037252903,
+      "max": 0.2779999999329448
+    }
+  },
+  {
+    "BlinkGCMarking": {
+      "sum": 0.5419999994337559,
+      "count": 1,
+      "min": 0.5419999994337559,
+      "max": 0.5419999994337559
+    }
+  },
+  {
+    "ChannelMojo::OnMessageReceived": {
+      "sum": 0.37499999813735485,
+      "count": 60,
+      "min": 0.0009999992325901985,
+      "max": 0.10800000000745058
+    }
+  },
+  {
+    "UpdateLayerTree": {
+      "sum": 0.3330000005662441,
+      "count": 1,
+      "min": 0.3330000005662441,
+      "max": 0.3330000005662441
+    }
+  },
+  {
+    "Paint": {
+      "sum": 0.2999999998137355,
+      "count": 1,
+      "min": 0.2999999998137355,
+      "max": 0.2999999998137355
+    }
+  },
+  {
+    "ThreadState::completeSweep": {
+      "sum": 0.2369999997317791,
+      "count": 1,
+      "min": 0.2369999997317791,
+      "max": 0.2369999997317791
+    }
+  },
+  {
+    "FeatureFirstUsed": {
+      "sum": 0.2209999980404973,
+      "count": 40,
+      "min": 0.0019999993965029716,
+      "max": 0.018000000156462193
+    }
+  },
+  {
+    "CSSFirstUsed": {
+      "sum": 0.21499999426305294,
+      "count": 104,
+      "min": 0.0009999992325901985,
+      "max": 0.009999999776482582
+    }
+  },
+  {
+    "PlatformResourceSendRequest": {
+      "sum": 0.18899999931454659,
+      "count": 6,
+      "min": 0.020999999716877937,
+      "max": 0.04899999964982271
+    }
+  },
+  {
+    "TaskGraphRunner::RunTask": {
+      "sum": 0.16299999877810478,
+      "count": 9,
+      "min": 0.0029999995604157448,
+      "max": 0.04900000058114529
+    }
+  },
+  {
+    "RunMicrotasks": {
+      "sum": 0.1560000004246831,
+      "count": 2,
+      "min": 0.004999999888241291,
+      "max": 0.1510000005364418
+    }
+  },
+  {
+    "CommitLoad": {
+      "sum": 0.08100000023841858,
+      "count": 1,
+      "min": 0.08100000023841858,
+      "max": 0.08100000023841858
+    }
+  },
+  {
+    "PaintImage": {
+      "sum": 0.041999999433755875,
+      "count": 3,
+      "min": 0.006000000052154064,
+      "max": 0.029000000096857548
+    }
+  },
+  {
+    "FireIdleCallback": {
+      "sum": 0.023000000044703484,
+      "count": 1,
+      "min": 0.023000000044703484,
+      "max": 0.023000000044703484
+    }
+  },
+  {
+    "AnimatedCSSFirstUsed": {
+      "sum": 0.009000000543892384,
+      "count": 1,
+      "min": 0.009000000543892384,
+      "max": 0.009000000543892384
+    }
+  },
+  {
+    "ResourceChangePriority": {
+      "sum": 0.007999999448657036,
+      "count": 2,
+      "min": 0.0029999995604157448,
+      "max": 0.004999999888241291
+    }
+  },
+  {
+    "NeedsBeginFrameChanged": {
+      "sum": 0,
+      "count": 9,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "ActivateLayerTree": {
+      "sum": 0,
+      "count": 18,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "ResourceReceivedData": {
+      "sum": 0,
+      "count": 7,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "ResourceReceiveResponse": {
+      "sum": 0,
+      "count": 5,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "TimerInstall": {
+      "sum": 0,
+      "count": 4,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "ResourceFinish": {
+      "sum": 0,
+      "count": 5,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "ResourceSendRequest": {
+      "sum": 0,
+      "count": 7,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "InvalidateLayout": {
+      "sum": 0,
+      "count": 7,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "BeginFrame": {
+      "sum": 0,
+      "count": 27,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "UpdateCounters": {
+      "sum": 0,
+      "count": 35,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "RequestMainThreadFrame": {
+      "sum": 0,
+      "count": 1,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "RequestIdleCallback": {
+      "sum": 0,
+      "count": 1,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "MarkLoad": {
+      "sum": 0,
+      "count": 1,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "BeginMainThreadFrame": {
+      "sum": 0,
+      "count": 18,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "TracingStartedInBrowser": {
+      "sum": 0,
+      "count": 1,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "DrawFrame": {
+      "sum": 0,
+      "count": 17,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "ScheduleStyleRecalculation": {
+      "sum": 0,
+      "count": 10,
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "MarkDOMContent": {
+      "sum": 0,
+      "count": 1,
+      "min": 0,
+      "max": 0
+    }
+  }
+]
