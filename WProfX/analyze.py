@@ -53,5 +53,6 @@ for _site_dir in working_dirs:
                 continue
             _load_time = round(((float(_time['load'])* 1000000)  - float(_start_ts)) / 1000, 2)
             _result.insert(0, {'load': _load_time, 'cpu_time': _cpu_times['total_usecs']})
+            print(json)
             trace.WriteJson(_output_file, _result)
             shutil.copy(_output_file, _wprofx_graphs)
