@@ -6,7 +6,7 @@ from bokeh.plotting import figure
 from bokeh.resources import INLINE
 from bokeh.util.string import encode_utf8
 import json
-
+import traceback
 
 class DrawWaterfall():
     def __init__(self, jsonFile, outputFile, lookup_id, order_lookup):
@@ -90,170 +90,179 @@ class DrawWaterfall():
                              dcss='#8ae887',
                              cother="#eb5bc0", dother='#eb5bc0', img='#c79efa')
 
+
     def draw_from_json(self):
         for _index, _event in enumerate(self.data):
-            if not _event['id'] == 'Deps':
-                for _obj in _event['objs']:
-                    _nodeId = _obj[0]
-                    _nodeData = _obj[1]
-                    try:
-                        _startTime = round(_nodeData['startTime'], 2)
-                    except:
-                        print(_nodeData, _nodeData)
-                        continue
-                    try:
-                        _endTime = round(_nodeData['endTime'], 2)
-                    except:
-                        print(_nodeId, _nodeData)
-                        continue
-                    _duration = round(_endTime - _startTime, 2)
-                    ##########################################################################################
-                    # Network
-                    ##########################################################################################
-                    if _nodeId.startswith('Network'):
-                        if 'transferSize' in _nodeData:
-                            _transferSize = _nodeData['transferSize']
-                        else:
-                            _transferSize = 0
-                        _url = _nodeData['url']
-                        _mimeType = _nodeData['mimeType']
-                        y_index = (_index + 1)
-                        if _mimeType in self.text_type_list:
-                            color = self.colormap['dtext']
-                        elif _mimeType in self.css_type_list:
-                            color = self.colormap['dcss']
-                        elif _mimeType in self.javascript_type_list:
-                            color = self.colormap['djs']
-                        elif _mimeType.startswith('image'):
-                            color = self.colormap['img']
-                        else:
-                            color = self.colormap['dother']
-                        _mimeType = _nodeId + ': ' + _nodeData['mimeType']
-                        source = ColumnDataSource(
-                            data=dict(
-                                x=[_startTime, _endTime],
-                                y=[y_index, y_index],
-                                desc=[_mimeType, _mimeType],
-                                o_url=[_url, _url],
-                                o_size=[_transferSize, _transferSize],
-                                o_stime=['s: ' + str(_startTime) + ' ms', 's: ' + str(_startTime) + ' ms'],
-                                o_etime=['e: ' + str(_endTime) + ' ms', 'e: ' + str(_endTime) + ' ms'],
-                                o_time=['dur: ' + str(_duration) + ' ms', 'dur: ' + str(_duration) + ' ms']
-                            ))
-                        r = self.p.line('x', 'y', source=source,
-                                   line_color=color,
-                                   line_width=self.line_width, line_cap='round', name='myline')
-                    ##########################################################################################
-                    # Loading
-                    ##########################################################################################
-                    elif _nodeId.startswith('Loading'):
-                        _desc = _nodeData['name'] + ': ' + _nodeId
-                        _url = ' '
-                        _styleSheetUrl = ' '
-                        if _nodeData['name'] == 'ParseHTML' and 'url' in _nodeData:
-                            if _nodeData['url'] is not None:
+            if not _event.get('id') == 'Deps':
+                try:
+                    for obj in _event.get('objs'):
+                        _nodeData = obj
+                        _nodeId = obj
+                        # _nodeId = _obj[0]
+                        # _nodeData = dict_slice(_obj, 1, len(_obj))
+                        # dict_slice = lambda adict, start, end: dict((k, adict[k]) for k in list(adict.keys())[start:end])
+                        # in python3, dict.keys() return dict_keys type, not list!
+                        try:
+                            _startTime = round(_nodeData['startTime'], 2)
+                        except Exception as e:
+                            print(str(e))
+                            print(_nodeData['startTime'], _nodeData)
+                            continue
+                        try:
+                            _endTime = round(_nodeData['endTime'], 2)
+                        except:
+                            print(_nodeId, _nodeData)
+                            continue
+                        _duration = round(_endTime - _startTime, 2)
+                        ##########################################################################################
+                        # Network
+                        ##########################################################################################
+                        if _nodeId['activityId'].startswith('Network'):
+                            if 'transferSize' in _nodeData:
+                                _transferSize = _nodeData['transferSize']
+                            else:
+                                _transferSize = 0
+                            _url = _nodeData['url']
+                            _mimeType = _nodeData['mimeType']
+                            y_index = (_index + 1)
+                            if _mimeType in self.text_type_list:
+                                color = self.colormap['dtext']
+                            elif _mimeType in self.css_type_list:
+                                color = self.colormap['dcss']
+                            elif _mimeType in self.javascript_type_list:
+                                color = self.colormap['djs']
+                            elif _mimeType.startswith('image'):
+                                color = self.colormap['img']
+                            else:
+                                color = self.colormap['dother']
+                            _mimeType = _nodeId['activityId'] + ': ' + _nodeData['mimeType']
+                            source = ColumnDataSource(
+                                data=dict(
+                                    x=[_startTime, _endTime],
+                                    y=[y_index, y_index],
+                                    desc=[_mimeType, _mimeType],
+                                    o_url=[_url, _url],
+                                    o_size=[_transferSize, _transferSize],
+                                    o_stime=['s: ' + str(_startTime) + ' ms', 's: ' + str(_startTime) + ' ms'],
+                                    o_etime=['e: ' + str(_endTime) + ' ms', 'e: ' + str(_endTime) + ' ms'],
+                                    o_time=['dur: ' + str(_duration) + ' ms', 'dur: ' + str(_duration) + ' ms']
+                                ))
+                            r = self.p.line('x', 'y', source=source,
+                                       line_color=color,
+                                       line_width=self.line_width, line_cap='round', name='myline')
+                        ##########################################################################################
+                        # Loading
+                        ##########################################################################################
+                        elif _nodeId['activityId'].startswith('Loading'):
+                            _desc = _nodeData['name'] + ': ' + _nodeId['activityId']
+                            _url = ' '
+                            _styleSheetUrl = ' '
+                            if _nodeData['name'] == 'ParseHTML' and 'url' in _nodeData:
+                                if _nodeData['url'] is not None:
 
-                                _url = _nodeData['url']
-                                y_index = _index + 1
-                                color = self.colormap['ctext']
-                            else:
-                                continue
-                        elif _nodeData['name'] == 'ParseAuthorStyleSheet' and 'styleSheetUrl' in _nodeData:
-                            if _nodeData['styleSheetUrl'] is not None:
-                                _styleSheetUrl = _nodeData['styleSheetUrl']
-                                y_index = _index + 1
-                                color = self.colormap['ccss']
-                            else:
-                                continue
-                        source = ColumnDataSource(
-                            data=dict(
-                                x=[_startTime, _endTime],
-                                y=[y_index, y_index],
-                                desc=[_desc, _desc],
-                                o_url=[_url, _url],
-                                o_size=[_styleSheetUrl, _styleSheetUrl],
-                                o_stime=['s: ' + str(_startTime) + ' ms', 's: ' + str(_startTime) + ' ms'],
-                                o_etime=['e: ' + str(_endTime) + ' ms', 'e: ' + str(_endTime) + ' ms'],
-                                o_time=['dur: ' + str(_duration) + ' ms', 'dur: ' + str(_duration) + ' ms']
-                            ))
-                        r = self.p.line('x', 'y', source=source,
-                                   line_color=color,
-                                   line_width=self.line_width, line_cap='round', name='myline')
-                    ##########################################################################################
-                    # Scripting
-                    ##########################################################################################
-                    elif _nodeId.startswith('Scripting'):
-                        _url = _nodeData['url']
-                        _desc = _nodeId
-                        color = self.colormap['cjs']
-                        y_index = _index + 1
-                        source = ColumnDataSource(
-                            data=dict(
-                                x=[_startTime, _endTime],
-                                y=[y_index, y_index],
-                                desc=[_desc, _desc],
-                                o_url=[_url, _url],
-                                o_size=['Scripting', 'Scripting'],
-                                o_stime=['s: ' + str(_startTime) + ' ms', 's: ' + str(_startTime) + ' ms'],
-                                o_etime=['e: ' + str(_endTime) + ' ms', 'e: ' + str(_endTime) + ' ms'],
-                                o_time=['dur: ' + str(_duration) + ' ms', 'dur: ' + str(_duration) + ' ms']
-                            ))
-                        r = self.p.line('x', 'y', source=source,
-                                   line_color=color,
-                                   line_width=self.line_width, line_cap='round', name='myline')
-                    ##########################################################################################
-                    # Rendering
-                    ##########################################################################################
-                    elif _nodeId.startswith('Rendering'):
-                        _desc = _nodeData['name']
-                        color = '#9b82e3'
-                        if _desc == 'UpdateLayerTree':
-                            y_index = (len(self.data) + 1)
-                        elif _desc == 'Layout':
-                            y_index = (len(self.data) + 2)
-                        elif _desc == 'HitTest':
-                            y_index = (len(self.data) + 3)
-                        elif _desc == 'RecalculateStyles':
-                            y_index = (len(self.data) + 4)
-                        source = ColumnDataSource(
-                            data=dict(
-                                x=[_startTime, _endTime],
-                                y=[y_index, y_index],
-                                desc=[_desc + ': ', _desc + ': '],
-                                o_url=['', ''],
-                                o_size=['Rendering', 'Rendering'],
-                                o_stime=['s: ' + str(_startTime) + ' ms', 's: ' + str(_startTime) + ' ms'],
-                                o_etime=['e: ' + str(_endTime) + ' ms', 'e: ' + str(_endTime) + ' ms'],
-                                o_time=['dur: ' + str(_duration) + ' ms', 'dur: ' + str(_duration) + ' ms']
-                            ))
-                        r = self.p.line('x', 'y', source=source,
-                                   line_color=color,
-                                   line_width=self.line_width, line_cap='round', name='myline')
-                    ##########################################################################################
-                    # Painting is one thread
-                    ##########################################################################################
-                    elif _nodeId.startswith('Paint'):
-                        _desc = _nodeData['name']
-                        color = '#76b169'
-                        y_index = (len(self.data) + 5)
-                        source = ColumnDataSource(
-                            data=dict(
-                                x=[_startTime, _endTime],
-                                y=[y_index, y_index],
-                                desc=[_desc + ': ', _desc + ': '],
-                                o_url=['', ''],
-                                o_size=['Painting', 'Painting'],
-                                o_stime=['s: ' + str(_startTime) + ' ms', 's: ' + str(_startTime) + ' ms'],
-                                o_etime=['e: ' + str(_endTime) + ' ms', 'e: ' + str(_endTime) + ' ms'],
-                                o_time=['dur: ' + str(_duration) + ' ms', 'dur: ' + str(_duration) + ' ms']
-                            ))
-                        r = self.p.line('x', 'y', source=source,
-                                        line_color=color,
-                                        line_width=self.line_width, name='myline')
+                                    _url = _nodeData['url']
+                                    y_index = _index + 1
+                                    color = self.colormap['ctext']
+                                else:
+                                    continue
+                            elif _nodeData['name'] == 'ParseAuthorStyleSheet' and 'styleSheetUrl' in _nodeData:
+                                if _nodeData['styleSheetUrl'] is not None:
+                                    _styleSheetUrl = _nodeData['styleSheetUrl']
+                                    y_index = _index + 1
+                                    color = self.colormap['ccss']
+                                else:
+                                    continue
+                            source = ColumnDataSource(
+                                data=dict(
+                                    x=[_startTime, _endTime],
+                                    y=[y_index, y_index],
+                                    desc=[_desc, _desc],
+                                    o_url=[_url, _url],
+                                    o_size=[_styleSheetUrl, _styleSheetUrl],
+                                    o_stime=['s: ' + str(_startTime) + ' ms', 's: ' + str(_startTime) + ' ms'],
+                                    o_etime=['e: ' + str(_endTime) + ' ms', 'e: ' + str(_endTime) + ' ms'],
+                                    o_time=['dur: ' + str(_duration) + ' ms', 'dur: ' + str(_duration) + ' ms']
+                                ))
+                            r = self.p.line('x', 'y', source=source,
+                                       line_color=color,
+                                       line_width=self.line_width, line_cap='round', name='myline')
+                        ##########################################################################################
+                        # Scripting
+                        ##########################################################################################
+                        elif _nodeId['activityId'].startswith('Scripting'):
+                            _url = _nodeData['url']
+                            _desc = _nodeId
+                            color = self.colormap['cjs']
+                            y_index = _index + 1
+                            source = ColumnDataSource(
+                                data=dict(
+                                    x=[_startTime, _endTime],
+                                    y=[y_index, y_index],
+                                    desc=[_desc, _desc],
+                                    o_url=[_url, _url],
+                                    o_size=['Scripting', 'Scripting'],
+                                    o_stime=['s: ' + str(_startTime) + ' ms', 's: ' + str(_startTime) + ' ms'],
+                                    o_etime=['e: ' + str(_endTime) + ' ms', 'e: ' + str(_endTime) + ' ms'],
+                                    o_time=['dur: ' + str(_duration) + ' ms', 'dur: ' + str(_duration) + ' ms']
+                                ))
+                            r = self.p.line('x', 'y', source=source,
+                                       line_color=color,
+                                       line_width=self.line_width, line_cap='round', name='myline')
+                        ##########################################################################################
+                        # Rendering
+                        ##########################################################################################
+                        elif _nodeId['activityId'].startswith('Rendering'):
+                            _desc = _nodeData['name']
+                            color = '#9b82e3'
+                            if _desc == 'UpdateLayerTree':
+                                y_index = (len(self.data) + 1)
+                            elif _desc == 'Layout':
+                                y_index = (len(self.data) + 2)
+                            elif _desc == 'HitTest':
+                                y_index = (len(self.data) + 3)
+                            elif _desc == 'RecalculateStyles':
+                                y_index = (len(self.data) + 4)
+                            source = ColumnDataSource(
+                                data=dict(
+                                    x=[_startTime, _endTime],
+                                    y=[y_index, y_index],
+                                    desc=[_desc + ': ', _desc + ': '],
+                                    o_url=['', ''],
+                                    o_size=['Rendering', 'Rendering'],
+                                    o_stime=['s: ' + str(_startTime) + ' ms', 's: ' + str(_startTime) + ' ms'],
+                                    o_etime=['e: ' + str(_endTime) + ' ms', 'e: ' + str(_endTime) + ' ms'],
+                                    o_time=['dur: ' + str(_duration) + ' ms', 'dur: ' + str(_duration) + ' ms']
+                                ))
+                            r = self.p.line('x', 'y', source=source,
+                                       line_color=color,
+                                       line_width=self.line_width, line_cap='round', name='myline')
+                        ##########################################################################################
+                        # Painting is one thread
+                        ##########################################################################################
+                        elif _nodeId['activityId'].startswith('Paint'):
+                            _desc = _nodeData['name']
+                            color = '#76b169'
+                            y_index = (len(self.data) + 5)
+                            source = ColumnDataSource(
+                                data=dict(
+                                    x=[_startTime, _endTime],
+                                    y=[y_index, y_index],
+                                    desc=[_desc + ': ', _desc + ': '],
+                                    o_url=['', ''],
+                                    o_size=['Painting', 'Painting'],
+                                    o_stime=['s: ' + str(_startTime) + ' ms', 's: ' + str(_startTime) + ' ms'],
+                                    o_etime=['e: ' + str(_endTime) + ' ms', 'e: ' + str(_endTime) + ' ms'],
+                                    o_time=['dur: ' + str(_duration) + ' ms', 'dur: ' + str(_duration) + ' ms']
+                                ))
+                            r = self.p.line('x', 'y', source=source,
+                                            line_color=color,
+                                            line_width=self.line_width, name='myline')
+                except Exception:
+                    traceback.print_exc()
 
     def draw_critical_path(self, cp):
         i = 0
-        for _dep in self.data[-1]['objs']:
+        for _dep in self.data[-3]['objs']:
             a1_id = _dep['a1']
             a2_id = _dep['a2']
             if (a1_id in cp) and (a2_id == cp[cp.index(a1_id) + 1]):
@@ -467,7 +476,7 @@ class DrawWaterfall():
                         line_width=0.5, line_cap='square')
 
     def draw_all_dependency(self):
-        for dep in self.data[-1]['objs']:
+        for dep in self.data[-3]['objs']:
             self.draw_dependents(dep)
 
 if __name__ == "__main__":

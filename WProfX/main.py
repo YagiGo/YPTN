@@ -5,7 +5,7 @@ __author__ = 'jnejati'
 import json
 import signal
 import pickle
-import webDnsSetup
+from WProfX import webDnsSetup
 #import network_emulator
 import os
 #import convert

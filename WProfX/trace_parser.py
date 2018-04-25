@@ -1183,25 +1183,25 @@ class Trace():
 
         _plot = waterfall_draw.DrawWaterfall(_resJson, _outf, _lookup_dict, _order_lookup)
         #_plot = waterfall_draw.DrawWaterfall(_resJson, _outf, _lookup_dict, _order_lookup, self.all_modified_dict)
-        # _plot.draw_from_json()
         _plot.draw_from_json()
-        _plot.draw_critical_path(self.critical_path)
-        #_plot.draw_all_dependency()
+        # _plot.draw_from_json()
+        # _plot.draw_critical_path(self.critical_path)
+        _plot.draw_all_dependency()
         _plot.showPlot()
 
     def CreateGraph(self):
         download_0, parse_0 = self.find_download0()
         if not download_0 or not parse_0:
             return False
-        print('download_0: ', download_0)
-        print('parse_0: ', parse_0)
+        # print('download_0: ', download_0)
+        # print('parse_0: ', parse_0)
         self.G.graph['download_0'] = download_0[0]
         self.G.graph['parse_0'] = parse_0[0]
 
         for obj in self.all:
             #print(self.all)
             if obj[0].startswith('Networking') or obj[0].startswith('Loading') or obj[0].startswith('Scripting'):
-                print('obj0: {0} \n obj1: {1}'.format(obj[0], obj[1]))
+                # print('obj0: {0} \n obj1: {1}'.format(obj[0], obj[1]))
                 self.G.add_node(obj[0], obj[1]) # can only run under version 2.0!!!
         return True
 
@@ -1250,7 +1250,7 @@ class Trace():
                     if diff < selected[1]:
                         selected = [s_id, diff]
             if selected[0] == '':
-                print('script', self.scripts_lookup_url[_url], _startTime, _endTime, _url, activitiy_data)
+                # print('script', self.scripts_lookup_url[_url], _startTime, _endTime, _url, activitiy_data)
                 exit()
             return selected[0]
 
@@ -1285,7 +1285,7 @@ class Trace():
                     if diff < selected[1]:
                         selected = [load_id, diff]
         if selected[0] in ['', None]:
-            print(selected[0], activitiy_data)
+            # print(selected[0], activitiy_data)
             return ''
         return selected[0]
 
@@ -1304,7 +1304,7 @@ class Trace():
                 if diff < selected[1]:
                     selected = [script_id, diff]
         if selected[0] in ['', None]:
-            print(selected[0], activitiy_data)
+            # print(selected[0], activitiy_data)
             return None
         return selected[0]
 
@@ -1350,7 +1350,7 @@ class Trace():
         if not _download0Id:
             return False
         _parse0Id = self.G.graph['parse_0']
-        print(_download0Id,_parse0Id)
+        # print(_download0Id,_parse0Id)
         a2_startTime, a1_triggered = self.edge_start(self.G.node[_download0Id]['endTime'],
                                                      self.G.node[_parse0Id]['startTime'])
         self.G.add_edge(_download0Id, _parse0Id,
@@ -1884,7 +1884,7 @@ def main():
     #_trace_file = '/Users/jnejati/PycharmProjects/wpt/traces/1_testbed01.trace' # uncompressed mutli imgs
     _trace_file = '/Users/jnejati/PycharmProjects/wpt/traces/1_testbed01_jsbig_uncompgood3g.trace'
     _trace_file = '/Users/jnejati/PycharmProjects/wpt/traces/1_testbed01_jsbig_compgood3g.trace'
-    _trace_file = '/home/zhaoxin/workspace/YPTN/WProfX/desktop_livetest/www.zhihu.com/run_0/trace/0_www.zhihu.com.trace'
+    _trace_file = '/home/zhaoxin/workspace/YPTN/WProfX/desktop_livetest/www.facebook.com/run_0/trace/0_www.facebook.com.trace'
 
 
     trace = Trace(_trace_file)
@@ -1894,7 +1894,7 @@ def main():
         #if 'dcmads.js' in t:
             print(t)
     exit()"""
-    _output_file = '/home/zhaoxin/workspace/YPTN/WProfX/graphs/0_www.zhihu.com.json'
+    _output_file = '/home/zhaoxin/workspace/YPTN/WProfX/graphs/0_www.facebook.com.json'
     trace.WriteJson(_output_file, _result)
     trace.draw_waterfall(_output_file, '0_www.zhihu.com.html')
 
