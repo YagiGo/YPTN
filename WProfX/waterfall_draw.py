@@ -470,10 +470,11 @@ class DrawWaterfall():
         for dep in self.data[-1]['objs']:
             self.draw_dependents(dep)
 
+if __name__ == "__main__":
 
-
-#_plot = DrawWaterfall('./results/zdnet.json', 'line.html')
-#_plot.draw_from_json()
-#_plot.draw_dependency()
-#_plot.showPlot()
-# draw dep
+    _plot = DrawWaterfall('./results/zdnet.json', 'line.html')
+    # _plot.draw_from_json()
+    #_plot.d
+    _plot.draw_all_dependency()
+    _plot.showPlot()
+    # draw dep
