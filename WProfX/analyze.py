@@ -6,7 +6,7 @@ import subprocess
 import time
 import logging
 import coloredlogs
-import trace_parser as tp
+from WProfX import trace_parser as tp
 coloredlogs.install(level='INFO')
 
 #_command = '/home/jnejati/PLTSpeed/analysis/trace_parser.py'

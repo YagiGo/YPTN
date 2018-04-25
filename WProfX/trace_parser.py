@@ -40,7 +40,7 @@ from collections import defaultdict
 
 from networkx.readwrite import json_graph
 
-import waterfall_draw
+from WProfX import waterfall_draw
 
 try:
     import ujson as json
