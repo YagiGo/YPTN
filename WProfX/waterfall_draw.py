@@ -19,7 +19,7 @@ class DrawWaterfall():
         self.line_width = 4
         output_file(outputFile)
         self.yr = Range1d(start=self.y_range, end=0)
-        self.xr = Range1d(start=0, end=1.05 * self.end_time)
+        self.xr = Range1d(start=0, end=self.end_time)
         self.lookup_id = lookup_id
         self.order_lookup = order_lookup
 
@@ -480,7 +480,6 @@ class DrawWaterfall():
             self.draw_dependents(dep)
 
 if __name__ == "__main__":
-
     _plot = DrawWaterfall('./results/zdnet.json', 'line.html')
     # _plot.draw_from_json()
     #_plot.d
