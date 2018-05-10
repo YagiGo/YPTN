@@ -1880,8 +1880,9 @@ class Trace():
 ########################################################################################################################
 #   Main Entry Point
 ########################################################################################################################
-def main():
+def analyzeTrace():
     #_trace_file = '/Users/jnejati/PycharmProjects/wpt/traces/1_testbed01.trace' # uncompressed mutli imgs
+    # _site_name = input_site
     _site_name = input("Please input the domain you want to profile:") # This will finally become the entry point!
     _common_path = os.path.normpath(os.path.dirname(os.path.realpath(__file__)))
     _common_path = ''.join([_common_path, '/desktop_livetest'])
@@ -1891,7 +1892,7 @@ def main():
     _specific_file_path =''.join(_part)
     _abs_path_parts = [_common_path, '/', str(_site_name), '/run_0/trace/', _specific_file_path]
     _abs_path = ''.join(_abs_path_parts)
-    _abs_path = os.path.normpath(_abs_path) # Compatibility Purpose
+    # _abs_path = os.path.normpath(_abs_path) # Compatibility Purpose
     # _trace_file = '/Users/jnejati/PycharmProjects/wpt/traces/1_testbed01_jsbig_uncompgood3g.trace'
     # _trace_file = '/Users/jnejati/PycharmProjects/wpt/traces/1_testbed01_jsbig_compgood3g.trace'
     # _trace_file = '/home/zhaoxin/workspace/YPTN/WProfX/desktop_livetest/www.yahoo.co.jp/run_0/trace/0_www.yahoo.co.jp.trace'
@@ -1921,5 +1922,5 @@ def main():
 if '__main__' == __name__:
     #  import cProfile
     #  cProfile.run('main()', None, 2)
-    main()
+    analyzeTrace()
  # TODO Findout the exact process as how the webkit handle a webpage

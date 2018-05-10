@@ -13,7 +13,8 @@ import cookielib
 import urlparse
 from netlib import wsgi
 from netlib.exceptions import HttpException
-from netlib.http import CONTENT_MISSING, Headers, http1
+from netlib.http import  Headers, http1
+from netlib.http import CONTENT_MISSING
 
 from . import controller, tnetstring, filt, script, version
 from .models import ClientConnection, ServerConnection, HTTPResponse, HTTPFlow, HTTPRequest

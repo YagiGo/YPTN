@@ -4,10 +4,10 @@ import signal
 import sys
 import thread
 from netlib.version_check import check_pyopenssl_version, check_mitmproxy_version
-from . import version, cmdline
-from .exceptions import ServerException
-from .proxy.server import DummyServer, ProxyServer
-from .proxy.config import process_proxy_options
+from libmproxy import version, cmdline
+from libmproxy.exceptions import ServerException
+from libmproxy.proxy.server import DummyServer, ProxyServer
+from libmproxy.proxy.config import process_proxy_options
 
 
 def assert_utf8_env():
