@@ -2,6 +2,7 @@
 # import time
 import sys
 import os
+from urlparse import urlparse
 '''
 timestamp = time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.localtime())
 print("Time now is %s" %timestamp)
@@ -112,7 +113,15 @@ path = 'test.txt'
 
 save_txt_file(path, list)
 """
+"""
 test_dict = {'h': '又可以来黑h了'}
 for key in test_dict:
     print(key)
     print (test_dict[key])
+"""
+
+test_url = "<ServerConnection: [ssl: m.baidu.com] m.baidu.com:443>"
+test_url_2 = "<ServerConnection: connectivitycheck.gstatic.com:80>"
+print(test_url[test_url.find('[')+1:test_url.find(']')])
+print(test_url_2[test_url_2.find(' ') + 1:len(test_url_2) - 1])
+print(urlparse("https://www.baidu.com:80"))

@@ -13,14 +13,14 @@ from libmproxy.proxy import ProxyServer, ProxyConfig
 from Minify import BaseMinifyHandeler
 import sys
 import logging
-
+from urlparse import urlparse
 from tools import identifyUser
 
 class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
     def __init__(self, server, state, level, log_file):
         flow.FlowMaster.__init__(self, server=server, state=state)
         BaseMinifyHandeler.Minifyflow.__init__(self, functionname=sys.argv[0], level=level, log_file=log_file)
-        self.request_count = 0
+        self.previous_request_url = ''
 
     def run(self):
         try:
@@ -34,9 +34,28 @@ class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
             f.reply()
         # print((BaseMinifyHandeler.Minifyflow.get_userID(self,f)))
         # print (f.client_conn)
-        self.request_count += 1
         return f
+    def conn_parse(self, server_conn):
+        """
 
+        :param server_conn: str
+        :return: parsed url
+        """
+        """
+        SSL scheme and non-SSL scheme should be distinguished
+        """
+        unparsed_url = server_conn[server_conn.find('[') + 1:server_conn.find(']')]
+        if unparsed_url + '>' == server_conn:
+            # A non-SSL scheme
+            unparsed_url = server_conn[server_conn.find(' ') + 1: len(str(server_conn)) - 1]
+            parsed_url = urlparse(unparsed_url).path
+            return parsed_url[parsed_url.find('.') + 1 : len(parsed_url)] if parsed_url.find(":") < 0 else \
+                parsed_url[parsed_url.find('.') + 1:parsed_url.find(':')] # no port number needed
+        else:
+            # An SSL scheme
+            parsed_url = urlparse(unparsed_url).path
+            return parsed_url[parsed_url.find('.') + 1: len(parsed_url)] if parsed_url.find(":") < 0 else \
+                parsed_url[parsed_url.find('.') + 1:parsed_url.find(':')] # no port number needed
     def handle_response(self, f):
         f = flow.FlowMaster.handle_responseheaders(self, f)
         BaseMinifyHandeler.Minifyflow.process_html(self, f)
@@ -44,10 +63,8 @@ class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
         BaseMinifyHandeler.Minifyflow.process_all_img(self, f)
         if f:
             f.reply()
-            if(self.request_count == 1):
-                print ("Initial Response!")
-                print (f.server_conn)
-        print (self.request_count)
+        print(f.server_conn)
+        print (self.conn_parse(str(f.server_conn)))
         # print (f.server_conn)
         return f
 
