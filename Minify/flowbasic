@@ -20,6 +20,7 @@ class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
     def __init__(self, server, state, level, log_file):
         flow.FlowMaster.__init__(self, server=server, state=state)
         BaseMinifyHandeler.Minifyflow.__init__(self, functionname=sys.argv[0], level=level, log_file=log_file)
+        self.request_count = 0
 
     def run(self):
         try:
@@ -31,8 +32,9 @@ class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
         f = flow.FlowMaster.handle_request(self, f)
         if f:
             f.reply()
-        print((BaseMinifyHandeler.Minifyflow.get_userID(self,f)))
-        print (f.client_conn)
+        # print((BaseMinifyHandeler.Minifyflow.get_userID(self,f)))
+        # print (f.client_conn)
+        self.request_count += 1
         return f
 
     def handle_response(self, f):
@@ -42,7 +44,11 @@ class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
         BaseMinifyHandeler.Minifyflow.process_all_img(self, f)
         if f:
             f.reply()
-        print (f.server_conn)
+            if(self.request_count == 1):
+                print ("Initial Response!")
+                print (f.server_conn)
+        print (self.request_count)
+        # print (f.server_conn)
         return f
 
 
