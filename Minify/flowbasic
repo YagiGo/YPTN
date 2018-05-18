@@ -63,7 +63,11 @@ class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
         BaseMinifyHandeler.Minifyflow.process_all_img(self, f)
         if f:
             f.reply()
-        print(f.server_conn)
+        current_url = self.conn_parse(str(f.server_conn))
+        if(self.previous_request_url == '' or self.previous_request_url != current_url):
+            # print(f.server_conn)
+            print("First Response")
+        self.previous_request_url = current_url
         print (self.conn_parse(str(f.server_conn)))
         # print (f.server_conn)
         return f

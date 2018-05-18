@@ -4,7 +4,6 @@
     <list default="true" id="2c69ca65-0925-492c-bb46-5b19e23ca29e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Minify/flowbasic" afterPath="$PROJECT_DIR$/Minify/flowbasic" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestGround.py" afterPath="$PROJECT_DIR$/TestGround.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,7 +41,7 @@
     <SUITE FILE_PATH="coverage/YPTN$main.coverage" NAME="main Coverage Results" MODIFIED="1525931892979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/libmproxy" />
     <SUITE FILE_PATH="coverage/YPTN$Main.coverage" NAME="Main Coverage Results" MODIFIED="1524632834026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/YPTN$analyze.coverage" NAME="analyze Coverage Results" MODIFIED="1524718131757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WProfX" />
-    <SUITE FILE_PATH="coverage/YPTN$flowbasic.coverage" NAME="flowbasic Coverage Results" MODIFIED="1526619262667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Minify" />
+    <SUITE FILE_PATH="coverage/YPTN$flowbasic.coverage" NAME="flowbasic Coverage Results" MODIFIED="1526619801596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Minify" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$UDP.coverage" NAME="UDP Coverage Results" MODIFIED="1508399661672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$getSrc.coverage" NAME="getSrc Coverage Results" MODIFIED="1509174622941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JSMinimizing" />
     <SUITE FILE_PATH="coverage/NetworkProgramming$flow.coverage" NAME="flow Coverage Results" MODIFIED="1519282238947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/libmproxy" />
@@ -91,8 +90,8 @@
       <file leaf-file-name="flowbasic" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Minify/flowbasic">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+            <state relative-caret-position="656">
+              <caret line="67" column="14" lean-forward="false" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
               <folding>
                 <element signature="e#317#343#0" expanded="true" />
               </folding>
@@ -824,13 +823,6 @@
       <option name="presentableId" value="Default" />
       <updated>1508391312441</updated>
     </task>
-    <task id="LOCAL-00029" summary="&quot;Implementing multiprocessing function&quot;">
-      <created>1520319026274</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1520319026274</updated>
-    </task>
     <task id="LOCAL-00030" summary="&quot;Implementing multiprocessing function&quot;">
       <created>1520321671480</created>
       <option name="number" value="00030" />
@@ -1167,7 +1159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526613647011</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Same origin detection system on the way">
+      <created>1526619418589</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1526619418590</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -1181,7 +1180,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2560" y="24" width="1200" height="1896" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1234,7 +1233,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Save html folder as one" />
     <MESSAGE value="&quot;Merge Web page folder&quot;" />
     <MESSAGE value="&quot;Merge a whole web page into one html file&quot;" />
     <MESSAGE value="&quot;HTML merger under development&quot;" />
@@ -1259,7 +1257,8 @@
     <MESSAGE value="&quot;Adding test files&quot;" />
     <MESSAGE value="Path problems Fixed!" />
     <MESSAGE value="MITM Proxy Fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="MITM Proxy Fixed" />
+    <MESSAGE value="Same origin detection system on the way" />
+    <option name="LAST_COMMIT_MESSAGE" value="Same origin detection system on the way" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1513,7 +1512,7 @@
         <state relative-caret-position="668">
           <caret line="159" column="35" lean-forward="false" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
           <folding>
-            <element signature="e#0#66#0" expanded="true" />
+            <element signature="e#0#66#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1634,8 +1633,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Minify/flowbasic">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+        <state relative-caret-position="656">
+          <caret line="67" column="14" lean-forward="false" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
           <folding>
             <element signature="e#317#343#0" expanded="true" />
           </folding>
