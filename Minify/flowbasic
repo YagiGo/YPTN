@@ -21,6 +21,7 @@ class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
         flow.FlowMaster.__init__(self, server=server, state=state)
         BaseMinifyHandeler.Minifyflow.__init__(self, functionname=sys.argv[0], level=level, log_file=log_file)
         self.previous_request_url = ''
+        self.url_of_cycle_last_recorded = ''
 
     def run(self):
         try:
@@ -57,19 +58,31 @@ class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
             return parsed_url[parsed_url.find('.') + 1: len(parsed_url)] if parsed_url.find(":") < 0 else \
                 parsed_url[parsed_url.find('.') + 1:parsed_url.find(':')] # no port number needed
     def handle_response(self, f):
+        # current_accessing_url: the exact file the client want to access
+        # url_of_cycle: the url the user accesses in this access cycle
         f = flow.FlowMaster.handle_responseheaders(self, f)
         BaseMinifyHandeler.Minifyflow.process_html(self, f)
         BaseMinifyHandeler.Minifyflow.process_js(self, f)
         BaseMinifyHandeler.Minifyflow.process_all_img(self, f)
+        print("Currently Accessing: " + BaseMinifyHandeler.Minifyflow.get_referer(f.request.headers))
+        # Use referer to determine a complete access cycle
         if f:
             f.reply()
-        current_url = self.conn_parse(str(f.server_conn))
-        if(self.previous_request_url == '' or self.previous_request_url != current_url):
+        url_of_cycle = BaseMinifyHandeler.Minifyflow.get_referer(f.request.headers)
+        if(self.url_of_cycle_last_recorded == '' or self.url_of_cycle_last_recorded != url_of_cycle):
+            print("User Requested Another Site: " + url_of_cycle)
+            # TODO optimizing code should be written in here!
+            self.url_of_cycle_last_recorded = url_of_cycle
+        # code above is used to determine a access cycle
+        current_accessing_url = self.conn_parse(str(f.server_conn))
+        if(self.previous_request_url == '' or self.previous_request_url != current_accessing_url):
             # print(f.server_conn)
             print("First Response")
-        self.previous_request_url = current_url
-        print (self.conn_parse(str(f.server_conn)))
-        # print (f.server_conn)
+            print("User Accessing:" + current_accessing_url)
+        self.previous_request_url = current_accessing_url
+        # print (self.conn_parse(str(f.server_conn)))
+        print ("User Request: " + str(f.request.headers))
+        print ("User Response: " + str(f.response.headers ))
         return f
 
 

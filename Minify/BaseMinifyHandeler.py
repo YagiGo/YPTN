@@ -17,7 +17,7 @@ class Minifyflow(log.Log):
         super(Minifyflow, self).__init__(functionname, level, log_file)  # A proper way to init parent class, python2
         # notice python3 super(ParentClass, self).__inin__(*kwag **warg)
 
-    @ staticmethod
+    @staticmethod
     def get_host(headers):
         return headers.get("Host", "") if not None else headers.get(":authority", "")
 
@@ -28,6 +28,9 @@ class Minifyflow(log.Log):
     @staticmethod
     def file_type(headers):
         return headers.get("content-type", "")
+    @staticmethod
+    def get_referer(headers):
+        return headers.get("referer", "")
 
     def is_js(self, headers):
         return self.file_type(headers).startswith("text/javascript")
@@ -67,6 +70,7 @@ class Minifyflow(log.Log):
                 try:
                     self.cache_file(self.get_host(flow.request.headers), jsfile, filetype="js")
                     self.log_info("JS file from " + msg + " has been cached")
+                    print("JS file from " + msg + " has been cached")
                 except Exception as e:
                     self.log_error("Something went wrong while caching " + msg + " error: " + str(e))
                     print(str(e))
@@ -84,6 +88,7 @@ class Minifyflow(log.Log):
                 try:
                     self.cache_file(msg, htmlfile, filetype="html")
                     self.log_info("HTML File from: " + msg + "has been cached")
+                    print ("HTML File from: " + msg + "has been cached")
                 except Exception as e:
                     self.log_error("Something went wrong while caching " + msg + " error: " + str(e))
                     print(str(e))
@@ -99,6 +104,7 @@ class Minifyflow(log.Log):
             try:
                 self.cache_image(msg, img, img_format=img_format)
                 self.log_info("Image from " + msg + " has been cached")
+                print("Image from " + msg + " has been cached")
             except Exception as e:
                 self.log_error("Something went wrong while caching." + msg + " Error: " + str(e))
                 print(str(e))
