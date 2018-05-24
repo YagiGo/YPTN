@@ -14,12 +14,16 @@ from Minify import BaseMinifyHandeler
 import sys
 import logging
 from urlparse import urlparse
+from Minify import dbAccess
+import datetime
+from pymongo import MongoClient
 from tools import identifyUser
 
-class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
-    def __init__(self, server, state, level, log_file):
+class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow, dbAccess.DatabaseObject):
+    def __init__(self, server, state, level, log_file, dbClient, dbName, dbCollection):
         flow.FlowMaster.__init__(self, server=server, state=state)
         BaseMinifyHandeler.Minifyflow.__init__(self, functionname=sys.argv[0], level=level, log_file=log_file)
+        dbAccess.DatabaseObject.__init__(self,dbClient, dbName, dbCollection)
         self.previous_request_url = ''
         self.url_of_cycle_last_recorded = ''
 
@@ -57,6 +61,13 @@ class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
             parsed_url = urlparse(unparsed_url).path
             return parsed_url[parsed_url.find('.') + 1: len(parsed_url)] if parsed_url.find(":") < 0 else \
                 parsed_url[parsed_url.find('.') + 1:parsed_url.find(':')] # no port number needed
+    @staticmethod
+    def get_url_post(self, url, user_agent):
+        return {
+            "time" : datetime.datetime.utcnow(),
+            "url" : url,
+            "user_agent" : user_agent
+        }
     def handle_response(self, f):
         # current_accessing_url: the exact file the client want to access
         # url_of_cycle: the url the user accesses in this access cycle
@@ -71,6 +82,7 @@ class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow):
         url_of_cycle = BaseMinifyHandeler.Minifyflow.get_referer(f.request.headers)
         if(self.url_of_cycle_last_recorded == '' or self.url_of_cycle_last_recorded != url_of_cycle):
             print("User Requested Another Site: " + url_of_cycle)
+            self.insert_url(self.get_url_post(self, url_of_cycle, "This is user agent"))
             # TODO optimizing code should be written in here!
             self.url_of_cycle_last_recorded = url_of_cycle
         # code above is used to determine a access cycle
@@ -96,5 +108,8 @@ config = ProxyConfig(
 
 state = flow.State()
 server = ProxyServer(config)
-m = Intercept(server, state, level=logging.INFO, log_file=BaseMinifyHandeler.Minifyflow.create_log_file())
+m = Intercept(server, state, level=logging.INFO, log_file=BaseMinifyHandeler.Minifyflow.create_log_file(),
+              dbClient=MongoClient("localhost", 27017),
+              dbName="test",
+              dbCollection="access_sites")
 m.run()
