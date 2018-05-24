@@ -1,3 +1,4 @@
+import datetime
 from pymongo import MongoClient
 """
 An URL post example
@@ -5,6 +6,7 @@ An URL post example
     "_id" :"the id the db gave",
     "time":"datetime.datetime.utcnow()",
     "url" :"access_url"
+    "user-agent" : "user-agent here, fetching from request header"
 
 
 """
@@ -34,3 +36,13 @@ class DatabaseObject():
         self.collection.remove({"url":url})
     def display_url(self, url):
         print(self.collection.find({"url":url}))
+
+if __name__ == "__main__":
+    dbInstance = DatabaseObject(MongoClient("localhost", 27017), dbName="test", dbCollection="access_sites")
+    url_post_example = {
+        "time" : datetime.datetime.utcnow(),
+        "url" : "www.example.com",
+        "user-agent" : "Mozilla/5.0 (Linux; Android 7.1.1; Nexus 5X Build/N4F26I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.135 Mobile Safari/537.36"
+    }
+    dbInstance.insert_url(url_post_example)
+    dbInstance.display_url(url="www.example.com")
