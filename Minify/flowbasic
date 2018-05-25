@@ -17,6 +17,7 @@ from urlparse import urlparse
 from Minify import dbAccess
 import datetime
 from pymongo import MongoClient
+import uuid
 from tools import identifyUser
 
 class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow, dbAccess.DatabaseObject):
@@ -61,12 +62,23 @@ class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow, dbAccess.Databas
             parsed_url = urlparse(unparsed_url).path
             return parsed_url[parsed_url.find('.') + 1: len(parsed_url)] if parsed_url.find(":") < 0 else \
                 parsed_url[parsed_url.find('.') + 1:parsed_url.find(':')] # no port number needed
+    def record_user(self, user_agent, collectionName="active_users"):
+        self.change_collection(collectionName= collectionName)
+        self.insert_user(self.get_user_post(user_agent))
+
     @staticmethod
-    def get_url_post(self, url, user_agent):
+
+    def get_url_post(url, user_agent):
         return {
             "time" : datetime.datetime.utcnow(),
             "url" : url,
             "user_agent" : user_agent
+        }
+    @staticmethod
+    def get_user_post(user_agent):
+        return {
+            "uuid":uuid.uuid3(namespace=uuid.NAMESPACE_OID, name = user_agent),
+            "user-agent" : user_agent
         }
     def handle_response(self, f):
         # current_accessing_url: the exact file the client want to access
@@ -79,22 +91,25 @@ class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow, dbAccess.Databas
         # Use referer to determine a complete access cycle
         if f:
             f.reply()
-        url_of_cycle = BaseMinifyHandeler.Minifyflow.get_referer(f.request.headers)
+        url_of_cycle = self.get_referer(f.request.headers)
+        self.record_user(user_agent=self.get_user_agent(f.request.headers))
+
         if(self.url_of_cycle_last_recorded == '' or self.url_of_cycle_last_recorded != url_of_cycle):
             print("User Requested Another Site: " + url_of_cycle)
-            self.insert_url(self.get_url_post(self, url_of_cycle, "This is user agent"))
+            self.insert_url(self.get_url_post(url = url_of_cycle, user_agent=self.get_user_agent(f.request.headers)))
             # TODO optimizing code should be written in here!
             self.url_of_cycle_last_recorded = url_of_cycle
         # code above is used to determine a access cycle
         current_accessing_url = self.conn_parse(str(f.server_conn))
         if(self.previous_request_url == '' or self.previous_request_url != current_accessing_url):
             # print(f.server_conn)
-            print("First Response")
-            print("User Accessing:" + current_accessing_url)
+            # print("First Response")
+            # print("User Accessing:" + current_accessing_url)
+            pass
         self.previous_request_url = current_accessing_url
         # print (self.conn_parse(str(f.server_conn)))
-        print ("User Request: " + str(f.request.headers))
-        print ("User Response: " + str(f.response.headers ))
+        # print ("User Request: " + str(f.request.headers))
+        # print ("User Response: " + str(f.response.headers ))
         return f
 
 

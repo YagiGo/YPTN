@@ -1,3 +1,4 @@
+import uuid
 import datetime
 from pymongo import MongoClient
 """
@@ -30,12 +31,32 @@ class DatabaseObject():
         :return: Nothing
         """
         self.collection.insert_one(url_post)
+
     def get_url(self, url):
         return self.collection.find({"url":url})
+
     def delete_url(self, url):
         self.collection.remove({"url":url})
+
     def display_url(self, url):
         print(self.collection.find({"url":url}))
+
+    def get_user(self, user_agent):
+        return self.collection.find({"uuid":uuid.uuid3(namespace=uuid.NAMESPACE_OID, name=user_agent)})
+
+    def insert_user(self, user_post):
+        print(user_post)
+        if self.collection.find({"uuid":uuid.uuid3(namespace=uuid.NAMESPACE_OID, name = user_post["user-agent"])}) is None:
+            self.collection.insert_one(user_post)
+        else:
+            print("User Already Exist!")
+
+    def change_collection(self, collectionName):
+        try:
+            self.collection = self.db[collectionName]
+        except:
+            self.collection = self.db.createCollection()
+
 
 if __name__ == "__main__":
     dbInstance = DatabaseObject(MongoClient("localhost", 27017), dbName="test", dbCollection="access_sites")
