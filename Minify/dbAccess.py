@@ -46,3 +46,4 @@ if __name__ == "__main__":
     }
     dbInstance.insert_url(url_post_example)
     dbInstance.display_url(url="www.example.com")
+
