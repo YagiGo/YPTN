@@ -65,6 +65,7 @@ class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow, dbAccess.Databas
     def record_user(self, user_agent, collectionName="active_users"):
         self.change_collection(collectionName= collectionName)
         self.insert_user(self.get_user_post(user_agent))
+        self.change_collection(collectionName="access_sites") # get back to the sites recording collection
 
     @staticmethod
 
@@ -92,7 +93,7 @@ class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow, dbAccess.Databas
         if f:
             f.reply()
         url_of_cycle = self.get_referer(f.request.headers)
-        self.record_user(user_agent=self.get_user_agent(f.request.headers))
+        self.record_user(user_agent=self.get_user_agenFREt(f.request.headers))
 
         if(self.url_of_cycle_last_recorded == '' or self.url_of_cycle_last_recorded != url_of_cycle):
             print("User Requested Another Site: " + url_of_cycle)
