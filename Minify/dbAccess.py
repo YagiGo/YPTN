@@ -23,7 +23,7 @@ class DatabaseObject():
             self.collection = self.db[dbCollection]
         except:
             # No such collection? create one
-            self.collection = self.db.createCollection(dbCollection)
+            self.collection = self.db.createCollection(dbCollection) #this is the default dbColletction
 
     def insert_url(self,url_post):
         """
@@ -45,11 +45,19 @@ class DatabaseObject():
         return self.collection.find({"uuid":uuid.uuid3(namespace=uuid.NAMESPACE_OID, name=user_agent)})
 
     def insert_user(self, user_post):
-        print(user_post)
-        if self.collection.find({"uuid":uuid.uuid3(namespace=uuid.NAMESPACE_OID, name = user_post["user-agent"])}) is None:
+        # first change the collection into the user recording collection
+        temp = self.collection
+        self.collection = self.db[uuid.uuid3(namespace=uuid.NAMESPACE_OID, name= user_post["user-agent"])]
+        if self.collection.find({"uuid":uuid.uuid3(namespace=uuid.NAMESPACE_OID, name= user_post["user-agent"])}) is None:
             self.collection.insert_one(user_post)
+        self.collection = temp
+
+    def go_to_user_collection(self, user_post):
+        if self.collection.find({"uuid":uuid.uuid3(namespace=uuid.NAMESPACE_OID, name = user_post["user-agent"])}) is None:
+            #go to the specific user collection, if there is none, create one
+            self.collection = self.db.createCollection[uuid.uuid3(namespace=uuid.NAMESPACE_OID, name= user_post["user-agent"])]
         else:
-            print("User Already Exist!")
+            self.collection = self.db[uuid.uuid3(namespace=uuid.NAMESPACE_OID, name= user_post["user-agent"])]
 
     def change_collection(self, collectionName):
         try:
