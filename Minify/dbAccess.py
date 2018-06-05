@@ -46,18 +46,29 @@ class DatabaseObject():
 
     def insert_user(self, user_post):
         # first change the collection into the user recording collection
+        """
         temp = self.collection
         self.collection = self.db[uuid.uuid3(namespace=uuid.NAMESPACE_OID, name= user_post["user-agent"])]
         if self.collection.find({"uuid":uuid.uuid3(namespace=uuid.NAMESPACE_OID, name= user_post["user-agent"])}) is None:
             self.collection.insert_one(user_post)
         self.collection = temp
-
+        """
+        # Go to the collection that records the user
+        try:
+            print("Collection Change Complete")
+            self.collection = self.db["access_users"]
+        except:
+            print("Collection Creation Complete")
+            self.collection = self.db.createCollection("access_users")
+        if self.collection.find({"uuid":uuid.uuid3(namespace=uuid.NAMESPACE_OID, name=user_post["user-agent"])}) is None:
+            print("Insert Complete")
+            self.collection.insert_one(user_post)
     def go_to_user_collection(self, user_post):
-        if self.collection.find({"uuid":uuid.uuid3(namespace=uuid.NAMESPACE_OID, name = user_post["user-agent"])}) is None:
-            #go to the specific user collection, if there is none, create one
-            self.collection = self.db.createCollection[uuid.uuid3(namespace=uuid.NAMESPACE_OID, name= user_post["user-agent"])]
-        else:
-            self.collection = self.db[uuid.uuid3(namespace=uuid.NAMESPACE_OID, name= user_post["user-agent"])]
+        # go the the specific collection for the specific user, if there is none, create one
+        try:
+            self.collection = self.db[str(uuid.uuid3(namespace=uuid.NAMESPACE_OID, name= user_post["user-agent"]))]
+        except:
+            self.collection = self.db.createCollection(str(uuid.uuid3(namespace=uuid.NAMESPACE_OID, name= user_post["user-agent"])))
 
     def change_collection(self, collectionName):
         try:
