@@ -63,6 +63,7 @@ class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow, dbAccess.Databas
             return parsed_url[parsed_url.find('.') + 1: len(parsed_url)] if parsed_url.find(":") < 0 else \
                 parsed_url[parsed_url.find('.') + 1:parsed_url.find(':')] # no port number needed
     def record_user(self, user_agent):
+        print ("WORKING AS EXPECTED")
         self.insert_user(self.get_user_post(user_agent),)
 
     @staticmethod
@@ -95,6 +96,7 @@ class Intercept(flow.FlowMaster, BaseMinifyHandeler.Minifyflow, dbAccess.Databas
 
         if(self.url_of_cycle_last_recorded == '' or self.url_of_cycle_last_recorded != url_of_cycle):
             print("User Requested Another Site: " + url_of_cycle)
+            self.record_user(user_agent=self.get_user_agent(f.request.headers))
             self.go_to_user_collection(self.get_user_post(self.get_user_agent(f.request.headers)))
             self.insert_url(self.get_url_post(url = url_of_cycle, user_agent=self.get_user_agent(f.request.headers)))
             # TODO optimizing code should be written in here!
