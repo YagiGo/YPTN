@@ -4,6 +4,7 @@ import struct
 import sys
 import time
 import select
+import os
 # We want unbuffered stdout so that live feedback can be provided for each TTL
 
 class FlushFile:
@@ -19,6 +20,10 @@ class NetworkMeasure:
     def __init__(self, source, destination):
         self.source = source
         self.destination = destination
+        self.ICMP_ECHO_REQUEST = 8
+        self.DEFAULT_TIMEOUT = 4
+        self.count = 4 # ping times
+        self.res ={"hop_counter": 0, "overall_latency": 0, "retry_times":0}
     # First Implement a traceroute
     def traceroute(self):
         dest_addr = socket.gethostbyname(self.destination)
@@ -34,8 +39,6 @@ class NetworkMeasure:
         retry_counter = 0 # how many times retried
         duration = 0.0 # overall latency
 
-
-        res ={"hop_counter": 0, "overall_latency": 0, "retry_times":0}
 
         while True:
             recv_socket = socket.socket(socket.AF_INET, socket.SOCK_RAW, icmp) # ICMP packet
@@ -91,10 +94,9 @@ class NetworkMeasure:
             if curr_addr == dest_addr or ttl > max_hops:
                 break
 
-        res["hop_counter"] = ttl
-        res["overall_latency"] = duration
-        res["retry_times"] = retry_counter
-        return res # benchmarking result
+        self.res["hop_counter"] = ttl
+        # self.res["overall_latency"] = duration
+        self.res["retry_times"] = retry_counter
 
     # Create a ping method
     # Get checksum
@@ -135,13 +137,15 @@ class NetworkMeasure:
             start_time = time.time()
             readable = select.select([sock],[],[],time_remaining)
             time_spent = (time.time() - start_time)
+            print(time_spent)
             if readable[0] == []:
                 # Timeout
-                return
+                return None
 
             time_received = time.time()
-            recv_packet, addr = sock.recvfrom(512)
-            icmp_header = recv_packet[20:28] # get ICMP header
+            recv_packet, addr = sock.recvfrom(1024)
+            icmp_header = recv_packet[20:28]
+            # get ICMP header
             type, code, checksum, packet_ID, sequence = struct.unpack(
                 "bbHHh", icmp_header
             )
@@ -152,9 +156,65 @@ class NetworkMeasure:
                 return time_received - time_sent
             time_remaining -= time_spent
             if time_remaining <= 0:
-                return
+                return None
 
+    def send_ping(self,sock, ID):
+        target_addr = socket.gethostbyname(self.destination)
+        checksum = 0
+        # Create a dummy header with a 0 checksum
+        header = struct.pack("bbHHh", self.ICMP_ECHO_REQUEST, 0, checksum, ID, 1)
+        bytes_In_double = struct.calcsize("d")
+        # data = sent time, then filled with Q(not really matter!)
+        data = struct.pack("d", time.time()) + (192 - bytes_In_double) * "Q"
 
+        # Get the checksum on the data and the dummy header
+        checksum = self.do_checksum(header+data)
+        header = struct.pack(
+            "bbHHh", self.ICMP_ECHO_REQUEST, 0, socket.htons(checksum), ID, 1)
+        packet = header + data
+        sock.sendto(packet, (target_addr, 1))
+
+    def ping_once(self):
+        icmp = socket.getprotobyname("icmp")
+
+        try:
+            sock = socket.socket(socket.AF_INET, socket.SOCK_RAW, icmp)
+        except socket.error as (errno, errmsg):
+            if errno == 1:
+                # Must run as root!
+                errmsg += "ICMP Message must be run as root user!"
+                raise socket.error(errmsg)
+        except Exception as e:
+            print("Exception: " + str(e))
+
+        ID = os.getpid() & 0xFFFF
+        self.send_ping(sock, ID)
+        delay = self.recv_ping(sock, ID, self.DEFAULT_TIMEOUT)
+        return delay
+
+    def ping(self):
+        # start the ping process
+        overall_time = 0.0
+        for i in range(self.count):
+            print("Ping to %s..." %self.destination)
+            try:
+                delay = self.ping_once()
+            except socket.gaierror as  e:
+                print("Ping failed.(Socket Error: %s)" %e[1])
+
+            if delay == None:
+                print("Ping failed. Timeout")
+            else:
+                delay = delay * 1000 # convert into ms
+                overall_time += delay
+                print("Get ping in %0.4f ms" %delay)
+        mean_latency = overall_time / self.count
+        self.res["overall_latency"] = round(mean_latency,3)
+
+    def start_benchmarking(self):
+        self.traceroute()
+        self.ping()
+        return self.res # benchmark result
 
 
 if __name__ == "__main__":
@@ -212,9 +272,12 @@ if __name__ == "__main__":
         'www.soundcloud.com',
         'www.bilibili.com'
     ]
-    test_site = ['www.wikipedia.com']
-    for site in test_sites:
+    test_site = ['www.google.com']
+    for site in test_site:
         sys.stdout.write("Currently Benchmarking "+site+"\n")
         test_measure = NetworkMeasure(source="localhost", destination=site)
-        res = test_measure.measure_hops()
+        # res = test_measure.measure_hops()
+        # print(res)
+        res = test_measure.start_benchmarking()
         print(res)
+        print("\n\n\n")
