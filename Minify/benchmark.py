@@ -42,7 +42,7 @@ class NetworkMeasure:
 
         while True:
             recv_socket = socket.socket(socket.AF_INET, socket.SOCK_RAW, icmp) # ICMP packet
-            send_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, udp) # UDP packet
+            send_socket = socket.socket(socket.AF_INET, socket.SOCK_RAW, icmp) # UDP packet
             send_socket.setsockopt(socket.SOL_IP, socket.IP_TTL, ttl) # TTL setting
 
             # Build the GNU timeval struct (seconds, microseconds)
