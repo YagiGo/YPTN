@@ -504,7 +504,7 @@ class Options(usage.Options):
     ]
 
 
-def main():
+def main(dest):
     def show(hop):
         print hop
 
@@ -520,23 +520,27 @@ def main():
                     max_tries=3,
                     max_hops=30)
 
+
+    """
     if len(sys.argv) < 2:
         print("Usage: %s [options] host" % (sys.argv[0]))
         print("%s: Try --help for usage details." % (sys.argv[0]))
         sys.exit(1)
-
-    target = sys.argv.pop(-1) if sys.argv[-1][0] != "-" else ""
+    """
+    # target = sys.argv.pop(-1) if sys.argv[-1][0] != "-" else ""
+    target = dest
     config = Options()
     try:
         config.parseOptions()
         if not target:
             raise
-    except usage.UsageError, e:
+    except usage.UsageError as e:
         print("%s: %s" % (sys.argv[0], e))
         print("%s: Try --help for usage details." % (sys.argv[0]))
         sys.exit(1)
 
     settings = defaults.copy()
+    """
     if config.get("quiet"):
         settings["hop_callback"] = None
     if config.get("no-dns"):
@@ -559,18 +563,71 @@ def main():
         settings["sport"] = int(config["sport"])
     if "serial" in config and config['serial']:
         settings["serial"] = config["serial"]
-
+    """
     if hasattr(os, "getuid") and os.getuid():
         print("traceroute needs root privileges for the raw socket")
         sys.exit(1)
     try:
         target = socket.gethostbyname(target)
-    except Exception, e:
+    except Exception as e:
         print("could not resolve '%s': %s" % (target, str(e)))
         sys.exit(1)
-
     reactor.callWhenRunning(start_trace, target, **settings)
     reactor.run()
 
 if __name__ == "__main__":
-    main()
+    test_sites = [
+        'www.google.com',
+        'www.youtube.com',
+        'www.facebook.com',
+        'www.baidu.com',
+        'www.wikipedia.org',
+        'www.yahoo.com',
+        'www.reddit.com',
+        'www.qq.com',
+        'www.taobao.com',
+        'www.amazon.com',
+        'www.tmall.com',
+        'www.twitter.com',
+        'www.sohu.com',
+        'www.live.com',
+        'www.vk.com',
+        'www.instagram.com',
+        'www.sina.com.cn',
+        'www.360.cn',
+        'www.jd.com',
+        'www.linkedin.com',
+        'www.weibo.com',
+        'www.yahoo.co.jp',
+        'www.yandex.ru',
+        'www.netflix.com',
+        'www.t.co',
+        'www.hao123.com',
+        'www.imgur.com',
+        'www.wordpress.com',
+        'www.msn.com',
+        'www.aliexpress.com',
+        'www.bing.com',
+        'www.tumblr.com',
+        'www.microsoft.com',
+        'www.stackoverflow.com',
+        'www.twitch.tv',
+        'www.amazon.co.jp',
+        'www.soso.com',
+        'www.apple.com',
+        'www.naver.com',
+        'www.imdb.com',
+        'www.tianya.cn',
+        'www.office.com',
+        'www.github.com',
+        'www.pinterest.com',
+        'www.paypal.com',
+        'www.adobe.com',
+        'www.wikia.com',
+        'www.cnzz.com',
+        'www.rakuten.co.jp',
+        'www.soundcloud.com',
+        'www.bilibili.com'
+    ]
+    for site in test_sites:
+        main(dest=site)
