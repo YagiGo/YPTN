@@ -33,6 +33,9 @@ import select
 import os
 import random
 from twisted.internet import defer, reactor
+from twisted.internet import threads
+from twisted.python import usage
+from twisted.web.client import getPage
 
 
 class FlushFile:
@@ -243,12 +246,10 @@ class NetworkMeasure:
         self.traceroute()
         self.ping()
         return self.res # benchmark result
-###############################################################################################################
 
-# Create ICMP, TCP, UDP headers down below
-#
-
-###############################################################################################################
+###################################################################################################################
+# Create IP, TCP, UDP headers for later use
+###################################################################################################################
 
 class iphdr(object):
     """
@@ -415,12 +416,54 @@ class icmphdr(object):
 
     def __repr__(self):
         return "ICMP (type %s, code %s, id %s, sequence %s)" % \
-                (self.type, self.code, self.id, self.sequence)
-##################################################################################################################
+               (self.type, self.code, self.id, self.sequence)
 
-# Create a TCP traceroute here.
 
-##################################################################################################################
+def pprintp(packet):
+    """
+    Used to pretty print packets.
+    """
+    lines = []
+    line = []
+    for i, byte in enumerate(packet):
+        line.append(("%.2x" % ord(byte), byte))
+        if (i + 1) % 8 == 0:
+            lines.append(line)
+            line = []
+
+    lines.append(line)
+
+    for row in lines:
+        left = ""
+        right = "   " * (8 - len(row))
+        for y in row:
+            left += "%s " % y[0]
+            right += "%s" % y[1]
+
+        print left + "     " + right
+
+
+@defer.inlineCallbacks
+def geoip_lookup(ip):
+    try:
+        r = yield getPage("http://freegeoip.net/json/%s" % ip)
+        d = json.loads(r)
+        items = [d["country_name"], d["region_name"], d["city"]]
+        text = ", ".join([s for s in items if s])
+        defer.returnValue(text.encode("utf-8"))
+    except Exception:
+        defer.returnValue("Unknown location")
+
+
+@defer.inlineCallbacks
+def reverse_lookup(ip):
+    try:
+        r = yield threads.deferToThread(socket.gethostbyaddr, ip)
+        defer.returnValue(r[0])
+    except Exception:
+        defer.returnValue(None)
+
+
 class Hop(object):
     def __init__(self, target, ttl, proto, dport=None, sport=None):
         self.proto = proto
@@ -489,14 +532,26 @@ class Hop(object):
         return "%02d. %s %s %s" % (self.ttl, ping, ip, location)
 
 
-class TCPTraceroute:
-    def __init__(self, destination):
-        self.destination = destination
-        self.protocol = "tcp"
-        self.send_socket = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_TCP)
-        self.recv_socket = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_ICMP)
-        self.send_socket.setsockopt(socket.IPPROTO_IP, socket.IP_HDRINCL, 1)
-        self.recv_socket.setsockopt(socket.IPPROTO_IP, socket.IP_HDRINCL, 1)
+class TracerouteProtocol(object):
+    def __init__(self, target, **settings):
+        self.target = target
+        self.settings = settings
+        self.verbose = settings.get("verbose")
+        self.proto = settings.get("proto")
+        self.rfd = socket.socket(socket.AF_INET, socket.SOCK_RAW,
+                                socket.IPPROTO_ICMP)
+        if self.proto == "icmp":
+            self.sfd = socket.socket(socket.AF_INET, socket.SOCK_RAW,
+                                    socket.IPPROTO_ICMP)
+        elif self.proto == "udp":
+            self.sfd = socket.socket(socket.AF_INET, socket.SOCK_RAW,
+                                    socket.IPPROTO_UDP)
+        elif self.proto == "tcp":
+            self.sfd = socket.socket(socket.AF_INET, socket.SOCK_RAW,
+                                    socket.IPPROTO_TCP)
+
+        self.rfd.setsockopt(socket.IPPROTO_IP, socket.IP_HDRINCL, 1)
+        self.sfd.setsockopt(socket.IPPROTO_IP, socket.IP_HDRINCL, 1)
 
         self.hops = []
         self.out_queue = []
@@ -507,23 +562,228 @@ class TCPTraceroute:
         reactor.addWriter(self)
 
         # send 1st probe packet
-        self.out_queue.append(Hop(self.destination, ttl=1, proto='tcp',
-                                  dport=random.randint(2**10, 2**16),
-                                  sport=random.randint(2**10, 2**16)))
+        self.out_queue.append(Hop(self.target, 1,
+                                  settings.get("proto"),
+                                  self.settings.get("dport"),
+                                  self.settings.get("sport")))
 
-    def log_prefix(self):
-        return "Traceroute Protocol(%s)" %self.destination
+    def logPrefix(self):
+        return "TracerouteProtocol(%s)" % self.target
 
     def fileno(self):
-        return self.recv_socket.fileno()
+        return self.rfd.fileno()
 
     @defer.inlineCallbacks
-    def hop_found(self, hop, ip, icmp):
-        hop.remote_ip =ip
-        hop
+    def hopFound(self, hop, ip, icmp):
+        hop.remote_ip = ip
+        hop.remote_icmp = icmp
+
+        if (ip and icmp):
+            hop.found = time.time()
+            if self.settings.get("geoip_lookup") is True:
+                hop.location = yield geoip_lookup(ip.src)
+
+            if self.settings.get("reverse_lookup") is True:
+                hop.remote_host = yield reverse_lookup(ip.src)
+
+        ttl = hop.ttl + 1
+        last = self.hops[-2:]
+        if (ip is not None and len(last) == 2 and last[0].remote_ip == ip) or \
+           (ttl > (self.settings.get("max_hops", 30) + 1)):
+            done = True
+        else:
+            done = False
+
+        if not done:
+            cb = self.settings.get("hop_callback")
+            if callable(cb):
+                yield defer.maybeDeferred(cb, hop)
+
+        if not self.waiting or done:
+            if self.deferred:
+                self.deferred.callback(self.hops)
+                self.deferred = None
+        else:
+            self.out_queue.append(Hop(self.target, ttl,
+                                      self.settings.get("proto"),
+                                      self.settings.get("dport"),
+                                      self.settings.get("sport")))
+
+    def doRead(self):
+        if not self.waiting or not self.hops:
+            return
+
+        pkt = self.rfd.recv(4096)
+        # disassemble ip header
+        ip = iphdr.disassemble(pkt[:20])
+
+        if self.verbose:
+            print "Got this packet:"
+            print "src %s" % ip.src
+            pprintp(pkt)
+
+        if ip.proto != socket.IPPROTO_ICMP:
+            return
+
+        found = False
+
+        # disassemble icmp header
+        icmp = icmphdr.disassemble(pkt[20:28])
+        if icmp.type == 0 and icmp.id == self.hops[-1].icmp.id:
+            found = True
+        elif icmp.type == 11:
+            # disassemble referenced ip header
+            ref = iphdr.disassemble(pkt[28:48])
+            if ref.dst == self.target:
+                found = True
+
+        if ip.src == self.target:
+            self.waiting = False
+
+        if found:
+            self.hopFound(self.hops[-1], ip, icmp)
+
+    def hopTimeout(self, hop, *ign):
+        if not hop.found:
+            if hop.tries < self.settings.get("max_tries", 3):
+                # retry
+                self.out_queue.append(hop)
+            else:
+                # give up and move forward
+                self.hopFound(hop, None, None)
+
+    def doWrite(self):
+        if self.waiting and self.out_queue:
+            hop = self.out_queue.pop(0)
+            pkt = hop.pkt
+            if not self.hops or (self.hops and hop.ttl != self.hops[-1].ttl):
+                self.hops.append(hop)
+
+            self.sfd.sendto(pkt, (hop.ip.dst, 0))
+
+            timeout = self.settings.get("timeout", 1)
+            reactor.callLater(timeout, self.hopTimeout, hop)
+
+    def connectionLost(self, why):
+        pass
 
 
+def traceroute(target, **settings):
+    tr = TracerouteProtocol(target, **settings)
+    return tr.deferred
 
+
+@defer.inlineCallbacks
+def start_trace(target, **settings):
+    hops = yield traceroute(target, **settings)
+    last_hop = hops[-1]
+    last_stats = last_hop.get()
+    if settings["hop_callback"] is None:
+        print(last_hop)
+
+    if settings['serial']:
+        import serial
+        ser = serial.Serial(
+                port=settings['serial'],
+                baudrate=9600)
+        ser.open()
+        ser.write('?f')
+        ser.write(last_hop.remote_ip.src)
+        ser.write('?n')
+        ser.write("%0.3fs" % last_stats['ping'])
+        ser.close()
+
+    reactor.stop()
+
+
+class Options(usage.Options):
+    optFlags = [
+        ["quiet", "q", "Only print results at the end."],
+        ["no-dns", "n", "Show numeric IPs only, not their host names."],
+        ["no-geoip", "g", "Do not collect and show GeoIP information"],
+        ["verbose", "v", "Be more verbose"],
+        ["help", "h", "Show this help"],
+    ]
+    optParameters = [
+        ["timeout", "t", 2, "Timeout for probe packets"],
+        ["tries", "r", 3, "How many tries before give up probing a hop"],
+        ["proto", "p", "icmp", "What protocol to use (tcp, udp, icmp)"],
+        ["dport", "d", random.randint(2 ** 10, 2 ** 16),
+                                    "Destination port (TCP and UDP only)"],
+        ["sport", "s", random.randint(2 ** 10, 2 ** 16),
+                                    "Source port (TCP and UDP only)"],
+        ["max_hops", "m", 30, "Max number of hops to probe"],
+        ["serial", "S", None, "Output last hop to serial"]
+    ]
+
+
+def main():
+    def show(hop):
+        print(hop)
+
+    defaults = dict(hop_callback=show,
+                    reverse_lookup=True,
+                    geoip_lookup=True,
+                    timeout=2,
+                    proto="icmp",
+                    dport=None,
+                    sport=None,
+                    serial=None,
+                    verbose=False,
+                    max_tries=3,
+                    max_hops=30)
+
+    if len(sys.argv) < 2:
+        print("Usage: %s [options] host" % (sys.argv[0]))
+        print("%s: Try --help for usage details." % (sys.argv[0]))
+        sys.exit(1)
+
+    target = sys.argv.pop(-1) if sys.argv[-1][0] != "-" else ""
+    config = Options()
+    try:
+        config.parseOptions()
+        if not target:
+            raise
+    except usage.UsageError as e:
+        print("%s: %s" % (sys.argv[0], e))
+        print("%s: Try --help for usage details." % (sys.argv[0]))
+        sys.exit(1)
+
+    settings = defaults.copy()
+    if config.get("quiet"):
+        settings["hop_callback"] = None
+    if config.get("no-dns"):
+        settings["reverse_lookup"] = False
+    if config.get("no-geoip"):
+        settings["geoip_lookup"] = False
+    if config.get("verbose"):
+        settings["verbose"] = True
+    if "timeout" in config:
+        settings["timeout"] = config["timeout"]
+    if "tries" in config:
+        settings["max_tries"] = int(config["tries"])
+    if "proto" in config:
+        settings["proto"] = config["proto"]
+    if "max_hops" in config:
+        settings["max_hops"] = config["max_hops"]
+    if "dport" in config:
+        settings["dport"] = int(config["dport"])
+    if "sport" in config:
+        settings["sport"] = int(config["sport"])
+    if "serial" in config and config['serial']:
+        settings["serial"] = config["serial"]
+
+    if hasattr(os, "getuid") and os.getuid():
+        print("traceroute needs root privileges for the raw socket")
+        sys.exit(1)
+    try:
+        target = socket.gethostbyname(target)
+    except Exception as e:
+        print("could not resolve '%s': %s" % (target, str(e)))
+        sys.exit(1)
+
+    reactor.callWhenRunning(start_trace, target, **settings)
+reactor.run()
 
 
 
