@@ -461,24 +461,25 @@ def traceroute(target, **settings):
 
 
 @defer.inlineCallbacks
-def start_trace(target, **settings):
-    hops = yield traceroute(target, **settings)
-    last_hop = hops[-1]
-    last_stats = last_hop.get()
-    if settings["hop_callback"] is None:
-        print last_hop
+def start_trace(targets, **settings):
+    for target in targets:
+        hops = yield traceroute(target, **settings)
+        last_hop = hops[-1]
+        last_stats = last_hop.get()
+        if settings["hop_callback"] is None:
+            print last_hop
 
-    if settings['serial']:
-        import serial
-        ser = serial.Serial(
-                port=settings['serial'],
-                baudrate=9600)
-        ser.open()
-        ser.write('?f')
-        ser.write(last_hop.remote_ip.src)
-        ser.write('?n')
-        ser.write("%0.3fs" % last_stats['ping'])
-        ser.close()
+        if settings['serial']:
+            import serial
+            ser = serial.Serial(
+                    port=settings['serial'],
+                    baudrate=9600)
+            ser.open()
+            ser.write('?f')
+            ser.write(last_hop.remote_ip.src)
+            ser.write('?n')
+            ser.write("%0.3fs" % last_stats['ping'])
+            ser.close()
 
     reactor.stop()
 
@@ -629,5 +630,4 @@ if __name__ == "__main__":
         'www.soundcloud.com',
         'www.bilibili.com'
     ]
-    for site in test_sites:
-        main(dest=site)
+    main(dest=test_sites)
