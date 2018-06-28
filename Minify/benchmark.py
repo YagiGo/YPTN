@@ -1,11 +1,39 @@
-# coding=utf-8
+# coding: utf-8
+# We want unbuffered stdout so that live feedback can be provided for each TTL
+
+#!/usr/bin/env python
+#
+# Copyright (c) 2018 Zhaoxin Wu
+#
+# Permission is hereby granted, free of charge, to any person obtaining
+# a copy of this software and associated documentation files (the
+# "Software"), to deal in the Software without restriction, including
+# without limitation the rights to use, copy, modify, merge, publish,
+# distribute, sublicense, and/or sell copies of the Software, and to
+# permit persons to whom the Software is furnished to do so, subject to
+# the following conditions:
+#
+# The above copyright notice and this permission notice shall be
+# included in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+# LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+# OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+# WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
 import socket
 import struct
 import sys
 import time
 import select
 import os
-# We want unbuffered stdout so that live feedback can be provided for each TTL
+import random
+from twisted.internet import defer, reactor
+
 
 class FlushFile:
     def __int__(self, f):
@@ -215,6 +243,289 @@ class NetworkMeasure:
         self.traceroute()
         self.ping()
         return self.res # benchmark result
+###############################################################################################################
+
+# Create ICMP, TCP, UDP headers down below
+#
+
+###############################################################################################################
+
+class iphdr(object):
+    """
+    This represents an IP packet header.
+    @assemble packages the packet
+    @disassemble disassembles the packet
+    """
+    def __init__(self, proto=socket.IPPROTO_ICMP, src="0.0.0.0", dst=None):
+        self.version = 4
+        self.hlen = 5
+        self.tos = 0
+        self.length = 20
+        self.id = random.randint(2 ** 10, 2 ** 16)
+        self.frag = 0
+        self.ttl = 255
+        self.proto = proto
+        self.cksum = 0
+        self.src = src
+        self.saddr = socket.inet_aton(src)
+        self.dst = dst or "0.0.0.0"
+        self.daddr = socket.inet_aton(self.dst)
+        self.data = ""
+
+    def assemble(self):
+        header = struct.pack('BBHHHBB',
+                             (self.version & 0x0f) << 4 | (self.hlen & 0x0f),
+                             self.tos, self.length + len(self.data),
+                             socket.htons(self.id), self.frag,
+                             self.ttl, self.proto)
+        self._raw = header + "\x00\x00" + self.saddr + self.daddr + self.data
+        return self._raw
+
+    @classmethod
+    def disassemble(self, data):
+        self._raw = data
+        ip = iphdr()
+        pkt = struct.unpack('!BBHHHBBH', data[:12])
+        ip.version = (pkt[0] >> 4 & 0x0f)
+        ip.hlen = (pkt[0] & 0x0f)
+        ip.tos, ip.length, ip.id, ip.frag, ip.ttl, ip.proto, ip.cksum = pkt[1:]
+        ip.saddr = data[12:16]
+        ip.daddr = data[16:20]
+        ip.src = socket.inet_ntoa(ip.saddr)
+        ip.dst = socket.inet_ntoa(ip.daddr)
+        return ip
+
+    def __repr__(self):
+        return "IP (tos %s, ttl %s, id %s, frag %s, proto %s, length %s) " \
+               "%s -> %s" % \
+               (self.tos, self.ttl, self.id, self.frag, self.proto,
+                self.length, self.src, self.dst)
+
+
+class tcphdr(object):
+    def __init__(self, data="", dport=4242, sport=4242):
+        self.seq = 0
+        self.hlen = 44
+        self.flags = 2
+        self.wsize = 200
+        self.cksum = 123
+        self.options = 0
+        self.mss = 1460
+        self.dport = dport
+        self.sport = sport
+
+    def assemble(self):
+        header = struct.pack("!HHL", self.sport, self.dport, self.seq)
+        header += '\x00\x00\x00\x00'
+        header += struct.pack("!HHH", (self.hlen & 0xff) << 10 | (self.flags &
+            0xff), self.wsize, self.cksum)
+        header += "\x00\x00"
+        options = '\x02\x04\x05\xb4\x01\x03\x03\x01\x01\x01\x08\x0a'
+        options += '\x4d\xcf\x52\x33\x00\x00\x00\x00\x04\x02\x00\x00'
+        # XXX There is something wrong here fixme
+        # options = struct.pack("!LBBBBBB", self.mss, 1, 3, 3, 1, 1, 1)
+        # options += struct.pack("!BBL", 8, 10, 1209452188)
+        # options += '\00'*4
+        # options += struct.pack("!BB", 4, 2)
+        # options += '\00'
+        self._raw = header + options
+        return self._raw
+
+    @classmethod
+    def checksum(self, data):
+        pass
+
+    def disassemble(self, data):
+        self._raw = data
+        tcp = tcphdr()
+        pkt = struct.unpack("!HHLH", data[:20])
+        tcp.sport, tcp.dport, tcp.seq = pkt[:3]
+        tcp.hlen = (pkt[4] >> 10) & 0xff
+        tcp.flags = pkt[4] & 0xff
+        tcp.wsize, tcp.cksum = struct.unpack("!HH", data[20:28])
+        return tcp
+
+
+class udphdr(object):
+    def __init__(self, data="", dport=4242, sport=4242):
+        self.dport = dport
+        self.sport = sport
+        self.cksum = 0
+        self.length = 0
+        self.data = data
+
+    def assemble(self):
+        self.length = len(self.data) + 8
+        part1 = struct.pack("!HHH", self.sport, self.dport, self.length)
+        cksum = self.checksum(self.data)
+        cksum = struct.pack("!H", cksum)
+
+        self._raw = part1 + cksum + self.data
+        return self._raw
+
+    @classmethod
+    def checksum(self, data):
+        # XXX implement proper checksum
+        cksum = 0
+        return cksum
+
+    def disassemble(self, data):
+        self._raw = data
+        udp = udphdr()
+        pkt = struct.unpack("!HHHH", data)
+        udp.src_port, udp.dst_port, udp.length, udp.cksum = pkt
+        return udp
+
+
+class icmphdr(object):
+    def __init__(self, data=""):
+        self.type = 8
+        self.code = 0
+        self.cksum = 0
+        self.id = random.randint(2 ** 10, 2 ** 16)
+        self.sequence = 0
+        self.data = data
+
+    def assemble(self):
+        part1 = struct.pack("BB", self.type, self.code)
+        part2 = struct.pack("!HH", self.id, self.sequence)
+        cksum = self.checksum(part1 + "\x00\x00" + part2 + self.data)
+        cksum = struct.pack("!H", cksum)
+        self._raw = part1 + cksum + part2 + self.data
+        return self._raw
+
+    @classmethod
+    def checksum(self, data):
+        if len(data) & 1:
+            data += "\x00"
+        cksum = reduce(operator.add,
+                       struct.unpack('!%dH' % (len(data) >> 1), data))
+        cksum = (cksum >> 16) + (cksum & 0xffff)
+        cksum += (cksum >> 16)
+        cksum = (cksum & 0xffff) ^ 0xffff
+        return cksum
+
+    @classmethod
+    def disassemble(self, data):
+        self._raw = data
+        icmp = icmphdr()
+        pkt = struct.unpack("!BBHHH", data)
+        icmp.type, icmp.code, icmp.cksum, icmp.id, icmp.sequence = pkt
+        return icmp
+
+    def __repr__(self):
+        return "ICMP (type %s, code %s, id %s, sequence %s)" % \
+                (self.type, self.code, self.id, self.sequence)
+##################################################################################################################
+
+# Create a TCP traceroute here.
+
+##################################################################################################################
+class Hop(object):
+    def __init__(self, target, ttl, proto, dport=None, sport=None):
+        self.proto = proto
+        self.dport = dport
+        self.sport = sport
+
+        self.found = False
+        self.tries = 0
+        self.last_try = 0
+        self.remote_ip = None
+        self.remote_icmp = None
+        self.remote_host = None
+        self.location = ""
+
+        self.ttl = ttl
+        self.ip = iphdr(dst=target)
+        self.ip.ttl = ttl
+        self.ip.id += ttl
+        if self.proto == "icmp":
+            self.icmp = icmphdr('\x00' * 20)
+            self.icmp.id = self.ip.id
+            self.ip.data = self.icmp.assemble()
+        elif self.proto == "udp":
+            self.udp = udphdr('\x00' * 20, self.dport, self.sport)
+            self.ip.data = self.udp.assemble()
+            self.ip.proto = socket.IPPROTO_UDP
+        else:
+            self.tcp = tcphdr('\x42' * 20, self.dport, self.sport)
+            self.ip.data = self.tcp.assemble()
+            self.ip.proto = socket.IPPROTO_TCP
+
+        self._pkt = self.ip.assemble()
+
+    @property
+    def pkt(self):
+        self.tries += 1
+        self.last_try = time.time()
+        return self._pkt
+
+    def get(self):
+        if self.found:
+            if self.remote_host:
+                ip = self.remote_host
+            else:
+                ip = self.remote_ip.src
+            ping = self.found - self.last_try
+        else:
+            ip = None
+            ping = None
+
+        location = self.location if self.location else None
+        return {'ttl': self.ttl, 'ping': ping, 'ip': ip, 'location': location}
+
+    def __repr__(self):
+        if self.found:
+            if self.remote_host:
+                ip = ":: %s" % self.remote_host
+            else:
+                ip = ":: %s" % self.remote_ip.src
+            ping = "%0.3fs" % (self.found - self.last_try)
+        else:
+            ip = "??"
+            ping = "-"
+
+        location = ":: %s" % self.location if self.location else ""
+        return "%02d. %s %s %s" % (self.ttl, ping, ip, location)
+
+
+class TCPTraceroute:
+    def __init__(self, destination):
+        self.destination = destination
+        self.protocol = "tcp"
+        self.send_socket = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_TCP)
+        self.recv_socket = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_ICMP)
+        self.send_socket.setsockopt(socket.IPPROTO_IP, socket.IP_HDRINCL, 1)
+        self.recv_socket.setsockopt(socket.IPPROTO_IP, socket.IP_HDRINCL, 1)
+
+        self.hops = []
+        self.out_queue = []
+        self.waiting = True
+        self.deferred = defer.Deferred()
+
+        reactor.addReader(self)
+        reactor.addWriter(self)
+
+        # send 1st probe packet
+        self.out_queue.append(Hop(self.destination, ttl=1, proto='tcp',
+                                  dport=random.randint(2**10, 2**16),
+                                  sport=random.randint(2**10, 2**16)))
+
+    def log_prefix(self):
+        return "Traceroute Protocol(%s)" %self.destination
+
+    def fileno(self):
+        return self.recv_socket.fileno()
+
+    @defer.inlineCallbacks
+    def hop_found(self, hop, ip, icmp):
+        hop.remote_ip =ip
+        hop
+
+
+
+
+
 
 
 if __name__ == "__main__":
