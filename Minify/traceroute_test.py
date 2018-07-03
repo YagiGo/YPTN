@@ -227,7 +227,7 @@ def pprintp(packet):
             left += "%s " % y[0]
             right += "%s" % y[1]
 
-        print left + "     " + right
+        print(left + "     " + right)
 
 
 @defer.inlineCallbacks
@@ -238,7 +238,8 @@ def geoip_lookup(ip):
         items = [d["country_name"], d["region_name"], d["city"]]
         text = ", ".join([s for s in items if s])
         defer.returnValue(text.encode("utf-8"))
-    except Exception:
+    except Exception as error:
+        # print(str(error))
         defer.returnValue("Unknown location")
 
 
@@ -404,10 +405,9 @@ class TracerouteProtocol(object):
         # disassemble ip header
         ip = iphdr.disassemble(pkt[:20])
 
-        if self.verbose:
-            print "Got this packet:"
-            print "src %s" % ip.src
-            pprintp(pkt)
+        # print("Got this packet:")
+        # print("src %s" % ip.src)
+        # pprintp(pkt)
 
         if ip.proto != socket.IPPROTO_ICMP:
             return
@@ -462,6 +462,7 @@ def traceroute(target, **settings):
 
 @defer.inlineCallbacks
 def start_trace(targets, **settings):
+    time_cost = 0.0
     for target in targets:
         print("currently benchmarking " + target )
         try:
@@ -470,10 +471,16 @@ def start_trace(targets, **settings):
             print("could not resolve '%s': %s" % (target, str(e)))
             sys.exit(1)
         hops = yield traceroute(target, **settings)
+        # time_cost += hops.get()['ping']
+        for hop in hops:
+            try:
+                time_cost += hop.get()['ping'] * 1000
+            except Exception:
+                pass # To prevent unresponsive or unreachable ones
         last_hop = hops[-1]
         last_stats = last_hop.get()
         if settings["hop_callback"] is None:
-            print last_hop
+            print(last_hop)
 
         if settings['serial']:
             import serial
@@ -486,8 +493,9 @@ def start_trace(targets, **settings):
             ser.write('?n')
             ser.write("%0.3fs" % last_stats['ping'])
             ser.close()
+        print("Time Cost: " + time_cost + "ms")
         print('\n')
-        time.sleep(1)
+        # time.sleep(1)
 
     reactor.stop()
 
