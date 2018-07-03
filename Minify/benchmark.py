@@ -791,7 +791,6 @@ def main():
 if __name__ == "__main__":
     # Test Sites: Alexa Top 50 Sites
     test_sites = [
-        'www.google.com',
         'www.youtube.com',
         'www.facebook.com',
         'www.baidu.com',
@@ -843,7 +842,7 @@ if __name__ == "__main__":
         'www.soundcloud.com',
         'www.bilibili.com'
     ]
-    test_site = ['www.google.com']
+    test_site = ['www.yahoo.co.jp']
     for site in test_site:
         sys.stdout.write("Currently Benchmarking "+site+"\n")
         test_measure = NetworkMeasure(source="localhost", destination=site)

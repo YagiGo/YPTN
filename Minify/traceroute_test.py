@@ -461,27 +461,35 @@ def traceroute(target, **settings):
 
 
 @defer.inlineCallbacks
-def start_trace(target, **settings):
-    hops = yield traceroute(target, **settings)
-    last_hop = hops[-1]
-    last_stats = last_hop.get()
-    if settings["hop_callback"] is None:
-        print last_hop
+def start_trace(targets, **settings):
+    for target in targets:
+        print("currently benchmarking " + target )
+        try:
+            target = socket.gethostbyname(target)
+        except Exception as e:
+            print("could not resolve '%s': %s" % (target, str(e)))
+            sys.exit(1)
+        hops = yield traceroute(target, **settings)
+        last_hop = hops[-1]
+        last_stats = last_hop.get()
+        if settings["hop_callback"] is None:
+            print last_hop
 
-    if settings['serial']:
-        import serial
-        ser = serial.Serial(
-                port=settings['serial'],
-                baudrate=9600)
-        ser.open()
-        ser.write('?f')
-        ser.write(last_hop.remote_ip.src)
-        ser.write('?n')
-        ser.write("%0.3fs" % last_stats['ping'])
-        ser.close()
+        if settings['serial']:
+            import serial
+            ser = serial.Serial(
+                    port=settings['serial'],
+                    baudrate=9600)
+            ser.open()
+            ser.write('?f')
+            ser.write(last_hop.remote_ip.src)
+            ser.write('?n')
+            ser.write("%0.3fs" % last_stats['ping'])
+            ser.close()
+        print('\n')
+        time.sleep(1)
 
     reactor.stop()
-
 
 class Options(usage.Options):
     optFlags = [
@@ -567,13 +575,12 @@ def main(dest):
     if hasattr(os, "getuid") and os.getuid():
         print("traceroute needs root privileges for the raw socket")
         sys.exit(1)
-    try:
-        target = socket.gethostbyname(target)
-    except Exception as e:
-        print("could not resolve '%s': %s" % (target, str(e)))
-        sys.exit(1)
     reactor.callWhenRunning(start_trace, target, **settings)
+    # You can't restart the reactor, but you should be able to run it more times by forking a separate process
     reactor.run()
+    # time.sleep(1)
+    # reactor.stop()
+
 
 if __name__ == "__main__":
     test_sites = [
@@ -629,5 +636,7 @@ if __name__ == "__main__":
         'www.soundcloud.com',
         'www.bilibili.com'
     ]
-    for site in test_sites:
-        main(dest=site)
+    test_site = ["www.google.com"]
+    # for site in test_site:
+        # main(dest=site)
+    main(dest = test_sites)
