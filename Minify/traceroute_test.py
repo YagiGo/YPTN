@@ -326,6 +326,7 @@ class TracerouteProtocol(object):
         self.settings = settings
         self.verbose = settings.get("verbose")
         self.proto = settings.get("proto")
+        # print("PROTOCOL IS " + self.proto)
         self.rfd = socket.socket(socket.AF_INET, socket.SOCK_RAW,
                                 socket.IPPROTO_ICMP)
         if self.proto == "icmp":
@@ -335,6 +336,7 @@ class TracerouteProtocol(object):
             self.sfd = socket.socket(socket.AF_INET, socket.SOCK_RAW,
                                     socket.IPPROTO_UDP)
         elif self.proto == "tcp":
+            # print ("THIS SHOULD ACTIVATE")
             self.sfd = socket.socket(socket.AF_INET, socket.SOCK_RAW,
                                     socket.IPPROTO_TCP)
 
@@ -462,8 +464,8 @@ def traceroute(target, **settings):
 
 @defer.inlineCallbacks
 def start_trace(targets, **settings):
-    time_cost = 0.0
     for target in targets:
+        time_cost = 0.0
         print("currently benchmarking " + target )
         try:
             target = socket.gethostbyname(target)
@@ -473,8 +475,10 @@ def start_trace(targets, **settings):
         hops = yield traceroute(target, **settings)
         # time_cost += hops.get()['ping']
         for hop in hops:
+            print(hop)
             try:
                 time_cost += hop.get()['ping'] * 1000
+                print(time_cost)
             except Exception:
                 pass # To prevent unresponsive or unreachable ones
         last_hop = hops[-1]
@@ -493,7 +497,7 @@ def start_trace(targets, **settings):
             ser.write('?n')
             ser.write("%0.3fs" % last_stats['ping'])
             ser.close()
-        print("Time Cost: " + time_cost + "ms")
+        print("Time Cost: %0.3f ms "%time_cost )
         print('\n')
         # time.sleep(1)
 
@@ -556,6 +560,7 @@ def main(dest):
         sys.exit(1)
 
     settings = defaults.copy()
+    settings['proto'] = 'icmp'
     """
     if config.get("quiet"):
         settings["hop_callback"] = None
@@ -644,7 +649,7 @@ if __name__ == "__main__":
         'www.soundcloud.com',
         'www.bilibili.com'
     ]
-    test_site = ["www.google.com"]
+    test_site = ["www.wikipedia.org"]
     # for site in test_site:
         # main(dest=site)
     main(dest = test_sites)
