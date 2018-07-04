@@ -472,6 +472,7 @@ def start_trace(targets, **settings):
         benchmark_result['url'] = target
         try:
             target = socket.gethostbyname(target)
+            benchmark_result['url_host'] = target
         except Exception as e:
             print("could not resolve '%s': %s" % (target, str(e)))
             sys.exit(1)
@@ -486,6 +487,7 @@ def start_trace(targets, **settings):
                 pass # To prevent unresponsive or unreachable ones
         last_hop = hops[-1]
         last_stats = last_hop.get()
+        benchmark_result['last_hop_ip'] = socket.gethostbyname(last_stats['ip'])
         hop_counter = last_stats['ttl']
         if settings["hop_callback"] is None:
             print(last_hop)
@@ -503,8 +505,10 @@ def start_trace(targets, **settings):
             ser.close()
         benchmark_result['time_cost'] = time_cost
         benchmark_result['hops'] = hop_counter
+        print(benchmark_result)
         print('\n')
     result.append(benchmark_result)
+    # print(result)
         # time.sleep(1)
     reactor.stop()
 
@@ -601,6 +605,7 @@ def main(dest):
 
 
 if __name__ == "__main__":
+    # Alexa top 50 sites test set
     test_sites = [
         'www.google.com',
         'www.youtube.com',
@@ -654,7 +659,7 @@ if __name__ == "__main__":
         'www.soundcloud.com',
         'www.bilibili.com'
     ]
-    test_site = ["www.wikipedia.org"]
+    test_site = ["www.softlab.cs.tsukuba.ac.jp"]
     # for site in test_site:
         # main(dest=site)
     main(dest = test_sites)
