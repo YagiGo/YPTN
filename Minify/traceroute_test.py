@@ -464,9 +464,12 @@ def traceroute(target, **settings):
 
 @defer.inlineCallbacks
 def start_trace(targets, **settings):
+    result = []
     for target in targets:
-        time_cost = 0.0
+        benchmark_result = {} # init dict for storing benchmark result
+        time_cost = 0.0 # init time counter
         print("currently benchmarking " + target )
+        benchmark_result['url'] = target
         try:
             target = socket.gethostbyname(target)
         except Exception as e:
@@ -475,7 +478,7 @@ def start_trace(targets, **settings):
         hops = yield traceroute(target, **settings)
         # time_cost += hops.get()['ping']
         for hop in hops:
-            print(hop)
+
             try:
                 time_cost += hop.get()['ping'] * 1000
                 print(time_cost)
@@ -483,6 +486,7 @@ def start_trace(targets, **settings):
                 pass # To prevent unresponsive or unreachable ones
         last_hop = hops[-1]
         last_stats = last_hop.get()
+        hop_counter = last_stats['ttl']
         if settings["hop_callback"] is None:
             print(last_hop)
 
@@ -497,10 +501,11 @@ def start_trace(targets, **settings):
             ser.write('?n')
             ser.write("%0.3fs" % last_stats['ping'])
             ser.close()
-        print("Time Cost: %0.3f ms "%time_cost )
+        benchmark_result['time_cost'] = time_cost
+        benchmark_result['hops'] = hop_counter
         print('\n')
+    result.append(benchmark_result)
         # time.sleep(1)
-
     reactor.stop()
 
 class Options(usage.Options):
