@@ -76,7 +76,7 @@ class DatabaseObject():
         except:
             self.collection = self.db.createCollection()
 
-    def show_result():
+    def show_result(self):
         pass
 if __name__ == "__main__":
     dbInstance = DatabaseObject(MongoClient("localhost", 27017), dbName="test", dbCollection="access_sites")

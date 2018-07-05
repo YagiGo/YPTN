@@ -36,6 +36,8 @@ from twisted.internet import reactor
 from twisted.internet import threads
 from twisted.python import usage
 from twisted.web.client import getPage
+from DataProcess import DbDataAccess
+from pymongo import MongoClient
 import traceback
 
 
@@ -543,6 +545,28 @@ class Options(usage.Options):
     ]
 
 
+def network_benchmark(dbAddr, dbPort, dbName, user_agent):
+    """
+
+    :param dbAddr: String, db Address
+    :param dbPort: int, db port
+    :param dbName: String, default db name
+    :param user_agent: string, user-agent in header, used for locating user's collection in the db
+
+    :return: benchmark result
+    """
+
+    # This function here get most accessed url from the db based on user-agent
+    # And perform network condition benchmark to each and every one of them.
+    test_obj = DbDataAccess(dbClient=MongoClient(dbAddr, dbPort), dbName=dbName)
+    # test_obj.get_url_and_time(user_agent="Mozilla/5.0 (Linux; Android 7.1.1; Nexus 5X Build/N4F26I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.135 Mobile Safari/537.36")
+    test_obj = DbDataAccess(dbClient=MongoClient(dbAddr, dbPort), dbName=dbName)
+    # test_obj.get_url_and_time(user_agent="Mozilla/5.0 (Linux; Android 7.1.1; Nexus 5X Build/N4F26I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.135 Mobile Safari/537.36")
+    benchmark_urls = test_obj.get_url_and_time(user_agent=user_agent)
+    main(dest=benchmark_urls)
+
+
+
 def main(dest):
     def show(hop):
         print hop
@@ -675,4 +699,6 @@ if __name__ == "__main__":
     test_site3 = ['www.google.com']
     # for site in test_site:
         # main(dest=site)
-    main(dest = test_sites)
+    # main(dest = test_sites)
+    network_benchmark(dbAddr="localhost", dbPort=27017, dbName="test",
+        user_agent="Mozilla/5.0 (Linux; Android 7.1.1; Nexus 5X Build/N4F26I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.135 Mobile Safari/537.36")
