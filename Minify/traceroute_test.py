@@ -339,6 +339,7 @@ class TracerouteProtocol(object):
             print("Benchmark using UDP")
             self.sfd = socket.socket(socket.AF_INET, socket.SOCK_RAW,
                                     socket.IPPROTO_UDP)
+            # Fix bugs in UDP
         elif self.proto == "tcp":
             print("Benchmark using TCP")
             # print ("THIS SHOULD ACTIVATE")
@@ -487,15 +488,16 @@ def start_trace(targets, **settings):
         # time_cost += hops.get()['ping']
         for hop in hops:
             try:
+                # print(hop)
                 time_cost += hop.get()['ping'] * 1000
-                print(time_cost)
+                # print(time_cost)
             except Exception:
                 print("opps, something broke here")
-                # traceback.print_exc()
+                traceback.print_exc()
                 pass # To prevent unresponsive or unreachable ones
         last_hop = hops[-1]
         last_stats = last_hop.get()
-        benchmark_result['last_hop_ip'] = socket.gethostbyname(last_stats['ip'])
+        # benchmark_result['last_hop_ip'] = socket.gethostbyname(last_stats['ip'])
         hop_counter = last_stats['ttl']
         if settings["hop_callback"] is None:
             print(last_hop)
@@ -578,7 +580,7 @@ def main(dest):
         sys.exit(1)
 
     settings = defaults.copy()
-    settings['proto'] = 'udp'
+    settings['proto'] = 'icmp'
     """
     if config.get("quiet"):
         settings["hop_callback"] = None
@@ -589,7 +591,7 @@ def main(dest):
     if config.get("verbose"):
         settings["verbose"] = True
     if "timeout" in config:
-        settings["timeout"] = config["timeout"]
+        settings["timeout"] = config["timeout"]ping
     if "tries" in config:
         settings["max_tries"] = int(config["tries"])
     if "proto" in config:
@@ -673,4 +675,4 @@ if __name__ == "__main__":
     test_site3 = ['www.google.com']
     # for site in test_site:
         # main(dest=site)
-    main(dest = test_site2)
+    main(dest = test_sites)
