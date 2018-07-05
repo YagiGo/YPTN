@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 #
-# Copyright (c) 2012 Alexandre Fiori
+# Copyright (c) 2012 Alexandre Fiori 2018 Zhaoxin Wu
 #
 # Permission is hereby granted, free of charge, to any person obtaining
 # a copy of this software and associated documentation files (the
@@ -36,6 +36,7 @@ from twisted.internet import reactor
 from twisted.internet import threads
 from twisted.python import usage
 from twisted.web.client import getPage
+import traceback
 
 
 class iphdr(object):
@@ -99,8 +100,8 @@ class tcphdr(object):
         self.cksum = 123
         self.options = 0
         self.mss = 1460
-        self.dport = dport
-        self.sport = sport
+        self.dport = 4242 # set to 4242
+        self.sport = 4242 # set to 4242
 
     def assemble(self):
         header = struct.pack("!HHL", self.sport, self.dport, self.seq)
@@ -136,8 +137,8 @@ class tcphdr(object):
 
 class udphdr(object):
     def __init__(self, data="", dport=4242, sport=4242):
-        self.dport = dport
-        self.sport = sport
+        self.dport = 4242 # set to 4242
+        self.sport = 4242 # set to 4242
         self.cksum = 0
         self.length = 0
         self.data = data
@@ -280,7 +281,8 @@ class Hop(object):
             self.ip.proto = socket.IPPROTO_UDP
         else:
             self.tcp = tcphdr('\x42' * 20, self.dport, self.sport)
-            self.ip.data = self.tcp.assemble()
+            self.ip.data = self.tcp.assemble()  # Something went wrong here, need fix!
+            # Updated, fixed, port numbers were not fed into the class
             self.ip.proto = socket.IPPROTO_TCP
 
         self._pkt = self.ip.assemble()
@@ -330,12 +332,15 @@ class TracerouteProtocol(object):
         self.rfd = socket.socket(socket.AF_INET, socket.SOCK_RAW,
                                 socket.IPPROTO_ICMP)
         if self.proto == "icmp":
+            print("Benchmark using ICMP")
             self.sfd = socket.socket(socket.AF_INET, socket.SOCK_RAW,
                                     socket.IPPROTO_ICMP)
         elif self.proto == "udp":
+            print("Benchmark using UDP")
             self.sfd = socket.socket(socket.AF_INET, socket.SOCK_RAW,
                                     socket.IPPROTO_UDP)
         elif self.proto == "tcp":
+            print("Benchmark using TCP")
             # print ("THIS SHOULD ACTIVATE")
             self.sfd = socket.socket(socket.AF_INET, socket.SOCK_RAW,
                                     socket.IPPROTO_TCP)
@@ -437,6 +442,7 @@ class TracerouteProtocol(object):
             if hop.tries < self.settings.get("max_tries", 3):
                 # retry
                 self.out_queue.append(hop)
+                # count retry times here
             else:
                 # give up and move forward
                 self.hopFound(hop, None, None)
@@ -476,14 +482,16 @@ def start_trace(targets, **settings):
         except Exception as e:
             print("could not resolve '%s': %s" % (target, str(e)))
             sys.exit(1)
+        # print("This works!")
         hops = yield traceroute(target, **settings)
         # time_cost += hops.get()['ping']
         for hop in hops:
-
             try:
                 time_cost += hop.get()['ping'] * 1000
                 print(time_cost)
             except Exception:
+                print("opps, something broke here")
+                # traceback.print_exc()
                 pass # To prevent unresponsive or unreachable ones
         last_hop = hops[-1]
         last_stats = last_hop.get()
@@ -557,6 +565,7 @@ def main(dest):
         sys.exit(1)
     """
     # target = sys.argv.pop(-1) if sys.argv[-1][0] != "-" else ""
+    # Using the parameters for testing purpose only!
     target = dest
     config = Options()
     try:
@@ -569,7 +578,7 @@ def main(dest):
         sys.exit(1)
 
     settings = defaults.copy()
-    settings['proto'] = 'icmp'
+    settings['proto'] = 'udp'
     """
     if config.get("quiet"):
         settings["hop_callback"] = None
@@ -660,6 +669,8 @@ if __name__ == "__main__":
         'www.bilibili.com'
     ]
     test_site = ["www.softlab.cs.tsukuba.ac.jp"]
+    test_site2 = ['www.netflix.com']
+    test_site3 = ['www.google.com']
     # for site in test_site:
         # main(dest=site)
-    main(dest = test_sites)
+    main(dest = test_site2)
