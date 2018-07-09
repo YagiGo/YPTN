@@ -1,0 +1,21 @@
+2018-06-21 14:25:48,646 INFO: HTML File from: www.google.comhas been cached
+2018-06-21 14:30:05,077 INFO: Host: www.google.com sent a HTML file
+2018-06-21 14:30:05,077 INFO: HTML File from: www.google.comhas been cached
+2018-06-21 14:31:14,545 INFO: Host: www.google.co.jp sent a JavaScript file
+2018-06-21 14:31:14,546 INFO: JS file from www.google.co.jp has been cached
+2018-06-21 14:31:14,980 INFO: Host: www.google.co.jp sent a JavaScript file
+2018-06-21 14:31:14,980 INFO: JS file from www.google.co.jp has been cached
+2018-06-21 14:31:15,281 INFO: Host: www.google.co.jp sent a JavaScript file
+2018-06-21 14:31:15,282 INFO: JS file from www.google.co.jp has been cached
+2018-06-21 14:31:15,627 INFO: Host: www.google.co.jp sent a JavaScript file
+2018-06-21 14:31:15,627 INFO: JS file from www.google.co.jp has been cached
+2018-06-21 14:31:16,542 INFO: Host: www.facebook.com sent a HTML file
+2018-06-21 14:31:16,543 INFO: HTML File from: www.facebook.comhas been cached
+2018-06-21 14:31:16,994 INFO: Host: m.facebook.com sent a HTML file
+2018-06-21 14:31:16,994 INFO: HTML File from: m.facebook.comhas been cached
+2018-06-21 14:31:18,537 INFO: Host: facebook.com sent a HTML file
+2018-06-21 14:31:18,540 INFO: HTML File from: facebook.comhas been cached
+2018-06-21 14:31:18,642 INFO: Host: static.xx.fbcdn.net sent an image
+2018-06-21 14:31:18,654 INFO: Image from static.xx.fbcdn.net has been cached
+2018-06-21 14:31:18,655 INFO: Host: static.xx.fbcdn.net sent an image
+2018-06-21 14:31:18,656 INFO: Image from static.xx.fbcdn.net has been cached
