@@ -19,3 +19,9 @@
 2018-06-21 14:31:18,654 INFO: Image from static.xx.fbcdn.net has been cached
 2018-06-21 14:31:18,655 INFO: Host: static.xx.fbcdn.net sent an image
 2018-06-21 14:31:18,656 INFO: Image from static.xx.fbcdn.net has been cached
+
+{'url': 'www.google.com', 'time_cost': 24.718046188354492, 'url_host': '216.58.220.228', 'hops': 10}
+{'url': 'www.youtube.com', 'time_cost': 25.16341209411621, 'url_host': '172.217.24.142', 'hops': 10}
+{'url': 'www.facebook.com', 'time_cost': 26.094913482666016, 'url_host': '31.13.82.38', 'hops': 10}
+{'url': 'www.baidu.com', 'time_cost': 341.8703079223633, 'url_host': '103.235.46.39', 'hops': 17}
+{'url': 'www.wikipedia.org', 'time_cost': 381.9284439086914, 'url_host': '103.102.166.224', 'hops': 15}
