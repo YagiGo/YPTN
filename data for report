@@ -1,0 +1,38 @@
+2018-06-21 14:25:48,646 INFO: HTML File from: www.google.comhas been cached
+2018-06-21 14:30:05,077 INFO: Host: www.google.com sent a HTML file
+2018-06-21 14:30:05,077 INFO: HTML File from: www.google.comhas been cached
+2018-06-21 14:31:14,545 INFO: Host: www.google.co.jp sent a JavaScript file
+2018-06-21 14:31:14,546 INFO: JS file from www.google.co.jp has been cached
+2018-06-21 14:31:14,980 INFO: Host: www.google.co.jp sent a JavaScript file
+2018-06-21 14:31:14,980 INFO: JS file from www.google.co.jp has been cached
+2018-06-21 14:31:15,281 INFO: Host: www.google.co.jp sent a JavaScript file
+2018-06-21 14:31:15,282 INFO: JS file from www.google.co.jp has been cached
+2018-06-21 14:31:15,627 INFO: Host: www.google.co.jp sent a JavaScript file
+2018-06-21 14:31:15,627 INFO: JS file from www.google.co.jp has been cached
+2018-06-21 14:31:16,542 INFO: Host: www.facebook.com sent a HTML file
+2018-06-21 14:31:16,543 INFO: HTML File from: www.facebook.comhas been cached
+2018-06-21 14:31:16,994 INFO: Host: m.facebook.com sent a HTML file
+2018-06-21 14:31:16,994 INFO: HTML File from: m.facebook.comhas been cached
+2018-06-21 14:31:18,537 INFO: Host: facebook.com sent a HTML file
+2018-06-21 14:31:18,540 INFO: HTML File from: facebook.comhas been cached
+2018-06-21 14:31:18,642 INFO: Host: static.xx.fbcdn.net sent an image
+2018-06-21 14:31:18,654 INFO: Image from static.xx.fbcdn.net has been cached
+2018-06-21 14:31:18,655 INFO: Host: static.xx.fbcdn.net sent an image
+2018-06-21 14:31:18,656 INFO: Image from static.xx.fbcdn.net has been cached
+
+{'url': 'www.google.com', 'time_cost': 24.718046188354492, 'url_host': '216.58.220.228', 'hops': 10}
+{'url': 'www.youtube.com', 'time_cost': 25.16341209411621, 'url_host': '172.217.24.142', 'hops': 10}
+{'url': 'www.facebook.com', 'time_cost': 26.094913482666016, 'url_host': '31.13.82.38', 'hops': 10}
+{'url': 'www.baidu.com', 'time_cost': 341.8703079223633, 'url_host': '103.235.46.39', 'hops': 17}
+{'url': 'www.wikipedia.org', 'time_cost': 381.9284439086914, 'url_host': '103.102.166.224', 'hops': 15}
+
+(u'https://www.amazon.co.jp/', 35)
+(u'https://weather.yahoo.co.jp/weather/', 17)
+(u'https://s.yimg.jp/images/ycd/lib/ycdloader/4.0.2/ycdproxy.html?placeholder=ycd-module&origin=https%3A%2F%2Fnews.yahoo.co.jp', 17)
+(u'https://news.yahoo.co.jp/pickup/6289314', 15)
+(u'https://www.amazon.co.jp/gp/aw/d/B00HE5M1NI/ref=gwm_mac_0_B00HE5M1NI?pf_rd_p=fb142535-5f3e-4c98-86d9-fa94f67073cd&pf_rd_s=grid-12&pf_rd_t=Gateway&pf_rd_i=mobile&pf_rd_m=AN1VRQENFRJN5&pf_rd_r=84NJ4EV3ZZ3X7QKHHS4A&pf_rd_r=84NJ4EV3ZZ3X7QKHHS4A&pf_rd_p=fb142535-5f3e-4c98-86d9-fa94f67073cd&pd_rd_i=B00HE5M1NI', 13)
+(u'https://news.baidu.com/news?fr=mohome&ssid=0&from=844b&uid=&pu=sz%40320_1001%2Cta%40iphone_2_7.1_3_537&bd_page_type=1', 13)
+(u'https://www.amazon.co.jp/2018%E5%B9%B4-%E4%B8%8A%E5%8D%8A%E6%9C%9F-%E4%BA%BA%E6%B0%97%E9%82%A6%E6%A5%BD%E3%82%A2%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0-Prime-Music/dp/B07DDFY2WG/ref=gwm_mac_1_B07DDFY2WG?pf_rd_p=daab4d60-f6ad-4837-872b-b345568902ce&pf_rd_s=grid-12&pf_rd_t=Gateway&pf_rd_i=mobile&pf_rd_m=AN1VRQENFRJN5&pf_rd_r=KFP65HTZN5G1XB3D2P2A&pf_rd_r=KFP65HTZN5G1XB3D2P2A&pf_rd_p=daab4d60-f6ad-4837-872b-b345568902ce&pd_rd_i=B07DDFY2WG', 12)
+(u'https://news.yahoo.co.jp/pickup/6288798', 12)
+(u'https://gss0.bdstatic.com/5foIcy0a2gI2n2jgoY3K/n/nvn/static/news/aio_519837f.css', 11)
+(u'https://www.amazon.co.jp/gp/aw/d/B01J6A7CT6/ref=aw_gw_roo_39f7e2d933f0?pf_rd_p=ad01baea-4f81-4b65-92a5-b497fbdb4f67&pf_rd_s=grid-1-takeover&pf_rd_t=Gateway&pf_rd_i=mobile&pf_rd_m=AN1VRQENFRJN5&pf_rd_r=84NJ4EV3ZZ3X7QKHHS4A&pf_rd_r=84NJ4EV3ZZ3X7QKHHS4A&pf_rd_p=ad01baea-4f81-4b65-92a5-b497fbdb4f67', 11)
