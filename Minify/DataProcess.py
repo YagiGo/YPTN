@@ -14,14 +14,20 @@ class DbDataAccess():
         self.db = dbClient[dbName]
         self.collection = self.db["access_sites"]
 
+    def go_to_database(self, dbClient, dbName):
+            self.db = dbClient[dbName]
+
     def go_to_collection(self, user_agent):
         try:
             self.collection = self.db[str(uuid.uuid3(namespace=uuid.NAMESPACE_OID, name=user_agent))]
         except:
             # No such collection? Go to the default one
             self.collection = self.db["access_sites"]
-    def get_url_and_time(self, user_agent, assigned_range=5):
+    def get_url_and_time(self, user_agent, assigned_range=10):
+        # assigned_range will be used to select the most accessed sites in the db
         # assigned_range will be set to 5 if not assigned
+        # and since this is not very accurate, future works will be contributed to improve accuracy by
+        # adding other means of benchmarking
         benchmark_urls = []
         accessed_url = []
         accessed_time = []
@@ -44,6 +50,14 @@ class DbDataAccess():
             benchmark_urls.append(url_counter[i][0])
             # print(url_counter[i][0]) #url here
         return benchmark_urls
+
+    def get_url_post(self, user_agent, url, access_time, access_times):
+        return {
+            "url":url,
+            "user_agent": user_agent,
+            "access_time": access_time,
+            "access_times": access_times
+        }
 
     def url_modify(self, url_record):
         """
