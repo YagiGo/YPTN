@@ -5,7 +5,7 @@ import operator
 from urlparse import urlparse
 
 class DbDataAccess():
-    def __init__(self, dbClient, dbName):
+    def __init__(self, dbClient, dbName, user_agent):
         """
 
         :param dbClient: a db instance
@@ -13,6 +13,7 @@ class DbDataAccess():
         """
         self.db = dbClient[dbName]
         self.collection = self.db["access_sites"]
+        self.user_agent = user_agent
 
     def go_to_database(self, dbClient, dbName):
             self.db = dbClient[dbName]
@@ -23,15 +24,17 @@ class DbDataAccess():
         except:
             # No such collection? Go to the default one
             self.collection = self.db["access_sites"]
-    def get_url_and_time(self, user_agent, assigned_range=10):
+    def get_url_and_time(self, assigned_range=10):
         # assigned_range will be used to select the most accessed sites in the db
         # assigned_range will be set to 5 if not assigned
         # and since this is not very accurate, future works will be contributed to improve accuracy by
         # adding other means of benchmarking
+
+        # first go to the db that stores
         benchmark_urls = []
         accessed_url = []
         accessed_time = []
-        self.go_to_collection(user_agent)
+        self.go_to_collection(self.user_agent)
         for post in self.collection.find():
             accessed_url.append(post['url'])
             accessed_time.append(post['time'])
@@ -40,22 +43,27 @@ class DbDataAccess():
         url_counter = sorted(url_counter.items(), key=operator.itemgetter(1), reverse=True)  # sort the dict in a descending order
         # print(url_counter)
         modified_url = self.url_modify(url_counter)
-        print(modified_url)
-        for item in url_counter:
+        # print(modified_url)
+        for item in modified_url:
+            # item[0] url
+            # item[1] access time
+            url_post = self.get_url_post(user_agent=self.user_agent, url = str(item[0]), access_times= int(item[1]))
+            print(url_post)
+            # and what the fuck is this?
             # print(item)
-            result = urlparse(str(item[0]))
             # print(result)
+
 
         for i in range(assigned_range):
             benchmark_urls.append(url_counter[i][0])
             # print(url_counter[i][0]) #url here
         return benchmark_urls
 
-    def get_url_post(self, user_agent, url, access_time, access_times):
+    def get_url_post(self, user_agent, url, access_times):
         return {
             "url":url,
             "user_agent": user_agent,
-            "access_time": access_time,
+            # "access_time": access_time, # Emmm, don't add access time at this point
             "access_times": access_times
         }
 
@@ -86,8 +94,9 @@ class DbDataAccess():
 
 
 if __name__ == "__main__":
-    test_obj = DbDataAccess(dbClient=MongoClient("localhost", 27017), dbName="test")
+    test_obj = DbDataAccess(dbClient=MongoClient("localhost", 27017), dbName="test",
+                            user_agent = "Mozilla/5.0 (Linux; Android 7.1.1; Nexus 5X Build/N4F26I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.135 Mobile Safari/537.36")
 
     # test_obj.get_url_and_time(user_agent="Mozilla/5.0 (Linux; Android 7.1.1; Nexus 5X Build/N4F26I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.135 Mobile Safari/537.36")
-    test_obj.get_url_and_time(user_agent="Mozilla/5.0 (Linux; Android 7.1.1; Nexus 5X Build/N4F26I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.135 Mobile Safari/537.36")
+    test_obj.get_url_and_time()
 
