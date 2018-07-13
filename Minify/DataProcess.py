@@ -5,18 +5,21 @@ import operator
 from urlparse import urlparse
 
 class DbDataAccess():
-    def __init__(self, dbClient, dbName, user_agent):
+    def __init__(self, dbClient, dbName, user_agent, processedDaraDBName):
         """
 
         :param dbClient: a db instance
         :param dbName: a specified database
         """
-        self.db = dbClient[dbName]
+        self.dbClient = dbClient
+        self.db = self.dbClient[dbName]
         self.collection = self.db["access_sites"]
         self.user_agent = user_agent
+        self.dbName = dbName # this db is used to store original data
+        self.processedDataDBName = processedDaraDBName 
 
-    def go_to_database(self, dbClient, dbName):
-            self.db = dbClient[dbName]
+    def go_to_database(self,dbName):
+            self.db = self.dbClient[dbName]
 
     def go_to_collection(self, user_agent):
         try:
@@ -30,7 +33,9 @@ class DbDataAccess():
         # and since this is not very accurate, future works will be contributed to improve accuracy by
         # adding other means of benchmarking
 
-        # first go to the db that stores
+        # first go to the db that stores filtered url data
+        self.go_to_database(self.processedDataDBName)
+        self.go_to_collection(self.user_agent)
         benchmark_urls = []
         accessed_url = []
         accessed_time = []
@@ -52,6 +57,9 @@ class DbDataAccess():
             # and what the fuck is this?
             # print(item)
             # print(result)
+        # when this is done, go back to original db and connection
+        self.go_to_database(self.dbName)
+        self.go_to_collection(self.user_agent)
 
 
         for i in range(assigned_range):
@@ -84,7 +92,6 @@ class DbDataAccess():
             if parsed_result.netloc not in [key for key, value in modified_url.items()]:
                 modified_url.update({parsed_result.netloc:int(item[1])})
             else:
-
                 modified_url[parsed_result.netloc] += item[1]
 
         return sorted(modified_url.items(), key=operator.itemgetter(1), reverse=True)  # sort the dict in a descendin
