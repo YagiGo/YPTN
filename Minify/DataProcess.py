@@ -16,7 +16,7 @@ class DbDataAccess():
         self.collection = self.db["access_sites"]
         self.user_agent = user_agent
         self.dbName = dbName # this db is used to store original data
-        self.processedDataDBName = processedDaraDBName 
+        self.processedDataDBName = processedDaraDBName
 
     def go_to_database(self,dbName):
             self.db = self.dbClient[dbName]
@@ -34,32 +34,38 @@ class DbDataAccess():
         # adding other means of benchmarking
 
         # first go to the db that stores filtered url data
-        self.go_to_database(self.processedDataDBName)
+        self.go_to_database(self.dbName)
         self.go_to_collection(self.user_agent)
         benchmark_urls = []
         accessed_url = []
         accessed_time = []
         self.go_to_collection(self.user_agent)
         for post in self.collection.find():
-            accessed_url.append(post['url'])
-            accessed_time.append(post['time'])
+            # print post['time']
+            try:
+                accessed_url.append(post['url'])
+                accessed_time.append(post['time'])
+            except:
+                print("Abnormal Post!")
+                self.collection.delete_one(post)
         url_counter = Counter(accessed_url)
         # print(type(url_counter))
         url_counter = sorted(url_counter.items(), key=operator.itemgetter(1), reverse=True)  # sort the dict in a descending order
         # print(url_counter)
         modified_url = self.url_modify(url_counter)
-        # print(modified_url)
+        print(modified_url)
+        url_posts = []
         for item in modified_url:
             # item[0] url
             # item[1] access time
-            url_post = self.get_url_post(user_agent=self.user_agent, url = str(item[0]), access_times= int(item[1]))
-            print(url_post)
+            url_posts.append(self.get_url_post(user_agent=self.user_agent, url = str(item[0]), access_times= int(item[1])))
             # and what the fuck is this?
             # print(item)
             # print(result)
         # when this is done, go back to original db and connection
-        self.go_to_database(self.dbName)
-        self.go_to_collection(self.user_agent)
+        self.write_to_db(url_posts)
+
+
 
 
         for i in range(assigned_range):
@@ -96,13 +102,24 @@ class DbDataAccess():
 
         return sorted(modified_url.items(), key=operator.itemgetter(1), reverse=True)  # sort the dict in a descendin
 
+    def write_to_db(self, posts):
+        # First go to the db that stores processed data
+        # then go to the collection corresponding to the user based on user-agent
+        # next, save the data
+        # finally go back to where you began
+        self.go_to_database(self.processedDataDBName)
+        self.go_to_collection(self.user_agent)
+        self.collection.insert_many(posts)
+        self.go_to_database(self.dbName)
+        self.go_to_collection(self.user_agent)
 
 
 
 
 if __name__ == "__main__":
     test_obj = DbDataAccess(dbClient=MongoClient("localhost", 27017), dbName="test",
-                            user_agent = "Mozilla/5.0 (Linux; Android 7.1.1; Nexus 5X Build/N4F26I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.135 Mobile Safari/537.36")
+                            user_agent = "Mozilla/5.0 (Linux; Android 7.1.1; Nexus 5X Build/N4F26I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.135 Mobile Safari/537.36",
+                            processedDaraDBName="processedData")
 
     # test_obj.get_url_and_time(user_agent="Mozilla/5.0 (Linux; Android 7.1.1; Nexus 5X Build/N4F26I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.135 Mobile Safari/537.36")
     test_obj.get_url_and_time()
