@@ -3,6 +3,7 @@ import uuid
 from collections import Counter
 import operator
 from urlparse import urlparse
+import time
 
 class DbDataAccess():
     def __init__(self, dbClient, dbName, user_agent, processedDaraDBName):
@@ -109,6 +110,8 @@ class DbDataAccess():
         # finally go back to where you began
         self.go_to_database(self.processedDataDBName)
         self.go_to_collection(self.user_agent)
+        self.collection.remove()
+        self.go_to_collection(self.user_agent) # first remove the original collection and create another one
         self.collection.insert_many(posts)
         self.go_to_database(self.dbName)
         self.go_to_collection(self.user_agent)
@@ -117,10 +120,18 @@ class DbDataAccess():
 
 
 if __name__ == "__main__":
+    #Now run the program periodically
+
     test_obj = DbDataAccess(dbClient=MongoClient("localhost", 27017), dbName="test",
                             user_agent = "Mozilla/5.0 (Linux; Android 7.1.1; Nexus 5X Build/N4F26I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.135 Mobile Safari/537.36",
                             processedDaraDBName="processedData")
 
     # test_obj.get_url_and_time(user_agent="Mozilla/5.0 (Linux; Android 7.1.1; Nexus 5X Build/N4F26I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.135 Mobile Safari/537.36")
-    test_obj.get_url_and_time()
-
+    times = 1
+    while True and times <= 24:
+        print("Start dataprocessing No.{}".format(times))
+        test_obj.get_url_and_time()
+        time.sleep(3600)
+        if times==24:
+            times = 0
+        times += 1
