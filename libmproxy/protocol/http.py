@@ -132,6 +132,7 @@ class Http1Layer(_StreamingHttpLayer):
 
 
 # TODO: The HTTP2 layer is missing multiplexing, which requires a major rewrite.
+# TODO: Try use hyper tp add multiplexing
 class Http2Layer(_HttpLayer):
     def __init__(self, ctx, mode):
         super(Http2Layer, self).__init__(ctx)
